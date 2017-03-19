@@ -1,0 +1,85 @@
+.home{
+
+	width: 100%;
+	height: 700px;
+	background-image: url("Background.jpg");
+
+}
+
+.osc{
+
+margin-top: 15%;
+
+}
+
+.pinguen{
+
+margin-top: 16%;
+position: absolute;;
+
+}
+.hello{
+position: relative;
+bottom: 150px;
+}
+#pinguen>div { display: none; }
+#pinguen:hover>div { display: block; }
+
+.arrow{
+
+	margin-top: 5%;
+	margin-left: 45%
+}
+.alien{
+	top: 20px;
+}
+
+.space{
+
+	position: absolute;
+	left: 82%;
+
+}
+
+.rocket{
+	
+	position: relative;
+	top: 220px;
+	left: 25px;
+	transition: 2s ease-in-out;
+
+}
+
+.rocket:hover{
+  transform: translateY(-330px) ;
+}
+
+
+.space{
+
+ 	transition: 1s ease-in-out;
+    animation: starAnim 2s infinite;
+
+}
+@keyframes starAnim {
+    0%   {opacity: 0.5;}
+    25%  {opacity: 1;}
+    50%   {opacity: 0.5;}
+    100%  {opacity: 1;}
+ 
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

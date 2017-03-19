@@ -13,45 +13,48 @@ margin-top: 15%;
 }
 
 .pinguen{
-
-margin-top: 16%;
+width: 80%;
+margin-top: -130%;
 position: absolute;;
 
 }
 .hello{
+    width: 180%;
 position: relative;
-bottom: 150px;
+margin-top: -480%;
 }
 #pinguen>div { display: none; }
 #pinguen:hover>div { display: block; }
 
 .arrow{
-
-	margin-top: 5%;
-	margin-left: 45%
+width: 40%;
+	margin-top: 10%;
+	margin-left: 50%;
 }
 .alien{
-	top: 20px;
+	top: 60%;
+   margin-right: 30%;
 }
 
 .space{
 
 	position: absolute;
-	left: 82%;
+	left: 75%;
+    
 
 }
 
 .rocket{
-	
-	position: relative;
-	top: 220px;
-	left: 25px;
+	width: 45%;
+	position: absolute;
+	top: 15%;
+	left: 20%;
 	transition: 2s ease-in-out;
 
 }
 
 .rocket:hover{
-  transform: translateY(-330px) ;
+  transform: translateY(-300%) ;
 }
 
 

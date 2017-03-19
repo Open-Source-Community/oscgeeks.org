@@ -15,7 +15,11 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" >
+     <link href="{{ asset('/css/aboutstyle.css') }}" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
+           <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+     
 @yield('CSS')
 <!--End Styles -->
 
@@ -24,6 +28,7 @@
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/Custom.js') }}"></script>
+     <script src="{{ asset('js/animated-text.js') }}"></script>
 @yield('JS')
 <!--End Scripts -->
 </head>
@@ -63,7 +68,7 @@
                     <!--DEPARTMENTS WOoooOOoOOw -->
 
                     <li class="active">
-                        <a href="#">Home <i class="fa fa-caret-down" aria-hidden="true"></i> </a>
+                        <a href="http://localhost:1234/osc-site-test/public/home">Home <i class="fa fa-caret-down" aria-hidden="true"></i> </a>
                     </li>
 
                     <li><a href="#" class="splings_link">Committes</a></li>
@@ -119,33 +124,15 @@
 
 <!--start footer-->
 <div class="footer">
-    <div class="container">
+    
 
         <div class="row">
 
-            <div class="col-lg-4 col-md-4">
-                <h1>AKMHD</h1>
-                <p>Since 2016</p>
-                <p><em>'Delivering apps for low cost and maximum fun.'</em></p>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h1>GET IN TOUCH</h1>
-                <p><i class="fa fa-phone"></i> 011111 222 333</p>
-                <p><i class="fa fa-envelope-o"></i> <a href="mailto:info@appname.com">info@appname.com</a></p>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <h1>ABOUT US</h1>
-                <p>Delivering high quality apps for low cost and maximum fun.</p>
-                <p>Company name @ 2016</p>
-
-            </div>
+       <center><div class="col-lg-12">OSC &copy; 2017 </div></center> 
 
 
         </div>
 
-    </div>
 </div>
 <!--End footer-->
 

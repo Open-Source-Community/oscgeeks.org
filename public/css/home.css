@@ -27,9 +27,8 @@ margin-top: -480%;
 #pinguen:hover>div { display: block; }
 
 .arrow{
-width: 40%;
-	margin-top: 10%;
-	margin-left: 50%;
+	width: 40%;
+	margin-top: 7%;
 }
 .alien{
 	top: 60%;
@@ -40,6 +39,7 @@ width: 40%;
 
 	position: absolute;
 	left: 75%;
+	top: 40%
     
 
 }
@@ -74,7 +74,11 @@ width: 40%;
 
 
 
+.alien{
+	position: absolute;;
 
+	top: 70%;
+}
 
 
 

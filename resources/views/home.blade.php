@@ -22,8 +22,7 @@
 		<div class=" arrow col-xs-1 col-xs-offset-5" onclick="HomeAndAbout()">
 			<img   src="{{ asset('images/Background/arrow.png')}}" />
 		</div>
-		
-			<img  class="  col-xs-3 col-xs-pull-4"  src="{{ asset('images/Background/alien.png')}}" /></div>
+		<img  class=" alien col-xs-3 col-xs-pull-4"  src="{{ asset('images/Background/alien.png')}}" /></div>
 		
 </div>
   <div class="container " id="about" style="visibility:hidden; display:none;">

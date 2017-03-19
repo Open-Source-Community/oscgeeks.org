@@ -29,6 +29,7 @@
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/Custom.js') }}"></script>
      <script src="{{ asset('js/animated-text.js') }}"></script>
+      <script src="{{ asset('js/ChangeHomeToAbout.js') }}"></script>
 @yield('JS')
 <!--End Scripts -->
 </head>

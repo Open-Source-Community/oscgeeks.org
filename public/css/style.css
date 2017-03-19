@@ -1,24 +1,29 @@
-/* glopal */
-
+/* global */
 * {
-     box-sizing: border-box;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing:border-box;
-
 }
-/*strat global nav styles*/
+/*End Global*/
+
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*start global nav styles*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     position: relative;
     bottom: -19px;
-
 }
+
 .navbar{
     border: none;
 }
+
 .navbar-default{
-     background-color: #232f3d;
-   
+    background-color: #232f3d;
+
 }
+
 .container-fluid{
     padding: 0;
     background-color: #232f3d;
@@ -27,40 +32,26 @@
 
 /*Start brand styles*/
 .navbar-default .navbar-brand{
-        color: aqua;
+    color: aqua;
 
 }
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
-    margin-left: 28px;
+    text-align: center;
 }
 
 .navbar-brand{
-
     font-size: 20px;
 }
 
+
 /*end brand styles*/
 
-/*Start Search Style*/
+/**********************************************************************************/
+/**********************************************************************************/
 
-
-.input-group {
-    margin-top: 10px;
-    margin-bottom: 1px;
-}
-.search_icon{
-    background-color: #ffb24b;
-}
-.input-group .col-xs-8{
-    
-}
-.style_search{
-    margin-left: -82px;
-}
-/*End Search Style*/
 /*Start Departments dropdown styles*/
 .popover{
-    
+
     max-width: none;
     height: auto;
 }
@@ -110,7 +101,7 @@
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
-    
+
     background-color: #232f3d;
     color: aliceblue;
     padding: 5;
@@ -127,27 +118,23 @@
 }
 /*End departments dropdown styles*/
 
-
+/**********************************************************************************/
+/**********************************************************************************/
 
 .splings_link{
     position: relative;
     font-size: 12px;
     color:#f0f0f0;
     left: 20px;
-    
-    
-    
 }
 
-
-
-
-
-
+/**********************************************************************************/
+/**********************************************************************************/
 
 /*START CART STYLES*/
 ul.dropdown-cart{
-    min-width:250px;
+    min-width:180px;
+    background-color: white;
 }
 ul.dropdown-cart li .item{
     display:block;
@@ -169,43 +156,66 @@ ul.dropdown-cart li .item:after{
 ul.dropdown-cart li .item-left{
     float:left;
 }
+
 ul.dropdown-cart li .item-left img,
 ul.dropdown-cart li .item-left span.item-info{
     float:left;
 }
+
 ul.dropdown-cart li .item-left span.item-info{
-    margin-left:10px;   
+    margin-left:10px;
 }
+
 ul.dropdown-cart li .item-left span.item-info span{
     display:block;
 }
+
 ul.dropdown-cart li .item-right{
     float:right;
 }
+
 ul.dropdown-cart li .item-right button{
     margin-top:14px;
-    
-    /*End CART STYLE*/
-    
-    
-    
 }
-    
-    
-    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a
-{
-            color: aliceblue;
 
-    
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a {
+    color: aliceblue;
 }
+
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
     border: 1px solid aliceblue;
     border-radius: 3px;
-            color: aliceblue;
+    color: aliceblue;
 
 }
 
+/************************************************************************************/
+/************************************************************************************/
 
+/*Start Footer*/
+
+.footer {
+    background-color: #242424;
+    color: white;
+    padding: 30px 0 30px;
+}
+
+.footer h1 {
+    font-family: "lato" , sans-serif;
+    font-size: 1.5em;
+}
+
+.footer p{
+    font-size: 0.9em;
+    color: #f2f2f2;
+}
+
+.footer a {
+    color: #f2f2f2;
+
+}
+/*End Footer*/
 
 
 

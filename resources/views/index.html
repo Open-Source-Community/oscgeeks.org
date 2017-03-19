@@ -1,33 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <meta charset= "UTF-9" />
+    <title>AbdlrHmn Ali</title>
+    <!-- tap Photo -->
 
-        <title>Laravel</title>
+    <!--
+    <link  href="images/tap.jpg"/>
+    -->
+  
+    <!-- Css Files-->
+    <link rel="stylesheet" href="Css/normalize.css"/>
+      <link rel="stylesheet" href="Css/font-awesome.min.css">
+   <link rel="stylesheet" href="Css/bootstrap.css"/>
+    <link rel="stylesheet" href="Css/style.css"/>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-       <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" >
-    @yield('CSS')
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/Custom.js') }}"></script>
-   
-   
-
-    @yield('JS')
-    </head>
-   <body>
+    
+</head>
+<body>
     
     <div class="container-fluid">
     <nav class="navbar navbar-default">
@@ -38,10 +28,10 @@
 
         <div class="style_search col-lg-6 col-xs-8  col-lg-offset-0 col-md-6
         col-md-offset-0 ">
-            <div class="input-group">
+		    <div class="input-group">
                 <div class="input-group-btn search-panel">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <span id="search_concept">All</span> <span class="caret"></span>
+                    	<span id="search_concept">All</span> <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="#contains">Contains</a></li>
@@ -61,7 +51,7 @@
                 </span>
             </div>
         </div>
-    </div>
+	</div>
     
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -307,7 +297,10 @@
     
     <!-- jquery File and MY Js -->
     <!-- Latest compiled and minified JavaScript -->
-   
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.menu-aim.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Custom.js"></script>    
 </body>
 
 </html>

@@ -9,6 +9,7 @@
 
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">
     <!--End Fonts -->
 
     <!--Start Styles -->
@@ -38,7 +39,7 @@
 
 <!--start header-->
 
-<div class="container-fluid">
+<div class="container-fluid nav">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
 
@@ -76,20 +77,15 @@
                     <li><a href="#" class="splings_link">blender</a></li>
                     <li><a href="#" class="splings_link">Linux</a></li>
 
-                    <li class="splings_link" class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact Us<span class="caret"></span></a>
-                        <ul class="dropdown-menu dropdown-cart" role="menu">
-
-                            <li>
-                                <ul class="list-inline">
-                                    <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official fa-3x"></i></a></li>
-                                    <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-                                    <li><a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-3x"></i></a></li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </li>
+                 <li class="splings_link dropdown"><a href="#" class="dropdown-toggle"
+        data-toggle="dropdown">Contact Us</a>
+        <ul class="dropdown-menu">
+          <ul class='list-inline' >
+            <li><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+          </ul>
+        </ul></li>
 
 
                 </ul>

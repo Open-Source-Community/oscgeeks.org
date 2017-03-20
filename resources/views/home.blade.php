@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+@section('CSS')
+	<link href="{{ asset('/css/aboutstyle.css') }}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@endsection
+
+@section('JS')
+	<script src="{{ asset('js/animated-text.js') }}"></script>
+	<script src="{{ asset('js/ChangeHomeToAbout.js') }}"></script>
+@endsection
+
 @section('content')
  
 <div class="home" id="home" style="visibility:visible; display:block;">

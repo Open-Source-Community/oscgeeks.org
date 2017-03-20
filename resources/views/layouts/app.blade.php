@@ -17,10 +17,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" >
-     <link href="{{ asset('/css/aboutstyle.css') }}" rel="stylesheet">
-       <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" >
-           <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-     
+
 @yield('CSS')
 <!--End Styles -->
 
@@ -29,8 +26,7 @@
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/Custom.js') }}"></script>
-     <script src="{{ asset('js/animated-text.js') }}"></script>
-      <script src="{{ asset('js/ChangeHomeToAbout.js') }}"></script>
+
 @yield('JS')
 <!--End Scripts -->
 </head>

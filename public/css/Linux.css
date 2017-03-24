@@ -1,0 +1,30 @@
+body{
+    background-image: url("Background.jpg");
+}
+
+/*first div*/
+#div-pos1{
+    background-color: #232f3d;
+}
+.text-pos1{
+    text-align: center;
+}
+
+.text-pos1 > a{
+    color: whitesmoke;
+}
+/*end first div*/
+
+/*second div*/
+#div-pos2{
+    background-color: #232f3d;
+}
+
+.text-pos2{
+    text-align: center;
+}
+
+.text-pos2 > a{
+    color: whitesmoke;
+}
+/*end second div*/

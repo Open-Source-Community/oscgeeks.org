@@ -66,7 +66,7 @@
                     <!--DEPARTMENTS WOoooOOoOOw -->
 
                     <li class="active">
-                        <a href="http://localhost:1234/osc-site-test/public/home">Home <i class="fa fa-caret-down" aria-hidden="true"></i> </a>
+                        <a href="http://localhost:1234/osc-site-test/public/home">Home</a>
                     </li>
 
                     <li><a href="#" class="splings_link">Committes</a></li>
@@ -113,22 +113,19 @@
 
         @yield('content')
 
-
-
 <!--start footer-->
 <div class="footer">
-    
-
-        <div class="row">
-
-       <center><div class="col-lg-12">OSC &copy; 2017 </div></center> 
 
 
-        </div>
+    <div class="row">
+
+        <center><div class="col-lg-12">OSC &copy; 2017 </div></center>
+
+
+    </div>
 
 </div>
 <!--End footer-->
-
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->
 

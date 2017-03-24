@@ -15,3 +15,6 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/linux', function () {
+    return view('linux');
+});

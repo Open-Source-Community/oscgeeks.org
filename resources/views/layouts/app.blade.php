@@ -113,19 +113,7 @@
 
         @yield('content')
 
-<!--start footer-->
-<div class="footer">
 
-
-    <div class="row">
-
-        <center><div class="col-lg-12">OSC &copy; 2017 </div></center>
-
-
-    </div>
-
-</div>
-<!--End footer-->
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->
 

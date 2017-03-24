@@ -28,3 +28,17 @@ body{
     color: whitesmoke;
 }
 /*end second div*/
+
+/*third div*/
+#div-pos3{
+    background-color: #232f3d;
+}
+
+.text-pos3{
+    text-align: center;
+}
+
+.text-pos3 > a{
+    color: whitesmoke;
+}
+/*end third div*/

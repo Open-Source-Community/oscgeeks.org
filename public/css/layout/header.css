@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #232f3d;
+    border-top: 3px solid orange;
+    font-family: "lato" , sans-serif;
+    padding: 10px 0 8px;
+}
+
+.navbar-header .navbar-brand {
+    color:white !important;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.container > .row > .navbar-collapse > .navbar-nav{
+    /*margin-top: 40px;*/
+}
+.navbar-nav{
+    left:-20px;
+}

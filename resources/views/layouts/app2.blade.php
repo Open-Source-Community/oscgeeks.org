@@ -38,9 +38,12 @@
 <!--  start Navbar  -->
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
+        <!--navbar logos-->
        <div class="row">
+        {{--<img class=" logo  col-xs-4 col-xs-offset-4 "  src="{{ asset('images/navbar/logo-osc.png')}}">--}}
         <img class=" osc  col-xs-4 col-xs-offset-4 " src="{{ asset('images/navbar/osc-log.png')}}">
        </div>
+
         <div class="navbar-header">
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -62,12 +65,18 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
                         <li class="dropdown-header">Dropdown header 1</li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header 2</li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Hr Committee</a></li>
+                        <li><a href="#">Pr Committee</a></li>
+                        <li><a href="#">Lr Committee</a></li>
+                        <li><a href="#">Fr Committee</a></li>
+                        <li><a href="#">IT Committee</a></li>
+                        <li><a href="#">Projects Committee</a></li>
+                        <li><a href="#">Art Committee</a></li>
+                        <li><a href="#">CCC Committee</a></li>
+                        <li><a href="#">English hero's Committee</a></li>
+                        <li><a href="#">Linux Committee</a></li>
+                        <li><a href="#">Laravel Committee</a></li>
+                        <li><a href="#">Blender Committee</a></li>
                     </ul>
 
                     <button type="button" class="btn btn-default btn-sm">Linux</button>

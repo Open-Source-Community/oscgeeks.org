@@ -19,31 +19,22 @@ position: absolute;;
 
 }
 .hello{
-    width: 180%;
-position: relative;
-margin-top: -480%;
+	width: 180%;
+	position: relative;
+	margin-top: -480%;
 }
-#pinguen>div { display: none; }
-#pinguen:hover>div { display: block; }
+#pinguen>div { visibility: hidden; }
+#pinguen:hover>div { visibility: visible; }
 
 .arrow{
-	width: 40%;
-	margin-top: 7%;
-}
-.alien{
-	top: 60%;
-   margin-right: 30%;
-}
-
-.space{
-
-	position: absolute;
-	left: 75%;
-	top: 40%
-    
+	margin-top: 3%;
+	margin-left: 3%;
 
 }
+.stars{
 
+	width: 100%;
+}
 .rocket{
 	width: 45%;
 	position: absolute;
@@ -60,8 +51,10 @@ margin-top: -480%;
 
 .space{
 
+	position: relative;
  	transition: 1s ease-in-out;
     animation: starAnim 2s infinite;
+    top: -90px;
 
 }
 @keyframes starAnim {
@@ -72,13 +65,6 @@ margin-top: -480%;
  
    }
 
-
-
-.alien{
-	position: absolute;;
-
-	top: 70%;
-}
 
 
 

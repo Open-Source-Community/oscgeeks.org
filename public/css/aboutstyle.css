@@ -1,15 +1,15 @@
-.container{
+.homeContainer{
     background-image: url(../images/About/Background.jpg);
     width: 100%;
     
 }
-.container #pinguens{
+.homeContainer #pinguens{
      position: sticky;
     left: 50%;
    top: 70%;
     width: 50%;
 }
-.container #about_the_gablia{
+.homeContainer #about_the_gablia{
     position: sticky;
     margin-left: 1%;
     margin-top: 3%;

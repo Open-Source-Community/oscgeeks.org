@@ -21,7 +21,6 @@
     <!--Start Scripts -->
     <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/linux.js') }}"></script>
     <!--End Scripts -->
 </head>

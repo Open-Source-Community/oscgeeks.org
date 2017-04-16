@@ -14,15 +14,4 @@
 .container > .row > .navbar-collapse > .navbar-nav{
     /*margin-top: 40px;*/
 }
-.navbar-nav{
-    left:-20px;
-}
 
-.osc{
-    padding-bottom: 10px;
-}
-
-.logo{
-    height: 100px;
-    width: 125px;
-}

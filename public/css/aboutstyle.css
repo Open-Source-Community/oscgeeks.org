@@ -1,7 +1,12 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('/fonts/font/HANDVETICA.TTF');
+}
+
 .homeContainer{
     background-image: url(../images/About/Background.jpg);
     width: 100%;
-    
+
 }
 .homeContainer #pinguens{
      position: sticky;
@@ -16,14 +21,14 @@
     width: 50%;
 }
  .about_text {
-     
+
      width: 90%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
        /*white-space: nowrap; /* Keeps the content on a single line */
 
   margin: 3% auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .20em; /* Adjust as needed */
-  animation: 
+  animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
@@ -33,5 +38,3 @@
   from { width: 0 }
   to { width: 90% }
 }
-
-

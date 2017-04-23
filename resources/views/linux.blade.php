@@ -65,11 +65,13 @@
 
         <!--start  حاجات لازم تعملهم لما تصطب لينكس-->
         <div class="panel panel-default">
+
             <div id="div-pos2" class="panel-heading">
                 <h4 class="text-pos2" class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" dir="rtl">٦ حاجات لازم تعملهم لما تصطب لينكس</a>
                 </h4>
             </div>
+
             <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body"><p dir="rtl">دلوقتي عندك Ubuntu 16.04 علي جهازك؟ ألف مبروك D: بس في شوية حاجات كدا ضروري تعملها.</p>
                     </br>
@@ -114,24 +116,25 @@
                     <p dir="rtl">من أول ما فتحت الجهاز لما طلعلك الmenu اللي بتختار منها عايز تخش علي<br> Ubuntu ولا Windows مروراً بالLogin Screen لغاية ما دخلت وفتحت الinternet وشغال دلوقتي. كل دا كود حر تقدر تشوفه وتعدل فيه!</p><br>
                     <p dir="rtl">لو مؤمن بجمال الفكرة دي كلم صحابك عنها! ((:</p><br><br></div>
             </div>
+
         </div>
         <!--end  حاجات لازم تعملهم لما تصطب لينكس-->
 
         <!--start shrouk descover linux-->
         <div class="panel panel-default">
+
             <div id="div-pos3" class="panel-heading">
                 <h4 class="text-pos3" class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" dir="rtl">شروق تكتشف لينكس</a>
                 </h4>
             </div>
+
             <div id="collapse3" class="panel-collapse collapse">
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                    </div>
+                <div class="panel-body">
+                    <p dir="rtl"><img src="images/pages images/linux/output.jpg"></p><br>
+                    <p dir="rtl"><a href="https://www.youtube.com/watch?v=MkNOk5fM4dY" target="_blank"><img src="images/pages images/linux/youtube.png"></a></p><br>
+                    <p dir="rtl"><img src="images/pages images/linux/output2.jpg"></p><br>
+                </div>
             </div>
         </div>
         <!--end shrouk descover linux-->

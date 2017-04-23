@@ -41,7 +41,23 @@
             </div>
             <div id="collapse1" class="panel-collapse collapse in">
                 <div class="panel-body">
-                    
+                    <h2 dir="rtl"><span style="color: #ff0000;">ملحوظات مهمة قبل ما نبدأ</span></h2><br>
+                    <ul dir="rtl">
+                        <li>
+                            <span style="color: #ff6600;">لو كارت الشاشة بتاعك AMD/ATI:</span>
+                        </li>
+                        <p dir="rtl">AMD/ATI مش منزلة drivers للنسخة الجديدة من Ubuntu. معني كدا إن مفيش غير الـOpen Source Drivers.<br> طيب هو الـOpen Source Drivers دي وحشة؟ في ناس كتير في OSC شغالين بيها وزي الفل. في ناس تانية سبب لها مشاكل زي إن الجهاز يسخن أو الـGUI ميقومش وحاجات كدا.</p><br>
+                        <p dir="rtl">لو لسا عايز تجرب حظك كمل قراية.</p>
+                    </ul><br>
+
+                    <ul dir="rtl">
+                        <li>
+                            <span style="color: #ff6600;">خد Backup:</span>
+                        </li>
+                        <p dir="rtl">يعني بجد خد backup علي الأقل للحاجات المهمة جداً علي جهازك. لو قريت واتبعت الخطوات بحذر إن شاء الله الdata بتاعتك هتكون في أمان. ممكن تحصل <br>مشاكل تانية بس الـdata بتاعتك في أمان. بس ليه تخاطر؟ أصل كلنا بنغلط وبتفلت مننا. خد backup عشان خاطري. لو مخدتش كمل بس ركز أوي الله يكرمك. </p><br>
+                        <p dir="rtl">لو لسا عايز تجرب حظك كمل قراية.</p>
+                    </ul><br>
+
                 </div>
             </div>
         </div>

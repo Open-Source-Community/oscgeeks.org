@@ -1,34 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Linux-OSC</title>
+@extends('layouts.app2')
 
-    <!-- Start Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">
-    <!--End Fonts -->
- 
-    <!--Start Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
+    @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/linux.css') }}" >
     <!--End Styles -->
-
-    <!--Start Scripts -->
-    <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
+@endsection
+   @section('JS')
     <script src="{{ asset('js/linux.js') }}"></script>
     <!--End Scripts -->
-</head>
-<body>
+@endsection
+@section('content')
 <div class="container">
     <br>
     <br>
-
+<br>
+ 
+   <br>
     <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div id="div-pos1" class="panel-heading">
@@ -71,7 +57,8 @@
         </div>
     </div>
 </div>
-
-@extends('layouts.footer')
-</body>
-</html>
+<br>
+<br>
+<br>
+<br>
+@endsection

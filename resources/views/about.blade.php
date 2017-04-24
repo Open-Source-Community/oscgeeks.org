@@ -20,4 +20,4 @@
 
 
 
- @extends('layouts.footer')
+ 

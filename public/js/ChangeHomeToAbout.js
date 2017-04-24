@@ -17,5 +17,4 @@ function moveToAbout(){
 
 window.location.href = "/about";
 
-
 }

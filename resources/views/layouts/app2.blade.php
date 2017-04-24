@@ -36,12 +36,12 @@
 <body>
 
 <!--  start Navbar  -->
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default ">
     <div class="container">
         <!--navbar logos-->
        <div class="row">
-    <img class=" logo  col-xs-3  "  src="{{ asset('images/navbar/logo-osc.png')}}">
-        <img class=" osc  col-xs-6  " src="{{ asset('images/navbar/osc-log.png')}}">
+    <img class=" logo  col-md-1 col-xs-3  "  src="{{ asset('images/navbar/logo-osc.png')}}">
+        <img class=" osc col-md-4 col-xs-6   " src="{{ asset('images/navbar/osc-log.png')}}">
        </div>
 
         <div class="navbar-header">
@@ -65,12 +65,15 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu " role="menu">
                                <li data-submenu-id="submenu-patas">
-                                    <a href="#">Patas</a>
+                                    <a href="#">HR</a>
                                 
 
                                     <div id="submenu-patas" class="popover" >
-                                        <h3 class="popover-title">Patas oscscss</h3>
-                                        <div class="popover-content"><img src="{{asset('images/Background/Pinguen.png')}}"/></div>
+                                        <h3 class="popover-title">HR COMMiTTEE</h3>
+                                        
+                                        <div class="popover-content" style="background-image:'images/Background/Pinguen.png';">
+                                        <p>description</p>
+                                        </div>
                                     </div>
                                 </li>
                      <!--   <li><a href="#">Hr Committee</a></li>
@@ -132,6 +135,22 @@
 
     @yield('content')
 
+
+<!--start footer-->
+<div class="footer">
+
+
+    <div class="row">
+
+        <center><div class="col-xs-12">OSC &copy; 2017 </div></center>
+
+
+    </div>
+
+</div>
+<!--End footer-->
+<!-- jquery File and MY Js -->
+<!-- Latest compiled and minified JavaScript -->
 
 </body>
 </html>

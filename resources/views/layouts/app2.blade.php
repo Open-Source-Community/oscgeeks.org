@@ -91,7 +91,7 @@
                     </ul>
                     </div></li>
 
-                  <li>  <button type="button" class="btn btn-default btn-sm">Linux</button></li>
+                  <li>  <button type="button" onclick="window.location='{{ url ("linux") }}'" class="btn btn-default btn-sm">Linux</button></li>
                  <li>   <button type="button" class="btn btn-default btn-sm">Blender</button></li>
                <li>    <div class="dropdown ">
                     <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us

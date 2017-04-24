@@ -1,3 +1,8 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('/fonts/font/HANDVETICA.TTF');
+}
+
 /* global */
 * {
     box-sizing: border-box;
@@ -194,10 +199,3 @@ ul.dropdown-cart li .item-right button{
 
 /************************************************************************************/
 /************************************************************************************/
-
-
-
-
-
-
-

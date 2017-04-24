@@ -1,3 +1,8 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('/fonts/font/HANDVETICA.TTF');
+}
+
 .home{
 
 	width: 100%;
@@ -62,17 +67,5 @@ position: absolute;;
     25%  {opacity: 1;}
     50%   {opacity: 0.5;}
     100%  {opacity: 1;}
- 
+
    }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -26,3 +26,8 @@ Route::get('/test', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/events', function () {
+    return view('events');
+});
+

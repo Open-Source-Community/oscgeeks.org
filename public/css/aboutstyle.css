@@ -1,11 +1,11 @@
 @font-face {
     font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
+    src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-.homeContainer{
+body{
    background-image: url(../images/About/Background.jpg);
-    width: 100%;
+
 
 }
 .homeContainer #pinguens{

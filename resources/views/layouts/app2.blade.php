@@ -108,23 +108,26 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                   <div class="dropdown">
-                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Events
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu">
-                        <!--enter events data-->
-                               <li data-submenu-id="submenu-patas">
-                                    <a href="#">Patas</a>
-                                
+                   {{--<div class="dropdown">--}}
+                    {{--<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Events--}}
+                        {{--<span class="caret"></span></button>--}}
+                        {{--<ul class="dropdown-menu" role="menu">--}}
+                        {{--<!--enter events data-->--}}
+                               {{--<li data-submenu-id="submenu-patas">--}}
+                                    {{--<a href="#">Patas</a>--}}
+                                {{----}}
 
-                                    <div id="submenu-patas" class="popover" >
-                                        <h3 class="popover-title">Patas oscscss</h3>
-                                        <div class="popover-content"><img src="{{asset('images/Background/Pinguen.png')}}"/></div>
-                                    </div>
-                                </li>
-                    </ul>
-                    </div>
-                    
+                                    {{--<div id="submenu-patas" class="popover" >--}}
+                                        {{--<h3 class="popover-title">Patas oscscss</h3>--}}
+                                        {{--<div class="popover-content"><img src="{{asset('images/Background/Pinguen.png')}}"/></div>--}}
+                                    {{--</div>--}}
+                                {{--</li>--}}
+                    {{--</ul>--}}
+                    {{--</div>--}}
+
+                    <li>  <button type="button" onclick="window.location='{{ url ("events") }}'" class="btn btn-default btn-sm">Events</button></li>
+
+
                 </ul>
             </div>
         </div>

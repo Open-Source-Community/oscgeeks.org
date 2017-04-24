@@ -59,7 +59,7 @@
             <div class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav nav_ul">
-                  <li>  <button type="button" class="btn btn-primary btn-sm">Home</button></li>
+                  <li>  <button type="button" onclick="window.location='{{ url ("home") }}'" class="btn btn-primary btn-sm">Home</button></li>
 <li><div class="dropdown">
                     <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
                         <span class="caret"></span></button>

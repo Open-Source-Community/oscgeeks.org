@@ -127,10 +127,7 @@
 
     </div>
 </div>
-<<<<<<< HEAD
-<br>
-<br>
-<br>
-<br>
+
+
 @endsection
 

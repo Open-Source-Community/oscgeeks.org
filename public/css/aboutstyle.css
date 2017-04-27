@@ -17,17 +17,21 @@ body{
 .homeContainer #about_the_gablia{
     position: sticky;
     margin-left: 1%;
-   
-    width: 50%;
+   font-family: HANDVETICA;
+    font-size: 400%;
+    color: white;
+    
 }
  .about_text {
 
      width: 90%;
+     font-family: HANDVETICA;
+    font-size: 140%;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
        /*white-space: nowrap; /* Keeps the content on a single line */
 
   margin: 3% auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .20em; /* Adjust as needed */
+  letter-spacing: .10em; /* Adjust as needed */
   animation:
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -37,4 +41,7 @@ body{
 @keyframes typing {
   from { width: 0 }
   to { width: 90% }
+}
+span{
+    font-size: 150%;
 }

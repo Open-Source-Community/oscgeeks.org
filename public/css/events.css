@@ -1,3 +1,7 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('../fonts/font/HANDVETICA.TTF');
+}
 body{
     background-image: url("Background.jpg");
 }
@@ -254,4 +258,13 @@ body{
     .timeline > li .line {
         display: none;
     }
+}
+h3{
+    font-family: HANDVETICA;
+    font-size: 200%;
+}
+.vision{
+     font-family: HANDVETICA;
+    font-size: 130%;
+    color: whitesmoke;
 }

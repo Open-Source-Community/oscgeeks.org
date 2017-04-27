@@ -56,9 +56,9 @@
         </div>
 
         <div class="row">
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse ">
 
-                <ul class="nav navbar-nav nav_ul">
+                <ul class="nav navbar-nav col-xs-10">
                   <li>  <button type="button" onclick="window.location='{{ url ("home") }}'" class="btn btn-primary btn-sm">Home</button></li>
 <li><div class="dropdown">
                     <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
@@ -93,7 +93,13 @@
 
                   <li>  <button type="button" onclick="window.location='{{ url ("linux") }}'" class="btn btn-default btn-sm">Linux</button></li>
                  <li>   <button type="button" class="btn btn-default btn-sm">Blender</button></li>
-               <li>    <div class="dropdown ">
+             
+                       <li>  <button type="button" onclick="window.location='{{ url ("events") }}'" class="btn btn-default btn-sm">Events</button></li>
+                      
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right col-xs-1">
+                    <li>    <div class="dropdown ">
                     <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
                         <span class="caret"></span></button>
                         
@@ -105,30 +111,12 @@
                     </ul>
                    </ul>
                     </div></li> 
-                </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                   {{--<div class="dropdown">--}}
-                    {{--<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Events--}}
-                        {{--<span class="caret"></span></button>--}}
-                        {{--<ul class="dropdown-menu" role="menu">--}}
-                        {{--<!--enter events data-->--}}
-                               {{--<li data-submenu-id="submenu-patas">--}}
-                                    {{--<a href="#">Patas</a>--}}
-                                {{----}}
-
-                                    {{--<div id="submenu-patas" class="popover" >--}}
-                                        {{--<h3 class="popover-title">Patas oscscss</h3>--}}
-                                        {{--<div class="popover-content"><img src="{{asset('images/Background/Pinguen.png')}}"/></div>--}}
-                                    {{--</div>--}}
-                                {{--</li>--}}
-                    {{--</ul>--}}
-                    {{--</div>--}}
-
-                    <li>  <button type="button" onclick="window.location='{{ url ("events") }}'" class="btn btn-default btn-sm">Events</button></li>
+                 
 
 
                 </ul>
+                
             </div>
         </div>
     </div>

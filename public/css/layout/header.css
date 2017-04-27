@@ -11,9 +11,9 @@
     position: absolute;
 }
 
-.container > .row > .navbar-collapse > .navbar-nav{
+.container > .row > .navbar-collapse > .navbar-nav  > li{
+margin-left: .5%;
+    margin-top: 1%;
     /*margin-top: 40px;*/
 }
 
-.logo{
-}

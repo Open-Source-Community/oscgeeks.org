@@ -40,8 +40,8 @@
     <div class="container">
         <!--navbar logos-->
        <div class="row">
-    <img class=" logo  col-md-1 col-xs-3  "  src="{{ asset('images/navbar/logo-osc.png')}}">
-        <img class=" osc col-md-4 col-xs-6   " src="{{ asset('images/navbar/osc-log.png')}}">
+    <img class=" logo  col-md-1 col-xs-1  "  src="{{ asset('images/navbar/logo-osc.png')}}">
+        <img class=" osc col-md-4 col-xs-4   " src="{{ asset('images/navbar/osc-log.png')}}">
        </div>
 
         <div class="navbar-header">

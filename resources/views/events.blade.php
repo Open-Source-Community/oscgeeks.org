@@ -20,7 +20,7 @@ their questions as best we can.
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="http://lorempixel.com/250/250/cats/1" alt="">
+                            <img class="img-circle img-responsive" src="{{ asset('images/navbar/logo-osc.png')}}" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -44,7 +44,7 @@ technical support if they want them installed on their laptops.
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="http://lorempixel.com/250/250/cats/2" alt="">
+                            <img class="img-circle img-responsive" src="{{ asset('images/navbar/logo-osc.png')}}" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -70,7 +70,7 @@ groups, and facebook fan page.
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="http://lorempixel.com/250/250/cats/3" alt="">
+                            <img class="img-circle img-responsive" src="{{ asset('images/navbar/logo-osc.png')}}" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -92,7 +92,7 @@ learn from everybody.
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="http://lorempixel.com/250/250/cats/4" alt="">
+                            <img class="img-circle img-responsive" src="{{ asset('images/navbar/logo-osc.png')}}" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">

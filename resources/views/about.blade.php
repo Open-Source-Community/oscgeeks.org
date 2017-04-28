@@ -21,7 +21,7 @@ open and available for everybody to study, contribute in, modify and share.<br>
 Simply we are students who believe in the Open Source concept. We are a
 community because we work together in each committee to reach our goal.
 A person is not just a member in a committee like PR or HR, we work
-wherever we can because we are OSCians. In other words <span>“open source احنا بتوع ال”</span> </p>
+wherever we can because we are OSCians. In other words <span>“ open sourceاحنا بتوع الـ ”</span> </p>
      <img src="{{asset('images/About/pinguens.png')}}" id="pinguens">
  </div>
    </div>

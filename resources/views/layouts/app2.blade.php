@@ -66,19 +66,7 @@
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu " role="menu">
                        
-                    <li data-submenu-id="submenu-monk">
-                        <a href="#">HR commitee</a>
-                        <div id="submenu-monk" class="popover">
-                            <h3 class="popover-title">Human resources</h3>
-                            <div class="popover-content">  <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nesciunt deserunt esse quidem cumque quaerat doloremque!
-                                    </li>
-                                
-                                </ul></div>
-                        </div>
-                    </li>
-                   
-
+                       
                         <li data-submenu-id="submenu-pygmy">
                         <a href="#">PR commitee</a>
                         <div id="submenu-pygmy" class="popover">
@@ -92,6 +80,19 @@
                                 </ul></div>
                         </div>
                     </li>
+                    <li data-submenu-id="submenu-monk">
+                        <a href="#">HR commitee</a>
+                        <div id="submenu-monk" class="popover">
+                            <h3 class="popover-title">Human resources</h3>
+                            <div class="popover-content">  <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nesciunt deserunt esse quidem cumque quaerat doloremque!
+                                    </li>
+                                
+                                </ul></div>
+                        </div>
+                    </li>
+                   
+
                      <!--   <li><a href="#">Hr Committee</a></li>
                         <li><a href="#">Pr Committee</a></li>
                         <li><a href="#">Lr Committee</a></li>

@@ -17,3 +17,73 @@ margin-left: .5%;
     /*margin-top: 40px;*/
 }
 
+/*Start Departments dropdown styles*/
+.popover{
+    
+    max-width: none;
+    height: auto;
+    margin-left:-25px; 
+  background-image: url("images/navbar/logo-osc.png");
+}
+
+#submenu-tamarin{
+    height: 300px;
+}
+.navbar .popover {
+    width: 400px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+}
+
+.navbar .popover-content {
+    text-align: center;
+}
+
+.navbar .popover-content img {
+    height: 212px;
+    max-width: 250px;
+}
+
+.navbar .dropdown-menu {
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .dropdown-menu > li > a:hover {
+    background-image: none;
+    color: white;
+    background-color: rgb(0, 129, 194);
+    background-color: rgba(0, 129, 194, 0.5);
+}
+
+.navbar .dropdown-menu > li > a.maintainHover {
+    color: white;
+    background-color: #0081C2;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    
+    background-color: #232f3d;
+    color: aliceblue;
+    padding: 5px;
+}
+.navbar-default .navbar-nav > .active > a:hover{
+    border: 1px solid #c1bebe;
+    border-radius: 3px;
+}
+
+.navbar-nav > li > a{
+    padding-top: 6px ;
+    padding-bottom: 6px;
+    margin-bottom: 3px;
+}
+/*End departments dropdown styles*/

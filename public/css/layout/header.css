@@ -17,7 +17,7 @@ margin-left: .5%;
     /*margin-top: 40px;*/
 }
 
-/*Start Departments dropdown styles*/
+/*Start committees dropdown styles*/
 .popover{
     
     max-width: none;
@@ -89,4 +89,13 @@ margin-left: .5%;
     padding-bottom: 6px;
     margin-bottom: 3px;
 }
-/*End departments dropdown styles*/
+/*End committees dropdown styles*/
+
+/*sart contact us style*/
+.contact  {
+    background-color: #232f3d;
+}
+.contact > .list-inline {
+    text-align: center;
+}
+/*end contact us style*/

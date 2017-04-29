@@ -19,10 +19,6 @@ Route::get('/linux', function () {
     return view('linux');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
-
 Route::get('/about', function () {
     return view('about');
 });

@@ -59,23 +59,41 @@
             <div class="navbar-collapse collapse ">
 
                 <ul class="nav navbar-nav col-xs-10">
-                  <li>  <button type="button" onclick="window.location='{{ url ("home") }}'" class="btn btn-primary btn-sm">Home</button></li>
-<li><div class="dropdown">
+                  <li>  <button type="button" onclick="window.location='{{ url ("home") }}'" 
+                  class="btn btn-primary btn-sm">Home</button></li>
+                    <li><div class="dropdown">
                     <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu " role="menu">
-                               <li data-submenu-id="submenu-patas">
-                                    <a href="#">HR</a>
+                       
+                       
+                        <li data-submenu-id="submenu-pygmy">
+                        <a href="#">PR commitee</a>
+                        <div id="submenu-pygmy" class="popover">
+                            <h3 class="popover-title">Presentation skills</h3>
+                            <div class="popover-content">  <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod perferendis earum eos natus adipisci rerum blanditiis iure id. Perferendis molestiae, excepturi voluptate nesciunt deserunt esse quidem cumque quaerat doloremque!
+                                    </li>
+                                    <img src="images/navbar/logo-osc.png">
+                                   
                                 
+                                </ul></div>
+                        </div>
+                    </li>
 
-                                    <div id="submenu-patas" class="popover" >
-                                        <h3 class="popover-title">HR COMMiTTEE</h3>
-                                        
-                                        <div class="popover-content" style="background-image:'images/Background/Pinguen.png';">
-                                        <p>description</p>
-                                        </div>
-                                    </div>
-                                </li>
+                    <li data-submenu-id="submenu-monk">
+                        <a href="#">HR commitee</a>
+                        <div id="submenu-monk" class="popover">
+                            <h3 class="popover-title">Human resources</h3>
+                            <div class="popover-content">  <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nesciunt deserunt esse quidem cumque quaerat doloremque!
+                                    </li>
+                                
+                                </ul></div>
+                        </div>
+                    </li>
+                   
+
                      <!--   <li><a href="#">Hr Committee</a></li>
                         <li><a href="#">Pr Committee</a></li>
                         <li><a href="#">Lr Committee</a></li>

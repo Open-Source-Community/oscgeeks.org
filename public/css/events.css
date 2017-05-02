@@ -4,6 +4,11 @@
 }
 body{
     background-image: url("Background.jpg");
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 .timeline {
     position: relative;

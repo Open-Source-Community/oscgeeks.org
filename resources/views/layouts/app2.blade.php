@@ -17,8 +17,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}" >
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
 
 @yield('CSS')
 <!--End Styles -->
@@ -39,10 +39,10 @@
 <div class="navbar navbar-default ">
     <div class="container">
         <!--navbar logos-->
-       <div class="row">
-    <img class=" logo  col-md-1 col-xs-3  "  src="{{ asset('images/navbar/logo-osc.png')}}">
-        <img class=" osc col-md-4 col-xs-6   " src="{{ asset('images/navbar/osc-log.png')}}">
-       </div>
+        <div class="row">
+            <img class=" logo  col-md-1 col-xs-3  " src="{{ asset('images/navbar/logo-osc.png')}}">
+            <img class=" osc col-md-4 col-xs-6   " src="{{ asset('images/navbar/osc-log.png')}}">
+        </div>
 
         <div class="navbar-header">
 
@@ -59,82 +59,97 @@
             <div class="navbar-collapse collapse ">
 
                 <ul class="nav navbar-nav col-xs-10">
-                  <li>  <button type="button" onclick="window.location='{{ url ("home") }}'" 
-                  class="btn btn-primary btn-sm">Home</button></li>
-                    <li><div class="dropdown">
-                    <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu " role="menu">
-                       
-                       
-                        <li data-submenu-id="submenu-pygmy">
-                        <a href="#">PR commitee</a>
-                        <div id="submenu-pygmy" class="popover">
-                            <h3 class="popover-title">Presentation skills</h3>
-                            <div class="popover-content">  <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quod perferendis earum eos natus adipisci rerum blanditiis iure id. Perferendis molestiae, excepturi voluptate nesciunt deserunt esse quidem cumque quaerat doloremque!
-                                    </li>
-                                    <img src="images/navbar/logo-osc.png">
-                                   
-                                
-                                </ul></div>
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("home") }}'"
+                                class="btn btn-primary btn-sm">Home
+                        </button>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu " role="menu">
+
+                                <li data-submenu-id="submenu-pygmy">
+                                    <a href="#">HHHHHHHHHHH</a>
+                                    <div id="submenu-pygmy" class="popover">
+                                        <h3 class="popover-title">HHHHHHHHHHH skills</h3>
+                                        <div class="popover-content">
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                                    quod perferendis earum eos natus adipisci rerum blanditiis iure id.
+                                                    Perferendis molestiae, excepturi voluptate nesciunt deserunt esse
+                                                    quidem cumque quaerat doloremque!
+                                                </li>
+                                                <img src="images/navbar/logo-osc.png">
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li data-submenu-id="submenu-monk">
+                                    <a href="#">MMMMMMMMM</a>
+                                    <div id="submenu-monk" class="popover">
+                                        <h3 class="popover-title">MMMMMMMMMMMMMM resources</h3>
+                                        <div class="popover-content">
+                                            <ul>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt
+                                                    deserunt esse quidem cumque quaerat doloremque!
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                @yield('dropdownlist')
+
+
+                            </ul>
                         </div>
                     </li>
 
-                    <li data-submenu-id="submenu-monk">
-                        <a href="#">HR commitee</a>
-                        <div id="submenu-monk" class="popover">
-                            <h3 class="popover-title">Human resources</h3>
-                            <div class="popover-content">  <ul>
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  nesciunt deserunt esse quidem cumque quaerat doloremque!
-                                    </li>
-                                
-                                </ul></div>
-                        </div>
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("linux") }}'"
+                                class="btn btn-default btn-sm">Linux
+                        </button>
                     </li>
-                   
+                    <li>
+                        <button type="button" class="btn btn-default btn-sm">Blender</button>
+                    </li>
 
-                     <!--   <li><a href="#">Hr Committee</a></li>
-                        <li><a href="#">Pr Committee</a></li>
-                        <li><a href="#">Lr Committee</a></li>
-                        <li><a href="#">Fr Committee</a></li>
-                        <li><a href="#">IT Committee</a></li>
-                        <li><a href="#">Projects Committee</a></li>
-                        <li><a href="#">Art Committee</a></li>
-                        <li><a href="#">CCC Committee</a></li>
-                        <li><a href="#">English hero's Committee</a></li>
-                        <li><a href="#">Linux Committee</a></li>
-                        <li><a href="#">Laravel Committee</a></li>
-                        <li><a href="#">Blender Committee</a></li>-->
-                    </ul>
-                    </div></li>
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("events") }}'"
+                                class="btn btn-default btn-sm">Events
+                        </button>
+                    </li>
 
-                  <li>  <button type="button" onclick="window.location='{{ url ("linux") }}'" class="btn btn-default btn-sm">Linux</button></li>
-                 <li>   <button type="button" class="btn btn-default btn-sm">Blender</button></li>
-             
-                       <li>  <button type="button" onclick="window.location='{{ url ("events") }}'" class="btn btn-default btn-sm">Events</button></li>
-                      
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right col-xs-1">
-                    <li>    <div class="dropdown ">
-                    <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
-                        <span class="caret"></span></button>
-                        
-                    <ul class="dropdown-menu contact">
-                        <ul class='list-inline'>
-                        <li><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-                    </ul>
-                   </ul>
-                    </div></li> 
+                    <li>
+                        <div class="dropdown ">
+                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
+                                <span class="caret"></span></button>
 
-                 
+                            <ul class="dropdown-menu contact">
+                                <ul class='list-inline'>
+                                    <li><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
+                                                    class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
+                                                    class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
+                                                    class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </li>
 
 
                 </ul>
-                
+
             </div>
         </div>
     </div>
@@ -142,7 +157,7 @@
 <!--  end Navbar  -->
 
 
-    @yield('content')
+@yield('content')
 
 
 <!--start footer-->
@@ -151,7 +166,9 @@
 
     <div class="row">
 
-        <center><div class="col-xs-12">OSC &copy; 2017 </div></center>
+        <center>
+            <div class="col-xs-12">OSC &copy; 2017</div>
+        </center>
 
 
     </div>

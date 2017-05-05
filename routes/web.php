@@ -15,15 +15,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/linux', function () {
-    return view('linux');
-});
+Route::get('/linux', 'CommitteesController@index1');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', 'CommitteesController@index2');
 
-Route::get('/events', function () {
-    return view('events');
-});
-
+Route::get('/events', 'EventsController@index');

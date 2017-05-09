@@ -17,11 +17,17 @@ margin-left: .5%;
     /*margin-top: 40px;*/
 }
 
-/*start text open source community*/
-
 .osc{
-    margin-top: 1.5%;
+    padding-top: 3.5%;
+    
 }
+.logo{
+   padding: 0px;
+    transform: translateX(30%);
+   
+}
+
+
 
 /*end text open source community*/
 
@@ -107,3 +113,4 @@ margin-left: .5%;
     text-align: center;
 }
 /*end contact us style*/
+>>>>>>> d37542abba6c62bdddc14971e88dd7cb7b456dec

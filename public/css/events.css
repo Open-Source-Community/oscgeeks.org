@@ -81,6 +81,8 @@ body{
     margin-top: 12px;
     font-size: 10px;
     line-height: 14px;
+    font-family: HANDVETICA;
+    font-size: 50%;
 }
 
 .timeline>li.timeline-inverted>.timeline-panel {
@@ -111,7 +113,9 @@ body{
     margin-top:22px;
     margin-bottom: 4px;
     padding:0;
-    color: #b3b3b3;
+    color: darkslateblue;
+    font-family: HANDVETICA;
+    
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -120,12 +124,15 @@ body{
     text-transform: none;
     font-size:18px;
     color:#333333;
+     font-family: HANDVETICA;
 }
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
+     font-family: HANDVETICA;
+    
     margin-bottom: 0;
-    color:#808080;
+    color:whitesmoke;
 }
 /*Style for even div.line*/
 .timeline>li:nth-child(odd) .line:before {
@@ -246,11 +253,13 @@ body{
     .timeline>li:nth-child(even) .timeline-image {
         left: 0;
         margin-left: 0;
+        visibility: hidden;
     }
     .timeline>li:nth-child(odd) .timeline-image {
         float:right;
         left: 0px;
         margin-left:0;
+        visibility: hidden;
     }
     .timeline > li:nth-child(even) .timeline-panel {
         width: 100%;

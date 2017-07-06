@@ -20,3 +20,5 @@ Route::get('/linux', 'CommitteesController@index1');
 Route::get('/about', 'CommitteesController@index2');
 
 Route::get('/events', 'EventsController@index');
+
+Route::get('/blender');

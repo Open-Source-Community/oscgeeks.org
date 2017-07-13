@@ -104,22 +104,42 @@ designs using Blender.
     <br>
     
     <p class="vision" style="font-size: 300%;">
-                   Here're some blender tutorials from our amazing instructor Saadiya Madboly
+                   Here're 2 playlists of blender tutorials recommended by our amazing instructor Saadiya Madboly
                     <br>
                 
     </p>            
     
     <div>
-      <a href="https://www.youtube.com/playlist?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr"><p class="vision" style="font-size: 200%;color:blue; ">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision" style="font-size: 200%;color:blue; ">
                    First Baby Steps in Blender
-          <br> </p>
-    </a>
+        <br> </p></button>
         <br>
-      <a href="https://www.youtube.com/playlist?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"><p class="vision" style="font-size: 200%; color:blue; ">
+        <br>
+  <div id="demo" class="collapse">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr" frameborder="0" allowfullscreen></iframe>
+          
+  </div>
+          
+        
+ <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"><p class="vision" style="font-size: 200%; color:blue; ">
                    Noob To Pro in Blender
-          <br> </p></a>  
+          <br> </p></button>
+        <br>
+        <br>
+  <div id="demo1" class="collapse">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl" frameborder="0" allowfullscreen></iframe>
+          
+  </div>
+        
+        
+        
+      <a href="https://www.youtube.com/playlist?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"></a>  
       <br> <br> <br> <br>
     </div>
+    
+    
+    
+    
     
     
 </div>

@@ -117,7 +117,8 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button" class="btn btn-default btn-sm">Blender</button>
+                        <button type="button" onclick="window.location='{{ url ("blender") }}'"
+                                class="btn btn-default btn-sm">Blender</button>
                     </li>
 
                     <li>

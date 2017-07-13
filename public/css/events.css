@@ -1,6 +1,8 @@
 @font-face {
     font-family: HANDVETICA;
     src: url('../fonts/font/HANDVETICA.TTF');
+    font-weight:700;
+
 }
 body{
     background-image: url("Background.jpg");

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Welcome  OSC - Open Source Community</title>
-    <link rel="icon" href="{asset('images/navbar/logo-osc.png') !!}"/>
+    <title>Welcome to OSC-Open Source Community</title>
+   <!-- Title Icon-->
+    <link rel="shortcut icon" href="{{{ asset('images/navbar/logo-osc.png') }}}">
+
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">
@@ -89,20 +91,7 @@
                                     </div>
                                 </li>
 
-                                <li data-submenu-id="submenu-monk">
-                                    <a href="#">MMMMMMMMM</a>
-                                    <div id="submenu-monk" class="popover">
-                                        <h3 class="popover-title">MMMMMMMMMMMMMM resources</h3>
-                                        <div class="popover-content">
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt
-                                                    deserunt esse quidem cumque quaerat doloremque!
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
+                               
 
                                 @yield('dropdownlist')
 

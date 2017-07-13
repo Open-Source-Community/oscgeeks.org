@@ -7,6 +7,7 @@
 @section('dropdownlist')
 
     @foreach($committees_data as $committee)
+                               
         <li data-submenu-id="submenu-pygmy">
             <a href="#">{{ $committee->title }} Committee</a>
             <div id="submenu-pygmy" class="popover">
@@ -16,11 +17,11 @@
                         <li>{{ $committee->description }}
                         </li>
                         <img src="{{ $committee->imageurl }}">
-
                     </ul>
                 </div>
             </div>
         </li>
+
     @endforeach
 
 @endsection

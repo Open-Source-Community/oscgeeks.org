@@ -42,7 +42,12 @@ margin-left: .5%;
 
 
 }
+.popover-title{
 
+    color: #232f3d;
+    font-weight: 20
+
+}
 #submenu-tamarin{
     height: 300px;
 }

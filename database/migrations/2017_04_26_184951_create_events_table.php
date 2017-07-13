@@ -18,7 +18,6 @@ class CreateEventsTable extends Migration
             $table->string('title');
             $table->string('imageurl');
             $table->string('description');
-            $table->string('admin_id');
             $table->timestamps();
         });
     }

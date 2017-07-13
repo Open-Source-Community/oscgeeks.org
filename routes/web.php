@@ -21,4 +21,4 @@ Route::get('/about', 'CommitteesController@index2');
 
 Route::get('/events', 'EventsController@index');
 
-Route::get('/blender');
+Route::get('/blender', function(){ return view('blender');});

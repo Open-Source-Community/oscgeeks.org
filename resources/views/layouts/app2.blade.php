@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Welcome to OSC-Open Source Community</title>
-
+    <title>Welcome  OSC - Open Source Community</title>
+    <link rel="icon" href="{asset('images/navbar/logo-osc.png') !!}"/>
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">

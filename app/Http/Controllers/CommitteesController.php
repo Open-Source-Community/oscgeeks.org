@@ -24,5 +24,10 @@ class CommitteesController extends Controller
         $committees_data = Committee::all();
         return view('blender', compact('committees_data'));
     }
+     public function index4()
+    {
+        $committees_data = Committee::all();
+        return view('laravel', compact('committees_data'));
+    }
 
 }

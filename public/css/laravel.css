@@ -1,0 +1,37 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('/fonts/font/HANDVETICA.TTF');
+}
+
+body {
+    background-image: url(../images/About/Background.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: HANDVETICA;
+    font-size: 400%;
+    color: white;
+}
+
+h2 {
+    font-family: HANDVETICA;
+    font-size: 300%;
+    color: #333333;
+}
+
+h3 {
+    font-family: HANDVETICA;
+    font-size: 200%;
+    color: bisque;
+}
+
+p {
+    font-family: HANDVETICA;
+    font-size: 150%;
+    color: darkslateblue;
+}

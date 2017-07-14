@@ -71,31 +71,8 @@
                             <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu " role="menu">
-
-                                <li data-submenu-id="submenu-pygmy">
-                                    <a href="#">HHHHHHHHHHH</a>
-                                    <div id="submenu-pygmy" class="popover">
-                                        <h3 class="popover-title">HHHHHHHHHHH skills</h3>
-                                        <div class="popover-content">
-                                            <ul>
-                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                                    quod perferendis earum eos natus adipisci rerum blanditiis iure id.
-                                                    Perferendis molestiae, excepturi voluptate nesciunt deserunt esse
-                                                    quidem cumque quaerat doloremque!
-                                                </li>
-                                                <img src="images/navbar/logo-osc.png">
-
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
-                               
-
                                 @yield('dropdownlist')
-
-
+                               
                             </ul>
                         </div>
                     </li>

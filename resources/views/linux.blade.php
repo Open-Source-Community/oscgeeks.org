@@ -6,6 +6,29 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/linux.css') }}">
 
 @endsection
+
+@section('dropdownlist')
+
+    @foreach($committees_data as $committee)
+
+        <li data-submenu-id="{{ $committee->title }}">
+            <a href="#">{{ $committee->title }} Committee</a>
+            <div id="{{ $committee->title }}" class="popover">
+                <h3 class="popover-title">{{ $committee->title }} Committee</h3>
+                <div class="popover-content">
+                    <ul>
+                        <li>{{ $committee->description }}
+                        </li>
+                        <img src="{{ $committee->imageurl }}">
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+    @endforeach
+
+@endsection
+
 @section('JS')
     <script src="{{ asset('js/linux.js') }}"></script>
     <!--End Scripts -->

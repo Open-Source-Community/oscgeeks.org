@@ -18,4 +18,11 @@ class CommitteesController extends Controller
         $committees_data = Committee::all();
         return view('about', compact('committees_data'));
     }
+
+    public function index3()
+    {
+        $committees_data = Committee::all();
+        return view('blender', compact('committees_data'));
+    }
+
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Welcome to OSC-Open Source Community</title>
-   <!-- Title Icon-->
-    <link rel="shortcut icon" href="{{{ asset('images/navbar/logo-osc.png') }}}">
+    <!-- Title Icon-->
+    <link rel="shortcut icon" href="{{ asset('images/navbar/logo-osc.png') }}">
 
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -72,7 +72,7 @@
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu " role="menu">
                                 @yield('dropdownlist')
-                               
+
                             </ul>
                         </div>
                     </li>
@@ -84,7 +84,8 @@
                     </li>
                     <li>
                         <button type="button" onclick="window.location='{{ url ("blender") }}'"
-                                class="btn btn-default btn-sm">Blender</button>
+                                class="btn btn-default btn-sm">Blender
+                        </button>
                     </li>
 
                     <li>

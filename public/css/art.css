@@ -1,0 +1,45 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('/fonts/font/HANDVETICA.TTF');
+}
+
+body {
+    text-align: center;
+    font-family: HANDVETICA;
+    font-size: 30;
+    background-image: url(../images/About/Background.jpg);
+}
+
+h1 {
+    font-family: HANDVETICA;
+    font-size: 400%;
+    color: white;
+}
+
+img {
+    width: 23%;
+    margin: 1%;
+    vertical-align: middle;
+    transition: all 2s, box-shadow .5s;
+}
+
+img:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
+    transform: scale(1.02);
+}
+
+img:focus {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
+    width: 46%;
+}
+
+p {
+    font-family: HANDVETICA;
+    font-size: 150%;
+    color: darkslateblue;
+}
+
+.artwork {
+    /*background-color: wheat;*/
+    display: inline-block;
+}

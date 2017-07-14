@@ -7,6 +7,7 @@
 @section('dropdownlist')
 
     @foreach($committees_data as $committee)
+<<<<<<< HEAD
 
         <li data-submenu-id="{{ $committee->title }}">
             <a href="#">{{ $committee->title }} Committee</a>
@@ -25,6 +26,7 @@
     @endforeach
 
 @endsection
+
 
 @section('JS')
 @endsection
@@ -124,12 +126,15 @@
         <br>
 
         <p class="vision" style="font-size: 300%;">
+
             Here're 2 playlists of  blender tutorials from our amazing instructor Saadiya Madboly
+
             <br>
 
         </p>
 
         <div>
+
             
  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision" style="font-size: 200%;color:blue; ">
                     First Baby Steps in Blender
@@ -157,6 +162,8 @@
           
       </div>
  <br>
+
+ 
 
     </div>
 

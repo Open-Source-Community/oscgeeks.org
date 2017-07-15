@@ -39,7 +39,7 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav col-xs-10">
                         <li>
-                            <button type="button" onclick="window.location='{{ url (" home ") }}'" class="btn btn-primary btn-sm">Home </button>
+                            <button type="button" onclick="window.location='{{ url ("home ") }}'" class="btn btn-primary btn-sm">Home </button>
                         </li>
                         <li>
                             <div class="dropdown">
@@ -48,16 +48,16 @@
                             </div>
                         </li>
                         <li>
-                            <button type="button" onclick="window.location='{{ url (" linux ") }}'" class="btn btn-default btn-sm">Linux </button>
+                            <button type="button" onclick="window.location='{{ url ("linux ") }}'" class="btn btn-default btn-sm">Linux </button>
                         </li>
                         <li>
-                            <button type="button" onclick="window.location='{{ url (" blender ") }}'" class="btn btn-default btn-sm">Blender </button>
+                            <button type="button" onclick="window.location='{{ url ("blender ") }}'" class="btn btn-default btn-sm">Blender </button>
                         </li>
                         <li>
-                            <button type="button" onclick="window.location='{{ url (" laravel ") }}'" class="btn btn-default btn-sm">Laravel </button>
+                            <button type="button" onclick="window.location='{{ url ("laravel ") }}'" class="btn btn-default btn-sm">Laravel </button>
                         </li>
                         <li>
-                            <button type="button" onclick="window.location='{{ url (" events ") }}'" class="btn btn-default btn-sm">Events </button>
+                            <button type="button" onclick="window.location='{{ url ("events ") }}'" class="btn btn-default btn-sm">Events </button>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right col-xs-1">

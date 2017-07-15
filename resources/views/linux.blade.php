@@ -11,9 +11,9 @@
 
     @foreach($committees_data as $committee)
 
-        <li data-submenu-id="{{ $committee->title }}">
+        <li data-submenu-id="{{ $committee->id }}">
             <a href="#">{{ $committee->title }} Committee</a>
-            <div id="{{ $committee->title }}" class="popover">
+            <div id="{{ $committee->id }}" class="popover">
                 <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                 <div class="popover-content">
                     <ul>

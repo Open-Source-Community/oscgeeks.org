@@ -1,14 +1,29 @@
 @extends('layouts.app2') @section('CSS')
-<link rel="stylesheet" type="text/css" href="{{ asset('/css/laravel.css') }}"> @endsection @section('dropdownlist') @foreach($committees_data as $committee)
-<li data-submenu-id="{{ $committee->title }}"> <a href="#">{{ $committee->title }} Committee</a>
-    <div id="{{ $committee->title }}" class="popover">
-        <h3 class="popover-title">{{ $committee->title }} Committee</h3>
-        <div class="popover-content">
-            <ul>
-                <li>{{ $committee->description }} </li> <img src="{{ $committee->imageurl }}"> </ul>
-        </div>
-    </div>
-</li> @endforeach @endsection @section('content')
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/laravel.css') }}"> @endsection
+
+@section('dropdownlist')
+
+    @foreach($committees_data as $committee)
+
+        <li data-submenu-id="{{ $committee->id }}">
+            <a href="#">{{ $committee->title }} Committee</a>
+            <div id="{{ $committee->id }}" class="popover">
+                <h3 class="popover-title">{{ $committee->title }} Committee</h3>
+                <div class="popover-content">
+                    <ul>
+                        <li>{{ $committee->description }}
+                        </li>
+                        <img src="{{ $committee->imageurl }}">
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+    @endforeach
+
+@endsection
+
+@section('content')
 <div class="container ">
     <center>
         <h1> Laravel Workshop</h1></center>

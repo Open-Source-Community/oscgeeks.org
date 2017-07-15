@@ -126,7 +126,7 @@
 
         <p class="vision" style="font-size: 300%;">
 
-            Here're 2 playlists of  blender tutorials from our amazing instructor Saadiya Madboly
+            Here're 2 playlists of blender tutorials to get started
 
             <br>
 

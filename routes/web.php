@@ -17,14 +17,16 @@ Route::get('/home', function () {
 
 Route::get('/events', 'EventsController@index');
 
-Route::get('/linux', 'CommitteesController@index1');
+Route::get('/Linux', 'CommitteesController@index1');
 
 Route::get('/about', 'CommitteesController@index2');
 
-Route::get('/blender', 'CommitteesController@index3');
+Route::get('/Blender', 'CommitteesController@index3');
 
-Route::get('/laravel', 'CommitteesController@index4');
+Route::get('/Laravel', 'CommitteesController@index4');
 
-Route::get('/art', 'CommitteesController@index5');
+Route::get('/Artwork', 'CommitteesController@index5');
 
-Route::get('/logistics', 'CommitteesController@index6');
+Route::get('/Companies', 'CommitteesController@index6');
+
+Route::get('/logistics', 'CommitteesController@index7');

@@ -40,7 +40,7 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-10">
+                <ul class="nav navbar-nav col-xs-9">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home
@@ -54,17 +54,17 @@
                         </div>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("linux") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Linux") }}'"
                                 class="btn btn-default btn-sm">Linux
                         </button>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("blender") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Blender") }}'"
                                 class="btn btn-default btn-sm">Blender
                         </button>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("laravel") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Laravel") }}'"
                                 class="btn btn-default btn-sm">Laravel
                         </button>
                     </li>
@@ -80,7 +80,12 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right col-xs-1">
+                <ul class="nav navbar-nav navbar-right col-xs-3">
+                 <li>
+                        <button type="button" onclick="window.location='{{ url ("Companies") }}'"
+                                class="btn btn-default btn-sm">Previous Sponsors
+                        </button>
+                    </li>
                     <li>
                         <div class="dropdown ">
                             <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us

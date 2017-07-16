@@ -1,6 +1,6 @@
 @font-face {
     font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
+    src: url('../fonts/font/HANDVETICA.TTF');
 }
 
 body {
@@ -17,7 +17,7 @@ h1 {
 }
 
 img {
-    width: 23%;
+    width: 30%;
     margin: 1%;
     vertical-align: middle;
     transition: all 2s, box-shadow .5s;

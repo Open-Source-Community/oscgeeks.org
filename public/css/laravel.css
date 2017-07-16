@@ -1,6 +1,6 @@
 @font-face {
     font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
+    src: url('../fonts/font/HANDVETICA.TTF');
 }
 
 body {

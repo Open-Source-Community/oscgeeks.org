@@ -54,17 +54,17 @@
                         </div>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("linux") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Linux") }}'"
                                 class="btn btn-default btn-sm">Linux
                         </button>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("blender") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Blender") }}'"
                                 class="btn btn-default btn-sm">Blender
                         </button>
                     </li>
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("laravel") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Laravel") }}'"
                                 class="btn btn-default btn-sm">Laravel
                         </button>
                     </li>

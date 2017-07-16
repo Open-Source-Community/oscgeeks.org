@@ -9,7 +9,7 @@
     @foreach($committees_data as $committee)
 
         <li data-submenu-id="{{ $committee->id }}">
-            <a href="#">{{ $committee->title }} Committee</a>
+            <a href="{{ $committee->title }}">{{ $committee->title }} Committee</a>
             <div id="{{ $committee->id }}" class="popover">
                 <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                 <div class="popover-content">
@@ -134,35 +134,40 @@
 
         <div>
 
-            
- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision" style="font-size: 200%;color:blue; ">
+
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision"
+                                                                                                     style="font-size: 200%;color:blue; ">
                     First Baby Steps in Blender
                     <br></p>
- </button>
-  <br> <br>             
-            
-            <div id="demo" class="collapse">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr"         frameborder="0" allowfullscreen></iframe>
-                
-            </div>
-        
-                        
- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"><p class="vision" style="font-size: 200%;color:blue; ">
-                   Noob to Pro in Blender
-                    <br></p>
- </button>
-       
-            
-<div id="demo1" class="collapse">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl" frameborder="0"          allowfullscreen></iframe>
-                
-</div>        
-            
-          
-      </div>
- <br>
+            </button>
+            <br> <br>
 
- 
+            <div id="demo" class="collapse">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr"
+                        frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1"><p class="vision"
+                                                                                                      style="font-size: 200%;color:blue; ">
+                    Noob to Pro in Blender
+                    <br></p>
+            </button>
+
+
+            <div id="demo1" class="collapse">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"
+                        frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+
+        </div>
+        <br>
+
 
     </div>
 

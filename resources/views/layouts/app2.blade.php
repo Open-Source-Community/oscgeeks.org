@@ -72,6 +72,12 @@
                         <button type="button" onclick="window.location='{{ url ("events") }}'"
                                 class="btn btn-default btn-sm">Events
                         </button>
+                    </li> 
+
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("logistics") }}'"
+                                class="btn btn-default btn-sm">logistics
+                        </button>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-1">

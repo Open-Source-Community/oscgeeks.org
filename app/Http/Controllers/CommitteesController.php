@@ -35,4 +35,10 @@ class CommitteesController extends Controller
         return view('art', compact('committees_data'));
     }
 
+    public function index6()
+    {
+        $committees_data = Committee::all();
+        return view('logistics', compact('committees_data'));
+    }
+
 }

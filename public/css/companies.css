@@ -1,0 +1,28 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('../fonts/font/HANDVETICA.TTF');
+}
+body{
+	background-image: url(../images/About/Background.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    height: 100%;
+}
+h1{
+	 font-family: HANDVETICA;
+	 color: black;
+	 size: 400%;
+
+}
+.circle-image{
+	
+}
+.circle-image:hover{
+	
+ box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
+    transform: scale(1.02);
+    
+}

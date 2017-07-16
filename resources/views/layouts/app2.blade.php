@@ -40,7 +40,7 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-10">
+                <ul class="nav navbar-nav col-xs-9">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home
@@ -74,7 +74,12 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right col-xs-1">
+                <ul class="nav navbar-nav navbar-right col-xs-3">
+                 <li>
+                        <button type="button" onclick="window.location='{{ url ("Companies") }}'"
+                                class="btn btn-default btn-sm">Previous Sponsors
+                        </button>
+                    </li>
                     <li>
                         <div class="dropdown ">
                             <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us

@@ -26,3 +26,4 @@ Route::get('/Blender', 'CommitteesController@index3');
 Route::get('/Laravel', 'CommitteesController@index4');
 
 Route::get('/Artwork', 'CommitteesController@index5');
+Route::get('/Companies', 'CommitteesController@index6');

@@ -7,6 +7,11 @@ body {
     text-align: center;
     font-family: HANDVETICA;
     font-size: 30;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     background-image: url(../images/About/Background.jpg);
 }
 

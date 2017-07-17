@@ -1,6 +1,8 @@
-@extends('layouts.app2') @section('CSS')
+@extends('layouts.app2')
+@section('CSS')
     <link rel="stylesheet" type="text/css"
-          href="{{ asset('/css/art.css') }}"> @endsection
+          href="{{ asset('/css/art.css') }}">
+@endsection
 
 @section('dropdownlist')
 

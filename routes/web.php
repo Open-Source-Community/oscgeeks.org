@@ -29,6 +29,6 @@ Route::get('/Artwork', 'CommitteesController@index5');
 
 Route::get('/Companies', 'CommitteesController@index6');
 
-Route::get('/logistics', 'CommitteesController@index7');
+Route::get('/Logistics', 'CommitteesController@index7');
 
-Route::get('/ccc','CommitteesController@index8');
+Route::get('/Content Creators','CommitteesController@index8');

@@ -5,7 +5,8 @@
 @endsection
 
 @section('dropdownlist')
-@foreach($committees_data as $committee)
+
+    @foreach($committees_data as $committee)
 
         <li data-submenu-id="{{ $committee->id }}">
             <a href="{{ $committee->title }}">{{ $committee->title }} Committee</a>

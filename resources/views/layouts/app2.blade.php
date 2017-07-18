@@ -80,13 +80,13 @@
                     </li> 
 
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("logistics") }}'"
-                                class="btn btn-default btn-sm">logistics
+                        <button type="button" onclick="window.location='{{ url ("Logistics") }}'"
+                                class="btn btn-default btn-sm">Logistics
                         </button>
                     </li>
                     
                     <li>
-                        <button type="button" onclick="window.location='{{ url ("ccc") }}'"
+                        <button type="button" onclick="window.location='{{ url ("Content Creators") }}'"
                                 class="btn btn-default btn-sm">CCC
                         </button>
                     </li>

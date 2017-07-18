@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/events.css') }}">
 @endsection
 
-
+@section('dropdownlist')
 @foreach($committees_data as $committee)
 
         <li data-submenu-id="{{ $committee->id }}">
@@ -23,7 +23,7 @@
 
     @endforeach
 
-
+@endsection
 
 @section('content')
 

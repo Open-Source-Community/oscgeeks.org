@@ -46,6 +46,7 @@
                                 class="btn btn-primary btn-sm">Home
                         </button>
                     </li>
+                    
                     <li>
                         <div class="dropdown">
                             <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
@@ -53,21 +54,25 @@
                             <ul class="dropdown-menu " role="menu"> @yield('dropdownlist') </ul>
                         </div>
                     </li>
+                    
                     <li>
                         <button type="button" onclick="window.location='{{ url ("Linux") }}'"
                                 class="btn btn-default btn-sm">Linux
                         </button>
                     </li>
+                    
                     <li>
                         <button type="button" onclick="window.location='{{ url ("Blender") }}'"
                                 class="btn btn-default btn-sm">Blender
                         </button>
                     </li>
+                    
                     <li>
                         <button type="button" onclick="window.location='{{ url ("Laravel") }}'"
                                 class="btn btn-default btn-sm">Laravel
                         </button>
                     </li>
+                    
                     <li>
                         <button type="button" onclick="window.location='{{ url ("events") }}'"
                                 class="btn btn-default btn-sm">Events
@@ -79,6 +84,13 @@
                                 class="btn btn-default btn-sm">logistics
                         </button>
                     </li>
+                    
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("ccc") }}'"
+                                class="btn btn-default btn-sm">CCC
+                        </button>
+                    </li>
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-3">
                  <li>

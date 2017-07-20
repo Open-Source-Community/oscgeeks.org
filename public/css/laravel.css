@@ -35,3 +35,17 @@ p {
     font-size: 150%;
     color: darkslateblue;
 }
+.artwork img{
+  
+    transition: all 2s, box-shadow .5s;
+}
+
+.artwork img:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
+    transform: scale(1.02);
+}
+
+.artwork img:focus {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
+    width: 46%;
+}

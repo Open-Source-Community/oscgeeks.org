@@ -21,19 +21,19 @@ h1 {
     color: white;
 }
 
-img {
+.artwork img {
     width: 30%;
     margin: 1%;
     vertical-align: middle;
     transition: all 2s, box-shadow .5s;
 }
 
-img:hover {
+.artwork img:hover {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
     transform: scale(1.02);
 }
 
-img:focus {
+.artwork img:focus {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
     width: 46%;
 }

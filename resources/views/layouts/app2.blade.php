@@ -79,17 +79,7 @@
                         </button>
                     </li> 
 
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("Logistics") }}'"
-                                class="btn btn-default btn-sm">Logistics
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("Content Creators") }}'"
-                                class="btn btn-default btn-sm">CCC
-                        </button>
-                    </li>
+                   
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-3">

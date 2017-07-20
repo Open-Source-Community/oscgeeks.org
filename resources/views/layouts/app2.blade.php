@@ -102,13 +102,13 @@
                         <div class="dropdown ">
                             <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
                                 <span class="caret"></span></button>
-                            <ul class="dropdown-menu contact">
-                                <ul class='list-inline'>
-                                    <li><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
+                            <ul class="dropdown-menu contact"  style="background-color: white;">
+                                <ul class='list-inline' >
+                                    <li ><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
                                                     class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
+                                    <li ><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
                                                     class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
+                                    <li ><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
                                                     class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
                                 </ul>
                             </ul>

@@ -285,9 +285,6 @@ h3{
     color: whitesmoke;
 }
 
-.videos
-{
-    
-text-align: center;
-    
+.resize {
+  width: 20px;
 }

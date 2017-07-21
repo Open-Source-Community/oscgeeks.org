@@ -33,7 +33,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <h3 class="text-center" style="font-size: 400%;">Blender</h3>
                 <p class="vision" style="font-size: 200%;">
                     <br>
@@ -138,15 +138,23 @@
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision"
                                                                                                      style="font-size: 200%;color:blue; ">
                     First Baby Steps in Blender
-                    <br></p>
+                    </p>
             </button>
             <br> <br>
 
             <div id="demo" class="collapse">
-                <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr"
-                        frameborder="0" allowfullscreen></iframe>
-
+                
+                <div class="container">
+                      <div class="row">
+                          <div class="col-md-6 form-group">
+                             <div class="embed-responsive embed-responsive-16by9">
+                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                         </div>   
+                      </div>
+                </div>
+                
+                
             </div>
 
 
@@ -158,11 +166,21 @@
 
 
             <div id="demo1" class="collapse">
-                <iframe width="560" height="315"
+                
+                 <div class="container">
+                      <div class="row">
+                          <div class="col-md-6 form-group">
+                             <div class="embed-responsive embed-responsive-16by9">
+                                   <iframe width="560" height="315"
                         src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"
-                        frameborder="0" allowfullscreen></iframe>
-
-            </div>
+                        frameborder="0" allowfullscreen>
+                                   </iframe>
+                            </div>
+                         </div>   
+                      </div>
+                </div>
+                
+           </div>
 
 
         </div>

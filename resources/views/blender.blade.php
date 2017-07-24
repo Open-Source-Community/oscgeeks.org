@@ -62,13 +62,22 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
+                
+                 @for( $i = 1 ; $i <= count($committee_images) ; $i++)
+                               
+                            @if ($i == 1)
+                            
+                                <li data-target="#myCarousel" data-slide-to="{{$i}}" class="active"></li>                            
+                                                               
+                            @else
+                           
+                               <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
+                              
+                            @endif    
+                    @endfor
+
+
+
 
             </ol>
             
@@ -76,40 +85,25 @@
             <!-- asset function statrs from public folder -->
             
             <div class="carousel-inner">
+                
+                @foreach($committee_images as $image)
+                                                   
+                 @if($image->imageurl == "blend1.png")
                 <div class="item active">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend1.png')}}"
-                         >
+                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/'.$image->imageurl)}}">
                 </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend2.png')}}"
-                         >
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend3.png')}}"
-                         >
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend4.png')}}"
-                         alt="New York">
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend5.png')}}"
-                         alt="New York">
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend6.png')}}"
-                         alt="New York">
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend7.png')}}"
-                         alt="New York">
-                </div>
+                 @else
+                
+                  <div class="item">
+                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/'.$image->imageurl)}}">
+                  </div>
+                
+                 @endif
+                         
+                @endforeach
+                
+                
+            
 
             </div>
 

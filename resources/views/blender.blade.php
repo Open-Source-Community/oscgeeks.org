@@ -71,17 +71,24 @@
                 <li data-target="#myCarousel" data-slide-to="6"></li>
 
             </ol>
-
+            
             <!-- Wrapper for slides -->
+            <!-- asset function statrs from public folder -->
+            
             <div class="carousel-inner">
                 <div class="item active">
                     <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend1.png')}}"
-                         alt="Los Angeles">
+                         >
                 </div>
 
                 <div class="item">
                     <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend2.png')}}"
-                         alt="Chicago">
+                         >
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend3.png')}}"
+                         >
                 </div>
 
                 <div class="item">
@@ -95,12 +102,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend3.png')}}"
-                         alt="New York">
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend9.png')}}"
+                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/blend6.png')}}"
                          alt="New York">
                 </div>
 

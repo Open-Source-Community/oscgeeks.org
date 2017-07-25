@@ -62,48 +62,43 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                
-                 @for( $i = 1 ; $i <= count($committee_images) ; $i++)
-                               
-                            @if ($i == 1)
-                            
-                                <li data-target="#myCarousel" data-slide-to="{{$i}}" class="active"></li>                            
-                                                               
-                            @else
-                           
-                               <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
-                              
-                            @endif    
-                    @endfor
 
+                @for( $i = 1 ; $i <= count($committee_images) ; $i++)
 
+                    @if ($i == 1)
+
+                        <li data-target="#myCarousel" data-slide-to="{{$i}}" class="active"></li>
+
+                    @else
+
+                        <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
+
+                    @endif
+                @endfor
 
 
             </ol>
-            
+
             <!-- Wrapper for slides -->
             <!-- asset function statrs from public folder -->
-            
+
             <div class="carousel-inner">
-                
-                @foreach($committee_images as $image)
-                                                   
-                 @if($image->imageurl == "blend1.png")
-                <div class="item active">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/'.$image->imageurl)}}">
-                </div>
-                 @else
-                
-                  <div class="item">
-                    <img class="img-responsive center-block" src="{{asset('/images/pages images/blender/'.$image->imageurl)}}">
-                  </div>
-                
-                 @endif
-                         
-                @endforeach
-                
-                
-            
+
+                @for( $i = 0 ; $i < count($committee_images) ; $i++)
+
+                    @if ($i == 0)
+                        <div class="item active">
+                            <img class="img-responsive center-block"
+                                 src="{{$committee_images[$i]->imageurl}}">
+                        </div>
+                    @else
+                        <div class="item">
+                            <img class="img-responsive center-block"
+                                 src="{{$committee_images[$i]->imageurl}}">
+                        </div>
+                    @endif
+                @endfor
+
 
             </div>
 
@@ -134,23 +129,25 @@
             <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision"
                                                                                                      style="font-size: 200%;color:blue; ">
                     First Baby Steps in Blender
-                    </p>
+                </p>
             </button>
             <br> <br>
 
             <div id="demo" class="collapse">
-                
+
                 <div class="container">
-                      <div class="row">
-                          <div class="col-md-6 form-group">
-                             <div class="embed-responsive embed-responsive-16by9">
-                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr" frameborder="0" allowfullscreen></iframe>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/JYj6e-72RDs?list=PL_ps7ytdG-RVd3OG2CG7vquUayYdxo-Xr"
+                                        frameborder="0" allowfullscreen></iframe>
                             </div>
-                         </div>   
-                      </div>
+                        </div>
+                    </div>
                 </div>
-                
-                
+
+
             </div>
 
 
@@ -163,21 +160,21 @@
 
 
             <div id="demo1" class="collapse">
-                
-                 <div class="container">
-                      <div class="row">
-                          <div class="col-md-6 form-group">
-                             <div class="embed-responsive embed-responsive-16by9">
-                                   <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"
-                        frameborder="0" allowfullscreen>
-                                   </iframe>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/t4MTnpnahu0?list=PL_ps7ytdG-RXgT7Z8sDJWULDprr9A_gQl"
+                                        frameborder="0" allowfullscreen>
+                                </iframe>
                             </div>
-                         </div>   
-                      </div>
+                        </div>
+                    </div>
                 </div>
-                
-           </div>
+
+            </div>
 
 
         </div>
@@ -188,4 +185,3 @@
 
 @endsection
 
- 

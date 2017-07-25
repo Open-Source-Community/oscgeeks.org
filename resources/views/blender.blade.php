@@ -1,7 +1,7 @@
 @extends('layouts.app2')
 
 @section('CSS')
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/events.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/blender.css') }}">
 @endsection
 
 @section('dropdownlist')
@@ -126,7 +126,8 @@
         <div>
 
 
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><p class="vision"
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">
+                <p class="vision"
                                                                                                      style="font-size: 200%;color:blue; ">
                     First Baby Steps in Blender
                 </p>

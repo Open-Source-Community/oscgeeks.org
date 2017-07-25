@@ -1,7 +1,7 @@
 @extends('layouts.app2')
 
 @section('CSS')
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/events.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/ccc.css') }}">
 @endsection
 
 @section('dropdownlist')

@@ -2,6 +2,12 @@
     margin-top: 20px;
 }
 
+#header_class{
+
+    color: #FFFFFF;
+    font-family: "HANDVETICA";
+    text-align: center;
+}
 /* Carousel Styles */
 .carousel-indicators .active {
     background-color: #2980b9;
@@ -100,3 +106,4 @@
     background-color: #fff;
     border-color: #fff;
 }
+

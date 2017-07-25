@@ -42,13 +42,13 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-          
+                <h1 id="header_class">Logistics Page</h1>
+
 
                 <div class="item active">
-
                 <div class="col-md-12 text-center">
                             <h3>
-                            <span>We printed posters and publish them on the walls to share the events with you.</span>
+                                <span>We printed posters and publish them on the walls to share the events with you.</span>
                             </h3>
                             <br>
                         </div>

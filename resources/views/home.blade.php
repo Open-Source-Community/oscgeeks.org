@@ -49,8 +49,11 @@
 
     <div class="row shapes">
         <img class="alien  shapes col-xs-3 col-xs-push-1" src="{{ asset('images/Background/alien.png')}}"/>
-        <a class="toAbout"><img class=" arrow  shapes col-xs-2 col-xs-push-2" onclick="window.location='{{ url ("about") }}'"
-                                         src="{{ asset('images/Background/arrow.png')}}"/></a>
+        <a class="toAbout">
+            <img class=" arrow  shapes col-xs-2 col-xs-push-2" onclick="window.location='{{ url ("about") }}'"
+                                         src="{{ asset('images/Background/arrow.png')}}"/>
+
+        </a>
 
         <div class="space  col-xs-2 col-xs-push-4">
             <img class="rocket shapes" src="{{asset('images/Background/Rocket.png')}}">

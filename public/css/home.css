@@ -34,6 +34,10 @@ position: absolute;;
 .arrow{
 	margin-top: 3%;
 	margin-left: 3%;
+	animation: MoveUpDown 1s linear infinite;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 
 }
 .stars{
@@ -69,3 +73,15 @@ position: absolute;;
     100%  {opacity: 1;}
 
    }
+
+@keyframes MoveUpDown {
+	0% {
+		bottom: 0;
+	}
+	50% {
+		bottom: 40px;
+	}
+	100% {
+		bottom: 0;
+	}
+}

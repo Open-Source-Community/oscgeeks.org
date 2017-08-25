@@ -56,7 +56,7 @@
         </a>
 
         <div class="space  col-xs-2 col-xs-push-4">
-            <img class="rocket shapes" src="{{asset('images/Background/Rocket.png')}}">
+            <img class="rocket shapes" src="{{asset('images/Background/rocket.png')}}">
             <img class="stars shapes" src="{{asset('images/Background/Stars.png')}}">
         </div>
 

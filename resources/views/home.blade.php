@@ -41,7 +41,7 @@
         <div id="pinguen" class=" shapes col-xs-1 col-xs-offset-4 ">
             <img src="{{ asset('images/Background/pinguen.png')}}" class="pinguen">
             <div>
-                <img class="hello " src="{{ asset('images/Background/hello.png')}}"/>
+                <img class="hello " src="{{ asset('images/Background/Hello.png')}}"/>
             </div>
         </div>
 

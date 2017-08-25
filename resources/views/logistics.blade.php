@@ -18,7 +18,7 @@
                     <ul>
                         <li>{{ $committee->description }}
                         </li>
-                        <img src="{{ $committee->imageurl }}">
+<!--                        <img src="{{ $committee->imageurl }}">-->
                     </ul>
                 </div>
             </div>

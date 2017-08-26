@@ -6,6 +6,7 @@
 
 
 
+
 @section('content')
     <h1>ArtWork</h1>
     <p>This is our art team work on our page on facebook or in the events .</p>

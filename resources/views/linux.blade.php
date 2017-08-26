@@ -9,6 +9,7 @@
 
 
 
+
 @section('JS')
     <script src="{{ asset('js/linux.js') }}"></script>
     <!--End Scripts -->

@@ -1,8 +1,10 @@
 @extends('layouts.app2',array('committees_data' => $committees_data))
 
+<<<<<<< HEAD
 @section('CSS')
 <link rel="stylesheet" type="text/css" href="{{ asset('/css/laravel.css') }}"> 
 @endsection
+
 
 
 

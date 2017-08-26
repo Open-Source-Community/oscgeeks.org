@@ -49,7 +49,8 @@ class CommitteesController extends Controller
     public function index7()
     {
         $committees_data = Committee::all();
-        return view('logistics', compact('committees_data'));
+        $committee_images = Image::where(['comm_name' => 'Logistics'])->get();
+        return view('logistics', compact('committees_data','committee_images'));
     }
     
     public function index8()

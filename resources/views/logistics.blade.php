@@ -13,46 +13,69 @@
 
 <div class="container">
     <div class="row">
-        <!-- Carousel -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+        
+        
+        
                 <h1 id="header_class">Logistics Page</h1>
-
-
-                <div class="item active">
                 <div class="col-md-12 text-center">
                             <h3>
-                                <span>We printed posters and publish them on the walls to share the events with you.</span>
+                            <span>We print posters and publish them on the walls to share events with you.</span>
                             </h3>
                             <br>
-                        </div>
-                  <img class="img-responsive center-block" src="{{asset('/images/logistics/1.png')}}"
-                         alt="New York">   <!-- Static Header -->
-                    <div class="header-text hidden-xs">
-                        
-                    </div><!-- /header-text -->
                 </div>
-             
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+
+                @for( $i = 1 ; $i <= count($committee_images) ; $i++)
+
+                    @if ($i == 1)
+
+                        <li data-target="#myCarousel" data-slide-to="{{$i}}" class="active"></li>
+
+                    @else
+
+                        <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
+
+                    @endif
+                @endfor
 
 
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <!-- asset function statrs from public folder -->
+
+            <div class="carousel-inner">
+
+                @for( $i = 0 ; $i < count($committee_images) ; $i++)
+
+                    @if ($i == 0)
+                        <div class="item active">
+                            <img class="img-responsive center-block"
+                                 src="{{$committee_images[$i]->imageurl}}">
+                        </div>
+                    @else
+                        <div class="item">
+                            <img class="img-responsive center-block"
+                                 src="{{$committee_images[$i]->imageurl}}">
+                        </div>
+                    @endif
+                @endfor
 
 
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
             </a>
-        </div><!-- /carousel -->
+        </div>
     </div>
 </div>
 <br>

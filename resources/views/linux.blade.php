@@ -3,12 +3,9 @@
 
 @section('CSS')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/linux.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/Linux.css') }}">
 
 @endsection
-
-
-
 
 @section('JS')
     <script src="{{ asset('js/linux.js') }}"></script>

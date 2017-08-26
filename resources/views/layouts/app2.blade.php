@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to OSC-Open Source Community</title>
+    <title>Welcome to OSC</title>
     <!-- Title Icon-->
     <link rel="shortcut icon" href="{{ asset('images/navbar/logo-osc.png') }}">
     <!-- Start Fonts -->

@@ -1,27 +1,6 @@
-@extends('layouts.app2') @section('CSS')
-    <link rel="stylesheet" type="text/css"
-          href="{{ asset('/css/companies.css') }}"> @endsection
-
-@section('dropdownlist')
-
-    @foreach($committees_data as $committee)
-
-        <li data-submenu-id="{{ $committee->id }}">
-            <a href="{{ $committee->title }}">{{ $committee->title }} Committee</a>
-            <div id="{{ $committee->id }}" class="popover">
-                <h3 class="popover-title">{{ $committee->title }} Committee</h3>
-                <div class="popover-content">
-                    <ul>
-                        <li>{{ $committee->description }}
-                        </li>
-                        <img src="{{ $committee->imageurl }}">
-                    </ul>
-                </div>
-            </div>
-        </li>
-
-    @endforeach
-
+@extends('layouts.app2',array('committees_data' => $committees_data))
+@section('CSS')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/companies.css') }}"> @endsection
 @endsection
 
 @section('content')

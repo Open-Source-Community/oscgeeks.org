@@ -50,8 +50,36 @@
                     <li>
                         <div class="dropdown">
                             <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu " role="menu"> @yield('dropdownlist') </ul>
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu " role="menu"> 
+                             
+                               @foreach($committees_data as $committee)
+
+                             <li data-submenu-id="{{ $committee->id }}">
+            
+                                  @if($committee->title == 'Linux' || $committee->title == 'Blender' || $committee->title == 'Laravel' 
+            || $committee->title == 'Artwork' || $committee->title == 'Logistics' || $committee->title == 'Content Creators')
+                                 <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
+                                 @else
+                                   <a href ="" style="pointer-events: none">{{$committee->title }} Committee</a>
+                                 @endif
+               
+            
+                               <div id="{{ $committee->id }}" class="popover">
+                                  <h3 class="popover-title">{{ $committee->title }} Committee</h3>
+                                    <div class="popover-content">
+                                        <ul>
+                                            <li>{{ $committee->description }}
+                                            </li>
+                                            <img src="{{ $committee->imageurl }}">
+                                        </ul>
+                                    </div>
+                               </div>
+                            </li>
+
+                             @endforeach                   
+                            
+                            </ul>
                         </div>
                     </li>
                     

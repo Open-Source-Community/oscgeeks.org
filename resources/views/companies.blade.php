@@ -3,10 +3,6 @@
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/companies.css') }}"> @endsection
 
-@extends('layouts.app2') @section('CSS')
-    <link rel="stylesheet" type="text/css"
-          href="{{ asset('/css/companies.css') }}"> @endsection
-
 @section('content')
 <div class="container">
     <center><h1>Our Previous Sponsors</h1></center>

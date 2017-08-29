@@ -82,31 +82,37 @@
                         </div>
                     </li>
                     
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("Linux") }}'"
-                                class="btn btn-default btn-sm">Linux
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("Blender") }}'"
-                                class="btn btn-default btn-sm">Blender
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("Laravel") }}'"
-                                class="btn btn-default btn-sm">Laravel
-                        </button>
+                     <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Workshops
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu " role="menu"> 
+
+                             <li data-submenu-id="1">
+            
+                               <a href="/Linux">Linux Workshop</a>
+               
+                            </li> 
+                                 <li data-submenu-id="2">
+            
+                               <a href="/Blender">Blender Workshop</a>
+               
+                            </li> 
+                                 <li data-submenu-id="3">
+            
+                               <a href="/Laravel">Laravel Workshop</a>
+               
+                            </li> 
+                            
+                            </ul>
+                        </div>
                     </li>
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("events") }}'"
                                 class="btn btn-default btn-sm">Events
                         </button>
-                    </li> 
-
-                   
+                    </li>                    
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-3">

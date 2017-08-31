@@ -3,16 +3,16 @@
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body {
-    text-align: center;
-    font-family: HANDVETICA;
-    font-size: 30;
+body{
+    background-image: url("https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Background/Background.jpg?raw=true");
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
+    font-size: 30;
     overflow-x: hidden;
-    background-image: url(../images/About/Background.jpg);
+    text-align: center;
+    font-family: HANDVETICA;
 }
 
 h1 {

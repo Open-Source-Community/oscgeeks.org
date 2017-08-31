@@ -1,11 +1,8 @@
 @extends('layouts.app2',array('committees_data' => $committees_data))
+
 @section('CSS')
-    <link rel="stylesheet" type="text/css"
-          href="{{ asset('/css/art.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/art.css') }}">
 @endsection
-
-
-
 
 @section('content')
     <h1>ArtWork</h1>

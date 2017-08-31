@@ -3,7 +3,7 @@
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 body{
-	background-image: url("https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Background/Background.jpg?raw=true");
+	background-image: url(../images/About/Background.jpg);
     width: 100%;
     height: auto;
     margin: 0px;

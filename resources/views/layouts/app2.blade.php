@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to OSC</title>
     <!-- Title Icon-->
-    <link rel="shortcut icon" href="{{ asset('images/navbar/logo-osc.png') }}">
+    <link rel="shortcut icon" href="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">
@@ -31,8 +31,8 @@
 <div class="navbar navbar-default ">
     <div class="container">
         <!--navbar logos-->
-        <div class="row"><img class=" logo  col-md-1 col-xs-3  " src="{{ asset('images/navbar/logo-osc.png')}}"> <img
-                    class=" osc col-md-4 col-xs-6   " src="{{ asset('images/navbar/osc-log.png')}}"></div>
+        <div class="row"><img class=" logo  col-md-1 col-xs-3  " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"> 
+            <img class=" osc col-md-4 col-xs-6   " src="https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/osc-log.png?raw=true"></div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
                         class="sr-only">toggle navigation</span> <span class="icon-bar"></span> <span

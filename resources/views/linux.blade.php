@@ -84,9 +84,9 @@
                         <p dir="rtl">sudo apt install ubuntu-restricted-extras</p></br>
 
                         <p>
-                        <p dir="rtl"><img src="images/pages images/linux/Screenshot(pic1).png" class="img-responsive">
+                        <p dir="rtl"><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/Screenshot(pic1).png?raw=true" class="img-responsive">
                         </p></br>
-                        <p dir="rtl"><img src="images/pages images/linux/Screenshot(pic2).png" class="img-responsive">
+                        <p dir="rtl"><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/Screenshot(pic2).png?raw=true" class="img-responsive">
                         </p>
                         </p><br>
 
@@ -118,7 +118,7 @@
                         <br>
                         <p dir="rtl">صدق أو لا تصدق انت دلوقتي Linux user. دا معناه إنك هتستخدم الterminal كتير. فيستحسن
                             تثبته في الlauncher عشان يبقي قريب منك.</p>
-                        <p dir="rtl"><img src="images/pages images/linux/Screenshot(pic3).png" class="img-responsive">
+                        <p dir="rtl"><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/Screenshot(pic3).png?raw=true" class="img-responsive">
                         </p><br>
                         <p dir="rtl">زي ما في الصورة هتفتح الterminal و right click علي الicon بتاعته في الlauncher.
                             وبعد كدا تختار Lock to Launcher.</p><br><br>
@@ -148,10 +148,10 @@
 
                 <div id="collapse3" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <p dir="rtl"><img src="images/pages images/linux/output.jpg" class="img-responsive"></p><br>
+                        <p dir="rtl"><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/output.jpg?raw=true" class="img-responsive"></p><br>
                         <p dir="rtl"><a href="https://www.youtube.com/watch?v=MkNOk5fM4dY" target="_blank"><img
-                                        src="images/pages images/linux/youtube.png" class="img-responsive"></a></p><br>
-                        <p dir="rtl"><img src="images/pages images/linux/output2.jpg" class="img-responsive"></p><br>
+                                        src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/youtube.png?raw=true" class="img-responsive"></a></p><br>
+                        <p dir="rtl"><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/linux/output2.jpg?raw=true" class="img-responsive"></p><br>
                     </div>
                 </div>
             </div>

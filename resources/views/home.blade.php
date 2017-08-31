@@ -7,7 +7,7 @@
 
     <title>Welcome to OSC - Open Source Community</title>
     <!-- Title Icon-->
-    <link rel="shortcut icon" href="{{{ asset('images/navbar/logo-osc.png') }}}">
+    <link rel="shortcut icon" href="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
 
     <link href="{{ asset('/css/aboutstyle.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
@@ -36,28 +36,28 @@
 
 <div class="home" id="home" style="visibility:visible; display:block;">
     <div class="row ">
-        <img class=" osc shapes col-xs-5 col-xs-offset-4 " src="{{ asset('images/Background/osc.png')}}">
+        <img class=" osc shapes col-xs-5 col-xs-offset-4 " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/osc.png?raw=true">
 
         <div id="pinguen" class=" shapes col-xs-1 col-xs-offset-4 ">
-            <img src="{{ asset('images/Background/pinguen.png')}}" class="pinguen">
+            <img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/pinguen.png?raw=true" class="pinguen">
             <div>
-                <img class="hello " src="{{ asset('images/Background/Hello.png')}}"/>
+                <img class="hello " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/Hello.png?raw=true"/>
             </div>
         </div>
 
     </div>
 
     <div class="row shapes">
-        <img class="alien  shapes col-xs-3 col-xs-push-1" src="{{ asset('images/Background/alien.png')}}"/>
+        <img class="alien  shapes col-xs-3 col-xs-push-1" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/alien.png?raw=true"/>
         <a class="toAbout">
             <img class=" arrow  shapes col-xs-2 col-xs-push-2" onclick="window.location='{{ url ("about") }}'"
-                                         src="{{ asset('images/Background/arrow.png')}}"/>
+                                         src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/arrow.png?raw=true"/>
 
         </a>
 
         <div class="space  col-xs-2 col-xs-push-4">
-            <img class="rocket shapes" src="{{asset('images/Background/rocket.png')}}">
-            <img class="stars shapes" src="{{asset('images/Background/Stars.png')}}">
+            <img class="rocket shapes" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/rocket.png?raw=true">
+            <img class="stars shapes" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/Stars.png?raw=true">
         </div>
 
     </div>

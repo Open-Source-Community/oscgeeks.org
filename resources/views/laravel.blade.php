@@ -10,7 +10,7 @@
         <h1> Laravel Workshop</h1></center>
     <h2>Love beautiful code? We do too.</h2>
     <p> The world wide web is the present and the future. The whole world is heading towards the cloud and online services everyday; and if you want to be successful in the rapid world of software development then you definitely need to learn how to create beautiful web applications.</p>
-    <div class="row artwork"><img class="img-responsive col-sm-3 " src="{{asset('/images/pages images/laravel/logolaravel.jpg')}}" alt="Los Angeles">
+    <div class="row artwork"><img class="img-responsive col-sm-3 " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/laravel/logolaravel.jpg?raw=true" alt="Los Angeles">
         <div class="col-sm-9">
             <h2> Laravel PHP Framework </h2>
             <p>Awesome and experienced web developers found a repeating pattern in the process of creating web applications. They know very well that a real programmer should not repeat his code over and over again. And so they created a group of libraries and tools that contained code they used across their websites; they called it Laravel.</p>

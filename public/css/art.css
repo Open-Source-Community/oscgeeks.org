@@ -12,7 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-image: url(../images/About/Background.jpg);
+    background-image: url("https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Background/Background.jpg?raw=true");
 }
 
 h1 {

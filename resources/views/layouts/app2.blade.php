@@ -40,7 +40,7 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-9">
+                <ul class="nav navbar-nav col-xs-5">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home
@@ -120,15 +120,15 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right col-xs-3">
+                <ul class="nav navbar-nav navbar-right col-xs-4">
                  <li>
                         <button type="button" onclick="window.location='{{ url ("Companies") }}'"
                                 class="btn btn-default btn-sm">Previous Sponsors
                         </button>
                     </li>
-                    <li>
+                     <li>
                         <div class="dropdown ">
-                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
+                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Social Media
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu contact"  style="background-color: white;">
                                 <ul class='list-inline' >
@@ -139,6 +139,30 @@
                                     <li ><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
                                                     class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
                                 </ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown ">
+                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu contact"  style="background-color: white;">
+                                
+                                 <li data-submenu-id="1">
+            
+                                     <a>President.of.OSC@gmail.com</a>
+               
+                            </li> 
+                                 <li data-submenu-id="2">
+            
+                                     <a>FR.of.OSC@gmail.com</a>
+               
+                            </li> 
+                                 <li data-submenu-id="3">
+            
+                                     <a>PR.of.OSC@gmail.com</a>
+               
+                            </li> 
                             </ul>
                         </div>
                     </li>

@@ -14,15 +14,25 @@
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/Form.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ asset('/css/Form.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> 
+<!--End Styles -->
+    <!--Start Scripts -->
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/html5shiv.min.js') }}"></script>
+    <script src="{{ asset('js/npm.js') }}"></script>
+    <script src="{{ asset('js/respond.min.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/Custom.js') }}"></script>
+    <script>new WOW().init();</script>
+<!--End Scripts -->
 </head>
-
 <body>
 <!--  start Navbar  -->
 <div class="navbar navbar-default ">
@@ -181,160 +191,165 @@
         </div>
     </div>
 </div>
+
+    <section class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
     <div class="container">
-	<form class="well form-horizontal" action="{{URL::to('done')}}" method="post" id="contact_form">
-		<fieldset>
-			<legend><center><h2><b>Registration Form</b></h2></center></legend><br>
-			<div class="form-group">
-				<label class="col-md-4 control-label">First Name</label>
-				<div class="col-md-4 inputGroupContainer">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-						<input type="text" name="first_name" placeholder="First Name" class="form-control" required>
-					</div>
-				</div>
-			</div>
-            <div class="form-group">
-			  	<label class="col-md-4 control-label" >Last Name</label> 
-			    <div class="col-md-4 inputGroupContainer">
-			    	<div class="input-group">
-			 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  		<input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
-			    	</div>
-			 	</div>
-            @if($errors->any())
-				<ul style="color:red;text-align:center;">
-					@foreach($errors->all() as $error)
-						<li>{{$error}} </li>
-					@endforeach
-				</ul>
-            @endif
-			  <div class="form-group">
-				<label class="col-md-4 control-label">E-Mail</label>
-				<div class="col-md-4 inputGroupContainer">
-					<div class="input-group">
-						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-						<input type="text" name="email" placeholder="E-Mail Address" class="form-control" required>
-					</div>
-				</div>
-			</div>
+    <form class="well form-horizontal" action="{{URL::to('done')}}" method="post" id="contact_form">
+        <fieldset>
+            <legend><center><h2><b>Registration Form</b></h2></center></legend><br>
+            <div class="form-group hvr-grow">
+                <label class="col-md-4 control-label">First Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" name="first_name" placeholder="First Name" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group hvr-grow">
+                <label class="col-md-4 control-label" >Last Name</label> 
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+                    </div>
+                </div>
+            </div>
+                @if($errors->any())
+                <ul style="color:red;text-align:center;">
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}} </li>
+                    @endforeach
+                </ul>
+                @endif
+               <div class="form-group hvr-grow">
+                  <label class="col-md-4 control-label">E-Mail</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+                    </div>
+                  </div>
+                </div>
 
-				<div class="form-group">
-				  <label class="col-md-4 control-label">Contact No.</label>  
-				    <div class="col-md-4 inputGroupContainer">
-				    <div class="input-group">
-				        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-				  <input name="contact_no" placeholder="your phone no." class="form-control" type="text" required>
-				    </div>
-				  </div>
-				</div>
-				
-				<div class="form-group"> 
-			  	<label class="col-md-4 control-label">Year</label>
-			    <div class="col-md-4 selectContainer">
-				    <div class="input-group">
-				    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-				    <select name="year" class="form-control selectpicker" required>
-				      <option >Select Your year</option>
-				      <option >1st year</option>
-				      <option >2nd year</option>
-				      <option >3rd year</option>
-				      <option >4th year</option>
-				    </select>
-				  </div>
-			</div>
-			</div>
-			<div class="form-group"> 
-			  	<label class="col-md-4 control-label">First Committee</label>
-			    <div class="col-md-4 selectContainer">
-				    <div class="input-group">
-				    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-				    <select name="homepage_select_first" class="form-control selectpicker" required id="select1">
-				      <option>Select your First Committee</option>
-				      <option value="1">Web Committee</option>
-				      <option value="2">Linux Committee</option>
-				      <option value="3">Blender Committee</option>
-				      <option value="4">English Heroes Committee</option>
-				      <option value="5">Content Creator Committee</option>
-				      <option value="6">ArtWork Committee</option>
-				      <option value="7">Projects Committee</option>
-				      <option value="8">Public Relation Committee</option>
-				      <option value="9">Human Resource Committee</option>
-				      <option value="10">Fundraising Committee</option>
-				      <option value="11">Logistics Committee</option>
-				    </select>
-				  </div>
-			</div>
-			</div>
+                <div class="form-group hvr-grow">
+                  <label class="col-md-4 control-label">Contact No.</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input name="contact_no" placeholder="your phone no." class="form-control" type="text" required>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group hvr-grow"> 
+                <label class="col-md-4 control-label">Year</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="year" class="form-control selectpicker" required>
+                      <option >Select Your year</option>
+                      <option >1st year</option>
+                      <option >2nd year</option>
+                      <option >3rd year</option>
+                      <option >4th year</option>
+                    </select>
+                  </div>
+            </div>
+            </div>
+            <div class="form-group hvr-grow"> 
+                <label class="col-md-4 control-label">First Committee</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="homepage_select_first" class="form-control selectpicker" required id="select1">
+                      <option>Select your First Committee</option>
+                      <option value="1">Web Committee</option>
+                      <option value="2">Linux Committee</option>
+                      <option value="3">Blender Committee</option>
+                      <option value="4">English Heroes Committee</option>
+                      <option value="5">Content Creator Committee</option>
+                      <option value="6">ArtWork Committee</option>
+                      <option value="7">Projects Committee</option>
+                      <option value="8">Public Relation Committee</option>
+                      <option value="9">Human Resource Committee</option>
+                      <option value="10">Fundraising Committee</option>
+                      <option value="11">Logistics Committee</option>
+                    </select>
+                  </div>
+            </div>
+            </div>
 
 
-			<div class="form-group"> 
-			  	<label class="col-md-4 control-label">Second Committee</label>
-			    <div class="col-md-4 selectContainer">
-				    <div class="input-group">
-				        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-				    <select name="homepage_select_second" class="form-control selectpicker" required id="select2">
-				      <option>Select your Second Committee</option>
-				      <option value="1">Web Committee</option>
-				      <option value="2">Linux Committee</option>
-				      <option value="3">Blender Committee</option>
-				      <option value="4">English Heroes Committee</option>
-				      <option value="5">Content Creator Committee</option>
-				      <option value="6">ArtWork Committee</option>
-				      <option value="7">Projects Committee</option>
-				      <option value="8">Public Relation Committee</option>
-				      <option value="9">Human Resource Committee</option>
-				      <option value="10">Fundraising Committee</option>
-				      <option value="11">Logistics Committee</option>
-				    </select>
-				  </div>
-			</div>
-			</div>
+            <div class="form-group hvr-grow"> 
+                <label class="col-md-4 control-label">Second Committee</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="homepage_select_second" class="form-control selectpicker" required id="select2">
+                      <option>Select your Second Committee</option>
+                      <option value="1">Web Committee</option>
+                      <option value="2">Linux Committee</option>
+                      <option value="3">Blender Committee</option>
+                      <option value="4">English Heroes Committee</option>
+                      <option value="5">Content Creator Committee</option>
+                      <option value="6">ArtWork Committee</option>
+                      <option value="7">Projects Committee</option>
+                      <option value="8">Public Relation Committee</option>
+                      <option value="9">Human Resource Committee</option>
+                      <option value="10">Fundraising Committee</option>
+                      <option value="11">Logistics Committee</option>
+                    </select>
+                  </div>
+            </div>
+            </div>
 
-			<div class="form-group"> 
-			  	<label class="col-md-4 control-label">Day</label>
-			    <div class="col-md-4 selectContainer">
-				    <div class="input-group">
-				        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-				    <select name="day" class="form-control selectpicker" required>
-				      <option >Select Day</option>
-				      <option >Saturday</option>
-				      <option >Sunday</option>
-				      <option >Monday</option>
-				      <option >Tuesday</option>
-				      <option >Wednesday</option>
-				      <option >Thursday</option>
-				    </select>
-				  </div>
-			</div>
-			</div>
+            <div class="form-group hvr-grow"> 
+                <label class="col-md-4 control-label">Day</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="day" class="form-control selectpicker" required>
+                      <option >Select Day</option>
+                      <option >Saturday</option>
+                      <option >Sunday</option>
+                      <option >Monday</option>
+                      <option >Tuesday</option>
+                      <option >Wednesday</option>
+                      <option >Thursday</option>
+                    </select>
+                  </div>
+            </div>
+            </div>
 
-			<div class="form-group"> 
-			  	<label class="col-md-4 control-label">Time</label>
-			    <div class="col-md-4 selectContainer">
-				    <div class="input-group">
-				        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-				    <select name="time" class="form-control selectpicker" required>
-				      <option value="">Select Time</option>
-				      <option >9 am to 10.30 am</option>
-				      <option >11 am to 12.30 pm</option>
-				      <option >1 pm to 2.30 pm</option>
-				      <option >3 pm to 4.30 pm</option>
-				    </select>
-				  </div>
-			</div>
-			</div>
-				<div class="form-group">
-			  <label class="col-md-4 control-label"></label>
-			  <div class="col-md-4"><br>
-			    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-			    <input type="hidden" value="{{ csrf_token() }}" name="_token">
-			  </div>
-			</div>
-	
+            <div class="form-group hvr-grow"> 
+                <label class="col-md-4 control-label">Time</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="time" class="form-control selectpicker" required>
+                      <option value="">Select Time</option>
+                      <option >9 am to 10.30 am</option>
+                      <option >11 am to 12.30 pm</option>
+                      <option >1 pm to 2.30 pm</option>
+                      <option >3 pm to 4.30 pm</option>
+                    </select>
+                  </div>
+            </div>
+            </div>
+                <div class="form-group">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4"><br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning hvr-grow" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                <input type="hidden" value="{{ csrf_token() }}" name="_token">
+              </div>
+            </div>
         </fieldset>
     </form>
-    <div>
+    </div>
+</section>
+    
 <!--start footer-->
 <div class="footer">
     <div class="row">
@@ -350,16 +365,16 @@
 <!--End footer-->
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->
-<!--End Styles -->
-    <!--Start Scripts -->
+ <!--Start Scripts -->
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/html5shiv.min.js') }}"></script>
+     <script src="{{ asset('js/html5shiv.min.js') }}"></script>
     <script src="{{ asset('js/npm.js') }}"></script>
     <script src="{{ asset('js/respond.min.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/Custom.js') }}"></script>
+    <script src="{{ asset('js/Custom.js') }}"></script> 
+    <script type="text/javascript" src="{{asset('js/Form.js')}}"></script>
     <script>new WOW().init();</script>
 <!--End Scripts -->
 </body>

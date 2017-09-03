@@ -14,7 +14,7 @@
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/form.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/Form.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">

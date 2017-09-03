@@ -11,9 +11,11 @@
 			<h1 class="hvr-pop">Web Committee</h1>
 		</div>
 
+<!--
 		<div class="">
 			<img class="img-responsive wow zoomInUp" src="{{asset('/images/Background/img1.jpg')}}">
 		</div>
+-->
 
 		<div class="job hvr-glow wow flipInX"  data-wow-duration="1s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>

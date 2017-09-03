@@ -13,9 +13,7 @@
 
 <div class="container">
     <div class="row">
-        
-        
-        
+
                 <h1 id="header_class">Logistics Page</h1>
                 <div class="col-md-12 text-center">
                             <h3>
@@ -23,6 +21,7 @@
                             </h3>
                             <br>
                 </div>
+        
        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Indicators -->
             <ol class="carousel-indicators">

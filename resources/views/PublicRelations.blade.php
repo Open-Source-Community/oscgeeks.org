@@ -11,9 +11,11 @@
 			<h1 class="hvr-float">Public Relations</h1>
 		</div>
 
+<!--
 		<div class="">
 			<img class="img-responsive wow zoomIn" src="{{asset('/images/Background/img1.jpg')}}">
 		</div>
+-->
 
 		<div class="cont  wow slideInRight hvr-grow">
 			<h2>Job Description:</h2>

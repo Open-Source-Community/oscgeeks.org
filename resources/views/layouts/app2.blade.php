@@ -72,6 +72,7 @@
                                  @endif
                
             
+<!--
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                                     <div class="popover-content">
@@ -81,6 +82,7 @@
                                         </ul>
                                     </div>
                                </div>
+-->
                             </li>
 
                              @endforeach                   

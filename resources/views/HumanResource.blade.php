@@ -14,9 +14,11 @@
 			<h1 class="hvr-grow">Human Resource</h1>
 		</div>
 
+<!--
 		<div class="">
 			<img class="img-responsive wow rollIn" src="{{asset('/images/Background/img1.jpg')}}">
 		</div>
+-->
 
 		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200"">
 			<h2>Job Description:</h2>

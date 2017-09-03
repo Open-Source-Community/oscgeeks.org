@@ -59,7 +59,6 @@
                                    <a href ="" style="pointer-events: none">{{$committee->title }} Committee</a>
                                  @endif
                
-            
 <!--
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>
@@ -139,6 +138,7 @@
                                 class="btn btn-default btn-sm">Previous Sponsors
                         </button>
                     </li>
+<!--
                      <li>
                         <div class="dropdown ">
                             <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Social Media
@@ -155,6 +155,7 @@
                             </ul>
                         </div>
                     </li>
+-->
                     <li>
                         <div class="dropdown ">
                             <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
@@ -347,7 +348,14 @@
 <div class="footer">
     <div class="row">
         <center>
-            <div class="col-xs-12">OSC &copy; 2017</div>
+            <div class="col-xs-12">&copy;OSC 2017</div>
+             <br><br>
+            
+            <a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <span>&nbsp;&nbsp;</span>
+            <a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>   
+            <span>&nbsp;&nbsp;</span>
+            <a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
         </center>
     </div>
 </div>

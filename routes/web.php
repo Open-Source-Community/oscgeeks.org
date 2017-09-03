@@ -36,3 +36,23 @@ Route::get('/Companies', 'CommitteesController@index6');
 Route::get('/Logistics', 'CommitteesController@index7');
 
 Route::get('/Content Creators','CommitteesController@index8');
+
+Route::get('/Form', 'CommitteesController@index9');
+
+Route::get('/Blender Workshop','CommitteesController@index10');
+
+Route::get('/English Heroes','CommitteesController@index11');
+
+Route::get('/Linux Workshop','CommitteesController@index12');
+
+Route::get('/Human Resources','CommitteesController@index13');
+
+Route::get('/Public Relations','CommitteesController@index14');
+
+Route::get('/Fundraising','CommitteesController@index15');
+
+Route::get('/Web','CommitteesController@index16');
+
+Route::get('/done','CommitteesController@done');
+
+Route::post('/done','RegisterationForm@store');

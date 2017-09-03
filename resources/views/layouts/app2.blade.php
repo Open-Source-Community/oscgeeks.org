@@ -14,15 +14,22 @@
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> @yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->
-    <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/Custom.js') }}"></script> @yield('JS')
+    <script src="{{ asset('js/html5shiv.min.js') }}"></script>
+    <script src="{{ asset('js/npm.js') }}"></script>
+    <script src="{{ asset('js/respond.min.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/Custom.js') }}"></script>
+    <script>new WOW().init();</script> @yield('JS')
 <!--End Scripts -->
 </head>
 
@@ -40,7 +47,7 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-5">
+                <ul class="nav navbar-nav col-xs-6">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home
@@ -57,8 +64,7 @@
 
                              <li data-submenu-id="{{ $committee->id }}">
             
-                                  @if($committee->title == 'Linux' || $committee->title == 'Blender' || $committee->title == 'Laravel' 
-            || $committee->title == 'Artwork' || $committee->title == 'Logistics' || $committee->title == 'Content Creators')
+                                  @if($committee->title != 'Projects')
                                  <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
                                  @else
                                    <a href ="" style="pointer-events: none">{{$committee->title }} Committee</a>
@@ -113,6 +119,20 @@
                                 class="btn btn-default btn-sm">Events
                         </button>
                     </li>                    
+                    
+                    <li>
+
+                        @if(Session::has('key'))
+                        <button type="button"  onclick="window.location='{{ url ("form") }}'"
+                                class="btn btn-default btn-sm" disabled>Registration Form
+                        </button>
+                        @else
+                         <button type="button"  onclick="window.location='{{ url ("form") }}'"
+                                class="btn btn-default btn-sm">Registration Form
+                        </button>
+                        @endif
+
+                    </li> 
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("about") }}'"

@@ -37,7 +37,7 @@ Route::get('/Logistics', 'CommitteesController@index7');
 
 Route::get('/Content Creators','CommitteesController@index8');
 
-Route::get('/Form', 'CommitteesController@index9');
+Route::get('/form', 'CommitteesController@index9');
 
 Route::get('/Blender Workshop','CommitteesController@index10');
 

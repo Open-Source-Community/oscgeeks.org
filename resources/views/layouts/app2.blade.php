@@ -14,6 +14,7 @@
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/form.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
@@ -96,12 +97,12 @@
 
                              <li data-submenu-id="1">
             
-                               <a href="/Linux">Linux Workshop</a>
+                               <a href="/Linux Workshop">Linux Workshop</a>
                
                             </li> 
                                  <li data-submenu-id="2">
             
-                               <a href="/Blender">Blender Workshop</a>
+                               <a href="/Blender Workshop">Blender Workshop</a>
                
                             </li> 
                                  <li data-submenu-id="3">

@@ -14,25 +14,14 @@
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-     <link rel="stylesheet" type="text/css" href="{{ asset('/css/Form.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/Form.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> 
-<!--End Styles -->
-    <!--Start Scripts -->
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/html5shiv.min.js') }}"></script>
-    <script src="{{ asset('js/npm.js') }}"></script>
-    <script src="{{ asset('js/respond.min.js') }}"></script>
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/Custom.js') }}"></script>
-    <script>new WOW().init();</script>
-<!--End Scripts -->
 </head>
+
 <body>
 <!--  start Navbar  -->
 <div class="navbar navbar-default ">
@@ -47,14 +36,14 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-6">
+                <ul class="nav navbar-nav col-xs-8">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home
                         </button>
                     </li>
                     
-                    <li>
+                    <li>    
                         <div class="dropdown">
                             <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
                             <span class="caret"></span></button>
@@ -197,7 +186,7 @@
     <form class="well form-horizontal" action="{{URL::to('done')}}" method="post" id="contact_form">
         <fieldset>
             <legend><center><h2><b>Registration Form</b></h2></center></legend><br>
-            <div class="form-group hvr-grow">
+            <div class="form-group">
                 <label class="col-md-4 control-label">First Name</label>
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
@@ -207,7 +196,7 @@
                 </div>
             </div>
             
-            <div class="form-group hvr-grow">
+            <div class="form-group">
                 <label class="col-md-4 control-label" >Last Name</label> 
                 <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
@@ -223,7 +212,7 @@
                     @endforeach
                 </ul>
                 @endif
-               <div class="form-group hvr-grow">
+            <div class="form-group">
                   <label class="col-md-4 control-label">E-Mail</label>  
                     <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
@@ -233,7 +222,7 @@
                   </div>
                 </div>
 
-                <div class="form-group hvr-grow">
+               <div class="form-group">
                   <label class="col-md-4 control-label">Contact No.</label>  
                     <div class="col-md-4 inputGroupContainer">
                     <div class="input-group">
@@ -243,7 +232,7 @@
                   </div>
                 </div>
                 
-                <div class="form-group hvr-grow"> 
+               <div class="form-group">
                 <label class="col-md-4 control-label">Year</label>
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
@@ -258,7 +247,7 @@
                   </div>
             </div>
             </div>
-            <div class="form-group hvr-grow"> 
+            <div class="form-group">
                 <label class="col-md-4 control-label">First Committee</label>
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
@@ -282,7 +271,7 @@
             </div>
 
 
-            <div class="form-group hvr-grow"> 
+      <div class="form-group">
                 <label class="col-md-4 control-label">Second Committee</label>
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
@@ -305,7 +294,7 @@
             </div>
             </div>
 
-            <div class="form-group hvr-grow"> 
+           <div class="form-group">
                 <label class="col-md-4 control-label">Day</label>
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
@@ -323,7 +312,7 @@
             </div>
             </div>
 
-            <div class="form-group hvr-grow"> 
+       <div class="form-group">
                 <label class="col-md-4 control-label">Time</label>
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
@@ -341,7 +330,7 @@
                 <div class="form-group">
               <label class="col-md-4 control-label"></label>
               <div class="col-md-4"><br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning hvr-grow" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
                 <input type="hidden" value="{{ csrf_token() }}" name="_token">
               </div>
             </div>

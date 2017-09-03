@@ -39,7 +39,7 @@
 <div class="navbar navbar-default ">
     <div class="container">
         <!--navbar logos-->
-        <div class="row"><img class=" logo  col-md-1 col-xs-3  " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"> 
+        <div class="row"><img class=" logo  col-md-1 col-xs-3" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"> 
             <img class=" osc col-md-4 col-xs-6   " src="https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/osc-log.png?raw=true"></div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
@@ -48,7 +48,7 @@
             <!--<a class="navbar-brand" href="a">OSC</a>--></div>
         <div class="row">
             <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-6">
+                <ul class="nav navbar-nav col-xs-8">
                     <li>
                         <button type="button" onclick="window.location='{{ url ("home") }}'"
                                 class="btn btn-primary btn-sm">Home

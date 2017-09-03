@@ -10,8 +10,8 @@
 @section('content')
 
 	<div class="container">
-		<div class="text-center">
-			<h1>Human Resource</h1>
+		<div class="text-center wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+			<h1 class="hvr-grow">Human Resource</h1>
 		</div>
 
 <!--
@@ -20,7 +20,7 @@
 		</div>
 -->
 
-		<div>
+		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200"">
 			<h2>Job Description:</h2>
 			<p>It's not only about interviews , WE ARE THE GOVERNAMENT we believe in human resource and how it's really important to invest in it, also believing in order and how it's important to Apply it, so, what does an HR do in OSC ? our cycle begins with the interviews, where the interviewee is always a winner , point here is not the selection but to see ourselves better and discover our advantages to work on it and also discover out disadvantages to correct it.</p>
 

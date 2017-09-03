@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Committee;
+use Session;
 use App\Image;
 use Illuminate\Http\Request;
 
@@ -58,5 +59,53 @@ class CommitteesController extends Controller
        $committees_data = Committee::all();
         return view('ccc', compact('committees_data'));
     }
-
+    public function index9()
+    {
+        if(Session::has('key')){
+            return redirect('/done');
+        }
+        else{
+       $committees_data = Committee::all();
+        return view('form', compact('committees_data'));}
+    }
+    public function index10()
+    {
+       $committees_data = Committee::all();
+        return view('BlenderWorkshop', compact('committees_data'));
+    }
+    public function index11()
+    {
+       $committees_data = Committee::all();
+        return view('EnglishHeroes', compact('committees_data'));
+    }
+    public function index12()
+    {
+       $committees_data = Committee::all();
+        return view('LinuxWorkshop', compact('committees_data'));
+    }
+    public function index13()
+    {
+       $committees_data = Committee::all();
+        return view('HumanResource', compact('committees_data'));
+    }
+    public function index14()
+    {
+       $committees_data = Committee::all();
+        return view('PublicRelations', compact('committees_data'));
+    }
+    public function index15()
+    {
+       $committees_data = Committee::all();
+        return view('fundraising', compact('committees_data'));
+    }
+    public function index16()
+    {
+       $committees_data = Committee::all();
+        return view('web', compact('committees_data'));
+    }
+    public function done()
+    {
+        $committees_data = Committee::all();
+        return view('done', compact('committees_data'));
+    }
 }

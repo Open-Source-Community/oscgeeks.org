@@ -1,0 +1,41 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('../fonts/font/HANDVETICA.TTF');
+}
+
+body{
+    background-image: url("Background.jpg");
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: HANDVETICA;
+}
+.about
+{
+	margin-bottom: 50px;
+}
+h1
+{
+	color:white;
+}
+p
+{
+	color:darkslateblue;
+	font-size:20px;
+	margin-left: 50px;
+}
+.who
+{
+	margin-bottom: 50px;
+}
+.what
+{
+	margin-bottom: 50px;
+}
+#ulli
+{
+	color:darkslateblue;
+	font-size: 20px;
+}

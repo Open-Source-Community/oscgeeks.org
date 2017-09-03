@@ -1,0 +1,30 @@
+@font-face {
+    font-family: HANDVETICA;
+    src: url('../fonts/font/HANDVETICA.TTF');
+}
+
+body{
+    background-image: url("Background.jpg");
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+     font-family: HANDVETICA;
+}
+
+h1
+{
+	color:white;
+}
+p
+{
+	color: darkslateblue;
+	font-size:20px;
+	margin-bottom: 20px;
+}
+.job
+{
+	margin-bottom: 50px;
+    margin-top: 50px
+}

@@ -109,6 +109,7 @@
                         </button>
                     </li>                    
                     
+<!--
                     <li>
 
                         @if(Session::has('key'))
@@ -122,6 +123,7 @@
                         @endif
 
                     </li> 
+-->
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("about") }}'"

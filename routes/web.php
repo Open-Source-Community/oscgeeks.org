@@ -37,7 +37,7 @@ Route::get('/Logistics', 'CommitteesController@index7');
 
 Route::get('/Content Creators','CommitteesController@index8');
 
-Route::get('/form', 'CommitteesController@index9');
+//Route::get('/form', 'CommitteesController@index9');
 
 Route::get('/Blender Workshop','CommitteesController@index10');
 
@@ -53,6 +53,6 @@ Route::get('/Fundraising','CommitteesController@index15');
 
 Route::get('/Web','CommitteesController@index16');
 
-Route::get('/done','CommitteesController@done');
-
-Route::post('/done','RegisterationForm@store');
+//Route::get('/done','CommitteesController@done');
+//
+//Route::post('/done','RegisterationForm@store');

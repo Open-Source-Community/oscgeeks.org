@@ -2,6 +2,8 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
+    <meta property="og:url" content="http://www.oscgeeks.org" />
+    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,13 +67,12 @@
 
                              <li data-submenu-id="{{ $committee->id }}">
             
-                                  @if($committee->title != 'Projects')
+                                 
                                  <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
-                                 @else
-                                   <a href ="" style="pointer-events: none">{{$committee->title }} Committee</a>
-                                 @endif
+                                 
+                                
                
-<!--
+
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                                     <div class="popover-content">
@@ -81,7 +82,6 @@
                                         </ul>
                                     </div>
                                </div>
--->
                             </li>
 
                              @endforeach                   

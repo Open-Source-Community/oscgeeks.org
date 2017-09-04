@@ -67,12 +67,7 @@
 
                              <li data-submenu-id="{{ $committee->id }}">
             
-                                  @if($committee->title != 'Projects')
                                  <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
-                                 @else
-                                   <a href ="" style="pointer-events: none">{{$committee->title }} Committee</a>
-                                 @endif
-               
 <!--
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>

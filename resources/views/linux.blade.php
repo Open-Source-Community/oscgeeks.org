@@ -1,7 +1,7 @@
 @extends('layouts.app2',array('committees_data' => $committees_data))
 
 @section('CSS')
-<link rel="stylesheet" type="text/css" href="{{ asset('/css/linux.css') }}"> 
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/Linux.css') }}"> 
 @endsection
 
 @section('content')

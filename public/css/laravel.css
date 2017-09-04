@@ -38,6 +38,7 @@ p {
 .artwork img{
   
     transition: all 2s, box-shadow .5s;
+    margin-top: 30px;
 }
 
 .artwork img:hover {

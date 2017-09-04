@@ -8,13 +8,21 @@ body {
     font-family: HANDVETICA;
     font-size: 30;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     background-image: url(../images/About/Background.jpg);
 }
 
+div img 
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
 h1 {
     font-family: HANDVETICA;
     font-size: 400%;
@@ -25,7 +33,7 @@ h1 {
     width: 30%;
     margin: 1%;
     vertical-align: middle;
-    transition: all 2s, box-shadow .5s;
+    transition: all 1s, box-shadow .3s;
 }
 
 .artwork img:hover {

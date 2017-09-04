@@ -2,20 +2,17 @@
 
 @section('CSS')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/fundraising.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/fr.css') }}">
 @endsection
 
 @section('content')
 	<div class="container">
 		<div class="text-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" offset="200">
 			<h1 class="hvr-pop">Fundraising</h1>
+			<img class="img-responsive" src="{{asset('/images/Background/2.jpg')}}">
 		</div>
 
-<!--
-		<div class="">
-			<img class="img-responsive wow zoomInUp" src="{{asset('/images/Background/img1.jpg')}}">
-		</div>
--->
+
 
 		<div class="job hvr-glow wow flipInX"  data-wow-duration="1s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>

@@ -12,6 +12,14 @@ body{
     overflow-x: hidden;
      font-family: HANDVETICA;
 }
+div img 
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
 h1
 {
 	color:white;
@@ -19,11 +27,12 @@ h1
 }
 p
 {
+	color: darkslateblue;
 	font-size:20px;
-	color:darkslateblue;
+	margin-bottom: 20px;
 }
 .job
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
+  
 }

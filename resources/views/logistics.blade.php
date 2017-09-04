@@ -2,7 +2,7 @@
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/events.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/logistics.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/lr.css') }}">
 
 @endsection
 
@@ -10,17 +10,19 @@
 
 
 @section('content')
-
 <div class="container">
     <div class="row">
-
-                <h1 id="header_class">Logistics Page</h1>
-                <div class="col-md-12 text-center">
-                            <h3>
-                            <span>We print posters and publish them on the walls to share events with you.</span>
-                            </h3>
-                            <br>
+            <div class="wow flipInX" data-wow-duration="1s" data-wow-delay="0.1s" offset="200">
+                <div class="text-center">
+                <h1 id="header_class" class="hvr-box-shadow-outset">Logistics Page</h1>
+                <img class="img-responsive" src="{{asset('/images/Background/5.jpg')}}">
                 </div>
+                <div class="col-md-12 text-center">
+                            <div class="text-center">
+                             <h3>We print posters and publish them on the walls to share events with you.</h3><br>
+                             </div>
+                </div>
+            </div>
         
        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
             <!-- Indicators -->

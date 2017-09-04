@@ -2,7 +2,7 @@
 
 @section('CSS')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/humanresource.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/hr.css') }}">
 
 @endsection
 
@@ -12,13 +12,9 @@
 	<div class="container">
 		<div class="text-center wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h1 class="hvr-grow">Human Resource</h1>
+			<img class="img-responsive" src="{{asset('/images/Background/3.jpg')}}">
 		</div>
 
-<!--
-		<div class="">
-			<img class="img-responsive wow rollIn" src="{{asset('/images/Background/img1.jpg')}}">
-		</div>
--->
 
 		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200"">
 			<h2>Job Description:</h2>

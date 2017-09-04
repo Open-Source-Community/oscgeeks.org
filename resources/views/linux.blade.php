@@ -1,24 +1,18 @@
 @extends('layouts.app2',array('committees_data' => $committees_data))
 
-
 @section('CSS')
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/Linux.css') }}">
-
-@endsection
-
-@section('JS')
-    <script src="{{ asset('js/linux.js') }}"></script>
-    <!--End Scripts -->
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/linux.css') }}"> 
 @endsection
 
 @section('content')
     <div class="container">
-        <br>
-        <br>
-        <br>
-
-        <br>
+    <div class="wow bounceIn" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+        <div class="text-center">
+            <h1 class="hvr-grow">Linux Committee</h1>
+            <img class="img-responsive" src="{{asset('/images/Background/4.jpg')}}">
+        </div>
+    </div>
+     <div class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
         <div class="panel-group" id="accordion">
             <!--start setup ubuntu step by step-->
             <div class="panel panel-default">
@@ -156,10 +150,7 @@
                 </div>
             </div>
             <!--end shrouk descover linux-->
-
         </div>
     </div>
-
-
+    </div>
 @endsection
-

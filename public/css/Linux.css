@@ -6,12 +6,25 @@
 body{
     background-image: url(../images/About/Background.jpg);
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
 }
-
+div img
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+h1
+{
+	font-family: HANDVETICA;
+	font-size: 400%;
+	color:white;
+}
 /*first div*/
 #div-pos1{
     background-color: #232f3d;

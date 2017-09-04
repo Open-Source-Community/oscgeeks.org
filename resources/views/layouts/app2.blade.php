@@ -202,7 +202,7 @@
 <div class="footer">
     <div class="row">
         <center>
-            <div class="col-xs-12">&copy;OSC 2017</div>
+            <div class="col-xs-12">OSC &copy; 2017</div>
             <br><br>
             
             <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>

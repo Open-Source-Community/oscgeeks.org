@@ -2,8 +2,6 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
-    <meta property="og:url" content="http://www.oscgeeks.org" />
-    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
     <meta charset="utf-8">
     <meta property="og:url" content="http://www.oscgeeks.org" />
     <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />

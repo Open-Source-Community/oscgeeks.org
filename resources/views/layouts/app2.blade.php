@@ -205,11 +205,11 @@
             <div class="col-xs-12">&copy;OSC 2017</div>
             <br><br>
             
-            <a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
             <span>&nbsp;&nbsp;</span>
-            <a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>   
+            <a target="_blank" href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>   
             <span>&nbsp;&nbsp;</span>
-            <a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
         </center>
     </div>
 </div>

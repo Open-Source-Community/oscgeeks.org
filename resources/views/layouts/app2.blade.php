@@ -69,14 +69,6 @@
             
                                  <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
 <!--
-=======
-                                 
-                                 <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
-                                 
-                                
-               
-
->>>>>>> a780ce8680ac72ba697dae76ab68f62b7ac73cc8
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                                     <div class="popover-content">
@@ -86,6 +78,7 @@
                                         </ul>
                                     </div>
                                </div>
+-->
                             </li>
 
                              @endforeach                   
@@ -128,7 +121,6 @@
                     
 <!--
                     <li>
-
                         @if(Session::has('key'))
                         <button type="button"  onclick="window.location='{{ url ("form") }}'"
                                 class="btn btn-default btn-sm" disabled>Registration Form
@@ -138,7 +130,6 @@
                                 class="btn btn-default btn-sm">Registration Form
                         </button>
                         @endif
-
                     </li> 
 -->
                     

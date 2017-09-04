@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta property="og:url" content="http://www.oscgeeks.org" />
+    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to OSC</title>

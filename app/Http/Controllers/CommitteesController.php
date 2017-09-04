@@ -103,6 +103,11 @@ class CommitteesController extends Controller
        $committees_data = Committee::all();
         return view('web', compact('committees_data'));
     }
+    public function index17()
+    {
+       $committees_data = Committee::all();
+        return view('Projects', compact('committees_data'));
+    }
     public function done()
     {
         $committees_data = Committee::all();

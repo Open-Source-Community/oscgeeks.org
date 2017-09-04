@@ -51,6 +51,8 @@ Route::get('/Fundraising','CommitteesController@index15');
 
 Route::get('/Web','CommitteesController@index16');
 
+Route::get('/Projects','CommitteesController@index17');
+
 //Route::get('/form', 'CommitteesController@index9');
 
 //Route::get('/done','CommitteesController@done');

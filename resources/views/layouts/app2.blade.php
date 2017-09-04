@@ -2,6 +2,8 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
+    <meta property="og:url" content="http://www.oscgeeks.org" />
+    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
     <meta charset="utf-8">
     <meta property="og:url" content="http://www.oscgeeks.org" />
     <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
@@ -69,6 +71,14 @@
             
                                  <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
 <!--
+=======
+                                 
+                                 <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
+                                 
+                                
+               
+
+>>>>>>> a780ce8680ac72ba697dae76ab68f62b7ac73cc8
                                <div id="{{ $committee->id }}" class="popover">
                                   <h3 class="popover-title">{{ $committee->title }} Committee</h3>
                                     <div class="popover-content">
@@ -78,7 +88,6 @@
                                         </ul>
                                     </div>
                                </div>
--->
                             </li>
 
                              @endforeach                   

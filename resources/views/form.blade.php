@@ -243,7 +243,7 @@
                     <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="year" class="form-control selectpicker" required>
-                      <option >Select Your year</option>
+                      <option value="">Select Your year</option>
                       <option >1st year</option>
                       <option >2nd year</option>
                       <option >3rd year</option>
@@ -258,7 +258,7 @@
                     <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="homepage_select_first" class="form-control selectpicker" required id="select1">
-                      <option>Select your First Committee</option>
+                      <option value="">Select your First Committee</option>
                       <option value="1">Web Committee</option>
                       <option value="2">Linux Committee</option>
                       <option value="3">Blender Committee</option>
@@ -282,7 +282,7 @@
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="homepage_select_second" class="form-control selectpicker" required id="select2">
-                      <option>Select your Second Committee</option>
+                      <option value="">Select your Second Committee</option>
                       <option value="1">Web Committee</option>
                       <option value="2">Linux Committee</option>
                       <option value="3">Blender Committee</option>
@@ -305,7 +305,7 @@
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="day" class="form-control selectpicker" required>
-                      <option >Select Day</option>
+                      <option value="">Select Day</option>
                       <option >Saturday</option>
                       <option >Sunday</option>
                       <option >Monday</option>
@@ -324,10 +324,10 @@
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="time" class="form-control selectpicker" required>
                       <option value="">Select Time</option>
-                      <option >9 am to 10.30 am</option>
-                      <option >11 am to 12.30 pm</option>
+                      <option >10 am to 11.30 am</option>
+                      <option >11.30 am to 1 pm</option>
                       <option >1 pm to 2.30 pm</option>
-                      <option >3 pm to 4.30 pm</option>
+                      <option >2.30 pm to 4 pm</option>
                     </select>
                   </div>
             </div>

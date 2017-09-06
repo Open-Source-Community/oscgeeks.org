@@ -19,13 +19,7 @@
                 </div>
                 <div class="col-md-12 text-center">
                             <div class="text-center">
-                             <h3>They are the backbone of OSC, the people who work behind the scenes to make
-sure that everything is perfect .They are Logistics Committee. They are
-responsible for reserving the places we need to work, from holding meetings, to
-interviews, to workshop sessions, to where we hold our events. Not just that they
-are also responsible for buying any materials that OSC needs, printing our IDs,
-banners, and t-shirts. They are also behind all the artistic, cool handcrafts you
-see during our events. We print posters and publish them on the walls to share events with you.</h3><br>
+                             <h3>We let you try to use our tools to create whatever you want in hand-craft. We organized the place with handcrafts and colors to share charefulness with you. We made  beautiful things together. We made mental and educational games to let you share your knowladge and fun with us. We search for the right place to host our event ana reserve it. We print posters and publish them on the walls to share events with you.</h3><br>
                              </div>
                 </div>
             </div>

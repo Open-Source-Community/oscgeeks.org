@@ -70,10 +70,25 @@ class RegisterationForm extends Controller
             $committees_data = Committee::all();
            if(!isset($cookie))
            {
-              $form->save();
-              $cookie = Cookie::forever('Recruit', 'Recruit');
-              $cookies= Session::put('key',$cookie);
-              return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                $count_check = Form::where(['day' => $request->day])->where(['time' => $request->time])->get();
+               
+                if (count($count_check) >= 2) {
+                        echo "<script>
+                        alert('This Day is not avaliable .. Please Try again');
+                        window.location.href='/form';
+                        </script>";
+                    }
+                  else
+                  {
+                      $form->save();
+                      echo "<script>
+                        alert('Done');
+                        window.location.href='/form';
+                        </script>";
+//                      $cookie = Cookie::forever('Recruit', 'Recruit');
+//                      $cookies= Session::put('key',$cookie);
+//                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                  }
            }
            else
            {

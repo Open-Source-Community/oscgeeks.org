@@ -68,26 +68,23 @@ class RegisterationForm extends Controller
             $form->time=$request->time;
             $form->ip=request()->ip();
             $committees_data = Committee::all();
+//            $ip_check = Form::where(['ip' => $request->ip])->get();
            if(!isset($cookie))
            {
-                $count_check = Form::where(['day' => $request->day])->where(['time' => $request->time])->get();
+                $time_check = Form::where(['day' => $request->day])->where(['time' => $request->time])->get();
                
-                if (count($count_check) >= 2) {
+                if (count($time_check) >= 2) {
                         echo "<script>
-                        alert('This Day is not avaliable .. Please Try again');
+                        alert('The slot you have picked is fully booked! Please choose another time for your interview');
                         window.location.href='/form';
                         </script>";
                     }
                   else
                   {
                       $form->save();
-                      echo "<script>
-                        alert('Done');
-                        window.location.href='/form';
-                        </script>";
-//                      $cookie = Cookie::forever('Recruit', 'Recruit');
-//                      $cookies= Session::put('key',$cookie);
-//                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      $cookie = Cookie::forever('Recruit', 'Recruit');
+                      $cookies= Session::put('key',$cookie);
+                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
                   }
            }
            else

@@ -2,8 +2,6 @@
 <html lang="{{ config('app.locale') }}">
 
 <head>
-    <meta property="og:url" content="http://www.oscgeeks.org" />
-    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
     <meta charset="utf-8">
     <meta property="og:url" content="http://www.oscgeeks.org" />
     <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
@@ -110,6 +108,7 @@
                         </button>
                     </li>                    
                     
+<!--
                     <li>
 
                         @if(Session::has('key'))
@@ -121,10 +120,9 @@
                                 class="btn btn-default btn-sm">Registration Form
                         </button>
                         @endif
-
-    <meta property="og:url" content="http://www.oscgeeks.org" />
-    <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
+                        
                     </li> 
+-->
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("about") }}'"

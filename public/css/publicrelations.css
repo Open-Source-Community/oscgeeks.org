@@ -6,11 +6,19 @@
 body{
     background-image: url("Background.jpg");
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     font-family: HANDVETICA;
+}
+div img 
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
 }
 h1
 {

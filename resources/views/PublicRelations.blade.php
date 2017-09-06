@@ -5,21 +5,17 @@
 @endsection
 
 @section('content')
-
+	
 	<div class="container">
-		<div class="text-center wow slideInLeft">
+		<div class="text-center wow slideInLeft"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h1 class="hvr-float">Public Relations</h1>
+			<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/PR.jpg?raw=true">
 		</div>
 
-<!--
-		<div class="">
-			<img class="img-responsive wow zoomIn" src="{{asset('/images/Background/img1.jpg')}}">
-		</div>
--->
-
-		<div class="cont  wow slideInRight hvr-grow">
+		
+		<div class="cont  wow slideInRight hvr-grow"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
-			<p>You can do a wonderful job but without revealing it to the public to know and understand your work, it’s like you did nothing!</p>
+			<p>You can do a wonderful job but without revealing it to the public to know and understand your work, its like you did nothing!</p>
 			<p>Surely you will extremely need people who have the ability to make relations and communicate clearly with anyone and can make a lasting impression of your job.</p>
 			<p>So, that's what we actually do as PRians!</p>
 			<p>Create and maintain a favorable public image for the community by communicating, understanding and supporting our followers and students, usually through publicity and other non-paid forms of communication to build, maintain and manage the reputation of OSC.</p>

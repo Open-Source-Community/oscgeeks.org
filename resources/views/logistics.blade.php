@@ -19,7 +19,13 @@
                 </div>
                 <div class="col-md-12 text-center">
                             <div class="text-center">
-                             <h3>We print posters and publish them on the walls to share events with you.</h3><br>
+                             <h3>They are the backbone of OSC, the people who work behind the scenes to make
+sure that everything is perfect .They are Logistics Committee. They are
+responsible for reserving the places we need to work, from holding meetings, to
+interviews, to workshop sessions, to where we hold our events. Not just that they
+are also responsible for buying any materials that OSC needs, printing our IDs,
+banners, and t-shirts. They are also behind all the artistic, cool handcrafts you
+see during our events. We print posters and publish them on the walls to share events with you.</h3><br>
                              </div>
                 </div>
             </div>

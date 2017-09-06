@@ -110,7 +110,6 @@
                         </button>
                     </li>                    
                     
-<!--
                     <li>
 
                         @if(Session::has('key'))
@@ -126,7 +125,6 @@
     <meta property="og:url" content="http://www.oscgeeks.org" />
     <meta property="og:image" content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true" />
                     </li> 
--->
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("about") }}'"

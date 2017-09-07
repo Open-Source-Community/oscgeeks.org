@@ -84,130 +84,428 @@ class RegisterationForm extends Controller
                 $time4 = '2.30 pm to 4 pm';
                 $time5 = '4 pm to 5.30 pm';
                
-        if ($day_default == $day1){
-                $Saturday_check1 = Form::where(['day' => $day1])->where(['time' => $time1])->get();
-                $Saturday_check2 = Form::where(['day' => $day1])->where(['time' => $time2])->get();
-                $Saturday_check3 = Form::where(['day' => $day1])->where(['time' => $time3])->get();
-                $Saturday_check4 = Form::where(['day' => $day1])->where(['time' => $time4])->get();
-                $Saturday_check5 = Form::where(['day' => $day1])->where(['time' => $time5])->get();}
-               
-        if ($day_default == $day2){
-                $Sunday_check1 = Form::where(['day' => $day2])->where(['time' => $time1])->get();
-                $Sunday_check2 = Form::where(['day' => $day2])->where(['time' => $time2])->get();
-                $Sunday_check3 = Form::where(['day' => $day2])->where(['time' => $time3])->get();
-                $Sunday_check4 = Form::where(['day' => $day2])->where(['time' => $time4])->get();
-                $Sunday_check5 = Form::where(['day' => $day2])->where(['time' => $time5])->get();}
-               
-        if ($day_default == $day3){
-                $Monday_check1 = Form::where(['day' => $day3])->where(['time' => $time1])->get();
-                $Monday_check2 = Form::where(['day' => $day3])->where(['time' => $time2])->get();
-                $Monday_check3 = Form::where(['day' => $day3])->where(['time' => $time3])->get();
-                $Monday_check4 = Form::where(['day' => $day3])->where(['time' => $time4])->get();
-                $Monday_check5 = Form::where(['day' => $day3])->where(['time' => $time5])->get();}
-               
-        if ($day_default == $day4){
-                $Tuesday_check1 = Form::where(['day' => $day4])->where(['time' => $time1])->get();
-                $Tuesday_check2 = Form::where(['day' => $day4])->where(['time' => $time2])->get();
-                $Tuesday_check3 = Form::where(['day' => $day4])->where(['time' => $time3])->get();
-                $Tuesday_check4 = Form::where(['day' => $day4])->where(['time' => $time4])->get();
-                $Tuesday_check5 = Form::where(['day' => $day4])->where(['time' => $time5])->get();}
-               
-        if ($day_default == $day5){
-                $Wednesday_check1 = Form::where(['day' => $day5])->where(['time' => $time1])->get();
-                $Wednesday_check2 = Form::where(['day' => $day5])->where(['time' => $time2])->get();
-                $Wednesday_check3 = Form::where(['day' => $day5])->where(['time' => $time3])->get();
-                $Wednesday_check4 = Form::where(['day' => $day5])->where(['time' => $time4])->get();
-                $Wednesday_check5 = Form::where(['day' => $day5])->where(['time' => $time5])->get();}
-               
-        if ($day_default == $day6){
-                $Thursday_check1 = Form::where(['day' => $day6])->where(['time' => $time1])->get();
-                $Thursday_check2 = Form::where(['day' => $day6])->where(['time' => $time2])->get();
-                $Thursday_check3 = Form::where(['day' => $day6])->where(['time' => $time3])->get();
-                $Thursday_check4 = Form::where(['day' => $day6])->where(['time' => $time4])->get();
-                $Thursday_check5 = Form::where(['day' => $day6])->where(['time' => $time5])->get();}
-        
+                
 //            $ip_check = Form::where(['ip' => $request->ip])->get();
            if(!isset($cookie))
            {
                if ($day_default == $day1){
-                   if (count($Saturday_check1) > 5)
+            if ($time_default == $time1){
+                $Saturday_check1 = Form::where(['day' => $day1])->where(['time' => $time1])->get();
+                if (count($Saturday_check1) > 5)
                        return redirect('/refused');
-                   else if (count($Saturday_check2) > 5)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Saturday_check2 = Form::where(['day' => $day1])->where(['time' => $time2])->get();
+                if (count($Saturday_check2) > 5)
                        return redirect('/refused');
-                   else if (count($Saturday_check3) > 5)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Saturday_check3 = Form::where(['day' => $day1])->where(['time' => $time3])->get();
+                 if (count($Saturday_check3) > 5)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Saturday_check4 = Form::where(['day' => $day1])->where(['time' => $time4])->get();
+                if (count($Saturday_check4) > 5)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Saturday_check5 = Form::where(['day' => $day1])->where(['time' => $time5])->get();
+            if (count($Saturday_check5) > 5)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+                }
+        if ($day_default == $day2){
+            if ($time_default == $time1){
+                $Sunday_check1 = Form::where(['day' => $day2])->where(['time' => $time1])->get();
+                if (count($Sunday_check1) > 6)
                        return redirect('/refused');
-                   else if (count($Saturday_check4) > 5)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Sunday_check2 = Form::where(['day' => $day2])->where(['time' => $time2])->get();
+                if (count($Sunday_check2) > 7)
                        return redirect('/refused');
-                   else if (count($Saturday_check5) > 5)
-                       return redirect('/refused');}
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Sunday_check3 = Form::where(['day' => $day2])->where(['time' => $time3])->get();
+                 if (count($Sunday_check3) > 7)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Sunday_check4 = Form::where(['day' => $day2])->where(['time' => $time4])->get();
+                if (count($Sunday_check4) > 7)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Sunday_check5 = Form::where(['day' => $day2])->where(['time' => $time5])->get();
+            if (count($Sunday_check5) > 6)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+        }
                
-               if ($day_default == $day2){
-                   if (count($Sunday_check1) > 6)
+       if ($day_default == $day3){
+            if ($time_default == $time1){
+                $Monday_check1 = Form::where(['day' => $day3])->where(['time' => $time1])->get();
+                if (count($Monday_check1) > 7)
                        return redirect('/refused');
-                   else if (count($Sunday_check2) > 7)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Monday_check2 = Form::where(['day' => $day3])->where(['time' => $time2])->get();
+                if (count($Monday_check2) > 8)
                        return redirect('/refused');
-                   else if (count($Sunday_check3) > 7)
-                       return redirect('/refused');
-                   else if (count($Sunday_check4) > 7)
-                       return redirect('/refused');
-                   else if (count($Sunday_check5) > 6)
-                       return redirect('/refused');}
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Monday_check3 = Form::where(['day' => $day3])->where(['time' => $time3])->get();
+                 if (count($Monday_check3) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Monday_check4 = Form::where(['day' => $day3])->where(['time' => $time4])->get();
+                if (count($Monday_check4) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Monday_check5 = Form::where(['day' => $day3])->where(['time' => $time5])->get();
+            if (count($Monday_check5) > 7)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       }
                
-               if ($day_default == $day3){
-                   if (count($Monday_check1) > 7)
+        if ($day_default == $day4){
+            if ($time_default == $time1){
+                $Tuesday_check1 = Form::where(['day' => $day4])->where(['time' => $time1])->get();
+                if (count($Tuesday_check1) > 7)
                        return redirect('/refused');
-                   else if (count($Monday_check2) > 8)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Tuesday_check2 = Form::where(['day' => $day4])->where(['time' => $time2])->get();
+                if (count($Tuesday_check2) > 8)
                        return redirect('/refused');
-                   else if (count($Monday_check3) > 8)
-                       return redirect('/refused');
-                   else if (count($Monday_check4) > 8)
-                       return redirect('/refused');
-                   else if (count($Monday_check5) > 7)
-                       return redirect('/refused');}
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Tuesday_check3 = Form::where(['day' => $day4])->where(['time' => $time3])->get();
+                 if (count($Tuesday_check3) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Tuesday_check4 = Form::where(['day' => $day4])->where(['time' => $time4])->get();
+                if (count($Tuesday_check4) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Tuesday_check5 = Form::where(['day' => $day4])->where(['time' => $time5])->get();
+            if (count($Tuesday_check5) > 7)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+        }
                
-               if ($day_default == $day4){
-                   if (count($Tuesday_check1) > 7)
+        if ($day_default == $day5){
+            if ($time_default == $time1){
+                $Wednesday_check1 = Form::where(['day' => $day5])->where(['time' => $time1])->get();
+                if (count($Wednesday_check1) > 8)
                        return redirect('/refused');
-                   else if (count($Tuesday_check2) > 8)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Wednesday_check2 = Form::where(['day' => $day5])->where(['time' => $time2])->get();
+                if (count($Wednesday_check2) > 8)
                        return redirect('/refused');
-                   else if (count($Tuesday_check3) > 8)
-                       return redirect('/refused');
-                   else if (count($Tuesday_check4) > 8)
-                       return redirect('/refused');
-                   else if (count($Tuesday_check5) > 7)
-                       return redirect('/refused');}
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Wednesday_check3 = Form::where(['day' => $day5])->where(['time' => $time3])->get();
+                 if (count($Wednesday_check3) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Wednesday_check4 = Form::where(['day' => $day5])->where(['time' => $time4])->get();
+                if (count($Wednesday_check4) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Wednesday_check5 = Form::where(['day' => $day5])->where(['time' => $time5])->get();
+            if (count($Wednesday_check5) > 8)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+        }
                
-               if ($day_default == $day5){
-                   if (count($Wednesday_check1) > 8)
+       if ($day_default == $day6){
+            if ($time_default == $time1){
+                $Thursday_check1 = Form::where(['day' => $day6])->where(['time' => $time1])->get();
+                if (count($Thursday_check1) > 10)
                        return redirect('/refused');
-                   else if (count($Wednesday_check2) > 8)
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            
+            elseif ($time_default == $time2){
+                $Thursday_check2 = Form::where(['day' => $day6])->where(['time' => $time2])->get();
+                if (count($Thursday_check2) > 10)
                        return redirect('/refused');
-                   else if (count($Wednesday_check3) > 8)
-                       return redirect('/refused');
-                   else if (count($Wednesday_check4) > 8)
-                       return redirect('/refused');
-                   else if (count($Wednesday_check5) > 8)
-                       return redirect('/refused');}
-               
-               if ($day_default == $day6){
-                   if (count($Thursday_check1) > 10)
-                       return redirect('/refused');
-                   else if (count($Thursday_check2) > 10)
-                       return redirect('/refused');
-                   else if (count($Thursday_check3) > 10)
-                       return redirect('/refused');
-                   else if (count($Thursday_check4) > 10)
-                       return redirect('/refused');
-                   else if (count($Thursday_check5) > 10)
-                       return redirect('/refused');}
-               else
-                  {
-                      $form->save();
-                      return redirect('/done');
-//                      $cookie = Cookie::forever('Recruit', 'Recruit');
-//                      $cookies= Session::put('key',$cookie);
-//                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
-                  }
+                else
+                    {
+                          $form->save();
+                          return redirect('/done');
+    //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+    //                      $cookies= Session::put('key',$cookie);
+    //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                      }
+            }
+            elseif ($time_default == $time3){
+                $Thursday_check3 = Form::where(['day' => $day6])->where(['time' => $time3])->get();
+                 if (count($Thursday_check3) > 10)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+            elseif ($time_default == $time4){
+                $Thursday_check4 = Form::where(['day' => $day6])->where(['time' => $time4])->get();
+                if (count($Thursday_check4) > 10)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       
+            elseif ($time_default == $time5){
+                $Thursday_check5 = Form::where(['day' => $day6])->where(['time' => $time5])->get();
+            if (count($Thursday_check5) > 10)
+                           return redirect('/refused');
+                    else
+                        {
+                              $form->save();
+                              return redirect('/done');
+        //                      $cookie = Cookie::forever('Recruit', 'Recruit');
+        //                      $cookies= Session::put('key',$cookie);
+        //                      return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
+                          }
+            }
+       }
            }
            else
            {

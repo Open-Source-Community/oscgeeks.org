@@ -125,7 +125,6 @@
                         </button>
                     </li>
                     
-<!--
                     <li>
                         @if(Session::has('key'))
                         <button type="button"  onclick="window.location='{{ url ("form") }}'"
@@ -137,7 +136,6 @@
                         </button>
                         @endif
                     </li> 
--->
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-4">
@@ -177,12 +175,7 @@
                             </li> 
                                  <li data-submenu-id="2">
             
-                                     <a>FR.of.OSC@gmail.com</a>
-               
-                            </li> 
-                                 <li data-submenu-id="3">
-            
-                                     <a>PR.of.OSC@gmail.com</a>
+                                     <a>oschrs@gmail.com</a>
                
                             </li> 
                             </ul>

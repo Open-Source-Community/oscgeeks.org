@@ -118,6 +118,12 @@
                                 class="btn btn-default btn-sm">Events
                         </button>
                     </li>                    
+                                        
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("about") }}'"
+                                class="btn btn-default btn-sm">About us
+                        </button>
+                    </li>
                     
 <!--
                     <li>
@@ -133,11 +139,6 @@
                     </li> 
 -->
                     
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("about") }}'"
-                                class="btn btn-default btn-sm">About us
-                        </button>
-                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-4">
                  <li>

@@ -9,8 +9,7 @@
 	<form class="well form-horizontal" action="{{URL::to('refused')}}" method="post" id="contact_form">
 		<fieldset>
 			<div class="done">
-			<h1>Sorry, The slot you have picked is fully booked! Please choose another time for your interview</h1>
-                <h1> <a href="/form">To Form Registration!</a></h1>
+			<h1>Sorry, The slot you have picked is fully booked! Please choose another time for your interview. <a href="/form">To Form Registration!</a></h1>
                 <!--			<p><img src="images/Background/imges.jpg" class="img-responsive"></p>-->
 			</div>
 		</fieldset>

@@ -107,6 +107,12 @@
                                 class="btn btn-default btn-sm">Events
                         </button>
                     </li>                    
+                                        
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("about") }}'"
+                                class="btn btn-default btn-sm">About us
+                        </button>
+                    </li>
                     
 <!--
                     <li>
@@ -124,11 +130,6 @@
                     </li> 
 -->
                     
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("about") }}'"
-                                class="btn btn-default btn-sm">About us
-                        </button>
-                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-4">
                  <li>
@@ -280,7 +281,7 @@
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="homepage_select_second" class="form-control selectpicker" id="select2">
-                      <option value="">Select your Second Committee</option>
+                      <option value="0">Select your Second Committee</option>
                       <option value="1">Web Committee</option>
                       <option value="2">Linux Committee</option>
                       <option value="3">Blender Committee</option>

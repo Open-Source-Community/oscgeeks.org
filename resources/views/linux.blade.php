@@ -12,6 +12,7 @@
             <img class="img-responsive" src="{{asset('/images/Background/4.jpg')}}">
         </div>
     </div>
+        <br>
      <div class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
         <div class="panel-group" id="accordion">
             <!--start setup ubuntu step by step-->

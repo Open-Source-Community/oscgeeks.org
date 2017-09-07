@@ -30,19 +30,19 @@
 		<!-- Wrapper For Slides-->
 		<div class="carousel-inner">
 			<div class="item active">
-				<img class="img-responsive" src="{{asset('/images/Background/img1.png')}}" alt="pic 0">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-29-52.png?raw=true" alt="pic 0">
 			</div>
 			<div class="item">
-				<img class="img-responsive" src="{{asset('/images/Background/img2.png')}}" alt="pic 1">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-31-24.png?raw=true" alt="pic 1">
 			</div>
 			<div class="item">
-				<img class="img-responsive" src="{{asset('/images/Background/img3.png')}}" alt="pic 2">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-33-08.png?raw=true" alt="pic 2">
 			</div>
 			<div class="item">
-				<img class="img-responsive" src="{{asset('/images/Background/img4.png')}}" alt="pic 3">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-34-41.png?raw=true" alt="pic 3">
 			</div>
 			<div class="item">
-				<img class="img-responsive" src="{{asset('/images/Background/img5.png')}}" alt="pic 4">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-34-11.png?raw=true" alt="pic 4">
 			</div>
 		</div>
 		<!--Controls-->
@@ -81,23 +81,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img class="img-responsive" src="{{asset('/images/Background/img1.jpg')}}" alt="Los Angeles" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img1.jpg?raw=true" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="{{asset('/images/Background/img2.jpg')}}" alt="Chicago" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img2.jpg?raw=true" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img class="img-responsive" src="{{asset('/images/Background/img3.jpg')}}" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img3.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="{{asset('/images/Background/img4.jpg')}}" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img4.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="{{asset('/images/Background/img5.jpg')}}" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img5.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
     </div>
 

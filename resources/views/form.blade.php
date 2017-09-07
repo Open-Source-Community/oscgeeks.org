@@ -108,6 +108,7 @@
                         </button>
                     </li>                    
                     
+<!--
                     <li>
 
                         @if(Session::has('key'))
@@ -121,6 +122,7 @@
                         @endif
                         
                     </li> 
+-->
                     
                     <li>
                         <button type="button" onclick="window.location='{{ url ("about") }}'"
@@ -277,7 +279,7 @@
                 <div class="col-md-4 selectContainer">
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                    <select name="homepage_select_second" class="form-control selectpicker" required id="select2">
+                    <select name="homepage_select_second" class="form-control selectpicker" id="select2">
                       <option value="">Select your Second Committee</option>
                       <option value="1">Web Committee</option>
                       <option value="2">Linux Committee</option>

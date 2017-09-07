@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Committee;
 use Session;
 use App\Image;
+use Cookie;
 use Illuminate\Http\Request;
 
 class CommitteesController extends Controller
@@ -110,7 +111,22 @@ class CommitteesController extends Controller
     }
     public function done()
     {
+        $cookie = Cookie::get('Recruit');
+        if (isset($cookie)){
         $committees_data = Committee::all();
-        return view('done', compact('committees_data'));
+        return view('done', compact('committees_data'));}
+        else {
+            return redirect('/form');
+        }
+    }
+    public function refused()
+    {
+       $cookie = Cookie::get('Recruit');
+        if (isset($cookie)){
+        $committees_data = Committee::all();
+        return view('refused', compact('committees_data'));}
+        else {
+            return redirect('/form');
+        }
     }
 }

@@ -10,7 +10,7 @@
 		<fieldset>
 			<div class="done">
 			<h1>Thanks For Your Registration.</h1>
-			<p><img src="images/Background/imges.jpg" class="img-responsive"></p>
+<!--			<p><img src="images/Background/imges.jpg" class="img-responsive"></p>-->
 			</div>
 		</fieldset>
 

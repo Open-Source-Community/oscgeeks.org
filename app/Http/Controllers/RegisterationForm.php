@@ -74,10 +74,7 @@ class RegisterationForm extends Controller
                 $time_check = Form::where(['day' => $request->day])->where(['time' => $request->time])->get();
                
                 if (count($time_check) >= 2) {
-                        echo "<script>
-                        alert('The slot you have picked is fully booked! Please choose another time for your interview');
-                        window.location.href='/form';
-                        </script>";
+                        return redirect('/refused');
                     }
                   else
                   {

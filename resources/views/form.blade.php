@@ -327,6 +327,7 @@
                       <option >11.30 am to 1 pm</option>
                       <option >1 pm to 2.30 pm</option>
                       <option >2.30 pm to 4 pm</option>
+                      <option >4 pm to 5.30 pm</option>
                     </select>
                   </div>
             </div>

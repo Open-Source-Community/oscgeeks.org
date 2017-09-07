@@ -7,23 +7,22 @@
 <div class="container">
     <center><h1>Our Previous Sponsors</h1></center>
     <div class="row">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/asset.jpg?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/bosta.png?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/codetouch.png?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/elsewedyelectric.jpg?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Acs.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Assct.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/BOsta.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Itworkx.png?raw=true">
     </div>
     <br>
     <div class="row">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/itworks.png?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/logo2x.png?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/mts.jpg?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/oracle.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/National%20technology.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Oracle.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/code%20touch.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Sewedy.png?raw=true">
     </div>
     <br>
     <div class="row">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/companies/nationaltechnology.png?raw=true">
-     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/tmentors.png?raw=true">
-      <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/companies/vadecom.png?raw=true">
+    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Tmentors.png?raw=true">
+     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Vad.png?raw=true">
       </div>
 </div>
 <br>

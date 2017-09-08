@@ -19,7 +19,7 @@
 			<h1 class="hvr-pop">Blender Workshop</h1>
 			</div>
 			<div class="hvr-glow">
-			<h2>Blender workshop enter you to the gate of 3D art.</h2>
+			<h2>Blender workshop enters you to the gate of 3D art.</h2>
 			<h3>The workshop consists of 5 sessions, after the workshop you will be able to :</h3>
 			<span>1. model your own design.</span><br>
 			<span>2.create advanced material (shaders + textures).</span><br>

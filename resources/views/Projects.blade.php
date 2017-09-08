@@ -67,7 +67,7 @@
 		</div>
 		</div>
 
-		<h2 class="proj1 hvr-float">:المحفظة</h2>
+		<h2 class="proj1 hvr-float">المحفظة:</h2>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -81,23 +81,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img1.jpg?raw=true" alt="Los Angeles" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image1.jpg?raw=true" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img2.jpg?raw=true" alt="Chicago" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image2.jpg?raw=true" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img3.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image3.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img4.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image4.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/img5.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image5.jpg?raw=true" alt="New york" style="width:100%;">
       </div>
     </div>
 

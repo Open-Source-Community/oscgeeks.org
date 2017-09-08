@@ -3,7 +3,7 @@
 
 @section('CSS')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/english.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/fr.css') }}">
 
 @endsection
 
@@ -18,11 +18,11 @@
 		<div class="text-center">
 		<h1 class="hvr-grow wow bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">English Heroes</h1>
 		</div>
-<!--
+
 		<div>
-			<img class="img-responsive wow lightSpeedIn" src="{{asset('/images/Background/img1.jpg')}}">
+			<img class="img-responsive wow lightSpeedIn" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/EnglishHeroes.png?raw=true">
 		</div>
--->
+<br><br>
 		<div class="text-center">
 		<p class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			English Heroes's content focuses on the participants' interactions in English, we accomplish that through activities such as making presentations in English, fun English related games and talking about any topic in English and many more, also we present some basic grammar rules to help participants create perfectly correct sentences.

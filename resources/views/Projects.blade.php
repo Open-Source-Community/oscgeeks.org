@@ -81,23 +81,23 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image1.jpg?raw=true" alt="Los Angeles" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image1.jpg?raw=true" alt="Los Angeles" style="width:30%;height: 50%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image2.jpg?raw=true" alt="Chicago" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image2.jpg?raw=true" alt="Chicago" style="width:30%;height: 50%;">
       </div>
     
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image3.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image3.jpg?raw=true" alt="New york" style="width:30%;height: 50%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image4.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image4.jpg?raw=true" alt="New york" style="width:30%;height: 50%;">
       </div>
 
       <div class="item">
-        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image5.jpg?raw=true" alt="New york" style="width:100%;">
+        <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project2/image5.jpg?raw=true" alt="New york" style="width:30%;height: 50%;">
       </div>
     </div>
 

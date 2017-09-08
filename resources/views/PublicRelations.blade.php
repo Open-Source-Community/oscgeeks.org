@@ -15,11 +15,13 @@
 		
 		<div class="cont  wow slideInRight hvr-grow"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
-			<p>You can do a wonderful job but without revealing it to the public to know and understand your work, its like you did nothing!</p>
-			<p>Surely you will extremely need people who have the ability to make relations and communicate clearly with anyone and can make a lasting impression of your job.</p>
+			<p>If you created a wonderful job without reveling it to the public, how
+would people know that you created that wonderful thing? it's like you've
+done nothing !</p>
+			<p>Surely you will need people who have the ability to make relations, communicate well with anyone and leave that good impression on people's toughts; to deliver your job or idea to the world in the most effective way.</p>
 			<p>So, that's what we actually do as PRians!</p>
 			<p>Create and maintain a favorable public image for the community by communicating, understanding and supporting our followers and students, usually through publicity and other non-paid forms of communication to build, maintain and manage the reputation of OSC.</p>
-			<p>These efforts also include support of arts committee, events, workshops and social media accounts.</p>
+			<p>These efforts also include supporting arts committee, events, workshops and social media accounts.</p>
 			<p>Mainly our work is managing the social media accounts and launching creative ideas of campaigns to make people reach to our work easily, spread our message -The open source- and our knowledge to others by establishing and maintaining lines of communication between our organization and its public.</p>
 		</div>
 	</div>

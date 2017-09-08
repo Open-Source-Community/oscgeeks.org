@@ -15,14 +15,13 @@
     <br>
     <div class="row">
     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/National%20technology.png?raw=true">
-    <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Oracle.png?raw=true">
     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/code%20touch.png?raw=true">
+     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Vad.png?raw=true">
     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Sewedy.png?raw=true">
     </div>
     <br>
     <div class="row">
     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Tmentors.png?raw=true">
-     <img class="img-responsive col-sm-3 circle-image" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Vad.png?raw=true">
       </div>
 </div>
 <br>

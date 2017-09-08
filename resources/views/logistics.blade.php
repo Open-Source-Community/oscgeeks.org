@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-12 text-center">
                             <div class="text-center">
-                             <h3>We let you try to use our tools to create whatever you want in hand-craft. We organized the place with handcrafts and colors to share charefulness with you. We made  beautiful things together. We made mental and educational games to let you share your knowladge and fun with us. We search for the right place to host our event ana reserve it. We print posters and publish them on the walls to share events with you.</h3><br>
+                             <h3>We let you try to use our tools to create whatever you want in hand-craft. We organized the place with handcrafts and colors to share charefulness with you. We made  beautiful things together. We made mental and educational games to let you share your knowladge and fun with us. We search for the right place to host our events and reserve it. We print posters and publish them on the walls to share events with you.</h3><br>
                              </div>
                 </div>
             </div>

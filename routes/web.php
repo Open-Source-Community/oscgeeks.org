@@ -53,10 +53,10 @@ Route::get('/Web','CommitteesController@index16');
 
 Route::get('/Projects','CommitteesController@index17');
 
-//Route::get('/form', 'CommitteesController@index9');
-//
-//Route::get('/done','CommitteesController@done');
-//
-//Route::get('/refused','CommitteesController@refused');
-//
-//Route::post('/done','RegisterationForm@store');
+Route::get('/form', 'CommitteesController@index9');
+
+Route::get('/done','CommitteesController@done');
+
+Route::get('/refused','CommitteesController@refused');
+
+Route::post('/done','RegisterationForm@store');

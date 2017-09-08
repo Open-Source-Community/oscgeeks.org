@@ -114,7 +114,6 @@
                         </button>
                     </li>
                     
-<!--
                     <li>
 
                         @if(Session::has('key'))
@@ -128,7 +127,6 @@
                         @endif
                         
                     </li> 
--->
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-4">

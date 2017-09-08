@@ -22,12 +22,12 @@
                     <br>
                    We're unique, one of a kind, you'll only find us at OSC. Our main
                      goal is to make technical and non-technical videos to spread, and
-                      share what knowledge we have with our community
+                      share the knowledge we have with our community
                     <br>
                 </p>
                 <p class="vision" style="font-size: 200%;">
-                   Our committee was created when we felt that not everyone can
-                   benefit from English tutorials, so we started to make Arabic ones.
+                   Our committee was created when we felt that not everyone gets the whole benefits out of the English
+tutorials, so we start making Arabic ones.
                     WANNA JOIN ?? check out our <a href="https://www.facebook.com/groups/OpenMinds.FCIS.ASU/">public group</a> 
                      
                     <br>

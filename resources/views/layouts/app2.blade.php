@@ -125,7 +125,6 @@
                         </button>
                     </li>
                     
-<!--
                     <li>
                         @if(Session::has('key'))
                         <button type="button"  onclick="window.location='{{ url ("form") }}'"
@@ -137,7 +136,6 @@
                         </button>
                         @endif
                     </li> 
--->
                     
                 </ul>
                 <ul class="nav navbar-nav navbar-right col-xs-4">

@@ -96,7 +96,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -110,7 +109,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -123,7 +121,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -136,7 +133,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -150,7 +146,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -165,7 +160,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -179,7 +173,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -192,7 +185,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -205,7 +197,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -219,7 +210,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -235,7 +225,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -249,7 +238,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -262,7 +250,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -275,7 +262,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -289,7 +275,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -305,7 +290,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -319,7 +303,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -332,7 +315,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -345,7 +327,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -359,7 +340,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -375,7 +355,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -389,7 +368,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -402,7 +380,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -415,7 +392,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -429,7 +405,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -445,7 +420,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -459,7 +433,6 @@ class RegisterationForm extends Controller
                 else
                     {
                           $form->save();
-                          return redirect('/done');
                           $cookie = Cookie::forever('Recruit', 'Recruit');
                           $cookies= Session::put('key',$cookie);
                           return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -472,7 +445,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -485,7 +457,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);
@@ -499,7 +470,6 @@ class RegisterationForm extends Controller
                     else
                         {
                               $form->save();
-                              return redirect('/done');
                               $cookie = Cookie::forever('Recruit', 'Recruit');
                               $cookies= Session::put('key',$cookie);
                               return Response::view('done', compact('committees_data','cookies'))->withCookie($cookie);

@@ -16,17 +16,35 @@
 		</div>
 
 
-		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200"">
+		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
-			<p>It's not only about interviews , WE ARE THE GOVERNAMENT we believe in human resource and how it's really important to invest in it, also believing in order and how it's important to Apply it, so, what does an HR do in OSC ? our cycle begins with the interviews, where the interviewee is always a winner , point here is not the selection but to see ourselves better and discover our advantages to work on it and also discover out disadvantages to correct it.</p>
+			<p>It's not only about interviews, WE ARE THE GOVERNMENT! We believe in
+human resources and how important it is to invest in, we also believe in
+order and how important to apply it, so, what does an HR do in OSC ?
+Our cycle begins with the interviews, where the interviewee is always a
+winner; meaning that it's not only about the selection, it's about
+knowing ourselves better and discovering our advantages to improve them
+and disadvantages to work on.</p>
 
-			<p>motivation, we all fall sometime, but OSC'S HR is always by your side, always help you stand up and
- 			keep on going, we help the crew as well as ourselves to not having any negative feelings or any problems that would effect us , also by praising positive thoughts to motivate ourselves even more.
+			<p>Then comes motivation. We all fall sometimes, but OSC's HR are always
+there to bring us back up and keep us focused on our greater good and
+belief. We help the crew as well as ourselves to keep any negative
+feelings or problems from hindering our progress. We believe that what
+makes communities rise or fall are the people and how well their
+potentials are used, and we intend to keep everyone in a shared
+productive spirit that will ensure our community keeps on growing.
+Another very important aspect of the HR is evaluation. The HRs are the
+guardians that always follow you and let you know yourself even better.
+This is done by evaluating each person's and committee's progress to make
+sure that we are always improving and going up on that curve!
 			</p>
 
-			<p>Evaluation, the first method of reforming is evaluation, HR is the mirror that always follows you and let you know yourself even better, so we need to evaluate ourselves to know how much we have improved.</p>
+			<p>Last but not the least, the HR is also responsible for organizing. Like
+we said before, we have a thing for order. We partner with others and
+help organizing our events and making sure everything is on track.
+We are the watchful eyes over the community; the guardians behind the
+scenes. We are the HR!</p>
 
-			<p>organizing, as we said before, WE LOVE ORDER we help organizing events and import matters also we care about timings precisely and that each member is at his/her place </p>
 		</div>
 	</div>
 

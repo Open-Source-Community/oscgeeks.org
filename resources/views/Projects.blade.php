@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="text-center wow flipInX" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<div class="text-center">
-			<h1 class="hvr-bounce-in">Project Committee</h1>
+			<h1 class="hvr-bounce-in">Projects Committee</h1>
 			</div>
 			<img class="img-responsive" src="{{asset('/images/Background/6.jpg')}}">
 		</div>
@@ -57,13 +57,13 @@
 		 <div class="wow bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 		<div class="hvr-glow">
 		<h2>Project Description:</h2>
-		<p>This is a project in which we use images to hide inside them either text or other images, the project is divided into two sub projects, first the text-in-image project in which we iterate over the text given by a user and hide it inside the bits of a given pic. This technique will hide the text completely and the user would never notice that the data are hided Here we choose an image and a text file then we encrypt, later on we can decrypt the secret text into a text file from our choice as show.</p><br>
+		<p>This is a project in which we use images to hide inside them either text or other images, the project is divided into two sub projects, first the text-in-image project in which we iterate over the text given by a user and hide it inside the bits of a given pic. This technique will hide the text completely and the user would never notice that the data are hiden Here we choose an image and a text file then we encrypt, later on we can decrypt the secret text into a text file from our choice as shown.</p><br>
 		</div>
 		<div class="hvr-glow">
-		<p>The second part is storing images inside other images, we used the Pixels of the image in order to store pixels of the secret images, for example we take the Red/Green/Blue bits of the secret image and store them in different Red/Green/Blue bits of the other image, this process requires that the image we are going to use have a larger height/width than the secret image, should be between 2.5-3* the size of the smaller image This is the basic application look in which the user picks his small image that he desires to store it in a larger image from his choice.</p><br>
+		<p>The second part is storing images inside other images, we used the Pixels of the image in order to store pixels of the secret images, for example we take the Red/Green/Blue bits of the secret image and store them in different Red/Green/Blue bits of the other image, this process requires that the image we are going to use have a larger height/width than the secret image, should be between 2.5-3* the size of the smaller image This is the basic application look in which the user picks his small image that he desires to store it in a larger image of his choice.</p><br>
 		</div>
 		<div class="hvr-glow">
-		<p>we encrypted the image on the left on the image on the right, if you opened the image after encrypting you will not notice any difference After decrypting the image has been returned as the original form `The link of out github repository is <a target="_blank" href="https://github.com/Open-Source-Community/steganography_OSC">steganography_OSC</a> </p><br>
+		<p>we encrypted the image on the left on the image on the right, if you open the image after encrypting you will not notice any difference After decrypting the image will return to the original form `The link of out github repository is <a target="_blank" href="https://github.com/Open-Source-Community/steganography_OSC">steganography_OSC</a> </p><br>
 		</div>
 		</div>
 

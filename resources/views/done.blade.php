@@ -9,7 +9,7 @@
 	<form class="well form-horizontal" action="{{URL::to('done')}}" method="post" id="contact_form">
 		<fieldset>
 			<div class="done">
-			<h1>Thanks For Your Registration.</h1>
+			<h1>Interviews will be held wara sa3eed. Thanks For Your Registration.</h1>
 <!--			<p><img src="images/Background/imges.jpg" class="img-responsive"></p>-->
 			</div>
 		</fieldset>

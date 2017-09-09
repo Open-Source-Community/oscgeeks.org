@@ -298,7 +298,6 @@
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="day" class="form-control selectpicker" required>
                       <option value="">Select Day</option>
-                      <option >Sunday</option>
                       <option >Monday</option>
                       <option >Tuesday</option>
                       <option >Wednesday</option>

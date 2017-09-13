@@ -46,31 +46,82 @@
                                 الخطوات بحذر إن شاء الله الdata بتاعتك هتكون في أمان. ممكن تحصل <br>مشاكل تانية بس
                                 الـdata بتاعتك في أمان. بس ليه تخاطر؟ أصل كلنا بنغلط وبتفلت مننا. خد backup عشان خاطري.
                                 لو مخدتش كمل بس ركز أوي الله يكرمك. </p><br>
-<!--                            <p dir="rtl">هنبدأ اهو :</p>-->
+                            <p dir="rtl">هنبدأ اهو :</p>
                         </ul>
-<!--
-                        <br>
-                        <ul dir="rtl">
+                         <ul dir="rtl">
                             <li>
-                                <span style="color: #ff6600;">‫‪Basic‬‬ ‫‪Disk‬‬ ‫‪VS‬‬ ‫‪Dynamic‬‬ ‫‪Disk‬‬ ‫‪-۱‬‬</span>
+                                <span style="color: #ff6600;">1- Basic Disk Vs Dynamic Disk</span>
                             </li>
-                            <p dir="rtl">
-                            العادي ان في ‫‪.basic‬‬ ‫‪disk‬‬ بس ‫‪microsoft‬‬ عملت افتكاسه كدا اسمها ال ‫‪dynamic‬‬ ‫‪disk‬‬ دا المفروض انه مفيد في حالات ال ‫‪RAID‬‬ ‫‪setups‬‬ و لو عايز تعمل ‫‪partition‬‬ بيمتد علي اكتر من ‫‪hard‬‬ ‫‪disk‬‬ و حوارات كده 
-                            </p>
-                            <p dir="rtl">
-                            للاسف ‫‪Linux‬‬ مش بيشتغل غير علي ال ‫‪basic‬‬ ‫‪disks‬‬
-                            </p>
-                            <p dir="rtl">
-                            اعرف ازاي ؟
-                            </p>
-                            <p dir="rtl">
-                                من علي ‫‪Windows‬‬ افتح ال ‫‪Start‬‬ ‫‪Menu‬‬ و اكتب ‫‪Disk‬‬ ‫Management‬‬ ممكن تلاقي اسمه ‫‪Create‬‬ ‫‪and‬‬ ‫‪Format‬‬ ‫‪Hard‬‬ ‫”‬‫‪”Disk‬‬ ‫‪Partitions‬‬                        
-                            </p>
-                            <p dir="rtl">
-                                ‫عنده‬ ‫راجل‬ ‫دا‬ ‫كدا‬ ‫الصورة‬ ‫في‬ ‫شايف‬ ‫انت‬ ‫ما‬ ‫زي‬ 2 ‫‪hard‬‬ ‫‪disk‬‬ واحد منهم ‫‪Basic‬‬ و التاني ‫‪Dynamic‬‬  
-                            </p>
+                    <p dir="rtl"> العادى ان فى Baisc Disk بس Microsoft عملت افتكاسة كدة اسمها الـdynamic disk.. ده المفروض إنه مفيد حاﻻت الـ RAID Setups ولو عايز تعمل Partition بيمتد على اكتر من Hard Disk و حوارات كدة.            <br><br>للأسف Linux مش بيشتغل غير على الـBasic Disk.
+                        <br><br>أعرف إزاى ؟
+                        <ul>
+                             <li>من على Windows افتح الـStart Menu واكتب Disk Management ممكن تلاقى اسمه "Create and Format Hard Disk Part"</li>
+                            <li>زى ما انت شايف فى الصورة كدة ده راجل Two Hard Disks .واحد منه Basic والتانى Dynamic</li>
+                             </ul> <br> <br>
+                             والـDynamic دايما بتلاقى الـPartitions بتاعه لونها اصفر كدة . <br><br>
+                             لو الـ Hard Disk بتاعك Dynamic فللاسف Linux مش بيـSupport الـDynamic Disks :( .
+                             <br><br>
+                             الحل الوحيد إنك تحوله لـBasic إزاى؟! <br>
+                             تاخد backup من كل الداتا اللى على الـHard Disk <br> هتـFormat كل حاجة و تحوله لـBasic وبعد كدة ترجع الـData.<br>ايه الهبل ده ؟!! فى حل تانى ؟<br> سمعنا ان فى برامج تانية بتدعى إنها تقدر تحول من Dynamic لـBasic من غير ما تـFormat حاجة . البرامج دى محدش فينا جربها بنفسه فانقدرش ننصحك تجربها. <br><br> الـHard Disk بتاعك Basic ؟ يلا بينا نكمل .
+                            </p><br>
+                                    <li>
+                                <span style="color: #ff6600;">2- EFI VS BIOS</span>
+                            </li>
+                             <p dir="rtl">
+                                 دى firmwares (برامج صغيرة جدا بتبقى محطوطة فى chip كدة على الـMotherboard).<br>الاول كان فى BIOS (Basic Input Output System) والناس كلها كانت فرحانة . وبعدين فى يوم من الايام قرروا يعملوا واحد تانى اسمه EFI(Extensible Firmware Interface) <br> وبعد كدة سموه UEFI (Unified Extensible Firmware Interface) . عملوه علشان بيدعم شوية Features كدة أهمها إنه بيسمح إن الـHard Disk يبقى GPT (هنتكلم فى الحوار ده فى الفقرة اللى جاية ).<br> <br>
+                                 اه كنت عايز اقولك إن UEFI احيانا بيستعبط فيها BIOS عشان الـcompatibility . <br>
+                                 بس احنا مش هنوجع دماغنا بالحوارات دى . كل اللى يهمنا دلوقتى <br>
+                                 <ul>
+                                     <li>هل Windows على جهازك نازل فى EFI Mode وﻻ BIOS Mode ؟</li>
                         </ul>
--->
+                        اعرف ازاى؟ <br>
+                        <ul>
+                            <li>من على Windows افتح الـStart Menu و اكتب Disk Management هتلاقى برنامج كدة ممكن يبقى باسم Create and Format Hard Disk Partitions . افتحه هتلاقى الـPartitions بتاعك موجودة.</li>
+                            <li>عندك Partition مكتوب عليه EFI ؟ لو عندك يبقى Windows محطوط فى الـEFI Mode . لو معندكش تبقى BIOS Mode . ركز وبص كويس علشان الخطوة دى مهمة جدا .</li>
+                            
+                        </ul>
+                        <br>
+                        يلا Exercise سريع ؟
+                     <br><br>
+                        ده BIOS وﻻ EFI ؟  
+                        طيب و ده ؟
+                        <br><br>
+                        لو قلت الاول BIOS والتانى EFI يبقى انا كدة اتطمنت عليك كمل . كمل 
+                        <br><br>
+                         </p>
+                             <li>
+                                <span style="color: #ff6600;">3- MBR VS GPT</span>
+                            </li>
+                     <p dir="rtl">
+                         دى Partition Tables يعى جداول متخزنة فى الـHard Disk بتاعك شايلة شوية معلومات عن الـParttions بتاعك . يعنى مثلا عندك كام Partition كل واحد فيهم بيبدأ من انهى Sector ، إلخ .
+                     لو الـHard Disk بتاعك MBR مش هتقدر تقسمه اكتر من اربع Partitions لكن لو GPT فبراحتك .
+                         <br><br>
+                         اعرف منين ؟<br> فى كذا طريقة بس الناس بتاعة OSC ناس كسلانة و بتحب تنجز . دوس Right Click على Disk 0 اللى على الشمال ده . فى الـMenu هتلاقى يا إما Convert to GPT يا إما Convert to MBR . <br><br>
+                         لو انت هتحول لـGPT يبقى انت اصلا ايه ؟ 
+                         <br><br>
+                         صح يبقى ان MBR . <br><br>
+                         طيب بص على ده كدة و قولى الـHard Disk بتاعه MBR وﻻ GPT ؟
+                         <br> الاجابة GPT . <br> لو شايف غير كدة و حاسس انك متلغبط  ، ارجع و اقرأ تانى الحتةاللى فاتت دى .<br><br>
+                    </p>
+                             <li>
+                                <span style="color: #ff6600;">4- عايزين نطلع بـUnallocated Space</span>
+                            </li>
+                     <p dir="rtl">
+                         ركز إن انت داخل البرامج بتاع الـDisk Management ده وعندك هدف واحد .. انت عايز تطلع بـFree Space  او زى ما بتوع Windows بيسموها Unalloated Spac . <br> و دى هتيجى عن طريق إانك : <br><br>
+                         <ol>
+                             <li>يا إما تعمل Delete لـ Partition.</li>
+                             <li>يا إما تعمل Shrink لـPartition.</li>
+                             
+                    </ol>
+                    احنا محتاجين على الاقل 30 جيجا Unallocated (كل ما كان اكتر كل ما كان احسن عشان تعرف تنول برامج وتبقى براحتك يعنى).<br><br> قبل ما تعمل حاجة عايزك بس تفهم كام حاجة :
+                    <ol>
+                        <li>الـFree Space هى هى الـUnallocated Space اسمين لنفس الحاجة.</li>
+                        <li>إنك تعمل Format لـPartition حاجة ، وإنك تعمله Delete دى حاجة تانية خالص . علشان نجيب Unallocated Space ﻻزم نعمل Delete او Shrink .</li>
+                    </ol>
+                    </p>
+                    
+                    
+                        </ul>
                     </div>
                 </div>
             </div>

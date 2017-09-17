@@ -177,10 +177,8 @@
                                 <span style="color: #ff6600;">8- الـInstallation  </span>
                             </li>
                          <p dir="rtl">
-                             انا مش هاخدك فى كل خطوة فى العالم .هقولك على الحاجات المهمة ،باقى الحاجات عبارة عن اختيار اللغة و التوقيت و بتاع و العمر قصير .<br><br> افتح الـInstaller.<br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/20.png?raw=true" class="img-responsive"></p></br> ابقى علم على Istall Third-Party Software. عشان يضيفلك الـServers اللى من خلالها تقدر تعمل Setup للـCodecs وشوية برامج مفيدة و عشان الـDrivers وبتاع .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/21.png?raw=true" class="img-responsive"></p></br> دى اهم خطوة !!<br><br> لو ماشى خطوة بخطوة فى الـGuide ده فالمفروض ان انت شايل Unallocated Space على الـHard Disk بتاعك ،<br> تقدر تدوس Install Ubuntu alongside windows. <br><br> خلى بالك لو اخترت Erase disk and istall Ubuntu هيفرمتلك الـHard Disk كله و كل الـData بتاعتك هتتمسح .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/22.png?raw=true" class="img-responsive"></p></br>لما هتدوس Install Now هيطلعلك box كدة بيأكد عليك و بيقولك Ubuntu هيقسم المساحة اللى انت سيبتهاله فاضية ازاى ، <br>دوس Continue او Okay او مش فاكر الزرار بيقول ايه بالضبط :) <br><br> ألف مبروك . <br><br> بما إنك عملت Installation لـUbuntu ففى 6 حاجات لازم تعملها لما تـSetup لـUbuntu 16.04 !<br><br> ولو وقفت فى مشكلة تقدر تسألنا على جروب OSC-Linux Troubleshooting .<br><br>
-</p>
-
-                    
+                             انا مش هاخدك فى كل خطوة فى العالم .هقولك على الحاجات المهمة ،باقى الحاجات عبارة عن اختيار اللغة و التوقيت و بتاع و العمر قصير .<br><br> افتح الـInstaller.<br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/20.png?raw=true" class="img-responsive"></p></br> ابقى علم على Istall Third-Party Software. عشان يضيفلك الـServers اللى من خلالها تقدر تعمل Setup للـCodecs وشوية برامج مفيدة و عشان الـDrivers وبتاع .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/21.png?raw=true" class="img-responsive"></p></br> دى اهم خطوة !!<br><br> لو ماشى خطوة بخطوة فى الـGuide ده فالمفروض ان انت شايل Unallocated Space على الـHard Disk بتاعك ،<br> تقدر تدوس Install Ubuntu alongside windows. <br><br> خلى بالك لو اخترت Erase disk and istall Ubuntu هيفرمتلك الـHard Disk كله و كل الـData بتاعتك هتتمسح .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/22.png?raw=true" class="img-responsive"></p></br>لما هتدوس Install Now هيطلعلك box كدة بيأكد عليك و بيقولك Ubuntu هيقسم المساحة اللى انت سيبتهاله فاضية ازاى ، <br>دوس Continue او Okay او مش فاكر الزرار بيقول ايه بالضبط :) <br><br> ألف مبروك . <br><br>بما انك عملت Installation ل Ubuntu ففي <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" dir="rtl">6 حاجات لازم تعملهم لما ت Setup لينكس</a><br><br> ولو وقفت فى مشكلة تقدر تسألنا على جروب <a href="https://www.facebook.com/groups/osc.troubleshot/" target="_blank">OSC-Linux Troubleshooting</a> .<br><br>
+                        </p>           
                         
                     </ol>
                     </p>
@@ -197,8 +195,7 @@
 
                 <div id="div-pos2" class="panel-heading">
                     <h4 class="text-pos2" class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" dir="rtl">٦ حاجات لازم
-                            تعملهم لما تصطب لينكس</a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" dir="rtl">6 حاجات لازم تعملهم لما تSetup لينكس</a>
                     </h4>
                 </div>
 

@@ -57,7 +57,8 @@
                         <ul>
                              <li>من على Windows افتح الـStart Menu واكتب Disk Management ممكن تلاقى اسمه "Create and Format Hard Disk Part"</li>
                             <li>زى ما انت شايف فى الصورة كدة ده راجل Two Hard Disks .واحد منه Basic والتانى Dynamic</li>
-                             </ul> <br> <br>
+                             </ul> <br> 
+                             <p dir="rtl"><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/1.png?raw=true" class="img-responsive"></p></br>
                              والـDynamic دايما بتلاقى الـPartitions بتاعه لونها اصفر كدة . <br><br>
                              لو الـ Hard Disk بتاعك Dynamic فللاسف Linux مش بيـSupport الـDynamic Disks :( .
                              <br><br>
@@ -82,10 +83,10 @@
                         </ul>
                         <br>
                         يلا Exercise سريع ؟
-                     <br><br>
+                     <br><p dir="rtl"><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/2.png?raw=true" class="img-responsive"></p></br>
                         ده BIOS وﻻ EFI ؟  
                         طيب و ده ؟
-                        <br><br>
+                        <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/3.png?raw=true" class="img-responsive"></p></br>
                         لو قلت الاول BIOS والتانى EFI يبقى انا كدة اتطمنت عليك كمل . كمل 
                         <br><br>
                          </p>
@@ -98,16 +99,16 @@
                          <br><br>
                          اعرف منين ؟<br> فى كذا طريقة بس الناس بتاعة OSC ناس كسلانة و بتحب تنجز . دوس Right Click على Disk 0 اللى على الشمال ده . فى الـMenu هتلاقى يا إما Convert to GPT يا إما Convert to MBR . <br><br>
                          لو انت هتحول لـGPT يبقى انت اصلا ايه ؟ 
-                         <br><br>
-                         صح يبقى ان MBR . <br><br>
+                         <br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/4.png?raw=true" class="img-responsive"></p></br>
+                         صح يبقى انت MBR . <br><br>
                          طيب بص على ده كدة و قولى الـHard Disk بتاعه MBR وﻻ GPT ؟
-                         <br> الاجابة GPT . <br> لو شايف غير كدة و حاسس انك متلغبط  ، ارجع و اقرأ تانى الحتةاللى فاتت دى .<br><br>
+                         <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/5.png?raw=true" class="img-responsive"></p></br> الاجابة GPT . <br> لو شايف غير كدة و حاسس انك متلغبط  ، ارجع و اقرأ تانى الحتةاللى فاتت دى .<br><br>
                     </p>
                              <li>
                                 <span style="color: #ff6600;">4- عايزين نطلع بـUnallocated Space</span>
                             </li>
                      <p dir="rtl">
-                         ركز إن انت داخل البرامج بتاع الـDisk Management ده وعندك هدف واحد .. انت عايز تطلع بـFree Space  او زى ما بتوع Windows بيسموها Unalloated Spac . <br> و دى هتيجى عن طريق إانك : <br><br>
+                         ركز إن انت داخل البرامج بتاع الـDisk Management ده وعندك هدف واحد .. انت عايز تطلع بـFree Space  او زى ما بتوع Windows بيسموها Unallocated Space . <br> و دى هتيجى عن طريق إانك : <br><br>
                          <ol>
                              <li>يا إما تعمل Delete لـ Partition.</li>
                              <li>يا إما تعمل Shrink لـPartition.</li>
@@ -117,6 +118,70 @@
                     <ol>
                         <li>الـFree Space هى هى الـUnallocated Space اسمين لنفس الحاجة.</li>
                         <li>إنك تعمل Format لـPartition حاجة ، وإنك تعمله Delete دى حاجة تانية خالص . علشان نجيب Unallocated Space ﻻزم نعمل Delete او Shrink .</li>
+                         <li>الدنيا مش سايحة على بعضها فى الـHard Disk. يعنى لو عندك شوية Free Space فى أول الـHard Disk وشوية فى الاخر مينفعش تعتبرهم جزء واحد. <br> بص الصورة اللى جاية دى مثال كويس:<br>
+                             <br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/6.png?raw=true" class="img-responsive"></p></br>لو سألتك الـHard Disk ده فيه Unallocated Space هتقولى ايه ؟
+                        <br> فى 9 جيجا فى الاول وفى 9 فى الاخر يبقى معايا 18 جيجا unallocated صح؟
+                        تمام .<br>هل ينفع استخدمهم كجزأ واحد ؟ لآ مش سلطة هى .</li>
+                        <li>لما بتيجى تعمل Shrink لأى Partition الـFree Space اللى بتيجى بتبقى على يمينه.</li>
+                        <li>Windows Disk Management مش بيديك إمكانية إنك تحرك Partition من مكانه.أوعى تحرك اى Partition من مكانه. <br> أولا: <br>لو الـPartition ده عليه Operating System سواء Windows او غيره الـOperating System ده مش هيقوم تانى لأنك غيرت مكان اول Sector فى الـPartition.<br> ثانيا:<br> حتى لو ده هياخد وقت طويل ولو لا قدر الله حصل Crash فى النص او الجهاز فصل او اى حاجة حصلت فالـData بتاعتك ضاعت .لو مزنوق اوى خد Backup. </li>
+                        <li>لما تكون بتنقل Data حجمها كبير دايما اعمل Copy مش Cut . عشان لو لا قدر الله حصل مشكلة فى نقل النسخة الاساسية تبقى موجودة .بعد ما تتأكد ان الحمدلله النقل تم بنجاح ،ممكن تشيل النسخة الاساسية .</li>
+                    </ol> <br> <br>
+                        طيب يلا نبدأ <br><br>
+                            لو انت GPT اتصرف و اعمل Shrink او Delete لأى Partition عشان تجيب Unallocated Space. <br><br> طبعا مش محتاج انبهك إنك لو هتعمل Delete لـPartition يبقى لازم تاخد الـData اللى عليه الاول وتوديها اى partition تانى او تحطها فى اى مكان .<br><br> لو انت MBR افتكر انك محدود فى 4Partitions .<br><br> بص هنا مثلا ... <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/7.png?raw=true" class="img-responsive"></p></br>ده BIOS و MBR و عنده 3Partitions .واحد System Reserved واتنين عاديين اللى هم الـC والـD.<br><br>هنا ببساطة نعمل Shrink للـC (حسب من فيهم فيه مساحة فاضية). ونبقى جبنا الـUnallocated Space بتاعنا.<br><br> طيب بص هنا ...<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/8.png?raw=true" class="img-responsive"></p></br>ده شخص عنده 4 Partitions .واحد System Reserved و C و D و E.<br><br>ينفع اعمل Shrink لأى Partition هنا ؟ <br>لأ.هو صحيح انا لو عملت Shrink هيجيبلى Unallocated Space. بس هل هعرف أستخدم الـUnallocated Space دى فى حاجة ؟<br> لأ .لأن انا عندى 4 Partitions ، فالـSpace دى زى قلتها لأنى مش هعرف أستخدمها فى إنى اعمل Partition خامس.<br><br> فى الحالة دى لازم اعمل Delete لـPartition. وبعد كدة يا إما هخلى الـPartition ده كله لـLinux يا إما هنلجأ لحوار اسمه Extended Partitions   بيديك إمكانية إنك تتحايل على الموقف و تعمل اكتر من 4 Partitions .بس ده لازم يتعمل من على Linux. لان الـWindows Disk Management لا يعتمد عليه فى الحوار ده .<br><br><br>
+                            لاحظ إن حتى لو عندك 4 Partitions وهتعمل Extended Partiton برضه لازم تعمل Delete لواحد من الاربعة اللى عندك .(هنرجعه تانى بس لازم نعمله Delete عشان حوله لـExtended الاول ).خد الـData من على الـPartition اللى هتعمله Delete واعمله Delete بحيث إنه يبقى Unallocated Space.<br><br> يلا بينا نروح على Linux بس قبل ما هنروح هنعمل حاجة صغيرة اوى اوى .<br><br><br>
+                    </p>
+                            <li>
+                                <span style="color: #ff6600;">5- لو 10/8.1/8 Windows يبقى لازم تقفل الـFast Startup.</span>
+                            </li>
+                     <p dir="rtl">
+                         <ul>
+                             <li>تعالى عند علامة البطارية تحت فى Task Bar ودوس عليها واختار Power Options.</li>
+                             <li>هتختار Choose what closing the lid does.<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/9.png?raw=true" class="img-responsive"></p></br></li>
+                             <li>هتدوس على Change setting that are currently unavailable<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/10.png?raw=true" class="img-responsive"></p></br></li>
+                             <li>هتشيل علامة الصح من قدام Fast Startup<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/11.png?raw=true" class="img-responsive"></p></br></li>
+                             ويلا بينا على Linux .<br><br>هفترض إن انت نزلت نسخة ubuntu أو خدتها من حد وحرقتها على فلاشة .<br>لو عايز تعرف إزاى تحرقها على فلاشة من Windows دوس هنا .<br><br>
+                             نخش فى مرحلة "احذر الـNext < Next < Next" .... <br><br><br>
+                       </ul>
+                     </p>
+                                                <li>
+                                <span style="color: #ff6600;">6- اعمل Boot من الفلاشة </span>
+                            </li>
+                     <p dir="rtl">
+                         بص هى شقلبة وكل جهاز بشكل . <br><br>
+                         <ul>
+                             <li>حط الفلاشة فى الجهاز و قول بسم الله و افتح.</li>
+                             <li>عشان توصل للBoot Menu وتقوم الجهاز من الفلاشة أول ما الجهاز يفتح هتدوس على زرار من الزراير دى :ESC - F12 - F2 - F9 - Del <br>وجرب تدوس على زرار الـFn معاهم لو منفعوش لوحدهم .<br> ولو انت Lenovo هتلاقى زرار صغير أوى على الجنب فى الـlaptop بتفتح الجهاز منه علشان تـBoot من على الفلاشة .<br><br> فاكر الخطوة التانية بتاعة EFI VS BIOS ؟ ماشى كمل.</li>
+                             <li>وصلت للـBoot Menu الحمدلله ؟ لو انت UEFI اختار USB اللى جنبها UEFI. لو انت BIOS فهتختار USB سادة بدون اضافات . <br><br> (فى الصورة اللى بيفتح هيخش على USB فى الـUEFI Mode).<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/12.png?raw=true" class="img-responsive"></p></br><br> الخطوة دى مهمة جدا لانك لو عملت Boot غلط ممكن ده يسببلك مشاكل بعدين. <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/13.png?raw=true" class="img-responsive"></p></br> بعد ما تختار الـUSB لو شفا شاشة زى اللى فوق دى . ده تأكيد إنك عامل Boot فى الـBIOS Mode. <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/14.png?raw=true" class="img-responsive"></p></br> لو ظهرلك Menu زى دى فيها Try و Install ده تأكيد انك عملت Boot فى الـUEFI Mode . اختار Try . <br>ايوة عارف انك هتعمل Setup ، برضه اختار Try مالكش دعوة . <br><br> خلاص إتأكدت انك عملت Boot فى الـMode الصح ؟ (UEFI او BIOS).</li>
+                          </ul> <br><br>
+                    </p>
+                             <li>
+                                <span style="color: #ff6600;">7- فى Linux </span>
+                            </li>
+                         <p dir="rtl">
+                             لو اول ما فتحت لقيت الـWindow دى قدامك ، ده تأكيد ده تأكيد تانى انك عملت Boot فى الـBIOS Mode ، اختار Try <br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/15.png?raw=true" class="img-responsive"></p></br><br> ايوة عارف انك هتعمل Setup ،برضه اختار Try مالكش دعوة .<br><br> لو لقيته دخل على الـDesktop على طول من غير ما يطلعلك الـWindow اللى فوق دى . ده تأكيد انك عملت Boot فى الـUEFI Mode. <br><br>لو انت الشخص الـBIOS/MBR اللى محتاج يعمل Extended Partition عشان عنده 4 Partitions موجودين بالفعل يبقى الجزء ده عشانك .<br>لو مش انت الشخص ده ومستعد تعمل Setup خلاص يبقى انزل لغاية النقطة 8 (8- الـInstallation).<br><br>
+                             انا هفترض إنك خدت Backup وعملت Delete لواحد من الاربع Partitions اللى عندك .ودلوقتى فى مكانه Free Space.<br><br>خلينى أفهمك ايه هو الـExtended Partition قبل ما نبدأ. <br><br> الـExtended Partition ده Partition بيستعبط هو فى حد ذاته مينفعش ترتب فيه Data .لكن بيشيل جواه Partitions تانية اسمها Logical Partitions <br>، هما دول اللى بتقدر تتعامل معاهم وتكتب فيهم Data . و الحلو انك تقدر تعمل العداد اللى انت عايزه من الـLogical Partitions.<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/16.png?raw=true" class="img-responsive"></p></br>زى ما انت شايف فى الصورة اللى فوق : قدرنا نعمل 3 Partitions جوة Extended Partition واحد . من غير لا دجل ولا شعوذة .<br><br> لاحظ ان مفيش حاجة اسمها Extended Partitions فى الـGPT . <br><br> طب يلا نطبق الكلام ده علينا : <br><br> 
+                             <ul>
+                                 <li>هتعمل Search على برنامج اسمه gpated وده زى الـDisk Management بس على Linux.</li>
+                                 <li>هتفتحه هيبقى شكله زى ما انت شايف كدة <br>
+                                 هتدوس على الجزء الـUnallocated (اللى المفروض إنه الـPartition اللى انت عامله Delete من على Windows).وبعدين هتدوس على علامة الـNew زى ما الصورة موضحة .<br><br>لاحظ إن عدد الـPartitions والاحجام والترتيب يختلف من جهاز لجهاز.<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/17.png?raw=true" class="img-responsive"></p></br><br> </li>
+                                 <li>فى Create As هتأكد إنك مختار Extended Partition. وبعدين دوس Add. <br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/18.png?raw=true" class="img-responsive"></p></br></li>
+                                 <li>الشكل المفروض يبقى حاجة زى كدة :<br>عندنا Extended Partition كل المساحة اللى جواه Unallocated.<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/19.0.jpeg?raw=true" class="img-responsive"></p></br></li>
+                                 <li>هنعلم على المساحة الـUnallocated اللى فى الـExtended Partition وهنختار New .<br>لاحظ إن Create As لازم تبقى Logical Partition دلوقتى ،هنعمل ntfs partition وهنتحكم فى حجمه عن طريق الـSlider اللى فوق ده . <br>المساحة اللى هتبقى Unallocated فى الاخر هى دى اللى Linux هيستخدمها ، يستحسن لا تقل عن 30 جيجا .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/19.1.png?raw=true" class="img-responsive"></p></br></li>
+                                 -تحذير: <br><br> اوعى تغير اى Partition من مكانه لو الـPartition ده فيه Operating System ساعتها الـOperating System مش هيقوم ! <br><br> 
+                                 <li>لو انت معجبكش التعديلات ممكن تعمل Undo فى gparted.</li>
+                                 <li>خلصت شغلك ؟ <br>سمِ الله ودوس على Apply</li>
+</ul><br><br>
+دلوقتى انت مستعد تبدأ الـInstallation. <br><br>
+</p>
+                             <li>
+                                <span style="color: #ff6600;">8- الـInstallation  </span>
+                            </li>
+                         <p dir="rtl">
+                             انا مش هاخدك فى كل خطوة فى العالم .هقولك على الحاجات المهمة ،باقى الحاجات عبارة عن اختيار اللغة و التوقيت و بتاع و العمر قصير .<br><br> افتح الـInstaller.<br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/20.png?raw=true" class="img-responsive"></p></br> ابقى علم على Istall Third-Party Software. عشان يضيفلك الـServers اللى من خلالها تقدر تعمل Setup للـCodecs وشوية برامج مفيدة و عشان الـDrivers وبتاع .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/21.png?raw=true" class="img-responsive"></p></br> دى اهم خطوة !!<br><br> لو ماشى خطوة بخطوة فى الـGuide ده فالمفروض ان انت شايل Unallocated Space على الـHard Disk بتاعك ،<br> تقدر تدوس Install Ubuntu alongside windows. <br><br> خلى بالك لو اخترت Erase disk and istall Ubuntu هيفرمتلك الـHard Disk كله و كل الـData بتاعتك هتتمسح .<br><br><p><img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Guide%20images/22.png?raw=true" class="img-responsive"></p></br>لما هتدوس Install Now هيطلعلك box كدة بيأكد عليك و بيقولك Ubuntu هيقسم المساحة اللى انت سيبتهاله فاضية ازاى ، <br>دوس Continue او Okay او مش فاكر الزرار بيقول ايه بالضبط :) <br><br> ألف مبروك . <br><br> بما إنك عملت Installation لـUbuntu ففى 6 حاجات لازم تعملها لما تـSetup لـUbuntu 16.04 !<br><br> ولو وقفت فى مشكلة تقدر تسألنا على جروب OSC-Linux Troubleshooting .<br><br>
+</p>
+
+                    
+                        
                     </ol>
                     </p>
                     

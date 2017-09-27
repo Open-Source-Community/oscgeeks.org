@@ -10,7 +10,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-     font-family: HANDVETICA;
+    font-family: HANDVETICA;
 }
 div img
 {
@@ -19,6 +19,11 @@ div img
     right:0;
     bottom:0;
     margin:auto;
+}
+#desc
+{
+    font-size:20px;
+    color:darkslateblue;
 }
 h1
 {

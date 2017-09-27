@@ -1,5 +1,5 @@
 
-     font-size: 400%;@font-face {
+@font-face {
     font-family: HANDVETICA;
     src: url('../fonts/font/HANDVETICA.TTF');
 }
@@ -11,7 +11,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-     font-family: HANDVETICA;
+    font-family: HANDVETICA;
 }
 h1
 {

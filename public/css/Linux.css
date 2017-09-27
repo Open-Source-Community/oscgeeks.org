@@ -10,6 +10,12 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: HANDVETICA;
+}
+#desc
+{
+    font-size:20px;
+    color:darkslateblue;
 }
 div img
 {

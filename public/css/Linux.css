@@ -12,7 +12,7 @@ body{
     overflow-x: hidden;
     font-family: HANDVETICA;
 }
-#description
+.description
 {
     font-size:20px;
     color:darkslateblue;

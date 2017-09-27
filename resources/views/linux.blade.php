@@ -14,7 +14,7 @@
     </div>
         <br>
 		<div class="text-center">
-		<p id="description" class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<p class="hvr-float wow bounceInLeft description" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			Have you ever heard the famous saying "windows Linux"?<br>
             Heard it or not, the Linux Moderators Committee is here because of this saying, to show students that there is a whole world beyond windows called Linux.<br>
             Our Committee believes in Open Source knowledge presented in Linux which is our main concern.<br>

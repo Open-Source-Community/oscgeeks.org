@@ -12,11 +12,6 @@ body{
     overflow-x: hidden;
     font-family: HANDVETICA;
 }
-.description
-{
-    font-size:20px;
-    color:darkslateblue;
-}
 div img
 {
     top:0;
@@ -30,12 +25,6 @@ h1
 	font-family: HANDVETICA;
 	font-size: 400%;
 	color:white;
-}
-h5
-{
-	font-family: HANDVETICA;
-	font-size: 200%;
-	color:darkslateblue;
 }
 
 /*first div*/

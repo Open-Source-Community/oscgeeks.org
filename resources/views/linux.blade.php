@@ -14,12 +14,12 @@
     </div>
         <br>
 		<div class="text-center">
-            <h5 class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+            <h3 class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			Have you ever heard the famous saying "windows Linux"?
-            </h5>
-		<h5 class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+            </h3>
+		<h3 class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
             Heard it or not, the Linux Moderators Committee is here because of this saying, to show students that there is a whole world beyond windows called Linux. Our Committee believes in Open Source knowledge presented in Linux which is our main concern. Our Committee believes in spreading knowledge so it provides Linux workshops to students and to our crew, also we are keen to learn and learn so beside our job in spreading knowledge everyday we are learning new Linux stuff.
-		</h5>
+		</h3>
 		</div>
         <br>
      <div class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">

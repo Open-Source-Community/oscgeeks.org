@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-    <div>
+    <div class="wow bounceIn" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
         <div class="text-center">
             <h1 class="hvr-grow">Linux Committee</h1>
             <img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/linux.png?raw=true">
@@ -14,7 +14,7 @@
     </div>
         <br>
 		<div class="text-center">
-		<p id="desc">
+		<p id="description" class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			Have you ever heard the famous saying "windows Linux"?<br>
             Heard it or not, the Linux Moderators Committee is here because of this saying, to show students that there is a whole world beyond windows called Linux.<br>
             Our Committee believes in Open Source knowledge presented in Linux which is our main concern.<br>
@@ -22,7 +22,7 @@
 		</p>
 		</div>
         <br>
-     <div>
+     <div class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
         <div class="panel-group" id="accordion">
             <!--start setup ubuntu step by step-->
             <div class="panel panel-default">

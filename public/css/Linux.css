@@ -31,6 +31,13 @@ h1
 	font-size: 400%;
 	color:white;
 }
+h4
+{
+	font-family: HANDVETICA;
+	font-size: 200%;
+	color:darkslateblue;
+}
+
 /*first div*/
 #div-pos1{
     background-color: #232f3d;

@@ -124,6 +124,11 @@
                                 class="btn btn-default btn-sm">About us
                         </button>
                     </li>
+                    <li>
+                        <button type="button" onclick="window.location='{{ url ("workShop2017") }}'"
+                                class="btn btn-default btn-sm">WorkShop
+                        </button>
+                    </li>
                     
 <!--
                     <li>
@@ -183,6 +188,7 @@
                             </ul>
                         </div>
                     </li>
+
                 </ul>
             </div>
         </div>

@@ -17,6 +17,7 @@
 
                 </p>
                 <h3 class="text-center wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">Our Events</h3>
+
                 <ul class="timeline wow flipInY" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
                     @for ($i = 0; $i < count($user_data); $i++)
                         @if($i%2==0)

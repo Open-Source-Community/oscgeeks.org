@@ -4,18 +4,19 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Form extends Model
+class WorkShop extends Model
 {
+    public $timestamps = false;
     protected $fillable = [
         'first_name',
         'last_name',
         'email',
-        'contact_no',
+        'mobile',
         'year',
-        'homepage_select_first',
-        'homepage_select_second',
+        'faculty',
+        'workshop',
         'day',
         'time',
-        'ip',
+        'blenderTask',
     ];
 }

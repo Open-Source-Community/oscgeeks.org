@@ -1,9 +1,6 @@
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
-
 class WorkShop extends Model
 {
     public $timestamps = false;
@@ -11,10 +8,10 @@ class WorkShop extends Model
         'first_name',
         'last_name',
         'email',
-        'mobile',
-        'year',
+        'contact_no',
         'faculty',
-        'workshop',
+        'year',
+        'homepage_select_workshop',
         'day',
         'time',
         'blenderTask',

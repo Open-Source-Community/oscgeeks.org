@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWorkShopsTable extends Migration
+class CreateWorkshopsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -18,13 +18,14 @@ class CreateWorkShopsTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
-            $table->string('mobile');
-            $table->string('year');
+            $table->string('contact_no');
             $table->string('faculty');
-            $table->string('workshop')->nullable();
-            $table->string('blenderTask')->nullable();
-            $table->string('day')->nullable();
+            $table->string('year');
+            $table->string('homepage_select_workshop');
+            $table->text('blenderTask')->nullable();
+            $table->string('day');
             $table->string('time');
+            $table->timestamps();
         });
     }
 

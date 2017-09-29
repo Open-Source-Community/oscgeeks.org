@@ -63,8 +63,8 @@ Route::get('/workShop2017','RegisterationForm@showWorkShop27');
 
 //Route::get('/form', 'CommitteesController@index9');
 //
-//Route::get('/done','CommitteesController@done');
+Route::get('/done','CommitteesController@done');
 //
-//Route::get('/refused','CommitteesController@refused');
+Route::get('/refused','CommitteesController@refused');
 //
 //Route::post('/done','RegisterationForm@store');

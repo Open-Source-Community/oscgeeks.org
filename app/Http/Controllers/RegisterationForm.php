@@ -476,8 +476,8 @@ class RegisterationForm extends Controller
         $day4 = 'Tuesday';
         $day5 = 'Wednesday';
         $day6 = 'Thursday';
-        $day7 = 'Saturday 7/10/2017';
-        $day8 = 'Sunday 8/10/2017';
+        $day7 = 'Saturday7/10/2017';
+        $day8 = 'Sunday8/10/2017';
         
         $time1 = '10 am to 11 am';
         $time2 = '11 am to 12 pm';
@@ -951,6 +951,135 @@ class RegisterationForm extends Controller
                 }
             }
         }
-    }
-
+        elseif ($day == $day7){
+            if ($time == $time1){
+                if (count($Saturday2_check1) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+            elseif ($time == $time2){
+                if (count($Saturday2_check2) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time3){
+                if (count($Saturday2_check3) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time4){
+                if (count($Saturday2_check4) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time5){
+                if (count($Saturday2_check5) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time6){
+                if (count($Saturday2_check6) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time7){
+                if (count($Saturday2_check7) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+        }
+        elseif ($day == $day8){
+            if ($time == $time1){
+                if (count($Sunday2_check1) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+            elseif ($time == $time2){
+                if (count($Sunday2_check2) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time3){
+                if (count($Sunday2_check3) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time4){
+                if (count($Sunday2_check4) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time5){
+                if (count($Sunday2_check5) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time6){
+                if (count($Sunday2_check6) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+             elseif ($time == $time7){
+                if (count($Sunday2_check7) > 5)
+                    return redirect('/refused');
+                else
+                {
+                    WorkShop::create($request->all());
+                    return redirect('done');
+                }
+            }
+        }
+    }    
 }

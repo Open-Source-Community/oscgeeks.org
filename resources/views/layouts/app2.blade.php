@@ -126,7 +126,7 @@
                     </li>
                     <li>
                         <button type="button" onclick="window.location='{{ url ("workShop2017") }}'"
-                                class="btn btn-default btn-sm">WorkShop Application
+                                class="btn btn-default btn-sm">WorkShop Registration
                         </button>
                     </li>
                     

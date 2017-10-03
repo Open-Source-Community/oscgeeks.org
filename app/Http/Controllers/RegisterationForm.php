@@ -91,7 +91,7 @@ class RegisterationForm extends Controller
             if ($day_default == $day1) {
                 if ($time_default == $time1) {
                     $Saturday_check1 = Form::where(['day' => $day1])->where(['time' => $time1])->get();
-                    if (count($Saturday_check1) > 4)
+                    if (count($Saturday_check1) > 5)
                         return redirect('/refused');
                     else {
                         $form->save();
@@ -101,7 +101,7 @@ class RegisterationForm extends Controller
                     }
                 } elseif ($time_default == $time2) {
                     $Saturday_check2 = Form::where(['day' => $day1])->where(['time' => $time2])->get();
-                    if (count($Saturday_check2) > 4)
+                    if (count($Saturday_check2) > 5)
                         return redirect('/refused');
                     else {
                         $form->save();
@@ -111,7 +111,7 @@ class RegisterationForm extends Controller
                     }
                 } elseif ($time_default == $time3) {
                     $Saturday_check3 = Form::where(['day' => $day1])->where(['time' => $time3])->get();
-                    if (count($Saturday_check3) > 4)
+                    if (count($Saturday_check3) > 5)
                         return redirect('/refused');
                     else {
                         $form->save();
@@ -121,7 +121,7 @@ class RegisterationForm extends Controller
                     }
                 } elseif ($time_default == $time4) {
                     $Saturday_check4 = Form::where(['day' => $day1])->where(['time' => $time4])->get();
-                    if (count($Saturday_check4) > 4)
+                    if (count($Saturday_check4) > 5)
                         return redirect('/refused');
                     else {
                         $form->save();
@@ -131,7 +131,7 @@ class RegisterationForm extends Controller
                     }
                 } elseif ($time_default == $time5) {
                     $Saturday_check5 = Form::where(['day' => $day1])->where(['time' => $time5])->get();
-                    if (count($Saturday_check5) > 4)
+                    if (count($Saturday_check5) > 5)
                         return redirect('/refused');
                     else {
                         $form->save();
@@ -563,7 +563,7 @@ class RegisterationForm extends Controller
         
         if ($day == $day1){
             if ($time == $time1){
-                if (count($Saturday_check1) > 4)
+                if (count($Saturday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -572,7 +572,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Saturday_check2) > 4)
+                if (count($Saturday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -581,7 +581,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Saturday_check3) > 4)
+                if (count($Saturday_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -590,7 +590,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Saturday_check4) > 4)
+                if (count($Saturday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -599,7 +599,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Saturday_check5) > 4)
+                if (count($Saturday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -608,7 +608,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Saturday_check6) > 4)
+                if (count($Saturday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -617,7 +617,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Saturday_check7) > 4)
+                if (count($Saturday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -628,7 +628,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day2){
             if ($time == $time1){
-                if (count($Sunday_check1) > 4)
+                if (count($Sunday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -637,7 +637,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Sunday_check2) > 4)
+                if (count($Sunday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -646,7 +646,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Sunday_check3) > 4)
+                if (count($Sunday_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -655,7 +655,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Sunday_check4) > 4)
+                if (count($Sunday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -664,7 +664,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Sunday_check5) > 4)
+                if (count($Sunday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -673,7 +673,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Sunday_check6) > 4)
+                if (count($Sunday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -682,7 +682,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Sunday_check7) > 4)
+                if (count($Sunday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -693,7 +693,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day3){
             if ($time == $time1){
-                if (count($Monday_check1) > 4)
+                if (count($Monday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -702,7 +702,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Monday_check2) > 4)
+                if (count($Monday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -711,7 +711,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Monday_check3) > 4)
+                if (count($Monday_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -720,7 +720,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Monday_check4) > 4)
+                if (count($Monday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -729,7 +729,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Monday_check5) > 4)
+                if (count($Monday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -738,7 +738,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Monday_check6) > 4)
+                if (count($Monday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -747,7 +747,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Monday_check7) > 4)
+                if (count($Monday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -758,7 +758,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day4){
             if ($time == $time1){
-                if (count($Tuesday_check1) > 4)
+                if (count($Tuesday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -767,7 +767,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Tuesday_check2) > 4)
+                if (count($Tuesday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -776,7 +776,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Tuesday_check3) > 4)
+                if (count($Tuesday_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -785,7 +785,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Tuesday_check4) > 4)
+                if (count($Tuesday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -794,7 +794,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Tuesday_check5) > 4)
+                if (count($Tuesday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -803,7 +803,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Tuesday_check6) > 4)
+                if (count($Tuesday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -812,7 +812,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Tuesday_check7) > 4)
+                if (count($Tuesday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -823,7 +823,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day5){
             if ($time == $time1){
-                if (count($Wednesday_check1) > 4)
+                if (count($Wednesday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -832,7 +832,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Wednesday_check2) > 4)
+                if (count($Wednesday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -841,7 +841,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Wednesday_check3) > 4)
+                if (count($Wednesday_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -850,7 +850,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Wednesday_check4) > 4)
+                if (count($Wednesday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -859,7 +859,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Wednesday_check5) > 4)
+                if (count($Wednesday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -868,7 +868,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Wednesday_check6) > 4)
+                if (count($Wednesday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -877,7 +877,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Wednesday_check7) > 4)
+                if (count($Wednesday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -888,7 +888,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day6){
             if ($time == $time1){
-                if (count($Thursday_check1) > 4)
+                if (count($Thursday_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -897,7 +897,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Thursday_check2) > 4)
+                if (count($Thursday_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -906,7 +906,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Thursday_check3) > 4)
+                if (count($Thursday_check3) > 5)
                    return redirect('/refused');
                 else
                 {
@@ -915,7 +915,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Thursday_check4) > 4)
+                if (count($Thursday_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -924,7 +924,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Thursday_check5) > 4)
+                if (count($Thursday_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -933,7 +933,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Thursday_check6) > 4)
+                if (count($Thursday_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -942,7 +942,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Thursday_check7) > 4)
+                if (count($Thursday_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -953,7 +953,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day7){
             if ($time == $time1){
-                if (count($Saturday2_check1) > 4)
+                if (count($Saturday2_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -962,7 +962,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Saturday2_check2) > 4)
+                if (count($Saturday2_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -971,7 +971,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Saturday2_check3) > 4)
+                if (count($Saturday2_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -980,7 +980,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Saturday2_check4) > 4)
+                if (count($Saturday2_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -989,7 +989,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Saturday2_check5) > 4)
+                if (count($Saturday2_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -998,7 +998,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Saturday2_check6) > 4)
+                if (count($Saturday2_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1007,7 +1007,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Saturday2_check7) > 4)
+                if (count($Saturday2_check7) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1018,7 +1018,7 @@ class RegisterationForm extends Controller
         }
         elseif ($day == $day8){
             if ($time == $time1){
-                if (count($Sunday2_check1) > 4)
+                if (count($Sunday2_check1) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1027,7 +1027,7 @@ class RegisterationForm extends Controller
                 }
             }
             elseif ($time == $time2){
-                if (count($Sunday2_check2) > 4)
+                if (count($Sunday2_check2) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1036,7 +1036,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time3){
-                if (count($Sunday2_check3) > 4)
+                if (count($Sunday2_check3) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1045,7 +1045,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time4){
-                if (count($Sunday2_check4) > 4)
+                if (count($Sunday2_check4) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1054,7 +1054,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time5){
-                if (count($Sunday2_check5) > 4)
+                if (count($Sunday2_check5) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1063,7 +1063,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time6){
-                if (count($Sunday2_check6) > 4)
+                if (count($Sunday2_check6) > 5)
                     return redirect('/refused');
                 else
                 {
@@ -1072,7 +1072,7 @@ class RegisterationForm extends Controller
                 }
             }
              elseif ($time == $time7){
-                if (count($Sunday2_check7) > 4)
+                if (count($Sunday2_check7) > 5)
                     return redirect('/refused');
                 else
                 {

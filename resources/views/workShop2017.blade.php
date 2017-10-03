@@ -92,10 +92,10 @@
                                 <option disabled selected value="">Select Day</option>
                                 <option class="NotforignDays" value="Saturday7/10/2017">Saturday 7/10</option>
                                 <option class="NotforignDays" value="Sunday8/10/2017">Sunday 8/10</option>
-                                <option class="forignDays" value="Saturday">Saturday 30/9</option>
-                                <option class="forignDays" value="Sunday">Sunday 1/10</option>
-                                <option class="forignDays" value="Monday">Monday 2/10</option>
-                                <option class="forignDays" value="Tuesday">Tuesday 3/10</option>
+                                {{--<option class="forignDays" value="Saturday">Saturday 30/9</option>--}}
+                                {{--<option class="forignDays" value="Sunday">Sunday 1/10</option>--}}
+                                {{--<option class="forignDays" value="Monday">Monday 2/10</option>--}}
+                                {{--<option class="forignDays" value="Tuesday">Tuesday 3/10</option>--}}
                                 <option class="forignDays" value="Wednesday">Wednesday 4/10</option>
                                 <option class="forignDays" value="Thursday ">Thursday 5/10</option>
                             </select>

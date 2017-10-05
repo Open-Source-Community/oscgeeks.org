@@ -9,6 +9,8 @@
     <!-- Title Icon-->
     <link rel="shortcut icon" href="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
 
+    
+
 
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -41,20 +43,7 @@
 
     </div>
 
-    <div class="row shapes">
-        <img class="alien  shapes col-xs-3 col-xs-push-1" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/alien.png?raw=true"/>
-        <a class="toAbout">
-            <img class=" arrow  shapes col-xs-2 col-xs-push-2" onclick="window.location='{{ url ("about") }}'"
-                                         src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/arrow.png?raw=true"/>
 
-        </a>
-
-        <div class="space  col-xs-2 col-xs-push-4">
-            <img class="rocket shapes" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/rocket.png?raw=true">
-            <img class="stars shapes" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/Stars.png?raw=true">
-        </div>
-
-    </div>
 
 </div>
 

@@ -40,22 +40,8 @@ position: absolute;;
 	bottom: 0;
 
 }
-.stars{
 
-	width: 100%;
-}
-.rocket{
-	width: 45%;
-	position: absolute;
-	top: 15%;
-	left: 20%;
-	transition: 2s ease-in-out;
 
-}
-
-.rocket:hover{
-  transform: translateY(-300%) ;
-}
 
 
 .space{

@@ -9,10 +9,6 @@
     <!-- Title Icon-->
     <link rel="shortcut icon" href="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
 
-    <link href="{{ asset('/css/aboutstyle.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
 
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -20,16 +16,14 @@
     <!--End Fonts -->
 
     <!--Start Styles -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
-
-    <script src="{{ asset('js/animated-text.js') }}"></script>
-    <script src="{{ asset('js/ChangeHomeToAbout.js') }}"></script>
+    
+    
     <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/Custom.js') }}"></script>
+    
 </head>
 <body>
 

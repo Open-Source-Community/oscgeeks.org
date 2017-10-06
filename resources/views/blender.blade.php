@@ -14,7 +14,7 @@
 @section('content')
     <div class="container">
         <div class="row wow  bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <div class="text-center">
                 <h3 class="hvr-grow" style="font-size: 400%;">Blender</h3>
                 </div>
@@ -35,7 +35,7 @@
                 </p>
                 </div><br>
                 <h3 class="text-center">Here we represent some of our instructors' work</h3>
-                
+
             </div>
         </div>
 
@@ -132,4 +132,3 @@
     </div>
 
 @endsection
-

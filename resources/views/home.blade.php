@@ -47,7 +47,7 @@
         
         <div class="clearfix"></div>
         
-        <a href="http://www.oscgeeks.org/about"  class="button col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-4 col-xs-offset-4">START TOUR</a>
+        <a href="{{url("about")}}"  class="button col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-4 col-xs-offset-4">START TOUR</a>
     </div>
 </div>
 

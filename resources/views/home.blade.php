@@ -18,13 +18,13 @@
     <!--End Fonts -->
 
     <!--Start Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.css') }}">
-    
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
     
     <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
     <script src="{{ asset('js/jquery.menu-aim.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/home.js')}}"></script>
     
 </head>
 <body>
@@ -32,19 +32,23 @@
 
 <div class="home" id="home" style="visibility:visible; display:block;">
     <div class="row ">
-        <img class=" osc shapes col-xs-5 col-xs-offset-4 " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/osc.png?raw=true">
-
-        <div id="pinguen" class=" shapes col-xs-1 col-xs-offset-4 ">
-            <img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/pinguen.png?raw=true" class="pinguen">
-            <div>
-                <img class="hello " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/Hello.png?raw=true"/>
-            </div>
+        <img class=" osc shapes col-lg-6 col-lg-offset-3 col-xs-8 col-xs-offset-2 " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/Background/osc.png?raw=true">
+        
+        <div class="clearfix"></div>
+        
+        <div class="message col-lg-3 col-sm-2 col-xs-3 col-xs-offset-7" id="message" >
+            <p>Want to know more ?</p>
+            <p>Let's take a tour.</p>
         </div>
-
+        
+        <div class="clearfix"></div>
+        
+        <div class=" rocket col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3 col-xs-5 col-xs-offset-3"></div>
+        
+        <div class="clearfix"></div>
+        
+        <a href="http://www.oscgeeks.org/about"  class="button col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-4 col-xs-offset-4">START TOUR</a>
     </div>
-
-
-
 </div>
 
 </body>

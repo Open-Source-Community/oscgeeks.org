@@ -1,0 +1,38 @@
+#message{
+    background-image: url("../img/Thought-Bubble-Transparent.png");
+    background-size: contain;
+    width: 227px;
+    height: 200px;
+    text-align: center;
+    font-size: 16px;
+    font-family:cursive;
+    font-weight: bold;
+    padding-top: 37px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 860px;
+    top: 165px;
+    visibility: hidden;
+}
+
+#message p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color:black
+}
+
+button{
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    background-image: url('../img/cloud%20button.png');
+    background-size: contain;
+    position: absolute;
+    top: 540px;
+    left: 650px;
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+}

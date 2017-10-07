@@ -12,9 +12,7 @@
 }
 
 .osc{
-
-margin-top: 8%;
-
+    margin-top: 3.5%;
 }
 
 .pinguen{
@@ -26,53 +24,78 @@ position: absolute;;
 .hello{
 	width: 180%;
 	position: relative;
-	margin-top: -480%;
+	margin-top: -460%;
 }
 #pinguen>div { visibility: hidden; }
 #pinguen:hover>div { visibility: visible; }
 
-.arrow{
-	margin-top: 3%;
-	margin-left: 3%;
-	animation: MoveUpDown 1s linear infinite;
-	position: absolute;
-	left: 0;
-	bottom: 0;
 
+.rocket{
+    margin-top: 100px;
+    height: 180px;
+    background-image: url("../images/22070253_525917584415520_1959156027_o.png");
+    background-size: 100% 100%;
+    animation: shaking 10s infinite ease-in-out;
+}
+
+.message{
+    background-image: url("../images/grey-thought-loud-thin-md.png");
+    background-size: 100% 100%;
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    font-size: 19px;
+    font-family:cursive;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+.message p{
+    margin-top: 12px;
+    margin-bottom: 0;
+    color:black
+}
+
+.button{
+    font-family: arial;
+    text-transform: uppercase;
+    font-size:30px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border:3px solid #fff;
+    display: block;
+    text-decoration: none;
+    margin-top: 45px;
+    color:#fff;
+    position: relative;
+    overflow: hidden;
+}
+            
+
+            
+.button:hover{
+    color:#fff;
+    line-height: 62px;
 }
 
 
+@keyframes shaking{
+    
+    25%{
+                transform: rotate(-5deg)
+    }
+    
+    75%{
+                transform: rotate(5deg)
 
-
-.space{
-
-	position: relative;
- 	transition: 1s ease-in-out;
-    animation: starAnim 2s infinite;
-    top: -90px;
-
+    }
 }
-@keyframes starAnim {
-    0%   {opacity: 0.5;}
-    25%  {opacity: 1;}
-    50%   {opacity: 0.5;}
-    100%  {opacity: 1;}
-
-   }
-
-@keyframes MoveUpDown {
-	0% {
-		bottom: 0;
-	}
-	50% {
-		bottom: 40px;
-	}
-	100% {
-		bottom: 0;
-	}
-}
-
-
 
 /* added recently*/
 
@@ -86,9 +109,9 @@ body{
 
 }
 .homeContainer #pinguens{
-     position: sticky;
+    position: sticky;
     left: 50%;
-   top: 60%;
+    top: 60%;
     width: 50%;
 }
 .homeContainer #about_the_gablia{
@@ -122,42 +145,3 @@ body{
 span{
     font-size: 150%;
 }
-
-/*Start Media querys for responsive Mode*/
-
-@media only screen and (max-width: 767px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-/*End Media querys for responsive Mode*/

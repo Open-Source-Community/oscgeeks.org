@@ -21,7 +21,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> @yield('CSS')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">@yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
@@ -34,167 +35,145 @@
     <script src="{{ asset('js/Custom.js') }}"></script>
     <script>new WOW().init();</script> @yield('JS')
 <!--End Scripts -->
+<!--  spiciale   -->
 </head>
 
 <body>
 <!--  start Navbar  -->
 <div class="navbar navbar-default ">
-    <div class="container">
+    <div class="container-fluid">
         <!--navbar logos-->
         <div class="row"><img class=" logo  col-md-1 col-xs-3" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"> 
             <img class=" osc col-md-4 col-xs-6   " src="https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/osc-log.png?raw=true"></div>
-        <div class="navbar-header">
+        <!--<div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
                         class="sr-only">toggle navigation</span> <span class="icon-bar"></span> <span
                         class="icon-bar"></span> <span class="icon-bar"></span></button>
-            <!--<a class="navbar-brand" href="a">OSC</a>--></div>
+            <!--<a class="navbar-brand" href="a">OSC</a>-->
         <div class="row">
-            <div class="navbar-collapse collapse ">
-                <ul class="nav navbar-nav col-xs-8">
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("home") }}'"
-                                class="btn btn-primary btn-sm">Home
-                        </button>
-                    </li>
-                    
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Committees
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu " role="menu"> 
-                             
-                               @foreach($committees_data as $committee)
-
-                             <li data-submenu-id="{{ $committee->id }}">
-            
-                                 <a href="{{ url($committee->title) }}">{{ $committee->title }} Committee</a>
-<!--
-                               <div id="{{ $committee->id }}" class="popover">
-                                  <h3 class="popover-title">{{ $committee->title }} Committee</h3>
-                                    <div class="popover-content">
-                                        <ul>
-                                            <li>{{ $committee->description }}
-                                            </li>
-                                        </ul>
-                                    </div>
-                               </div>
--->
-                            </li>
-
-                             @endforeach                   
+            <div class="nav hidden-xs hidden-sm  col-md-12 col-lg-12">
+                <ul class="navigation col-md-9 col-lg-9">
+                    <li><a href="/"><i class="fa fa-home" style="font-size: 20px"></i> <b>Home</b></a></li>
+                    <li>|</li>
+                    <li class="dropdown" style="padding: 0px">
                             
-                            </ul>
-                        </div>
-                    </li>
-                    
-                     <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default btn-sm " type="button" data-toggle="dropdown">Workshops
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu " role="menu"> 
-
-                             <li data-submenu-id="1">
-            
-                               <a href="/Linux Workshop">Linux Workshop</a>
-               
-                            </li> 
-                                 <li data-submenu-id="2">
-            
-                               <a href="/Blender Workshop">Blender Workshop</a>
-               
-                            </li> 
-                                 <li data-submenu-id="3">
-            
-                               <a href="/Laravel">Laravel Workshop</a>
-               
-                            </li> 
+                        <button class="dropbtn"><b>Committees</b> <i class="fa fa-arrow-down" style="font-size: 9px"></i></button>
+                          <div class="dropdown-content">
+                            <a href="/Linux">Linux Committee</a>
+                            <a href="/Blender">Blender Committee</a>
+                            <a href="/English Heroes">English Heroes Committee</a>
+                            <a href="/Content Creators">Content Creators Committee</a>
+                            <a href="/Artwork">Artwork Committee</a>  
+                            <a href="/Projects">Projects Committee</a>  
+                            <a href="/Web">Web Committee</a>
+                            <a href="/Public Relations">Public Relations Committee</a>  
+                            <a href="/Human Resources">Human Resources Committee</a>  
+                            <a href="/Fundraising">Fundraising Committee</a>  
+                            <a href="/Logistics">Logistics Committee</a>  
+                          </div>
                             
-                            </ul>
+                    </li>
+                    <li>|</li>
+                    <li class="dropdown" style="padding: 0px">
+                        
+                      <button class="dropbtn"><b>Workshops</b> <i class="fa fa-arrow-down" style="font-size: 10px"></i></button>
+                        <div class="dropdown-content">
+                            <a href="/Linux Workshop">Linux Workshop</a>
+                            <a href="/Blender Workshop">Blender Workshop</a>
+                            <a href="/Laravel">Laravel Workshop</a>
                         </div>
                     </li>
-                    
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("events") }}'"
-                                class="btn btn-default btn-sm">Events
-                        </button>
-                    </li>                    
-                                        
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("about") }}'"
-                                class="btn btn-default btn-sm">About us
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" onclick="window.location='{{ url ("workShop2017") }}'"
-                                class="btn btn-default btn-sm">WorkShop Registration
-                        </button>
-                    </li>
-                    
-<!--
-                    <li>
-                        @if(Session::has('key'))
-                        <button type="button"  onclick="window.location='{{ url ("form") }}'"
-                                class="btn btn-default btn-sm" disabled>Registration Form
-                        </button>
-                        @else
-                         <button type="button"  onclick="window.location='{{ url ("form") }}'"
-                                class="btn btn-default btn-sm">Registration Form
-                        </button>
-                        @endif
-                    </li> 
--->
-                    
+                    <li>|</li>
+                    <li><a href="/events"><b>Events</b></a></li>
+                    <li>|</li>
+                    <li><a href="/about"><b>About Us</b></a></li>
+                    <li>|</li>
+                    <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right col-xs-4">
-                 <li>
-                        <button type="button" onclick="window.location='{{ url ("Companies") }}'"
-                                class="btn btn-default btn-sm">Previous Sponsors
-                        </button>
-                    </li>
-<!--
-                     <li>
-                        <div class="dropdown ">
-                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Social Media
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu contact"  style="background-color: white;">
-                                <ul class='list-inline' >
-                                    <li ><a href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
-                                                    class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a></li>
-                                    <li ><a href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
-                                                    class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></li>
-                                    <li ><a href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
-                                                    class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </li>
--->
-                    <li>
-                        <div class="dropdown ">
-                            <button class="btn btn-sm btn-default " type="button" data-toggle="dropdown">Contact Us
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu contact"  style="background-color: white;">
-                                
-                                 <li data-submenu-id="1">
-            
-                                     <a>President.of.OSC@gmail.com</a>
-               
-                            </li> 
-                                 <li data-submenu-id="2">
-            
-                                     <a>oschrs@gmail.com</a>
-               
-                            </li> 
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
+                
+                <div class="contact_us col-md-3 col-lg-3">
+                    <div class="dropdown">
+                      <button class="dropbtn" onclick="window.location='/Companies'" style="font-size: 12px"><b>Previous Sponsors</b></button>
+                    </div>
+                    <div class="dropdown">
+                      <button class="dropbtn" style="font-size: 12px"><b>Contact Us</b> <i class="fa fa-arrow-down" ></i></button>
+                      <div class="dropdown-content" style="right: -40px">
+                        <a href="mailto:President.of.OSC@gmail.com">President Of OSC</a>
+                        <a href="mailto:oschrs@gmail.com">Hrs Of OSC</a>
+                      </div>
+                    </div>
+                </div>
             </div>
+            
+            
+            
+            
+            <!-- NavBar For Small Screen -->
+            
+                <p class="fa fa-bars"></p>
+            
+                <div class="menu" style="display: none;margin-top:70px">
+                    <div class="nav small_nav hidden-md hidden-lg col-xs-6 col-xs-6"> 
+
+                    <ul class="navigation">
+                        <li><a href="/"><i class="fa fa-home"></i> <b>Home</b></a></li>
+                        <li class="dropdown">
+
+                            <b>Committees</b> <i class="fa fa-arrow-down" style="font-size: 10px"></i>
+                              <div class="dropdown-content">
+                                <a href="/Linux">Linux Committee</a>
+                                <a href="/Blender">Blender Committee</a>
+                                <a href="/English Heroes">English Heroes Committee</a>
+                                <a href="/Content Creators">Content Creators Committee</a>
+                                <a href="/Artwork">Artwork Committee</a>  
+                                <a href="/Projects">Projects Committee</a>  
+                                <a href="/Web">Web Committee</a>
+                                <a href="/Public Relations">Public Relations Committee</a>  
+                                <a href="/Human Resources">Human Resources Committee</a>  
+                                <a href="/Fundraising">Fundraising Committee</a>  
+                                <a href="/Logistics">Logistics Committee</a>  
+                              </div>
+
+                        </li>
+                        <li class="dropdown" style="padding: 0px">
+
+                          <b>Workshops</b> <i class="fa fa-arrow-down" style="font-size: 10px"></i>
+                            <div class="dropdown-content">
+                                <a href="/Linux Workshop">Linux Workshop</a>
+                                <a href="/Blender Workshop">Blender Workshop</a>
+                                <a href="/Laravel">Laravel Workshop</a>
+                            </div>
+                        </li>
+                        <li><a href="/events"><b>Events</b></a></li>
+                        <li style="padding: 0"><a href="/about"><b>About Us</b></a></li>
+                        <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>
+                    </ul>
+
+                </div>
+                
+                <div class="contact_us hidden-md hidden-lg col-xs-6 col-sm-6">
+                    <div class="dropdown col-xs-12 col-sm-12">
+                      <button class="dropbtn" onclick="window.location='/Companies'"><b>Previous Sponsors</b></button>
+                    </div>
+                
+                    <div class="dropdown col-xs-12 col-sm-12">
+                          <button class="dropbtn"><b>Contact Us</b> <i class="fa fa-arrow-down" style="font-size: 10px"></i></button>
+                          <div class="dropdown-content contact">
+                           <a href="mailto:President.of.OSC@gmail.com">President Of OSC</a>
+                           <a href="mailto:oschrs@gmail.com">Hrs Of OSC</a>
+                          </div>
+                    </div>
+                </div>
+            
+            </div>
+                </div>
+            
+            
+            <!-- NavBar For Small Screen -->
+            
         </div>
-    </div>
-</div>
-<!--  end Navbar  -->@yield('content')
+       </div>
+       @yield('content')
 <!--start footer-->
 <div class="footer">
     <div class="row">
@@ -213,6 +192,22 @@
 <!--End footer-->
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->
+    
+    <script>
+        
+        $(document).ready(function(){
+           
+            $(".fa-bars").click(function(){
+                
+               $(".menu").slideToggle(); 
+                
+            });
+            
+            
+        });
+    
+    </script>  
+
 </body>
 
 </html>

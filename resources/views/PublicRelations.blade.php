@@ -13,7 +13,7 @@
 		</div>
 
 		
-		<div class="cont  wow slideInRight hvr-grow"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<div class="cont hvr-float-shadow wow slideInRight "  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
 			<p>If you created a wonderful job without reveling it to the public, how
 would people know that you created that wonderful thing? it's like you've
@@ -24,6 +24,7 @@ done nothing !</p>
 			<p>These efforts also include supporting arts committee, events, workshops and social media accounts.</p>
 			<p>Mainly our work is managing the social media accounts and launching creative ideas of campaigns to make people reach to our work easily, spread our message -The open source- and our knowledge to others by establishing and maintaining lines of communication between our organization and its public.</p>
 		</div>
+		<br><br>
 	</div>
 
 @endsection

@@ -9,7 +9,7 @@
     <div class="container text-center">
     <h1 class="hvr-grow">ArtWork</h1>
     <div class="text-center">
-    <p class="hvr-grow">This is our art team work on our page on facebook or in the events .</p>
+    <p class="hvr-float-shadow">This is our art team work on our page on facebook or in the events .</p><br>
      <img class="img-responsive" src="{{asset('/images/Background/7.jpg')}}">
     </div>
     </div>

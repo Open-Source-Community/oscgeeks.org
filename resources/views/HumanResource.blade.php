@@ -16,7 +16,7 @@
 		</div>
 
 
-		<div class="job hvr-grow-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<div class="job hvr-float-shadow wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
 			<p>It's not only about interviews, WE ARE THE GOVERNMENT! We believe in
 human resources and how important it is to invest in, we also believe in

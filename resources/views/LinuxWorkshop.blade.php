@@ -13,7 +13,7 @@
 		<div class="text-center wow bounceInDown" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h1 class=" hvr-bounce-in">Linux Workshop</h1>
 		</div>
-		<div class="about hvr-grow-shadow wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<div class="about hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>About the workshop:</h2>	
 			<p id="parag">Linux is everywhere; From desktop, mobiles, servers, to supercomputers.
 				This workshop explores various tools and techniques that enables participants
@@ -25,13 +25,13 @@
 				skills and tools.</p>
 		</div>
 
-		<div class="who hvr-grow-shadow wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<div class="who hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 		<h2>Who is this workshop for?</h2>
 		<p id="parag">This workshop is designed for students with limited or no previous exposure to
 			Linux, focusing mainly on computer science students.</p>
 		</div>
 
-		<div class="what hvr-grow-shadow wow bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<div class="what hvr-float wow bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 		<h2>What you will learn?</h2>
 		<ul id="ulli">
 			<li>Installing Linux as the only operating system, or dual boot alongside

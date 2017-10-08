@@ -14,7 +14,7 @@
             <div class="hvr-grow">
             <h1 id="about_the_gablia" class="col-xs-12">About OSC</h1>
             </div>
-            <div class="hvr-grow-shadow">
+            <div class="hvr-float">
             <p class="about_text"><span>Open Source Community</span> a student community founded in Faculty of
                 Computer and Information Science - Ain Shams University, on Dec 5th
                 2013.<br> Open Source Community promotes the philosophy of free software

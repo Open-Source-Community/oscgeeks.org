@@ -16,7 +16,7 @@
 		</div>
         <br><br>
 		<div class="text-center">
-		<p id="desc" class="hvr-float wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<p id="desc" class="hvr-float-shadow wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			They spend thousands of hours on developing new and big projects -whether desktop or android applications- to make our lives easier, as well as contribute to the existing open source projects. They have different ideas, and spend great efforts to produce such brilliant work. We call them Code Knights.
 		</p>
 		</div>

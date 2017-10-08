@@ -17,7 +17,7 @@
                 <h3 class = "hvr-grow" style="font-size: 400%; ">Content Creators Committee</h3>
                 <img class="img-responsive" src="{{asset('/images/Background/1.jpg')}}">
                 </div>
-                <div class="text-center">
+                <div class="text-center hvr-float-shadow">
                 <p class="vision" style="font-size: 200%;">
                     <br>
                    We're unique, one of a kind, you'll only find us at OSC. Our main

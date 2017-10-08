@@ -12,8 +12,8 @@
 			<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/PR.jpg?raw=true">
 		</div>
 
-		
-		<div class="cont  wow slideInRight hvr-grow"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+		<!--hvr-grow-->
+		<div class="cont  wow slideInRight"  data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
 			<h2>Job Description:</h2>
 			<p>If you created a wonderful job without reveling it to the public, how
 would people know that you created that wonderful thing? it's like you've

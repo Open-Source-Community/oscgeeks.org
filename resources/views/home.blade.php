@@ -36,10 +36,7 @@
         
         <div class="clearfix"></div>
         
-        <div class="message col-lg-3 col-sm-2 col-xs-3 col-xs-offset-7" id="message" >
-            <p>Want to know more ?</p>
-            <p>Let's take a tour.</p>
-        </div>
+        <div class="message col-lg-3 col-sm-2 col-xs-3 col-xs-offset-7" id="message" ></div>
         
         <div class="clearfix"></div>
         

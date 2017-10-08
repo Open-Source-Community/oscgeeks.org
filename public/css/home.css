@@ -12,7 +12,7 @@
 }
 
 .osc{
-    margin-top: 3.5%;
+    margin-top: 3%;
 }
 
 .pinguen{
@@ -39,16 +39,16 @@ position: absolute;;
 }
 
 .message{
-    background-image: url("../images/grey-thought-loud-thin-md.png");
+    background-image: url("../images/cloud%20thought.png");
     background-size: 100% 100%;
     width: 250px;
-    height: 160px;
+    height: 140px;
     text-align: center;
     font-size: 19px;
     font-family:cursive;
     font-weight: bold;
-    padding-top: 25px;
-    padding-left: 25px;
+    padding-top: 12px;
+    padding-left: 55px;
     margin-top: 13px;
     position: absolute;
 }

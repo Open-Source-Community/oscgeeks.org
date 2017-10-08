@@ -35,57 +35,59 @@ p {
     font-size: 150%;
     color: darkslateblue;
 }
-.artwork img{
-  
-    transition: all 2s, box-shadow .5s;
+
+.artwork img {
+    /*transition: all 2s, box-shadow .5s;*/
     margin-top: 30px;
 }
 
-.artwork img:hover {
+
+/*.artwork img:hover {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
     transform: scale(1.02);
-}
+}*/
 
-.artwork img:focus {
+
+/*.artwork img:focus {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
     width: 46%;
-}
+}*/
+
 
 /*Start Media querys for responsive Mode*/
 
 @media only screen and (max-width: 767px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
-
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
-
 }
+
+
 /*End Media querys for responsive Mode*/

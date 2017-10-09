@@ -1,4 +1,4 @@
-@extends('layouts.app2',array('committees_data' => $committees_data))
+@extends('layouts.app2')
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/aboutstyle.css') }}">
@@ -27,7 +27,7 @@
                 community because we work together in each committee to reach our goal.
                 A person is not just a member in a committee like PR or HR, we work
                 wherever we can because we are OSCians. In other words <span>“ open sourceاحنا بتوع الـ ”</span></p>
-            </div><br><br>
+            </div>
             <img src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/About/pinguens.png?raw=true" id="pinguens">
         </div>
     </div>

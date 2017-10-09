@@ -1,5 +1,5 @@
+@extends('layouts.app2')
 
-@extends('layouts.app2',array('committees_data' => $committees_data))
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/companies.css') }}"> @endsection
 

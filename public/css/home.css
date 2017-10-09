@@ -5,173 +5,147 @@
 
 .home{
 
-	width: 98.7%;
-	height: 660px;
-	background-image: url(../images/About/Background.jpg);
+    width: 98.7%;
+    height: 660px;
+    background-image: url(../images/About/Background.jpg);
 
 }
 
 .osc{
-
-margin-top: 8%;
-
+    margin-top: 1.5%;
 }
 
 .pinguen{
-width: 80%;
-margin-top: -130%;
-position: absolute;;
+    width: 80%;
+    margin-top: -130%;
+    position: absolute;;
 
 }
 .hello{
-	width: 180%;
-	position: relative;
-	margin-top: -480%;
+    width: 180%;
+    position: relative;
+    margin-top: -460%;
 }
 #pinguen>div { visibility: hidden; }
 #pinguen:hover>div { visibility: visible; }
 
-.arrow{
-	margin-top: 3%;
-	margin-left: 3%;
-	animation: MoveUpDown 1s linear infinite;
-	position: absolute;
-	left: 0;
-	bottom: 0;
 
-}
-.stars{
-
-	width: 100%;
-}
 .rocket{
-	width: 45%;
-	position: absolute;
-	top: 15%;
-	left: 20%;
-	transition: 2s ease-in-out;
-
+    margin-top: 60px;
+    height: 260px;
+    background-image: url("../images/22070253_525917584415520_1959156027_o.png");
+    background-size: 100% 100%;
+    animation: shaking 10s infinite ease-in-out;
 }
 
-.rocket:hover{
-  transform: translateY(-300%) ;
+.message{
+    background-image: url("../images/rectanglespeechthought.png");
+    background-size: 100% 100%;
+    width: 300px;
+    height: 140px;
+    text-align: center;
+    font-size: 19px;
+    font-family:cursive;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-left: 50px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.message p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Julee';font-size: 22px;
+    color:black
+}
+
+.button{
+    font-family: 'Frijole';
+    text-transform: uppercase;
+    font-size:22px;
+    width: 240px;
+    height: 60px;
+    border-radius: 80px;
+    line-height: 60px;
+    text-align: center;
+    border:3px solid #fff;
+    display: block;
+    text-decoration: none;
+    margin-top: 35px;
+    color:#fff;
+    position: relative;
+    overflow: hidden;
 }
 
 
-.space{
 
-	position: relative;
- 	transition: 1s ease-in-out;
-    animation: starAnim 2s infinite;
-    top: -90px;
-
-}
-@keyframes starAnim {
-    0%   {opacity: 0.5;}
-    25%  {opacity: 1;}
-    50%   {opacity: 0.5;}
-    100%  {opacity: 1;}
-
-   }
-
-@keyframes MoveUpDown {
-	0% {
-		bottom: 0;
-	}
-	50% {
-		bottom: 40px;
-	}
-	100% {
-		bottom: 0;
-	}
+.button:hover{
+    color:orange;
+    background-color: #fff;
+    border-color: gold;
+    text-decoration: none;
+    line-height: 62px;
 }
 
 
+@keyframes shaking{
+
+    25%{
+        transform: rotate(-5deg)
+    }
+
+    75%{
+        transform: rotate(5deg)
+
+    }
+}
 
 /* added recently*/
 
 body{
-   background-image: url(../images/About/Background.jpg);
-   width: 100%;
-   height: auto;
-   margin: 0px;
-   padding: 0px;
-   overflow-x: hidden;
+    background-image: url(../images/About/Background.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 
 }
 .homeContainer #pinguens{
-     position: sticky;
+    position: sticky;
     left: 50%;
-   top: 60%;
+    top: 60%;
     width: 50%;
 }
 .homeContainer #about_the_gablia{
     position: sticky;
     margin-left: 1%;
-   font-family: HANDVETICA;
+    font-family: HANDVETICA;
     font-size: 400%;
     color: white;
-    
+
 }
- .about_text {
+.about_text {
 
-     width: 90%;
-     font-family: HANDVETICA;
+    width: 90%;
+    font-family: HANDVETICA;
     font-size: 140%;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-       /*white-space: nowrap; /* Keeps the content on a single line */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*white-space: nowrap; /* Keeps the content on a single line */
 
-  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 90% }
+    from { width: 0 }
+    to { width: 90% }
 }
 span{
     font-size: 150%;
 }
-
-/*Start Media querys for responsive Mode*/
-
-@media only screen and (max-width: 767px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-/*End Media querys for responsive Mode*/

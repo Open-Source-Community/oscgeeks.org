@@ -5,10 +5,7 @@ namespace App\Http\Controllers;
 use App\WorkShop;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use Cookie;
-use App\Committee;
 use App\Form;
 use Session;
 use App\Http\Requests\formvalidation;
@@ -68,7 +65,7 @@ class RegisterationForm extends Controller
         $form->day = $request->day;
         $form->time = $request->time;
         $form->ip = request()->ip();
-        $committees_data = Committee::all();
+        
 
         $day_default = $request->day;
         $day1 = 'Saturday';
@@ -97,7 +94,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Saturday_check2 = Form::where(['day' => $day1])->where(['time' => $time2])->get();
@@ -107,7 +104,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Saturday_check3 = Form::where(['day' => $day1])->where(['time' => $time3])->get();
@@ -117,7 +114,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Saturday_check4 = Form::where(['day' => $day1])->where(['time' => $time4])->get();
@@ -127,7 +124,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Saturday_check5 = Form::where(['day' => $day1])->where(['time' => $time5])->get();
@@ -137,7 +134,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
@@ -150,7 +147,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Sunday_check2 = Form::where(['day' => $day2])->where(['time' => $time2])->get();
@@ -160,7 +157,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Sunday_check3 = Form::where(['day' => $day2])->where(['time' => $time3])->get();
@@ -170,7 +167,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Sunday_check4 = Form::where(['day' => $day2])->where(['time' => $time4])->get();
@@ -180,7 +177,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Sunday_check5 = Form::where(['day' => $day2])->where(['time' => $time5])->get();
@@ -190,7 +187,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
@@ -204,7 +201,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Monday_check2 = Form::where(['day' => $day3])->where(['time' => $time2])->get();
@@ -214,7 +211,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Monday_check3 = Form::where(['day' => $day3])->where(['time' => $time3])->get();
@@ -224,7 +221,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Monday_check4 = Form::where(['day' => $day3])->where(['time' => $time4])->get();
@@ -234,7 +231,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Monday_check5 = Form::where(['day' => $day3])->where(['time' => $time5])->get();
@@ -244,7 +241,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
@@ -258,7 +255,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Tuesday_check2 = Form::where(['day' => $day4])->where(['time' => $time2])->get();
@@ -268,7 +265,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Tuesday_check3 = Form::where(['day' => $day4])->where(['time' => $time3])->get();
@@ -278,7 +275,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Tuesday_check4 = Form::where(['day' => $day4])->where(['time' => $time4])->get();
@@ -288,7 +285,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Tuesday_check5 = Form::where(['day' => $day4])->where(['time' => $time5])->get();
@@ -298,7 +295,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
@@ -312,7 +309,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Wednesday_check2 = Form::where(['day' => $day5])->where(['time' => $time2])->get();
@@ -322,7 +319,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Wednesday_check3 = Form::where(['day' => $day5])->where(['time' => $time3])->get();
@@ -332,7 +329,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Wednesday_check4 = Form::where(['day' => $day5])->where(['time' => $time4])->get();
@@ -342,7 +339,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Wednesday_check5 = Form::where(['day' => $day5])->where(['time' => $time5])->get();
@@ -352,7 +349,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
@@ -366,7 +363,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time2) {
                     $Thursday_check2 = Form::where(['day' => $day6])->where(['time' => $time2])->get();
@@ -376,7 +373,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time3) {
                     $Thursday_check3 = Form::where(['day' => $day6])->where(['time' => $time3])->get();
@@ -386,7 +383,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time4) {
                     $Thursday_check4 = Form::where(['day' => $day6])->where(['time' => $time4])->get();
@@ -396,7 +393,7 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 } elseif ($time_default == $time5) {
                     $Thursday_check5 = Form::where(['day' => $day6])->where(['time' => $time5])->get();
@@ -406,13 +403,13 @@ class RegisterationForm extends Controller
                         $form->save();
                         $cookie = Cookie::forever('Recruit', 'Recruit');
                         $cookies = Session::put('key', $cookie);
-                        return Response::view('done', compact('committees_data', 'cookies'))->withCookie($cookie);
+                        return Response::view('done', compact('cookies'))->withCookie($cookie);
                     }
                 }
             }
         } else {
             $cookies = Session::put('key', $cookie);
-            return view('done', compact('committees_data', 'cookies'));
+            return view('done', compact('cookies'));
         }
 
     }
@@ -464,8 +461,8 @@ class RegisterationForm extends Controller
 
     public function showWorkShop27()
     {
-        $committees_data = Committee::all();
-        return view("workShop2017", compact('committees_data'));
+        
+        return view("workShop2017");
     }
 
     public function postWorkShop27(Request $request)

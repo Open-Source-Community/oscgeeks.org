@@ -87,8 +87,8 @@
                     <li><a href="/events"><b>Events</b></a></li>
                     <li>|</li>
                     <li><a href="/about"><b>About Us</b></a></li>
-                    <li>|</li>
-                    <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>
+<!--                    <li>|</li>-->
+<!--                    <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>-->
                 </ul>
                 
                 <div class="contact_us col-md-3 col-lg-3">
@@ -98,8 +98,8 @@
                     <div class="dropdown">
                       <button class="dropbtn" style="font-size: 12px"><b>Contact Us</b> <i class="fa fa-arrow-down" ></i></button>
                       <div class="dropdown-content" style="right: -40px">
-                        <a href="mailto:President.of.OSC@gmail.com">President Of OSC</a>
-                        <a href="mailto:oschrs@gmail.com">Hrs Of OSC</a>
+                        <a href="mailto:President.of.OSC@gmail.com">President of OSC</a>
+                        <a href="mailto:oschrs@gmail.com">Hr head of OSC</a>
                       </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                         </li>
                         <li><a href="/events"><b>Events</b></a></li>
                         <li style="padding: 0"><a href="/about"><b>About Us</b></a></li>
-                        <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>
+<!--                        <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>-->
                     </ul>
 
                 </div>
@@ -159,8 +159,8 @@
                     <div class="dropdown col-xs-12 col-sm-12">
                           <button class="dropbtn"><b>Contact Us</b> <i class="fa fa-arrow-down" style="font-size: 10px"></i></button>
                           <div class="dropdown-content contact">
-                           <a href="mailto:President.of.OSC@gmail.com">President Of OSC</a>
-                           <a href="mailto:oschrs@gmail.com">Hrs Of OSC</a>
+                           <a href="mailto:President.of.OSC@gmail.com">President of OSC</a>
+                           <a href="mailto:oschrs@gmail.com">Hr head of OSC</a>
                           </div>
                     </div>
                 </div>

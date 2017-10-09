@@ -1,4 +1,4 @@
-@extends('layouts.app2',array('committees_data' => $committees_data))
+@extends('layouts.app2')
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/artwork.css') }}">

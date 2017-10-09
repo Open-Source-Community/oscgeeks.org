@@ -57,14 +57,14 @@ Route::get('/Web','CommitteesController@index16');
 
 Route::get('/Projects','CommitteesController@index17');
 
-Route::post('/workShop2017','RegisterationForm@postWorkShop27');
-Route::get('/workShop2017','RegisterationForm@showWorkShop27');
+//Route::post('/workShop2017','RegisterationForm@postWorkShop27');
+//Route::get('/workShop2017','RegisterationForm@showWorkShop27');
 
 
 //Route::get('/form', 'CommitteesController@index9');
 //
-Route::get('/done','CommitteesController@done');
-//
-Route::get('/refused','CommitteesController@refused');
+//Route::get('/done','CommitteesController@done');
+////
+//Route::get('/refused','CommitteesController@refused');
 //
 //Route::post('/done','RegisterationForm@store');

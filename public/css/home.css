@@ -12,7 +12,7 @@
 }
 
 .osc{
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .pinguen{
@@ -31,38 +31,39 @@ position: absolute;;
 
 
 .rocket{
-    margin-top: 100px;
-    height: 180px;
+    margin-top: 60px;
+    height: 260px;
     background-image: url("../images/22070253_525917584415520_1959156027_o.png");
     background-size: 100% 100%;
     animation: shaking 10s infinite ease-in-out;
 }
 
 .message{
-    background-image: url("../images/cloud%20thought.png");
+    background-image: url("../images/rectangle%20speech%20thought.png");
     background-size: 100% 100%;
-    width: 250px;
+    width: 300px;
     height: 140px;
     text-align: center;
     font-size: 19px;
     font-family:cursive;
     font-weight: bold;
-    padding-top: 12px;
-    padding-left: 55px;
-    margin-top: 13px;
+    padding-top: 14px;
+    padding-left: 50px;
+    margin-top: 5px;
     position: absolute;
 }
 
 .message p{
-    margin-top: 12px;
+    margin-top: 10px;
     margin-bottom: 0;
+    font-family: 'Julee';font-size: 22px;
     color:black
 }
 
 .button{
-    font-family: arial;
+    font-family: 'Frijole';
     text-transform: uppercase;
-    font-size:30px;
+    font-size:22px;
     width: 240px;
     height: 60px;
     border-radius: 80px;
@@ -71,7 +72,7 @@ position: absolute;;
     border:3px solid #fff;
     display: block;
     text-decoration: none;
-    margin-top: 45px;
+    margin-top: 35px;
     color:#fff;
     position: relative;
     overflow: hidden;
@@ -80,7 +81,10 @@ position: absolute;;
 
             
 .button:hover{
-    color:#fff;
+    color:orange;
+    background-color: #fff;
+    border-color: gold;
+    text-decoration: none;
     line-height: 62px;
 }
 

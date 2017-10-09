@@ -15,6 +15,8 @@
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/font-awesome/css/font-awesome.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
     <!--End Fonts -->
 
     <!--Start Styles -->
@@ -36,7 +38,10 @@
         
         <div class="clearfix"></div>
         
-        <div class="message col-lg-3 col-sm-2 col-xs-3 col-xs-offset-7" id="message" ></div>
+        <div class="message col-lg-3 col-sm-2 col-xs-3 col-xs-offset-7" id="message" >
+            <p>Want to know more ?</p>
+            <p>Let's take a tour.</p>
+        </div>
         
         <div class="clearfix"></div>
         

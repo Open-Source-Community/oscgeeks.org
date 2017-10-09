@@ -35,7 +35,7 @@
     height: 260px;
     background-image: url("https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/22070253_525917584415520_1959156027_o.png?raw=true");
     background-size: 100% 100%;
-    /*animation: shaking 10s infinite ease-in-out;*/
+    animation: shaking 10s infinite ease-in-out;
 }
 
 .message{

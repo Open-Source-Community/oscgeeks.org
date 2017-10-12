@@ -22,7 +22,7 @@
                     @for ($i = 0; $i < count($user_data); $i++)
                         @if($i%2==0)
                             <li>
-                                <div class="timeline-image">
+                                <div class="timeline-image img-responsive">
                                     <img class="img-circle img-responsive" src="{{ $user_data[$i]->imageurl }}" alt="">
                                 </div>
                                 <div class="timeline-panel">
@@ -42,7 +42,7 @@
                         @endif
                         @if($i%2==1)
                             <li class="timeline-inverted">
-                                <div class="timeline-image">
+                                <div class="timeline-image img-responsive">
                                     <img class="img-circle img-responsive" src="{{ $user_data[$i]->imageurl }}" alt="">
                                 </div>
                                 <div class="timeline-panel">

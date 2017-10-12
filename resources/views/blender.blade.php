@@ -4,10 +4,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/blender.css') }}">
 @endsection
 
-
-
-
-
 @section('JS')
 @endsection
 

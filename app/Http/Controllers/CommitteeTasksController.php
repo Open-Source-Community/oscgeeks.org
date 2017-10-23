@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Task;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CommitteeTasksController extends Controller
 {
@@ -15,7 +16,8 @@ class CommitteeTasksController extends Controller
      */
     public function index($committee_id)
     {
-        //
+        $Tasks = DB::table('tasks')->find($committee_id);
+        return view('resources/views/managment/tasks/index.blade.php',compact('Tasks'));
     }
 
     /**
@@ -88,6 +90,10 @@ class CommitteeTasksController extends Controller
      */
     public function destroy($committee_id, $task_id)
     {
-        //
+        DB::table('tasks')->where([
+            ['task_id', '=', $task_id],
+            ['$committee_id' , '=' , $committee_id],
+            ])->delete();
+
     }
 }

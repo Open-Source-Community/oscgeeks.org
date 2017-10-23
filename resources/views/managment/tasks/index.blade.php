@@ -278,23 +278,28 @@
                 <thead>
                 <tr>
 
-                    <th> Member</th>
-                    <th> Name</th>
-                    <th> Desc</th>
-                    <th> Dead line</th>
-                    <th> status</th>
+                    <th>Task ID</th>
+                    <th>Name</th>
+                    <th>Desc</th>
+                    <th>User</th>
+                    <th>deadline </th>
+
+
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
+
                 @foreach($items as $item)
 
                     <tr>
-                        <td>{{$item->user['name']}}</td>
+                        <td>{{$item->id}}</td>
                         <td>{{$item->name}}</td>
-                        <td>Desc</td>
-                        <td></td>
-                        <td></td>
+                        <td>{{$item->description}}</td>
+                        <td>{{$item->user['name']}}</td>
+                        <td>{{$item->deadline}}</td>
+
+
                         <td>
                             <div class="col-sm-12">
                                 <a href="{{url("tasks/ads/$item->id/edit")}}">

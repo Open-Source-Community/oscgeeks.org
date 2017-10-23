@@ -7,6 +7,15 @@ use App\Image;
 
 class CommitteesController extends Controller
 {
+
+    public function index()
+    {
+
+    }
+
+
+
+
     public function index1()
     {
         return view('linux');

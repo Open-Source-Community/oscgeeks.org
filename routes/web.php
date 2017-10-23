@@ -68,3 +68,8 @@ Route::get('/Projects','CommitteesController@index17');
 //Route::get('/refused','CommitteesController@refused');
 //
 //Route::post('/done','RegisterationForm@store');
+
+
+// Omar
+
+Route::resource('/categories.tasks', 'TasksController');

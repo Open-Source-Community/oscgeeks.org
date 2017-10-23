@@ -17,7 +17,7 @@
     </div>
     <div class="hvr-float-shadow">
     <div class="row artwork">
-    <img class="img-responsive col-sm-3 " src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/laravel/logolaravel.jpg?raw=true" alt="Los Angeles">
+    <img class="img-responsive col-sm-3 " src="../images/laravel.png" alt="Los Angeles">
 
         <div class="col-sm-9">
             <h2> Laravel PHP Framework </h2>

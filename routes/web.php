@@ -72,4 +72,4 @@ Route::get('/Projects','CommitteesController@index17');
 
 // Omar
 
-Route::resource('/categories.tasks', 'TasksController');
+Route::resource('/committees.tasks', 'CommitteeTasksController');

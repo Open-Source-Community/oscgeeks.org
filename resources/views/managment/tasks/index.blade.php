@@ -281,7 +281,8 @@
                     <th> Member</th>
                     <th> Name</th>
                     <th> Desc</th>
-
+                    <th> Dead line</th>
+                    <th> status</th>
                     <th></th>
                 </tr>
                 </thead>
@@ -292,6 +293,8 @@
                         <td>{{$item->user['name']}}</td>
                         <td>{{$item->name}}</td>
                         <td>Desc</td>
+                        <td></td>
+                        <td></td>
                         <td>
                             <div class="col-sm-12">
                                 <a href="{{url("tasks/ads/$item->id/edit")}}">

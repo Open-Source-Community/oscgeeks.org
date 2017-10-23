@@ -10,10 +10,8 @@ class CommitteesController extends Controller
 
     public function index()
     {
-
+        return view("managment.committees.index");
     }
-
-
 
 
     public function index1()
@@ -42,6 +40,7 @@ class CommitteesController extends Controller
         $committees_data2 = Image::where(['comm_name' => 'Artwork'])->get();
         return view('art', compact('committees_data2'));
     }
+
     public function index6()
     {
         return view('companies');
@@ -52,55 +51,66 @@ class CommitteesController extends Controller
         $committee_images = Image::where(['comm_name' => 'Logistics'])->get();
         return view('logistics', compact('committee_images'));
     }
-    
+
     public function index8()
     {
         return view('ccc');
     }
+
     public function index9()
     {
-        if(Session::has('key')){
+        if (Session::has('key')) {
             return redirect('/done');
+        } else {
+            return view('form');
         }
-        else{
-        return view('form');}
     }
+
     public function index10()
     {
         return view('BlenderWorkshop');
     }
+
     public function index11()
     {
         return view('EnglishHeroes');
     }
+
     public function index12()
     {
         return view('LinuxWorkshop');
     }
+
     public function index13()
     {
         return view('HumanResource');
     }
+
     public function index14()
     {
         return view('PublicRelations');
     }
+
     public function index15()
     {
         return view('fundraising');
     }
+
     public function index16()
     {
         return view('web');
     }
+
     public function index17()
     {
         return view('Projects');
     }
+
     public function done()
     {
         return view('done');
     }
+
     public function refused()
     {
         return view('refused');

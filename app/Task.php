@@ -17,11 +17,11 @@ class Task extends Model
 
     public function committee()
     {
-        return $this->belongsTo('committee_id');
+        return $this->belongsTo(Committee::class, 'committee_id');
     }
 
     public function user()
     {
-        return $this->belongsTo('user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

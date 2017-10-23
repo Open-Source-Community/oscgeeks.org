@@ -16,8 +16,8 @@ class CommitteeTasksController extends Controller
      */
     public function index($committee_id)
     {
-        $Tasks = DB::table('tasks')->find($committee_id);
-        return view('resources/views/managment/tasks/index.blade.php',compact('Tasks'));
+        $items = Task::where('committee_id', $committee_id)->get();
+        return view('managment.tasks.index', compact('items'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CommitteeTasksController extends Controller
     public function create($committee_id)
     {
         $users = User::all();
-        return view('managment.tasks.create', compact('committee_id','users'));
+        return view('managment.tasks.create', compact('committee_id', 'users'));
     }
 
     /**
@@ -64,7 +64,7 @@ class CommitteeTasksController extends Controller
     public function edit($committee_id, $task_id)
     {
         $users = User::all();
-        return view('managment.tasks.edit', compact('committee_id', 'task_id','users'));
+        return view('managment.tasks.edit', compact('committee_id', 'task_id', 'users'));
 
     }
 
@@ -92,8 +92,8 @@ class CommitteeTasksController extends Controller
     {
         DB::table('tasks')->where([
             ['task_id', '=', $task_id],
-            ['$committee_id' , '=' , $committee_id],
-            ])->delete();
+            ['$committee_id', '=', $committee_id],
+        ])->delete();
 
     }
 }

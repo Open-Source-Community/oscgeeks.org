@@ -192,11 +192,11 @@
                 <div class="contact_us col-md-3 col-lg-3">
                     <div class="dropdown">
                         <button class="dropbtn" onclick="window.location='/Companies'" style="font-size: 12px"><b>Previous
-                            Sponsors</b></button>
+                                Sponsors</b></button>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn" style="font-size: 12px"><b>Contact Us</b> <i
-                                class="fa fa-arrow-down"></i></button>
+                                    class="fa fa-arrow-down"></i></button>
                         <div class="dropdown-content" style="right: -40px">
                             <a href="/cdn-cgi/l/email-protection#ca9ab8afb9a3aeafa4bee4a5ace48599898aada7aba3a6e4a9a5a7">President
                                 of OSC</a>
@@ -278,39 +278,38 @@
                 <thead>
                 <tr>
 
-                    <th> الاسم</th>
-                    <th> الاسم</th>
-                    <th> الاسم</th>
+                    <th> Member</th>
+                    <th> Name</th>
+                    <th> Desc</th>
 
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
+                @foreach($items as $item)
 
-                <tr>
+                    <tr>
+                        <td>{{$item->user['name']}}</td>
+                        <td>{{$item->name}}</td>
+                        <td>Desc</td>
+                        <td>
+                            <div class="col-sm-12">
+                                <a href="{{url("tasks/ads/$item->id/edit")}}">
+                                    <button class="btn btn-warning label-sm">تعديل</button>
+                                </a>
+                            </div>
+                            <div class="col-sm-12">
+                                <form onsubmit='return ConfirmDelete()' method="post"
+                                      action="{{url(" admin/ads/$item->id")}}">
+                                    {{ method_field('DELETE') }}
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    <button type="submit" class="btn btn-danger label-sm">حذف</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
 
-                    <td>Ahmed</td>
-                    <td>Ahmed</td>
-                    <td>Ahmed</td>
-                    <td>
-                        <div class="col-sm-12">
-                            <a href="{{url("tasks/ads/$item->id/edit")}}">
-                            <button class="btn btn-warning label-sm">تعديل</button>
-                            </a>
-                        </div>
-                        <div class="col-sm-12">
-                            <form onsubmit='return ConfirmDelete()' method="post"
-                                  action="{{url(" admin
-                            /ads/$item->id")}}">
-                            {{ method_field('DELETE') }}
-                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                            <button type="submit" class="btn btn-danger label-sm">حذف</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-
-
+                @endforeach
                 </tbody>
             </table>
 
@@ -327,13 +326,13 @@
             <br><br>
 
             <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
-                    class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                        class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
             <span>&nbsp;&nbsp;</span>
             <a target="_blank" href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
-                    class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                        class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
             <span>&nbsp;&nbsp;</span>
             <a target="_blank" href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
-                    class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                        class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
         </center>
     </div>
 </div>

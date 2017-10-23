@@ -18,6 +18,7 @@ class CreateTasksTable extends Migration
             $table->string('name');
             $table->longText('description');
             $table->integer('user_id');
+            $table->integer('committee_id');
             $table->timestamp('deadline');
         });
     }

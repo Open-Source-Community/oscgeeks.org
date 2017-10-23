@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Task;
+use App\User;
 use Illuminate\Http\Request;
 
 class CommitteeTasksController extends Controller
@@ -11,7 +13,7 @@ class CommitteeTasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($category_id)
+    public function index($committee_id)
     {
         //
     }
@@ -21,9 +23,10 @@ class CommitteeTasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create($category_id)
+    public function create($committee_id)
     {
-        //
+        $users = User::all();
+        return view('managment.tasks.create', compact('committee_id','users'));
     }
 
     /**
@@ -32,9 +35,11 @@ class CommitteeTasksController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $category_id)
+    public function store(Request $request, $committee_id)
     {
-        //
+        $request['committee_id'] = $committee_id;
+        Task::create($request->all());
+        return redirect("committees/$committee_id/tasks");
     }
 
     /**
@@ -54,9 +59,11 @@ class CommitteeTasksController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($category_id, $task_id)
+    public function edit($committee_id, $task_id)
     {
-        //
+        $users = User::all();
+        return view('managment.tasks.edit', compact('committee_id', 'task_id','users'));
+
     }
 
     /**
@@ -66,9 +73,11 @@ class CommitteeTasksController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $category_id, $task_id)
+    public function update(Request $request, $committee_id, $task_id)
     {
-        //
+        $item = Task::find($task_id);
+        $item->update($request->all());
+        return redirect("committees/$committee_id/tasks");
     }
 
     /**
@@ -77,7 +86,7 @@ class CommitteeTasksController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($category_id, $task_id)
+    public function destroy($committee_id, $task_id)
     {
         //
     }

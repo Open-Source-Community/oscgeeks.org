@@ -8,6 +8,7 @@
           content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>Welcome to OSC</title>
     <!-- Title Icon-->
     <link rel="shortcut icon"
@@ -272,35 +273,48 @@
 
     </div>
 </div>
-<div class="row">
-    <div class=" col-xs-push-1 col-xs-10 col-md-6 col-md-push-3 col-lg-6 " style="margin: 30px 0px">
-        <div class="col-xs-3 committee">
-            <a href="#"><h1>Web</h1></a>
-        </div>
-        <div class="col-xs-3 committee">
-            <a href="#"><h1>Web</h1></a>
-        </div>
-        <div class="col-xs-3 committee">
-            <a href="#"><h1>Web</h1></a>
-        </div>
-        <div class="col-xs-3 committee">
-            <a href="#"><h1>Web</h1></a>
-        </div>
-
-        <div class="col-xs-4 committee"><a href="#"><h1>Web</h1></a></div>
-        <div class="col-xs-4 committee"><a href="#"><h1>Web</h1></a></div>
-        <div class="col-xs-4 committee"><a href="#"><h1>Web</h1></a></div>
-
-        <div class="col-xs-3 committee"><a href="#"><h1>Web</h1></a></div>
-        <div class="col-xs-3 committee"><a href="#"><h1>Web</h1></a></div>
-        <div class="col-xs-3 committee"><a href="#"><h1>Web</h1></a></div>
-        <div class="col-xs-3 committee"><a href="#"><h1>Web</h1></a></div>
-
-
-    </div>
-
+<div class="container" style=".list-group-horizontal .list-group-item {
+    display: inline-block;
+    float: left;
+}
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
+">
+	<div class="row">
+	    <div class="row" style="padding-top:50px">
+	        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+	            <div class="list-group list-group-horizontal">
+	                <a href="#" class="list-group-item active">HR</a>
+	                <a href="#" class="list-group-item">PR</a>
+	                <a href="#" class="list-group-item">LR</a>
+	                <a href="#" class="list-group-item">FR</a>
+	            </div>
+	        </div>
+	        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+	            <div class="list-group list-group-horizontal">
+	                <a href="#" class="list-group-item">Web</a>
+	                <a href="#" class="list-group-item active">Projects</a>
+	                <a href="#" class="list-group-item">Linux</a>
+	                <a href="#" class="list-group-item">CCC</a>
+	                <a href="#" class="list-group-item">Blender</a>
+	                <a href="#" class="list-group-item">Art</a>
+	                <a href="#" class="list-group-item">EH</a>
+	            </div>
+	        </div>
+		</div>
+	</div>
 </div>
-
 
 <!--start footer-->
 <div class="footer">

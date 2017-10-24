@@ -8,14 +8,13 @@
           content="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>Welcome to OSC</title>
     <!-- Title Icon-->
     <link rel="shortcut icon"
           href="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
     <!-- Start Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="http://oscgeeks.org/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{asset("css/font-awesome/css/font-awesome.min.css")}}">
     <!--End Fonts -->
     <!--Start Styles -->
     <link rel="stylesheet" type="text/css" href="http://oscgeeks.org/css/bootstrap.css">
@@ -27,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="http://oscgeeks.org/css/layout/footer.css">
     <link rel="stylesheet" type="text/css" href="http://oscgeeks.org/css/layout/nav.css">
     <link rel="stylesheet" type="text/css" href="http://oscgeeks.org/css/aboutstyle.css">
-
+    <link rel="stylesheet" type="text/css" href="{{asset("css/managment.css")}}">
     <!--End Styles -->
     <!--Start Scripts -->
     <script src="http://oscgeeks.org/js/jquery-3.2.1.min.js"></script>
@@ -120,10 +119,12 @@
             color: #fff;
             text-decoration: none;
         }
-        .committee:hover{
+
+        .committee:hover {
             border-radius: 10%;
             background: #d0a90c;
         }
+
         .footer {
             position: fixed;
         }
@@ -131,6 +132,7 @@
 </head>
 
 <body>
+
 <!--  start Navbar  -->
 <div class="navbar navbar-default ">
     <div class="container-fluid">
@@ -191,11 +193,11 @@
                 <div class="contact_us col-md-3 col-lg-3">
                     <div class="dropdown">
                         <button class="dropbtn" onclick="window.location='/Companies'" style="font-size: 12px"><b>Previous
-                            Sponsors</b></button>
+                                Sponsors</b></button>
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn" style="font-size: 12px"><b>Contact Us</b> <i
-                                class="fa fa-arrow-down"></i></button>
+                                    class="fa fa-arrow-down"></i></button>
                         <div class="dropdown-content" style="right: -40px">
                             <a href="/cdn-cgi/l/email-protection#ca9ab8afb9a3aeafa4bee4a5ace48599898aada7aba3a6e4a9a5a7">President
                                 of OSC</a>
@@ -273,65 +275,46 @@
 
     </div>
 </div>
-<div class="container" style=".list-group-horizontal .list-group-item {
-    display: inline-block;
-    float: left;
-}
-.list-group-horizontal .list-group-item {
-	margin-bottom: 0;
-	margin-left:-4px;
-	margin-right: 0;
-}
-.list-group-horizontal .list-group-item:first-child {
-	border-top-right-radius:0;
-	border-bottom-left-radius:4px;
-}
-.list-group-horizontal .list-group-item:last-child {
-	border-top-right-radius:4px;
-	border-bottom-left-radius:0;
-}
-">
-	<div class="row">
-	    <div class="row" style="padding-top:50px">
-	        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-	            <div class="list-group list-group-horizontal">
-	                <a href="#" class="list-group-item active">HR</a>
-	                <a href="#" class="list-group-item">PR</a>
-	                <a href="#" class="list-group-item">LR</a>
-	                <a href="#" class="list-group-item">FR</a>
-	            </div>
-	        </div>
-	        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-	            <div class="list-group list-group-horizontal">
-	                <a href="#" class="list-group-item">Web</a>
-	                <a href="#" class="list-group-item active">Projects</a>
-	                <a href="#" class="list-group-item">Linux</a>
-	                <a href="#" class="list-group-item">CCC</a>
-	                <a href="#" class="list-group-item">Blender</a>
-	                <a href="#" class="list-group-item">Art</a>
-	                <a href="#" class="list-group-item">EH</a>
-	            </div>
-	        </div>
-		</div>
-	</div>
+
+<div class="committees">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul id="hexGrid">
+                    @foreach($items as $item)
+                        <li class="hex">
+                            <a class="hexIn" href="{{url("committees/$item->id/tasks")}}">
+                                <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt=""/>
+                                <h1>{{$item->name}}</h1>
+                                <p>Some sample text about the article this hexagon leads to</p>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!--start footer-->
-<div class="footer">
-    <div class="row">
-        <center>
-            <div class="col-xs-12">OSC &copy; 2017</div>
-            <br><br>
 
-            <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
-                    class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-            <span>&nbsp;&nbsp;</span>
-            <a target="_blank" href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
-                    class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-            <span>&nbsp;&nbsp;</span>
-            <a target="_blank" href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
-                    class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-        </center>
+<!--start footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <center>
+                <div class="col-xs-12">OSC &copy; 2017</div>
+                <br><br>
+                <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i
+                            class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                <span>&nbsp;&nbsp;</span>
+                <a target="_blank" href="https://twitter.com/oscgeeks" id="" class="splings_link"><i
+                            class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                <span>&nbsp;&nbsp;</span>
+                <a target="_blank" href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i
+                            class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            </center>
+        </div>
     </div>
 </div>
 <!--End footer-->

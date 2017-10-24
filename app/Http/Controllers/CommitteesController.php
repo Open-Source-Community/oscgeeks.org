@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Committee;
 use Session;
 use App\Image;
 
@@ -10,7 +11,8 @@ class CommitteesController extends Controller
 
     public function index()
     {
-        return view("managment.committees.index");
+        $items = Committee::all();
+        return view("managment.committees.index", compact('items'));
     }
 
 

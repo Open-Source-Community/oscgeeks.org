@@ -1,0 +1,71 @@
+.form {
+    margin-top: 110px;
+    margin-left: 500px;
+    height: 450px;
+    width: 380px;
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form .logo {
+    height: 25%;
+    width: 100%;
+    background-color: rgba(40, 40, 40, .8);
+    margin-left: -8.2em;
+}
+
+.form .logo img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 37%;
+}
+
+.form form {
+    margin-top: 50px;
+}
+
+.form form input[type="text"],
+.form form input[type="password"],
+.form input[type="submit"] {
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 7% 10%;
+    border: none;
+    border-radius: 7px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.form input[type="submit"] {
+    clear: both;
+    height: 45px;
+    margin-top: 75px;
+    background-color: rgba(40, 40, 40, .8);
+    color: #fff;
+    font-size: 22px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgba(40, 40, 40, .9)
+}
+
+.form form input[type="checkbox"] {
+    border: none;
+    background: none;
+    width: 17px;
+    height: 17px;
+    margin-left: 11%;
+    margin-top: 5px;
+    float: left
+}
+
+.form form span {
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    padding-top: 4px;
+    margin-left: 3px;
+}

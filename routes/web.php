@@ -74,3 +74,7 @@ Route::get('/Projects','CommitteesController@index17');
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/changepassword', function () {
+    return view('changepassword');
+});

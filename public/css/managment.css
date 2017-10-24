@@ -1,5 +1,4 @@
 .committees {
-    position: absolute;
     width: 100%;
 }
 
@@ -126,7 +125,6 @@ body {
 
     /* Hexagons */
 #hexGrid {
-    overflow: hidden;
     width: 90%;
     margin: 0 auto;
     padding: 0.866% 0;

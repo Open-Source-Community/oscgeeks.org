@@ -68,3 +68,9 @@ Route::get('/Projects','CommitteesController@index17');
 //Route::get('/refused','CommitteesController@refused');
 //
 //Route::post('/done','RegisterationForm@store');
+
+
+
+Route::get('/login', function () {
+    return view('login');
+});

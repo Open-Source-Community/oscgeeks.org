@@ -299,7 +299,11 @@
 
 <!--start footer-->
 
-<div class="footer">
+<div class="footer" <style>position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;</style>>
     <div class="container">
         <div class="row">
             <center>

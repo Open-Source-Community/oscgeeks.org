@@ -21,7 +21,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/managment.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">@yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->

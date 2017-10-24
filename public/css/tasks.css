@@ -1,0 +1,67 @@
+#btn_add{
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    background-color: #4d4d4d;
+    border-style: none;
+}
+
+#bnts{
+    width: 59%;
+    margin-left: 39%;
+    margin-top: 17px;
+}
+
+#dr_dn{
+    margin-left: 60%;
+    width: 30.5%;
+    margin-top: 10px;
+}
+
+#task{
+    border-style: solid;
+    border-radius: 40px;
+    width: 30%;
+    height: 550px;
+    margin-left: 3%;
+    margin-top: 1.6%;
+   
+}
+
+#h4_nm{
+    margin-left: 22px;
+    position:relative; 
+    top:10px;
+    width:40%;
+}
+
+#h_task{
+    
+    height: 30px;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 17px;
+    /*border-radius: 20px;*/
+}
+
+#h_des{
+    font-style:italic;
+    font-weight:400;
+    width: 90%;
+    margin-left: 17px;
+}
+
+#desc{
+    height: 230px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+#d_div{
+    
+    border-style: solid;
+    margin-left: 30px;
+    border-radius: 30px;
+    margin-top: 4px;
+    width: 70%;
+    height: 60px;
+}

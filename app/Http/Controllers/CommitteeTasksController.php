@@ -17,7 +17,7 @@ class CommitteeTasksController extends Controller
     public function index($committee_id)
     {
         $items = Task::where('committee_id', $committee_id)->get();
-        return view('managment.tasks.index', compact('items'));
+        return view('managment.tasks.index', compact('items', 'committee_id'));
     }
 
     /**
@@ -64,7 +64,8 @@ class CommitteeTasksController extends Controller
     public function edit($committee_id, $task_id)
     {
         $users = User::all();
-        return view('managment.tasks.edit', compact('committee_id', 'task_id', 'users'));
+        $item = Task::find($task_id);
+        return view('managment.tasks.edit', compact('committee_id', 'item', 'users'));
 
     }
 
@@ -77,6 +78,14 @@ class CommitteeTasksController extends Controller
      */
     public function update(Request $request, $committee_id, $task_id)
     {
+
+        if ($request->newDeadline) {
+            $request['deadline'] = $request->newDeadline;
+        } elseif ($request->oldDeadline) {
+            $request['deadline'] = $request->oldDeadline;
+        } else {
+            $request['deadline'] = date('y-m-d', time());
+        }
         $item = Task::find($task_id);
         $item->update($request->all());
         return redirect("committees/$committee_id/tasks");

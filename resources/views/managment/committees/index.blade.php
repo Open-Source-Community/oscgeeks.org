@@ -16,20 +16,19 @@
 
                         @foreach($items as $item)
 
-                                <li class="list">
+                            <li class="list">
 
-                                    <div class="hex-div">
+                                <div class="hex-div">
 
-                                        <img src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg"
-                                             alt=""/>
+                                    <img src="https://farm3.staticflickr.com/2878/10944255073_973d2cd25c.jpg"
+                                         alt=""/>
 
-                                        <h1>{{$item->name}}</h1>
+                                    <h1>{{$item->name}}</h1>
 
-                                    </div>
-                                </li>
+                                </div>
+                            </li>
 
                         @endforeach
-
                     </ul>
                 </div>
             </div>

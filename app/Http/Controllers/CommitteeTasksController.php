@@ -39,6 +39,7 @@ class CommitteeTasksController extends Controller
      */
     public function store(Request $request, $committee_id)
     {
+        $request['deadline'] = $request->newDeadline;
         $request['committee_id'] = $committee_id;
         Task::create($request->all());
         return redirect("committees/$committee_id/tasks");
@@ -99,10 +100,9 @@ class CommitteeTasksController extends Controller
      */
     public function destroy($committee_id, $task_id)
     {
-        DB::table('tasks')->where([
-            ['task_id', '=', $task_id],
-            ['$committee_id', '=', $committee_id],
-        ])->delete();
+        $item = Task::find($task_id);
+        $item->delete();
+        return redirect("committees/$committee_id/tasks");
 
     }
 }

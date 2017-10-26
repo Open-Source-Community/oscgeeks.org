@@ -1,67 +1,59 @@
-#btn_add{
-    margin-left: 1.5%;
-    margin-top: 1.5%;
-    background-color: #4d4d4d;
-    border-style: none;
+fieldset.scheduler-border {
+    border: 2px solid #333 !important;
+    padding: 0px 10px 10px 10px !important;
+    border-bottom: none;
+    border-radius: 10px;
+    -webkit-box-shadow:  2px 3px 10px  #333;
+    box-shadow:  2px 3px 10px  #333;
+    margin:auto !important;
+
 }
 
-#bnts{
-    width: 59%;
-    margin-left: 39%;
-    margin-top: 17px;
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto !important;
+    border: none;
+    color:#FFF;
+    font-size: 22px !important;
+
+}
+.des h5{
+    color: #333;
+    font-weight: 800;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+.des > p{
+    color: #FFF;
+    padding: 20px 30px;
+
 }
 
-#dr_dn{
-    margin-left: 60%;
-    width: 30.5%;
-    margin-top: 10px;
+.dead{
+    float: left;
+    color: #FF651A;
+    font-weight: 800;
+    padding: 15px;
+    background: #333;
+    border-radius: 10px;
+}
+fieldset button , fieldset a {
+    border: 2px solid #FF651A;
+    color: #FE7701;
+    font-size: 16px;
+    padding: 12px 20px;
+    float: right;
+    border-radius: 10px;
+    background: #333;
 }
 
-#task{
-    border-style: solid;
-    border-radius: 40px;
-    width: 30%;
-    height: 550px;
-    margin-left: 3%;
-    margin-top: 1.6%;
-   
-}
-
-#h4_nm{
-    margin-left: 22px;
-    position:relative; 
-    top:10px;
-    width:40%;
-}
-
-#h_task{
-    
-    height: 30px;
-    width: 60%;
-    margin-top: 10px;
-    margin-left: 17px;
-    /*border-radius: 20px;*/
-}
-
-#h_des{
-    font-style:italic;
-    font-weight:400;
-    width: 90%;
-    margin-left: 17px;
-}
-
-#desc{
-    height: 230px;
-    margin-top: 30px;
-    margin-left: 5px;
-}
-
-#d_div{
-    
-    border-style: solid;
-    margin-left: 30px;
-    border-radius: 30px;
-    margin-top: 4px;
-    width: 70%;
-    height: 60px;
+fieldset button:hover ,fieldset a:hover {
+    text-decoration: none;
+    background: #FF651A;
+    transition: .5s;
+    color: #FFF;
+    border: 2px solid #333;
+    cursor: pointer;
 }

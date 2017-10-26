@@ -2,58 +2,49 @@
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/aboutstyle.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/tasks.css') }}">
 
 @endsection
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class=" col-xs-12 ">
 
-                <form class="form-horizontal" method="post"
-                      action="{{url("committees/$committee_id/tasks/$item->id")}}">
+                <form method="post" action="{{url("committees/$committee_id/tasks/$item->id")}}">
                     {{method_field("PUT")}}
                     {{csrf_field()}}
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="name">Members:</label>
-                        <div class="col-sm-8">
-                            <select required class="form-control" name="user_id">
+                    <fieldset class="scheduler-border"
+                              style="background: url('black-bg.png'); background-repeat: no-repeat; background-size: cover;">
+                        <legend class="scheduler-border"><input value="{{$item->name}}" type="text" name="name" class="form-control"
+                                                                placeholder="Task name"></legend>
+
+                        <div class="des">
+                            <select name="user_id" class="form-control" style="width: 35%;float: right;">
                                 @foreach($users as $user)
-                                    @if($item->id == $user->id)
+                                    @if($item->user['id'] == $user->id )
                                         <option selected value="{{$user->id}}">{{$user->name}}</option>
                                     @else
                                         <option value="{{$user->id}}">{{$user->name}}</option>
                                     @endif
                                 @endforeach
                             </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="name">Name:</label>
-                        <div class="col-sm-8">
-                            <input required value="{{$item->name}}" type="text" class="form-control" id="name"
-                                   placeholder="Enter Name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="pwd">Description:</label>
-                        <div class="col-sm-8">
-                            <textarea required name="description" class="form-control">{{$item->description}}</textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2">Deadline:</label>
-                        <div class="col-sm-8">
-                            <input name="oldDeadline" type="hidden" value="{{$item->deadline}}">
-                            <input id="deadline" name="newDeadline" type="datetime-local"
-                                   class="form-control">
-                        </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Submit</button>
                         </div>
-                    </div>
+
+                        <div class="des">
+                            <h5>Description :- </h5>
+                            <p>
+                                <textarea rows="10" name="description"
+                                          class="form-control">{{$item->description}}</textarea>
+                            </p>
+                        </div>
+                        <input name="oldDeadline" value="{{$item->deadline}}" type="hidden">
+                        <p class="dead col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-6">Deadline :
+                            <input name="newDeadline" type="datetime-local" class="form-control">
+                        </p>
+                        <button
+                                class=" col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-3 col-md-3 "><b>Edit Task</b>
+                        </button>
                 </form>
 
             </div>

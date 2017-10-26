@@ -10,50 +10,36 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class=" col-xs-12 ">
-                <button id="btn_add" type="button" class="btn btn-primary btn-lg">Add Task</button>
+            <div class=" col-xs-push-1 col-xs-10 col-md-6 col-md-push-3 col-lg-6 " style="margin: 30px 0px">
 
-                <form id="task" class="form-horizontal" method="post"
-                      action="{{url("committees/$committee_id/tasks")}}">
+                <form method="post" action="{{url("committees/$committee_id/tasks")}}">
                     {{csrf_field()}}
+                    <fieldset class="scheduler-border"
+                              style="background: url('black-bg.png'); background-repeat: no-repeat; background-size: cover;">
+                        <legend class="scheduler-border"><input type="text" name="name" class="form-control"
+                                                                placeholder="Task name"></legend>
 
-                    <h4 id="h4_nm">Task's Name :-</h4>
-                    <input type="text" id="h_task" placeholder="Enter task name">
+                        <div class="des">
+                            <select name="user_id" class="form-control" style="width: 35%;float: right;">
+                                @foreach($users as $user)
+                                    <option value="{{$user->id}}">{{$user->name}}</option>
+                                @endforeach
+                            </select>
 
-                    <div id="dr_dn" class="dropdown">
-                        <h5 id="h_des"><strong>Members</strong></h5>
-                        <select name="user_id" class="form-control">
-                            @foreach($users as $user)
-                                <option {{$user->id}}>{{$user->name}}</option>
-                            @endforeach
-                        </select>
-                    </div>
+                        </div>
 
-                    <div id="desc">
-                        <h5 id="h_des"><strong>Description</strong></h5>
-                        <textarea name="description" style="width:95%; margin-left:5px; height:200px;"></textarea>
-                    </div>
-                    <br>
-
-                    <div id="d_div" class="row">
-                        <p class="col-md-3" style="margin-left:8px; margin-top:17px;">Deadline:</p>
-                        <input name="deadline" class="col-md-3" type="date"
-                               style="width:60%; margin-left:8px; margin-top:17px; border-style: none;">
-                    </div>
-
-                    <div id="bnts">
-
-                        <button id="btn-edit" type="button" class="btn btn-primary btn-lg"
-                                style="background-color: #4d4d4d; border-style: none; height:40px;">Edit
+                        <div class="des">
+                            <h5>Description :- </h5>
+                            <p>
+                                <textarea rows="10" name="description" class="form-control"></textarea>
+                            </p>
+                        </div>
+                        <p class="dead col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-0 col-md-6">Deadline :
+                            <input name="newDeadline" type="datetime-local" class="form-control">
+                        </p>
+                        <button
+                                class=" col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-3 col-md-3 "><b>Add Task</b>
                         </button>
-                        <button id="btn-del" type="button" class="btn btn-primary btn-lg"
-                                style="background-color: #4d4d4d; border-style:none; height:40px;">Delete
-                        </button>
-                        <button id="btn-del" type="button" class="btn btn-primary btn-lg"
-                                style="background-color: #4d4d4d; border-style:none; height:40px;">Add
-                        </button>
-                    </div>
-
                 </form>
 
             </div>

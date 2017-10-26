@@ -1,13 +1,4 @@
-td, th, tr {
-    color: #fff;
-}
-
-td:hover, th:hover, tr:hover {
-    text-decoration: none;
-}
-
 .committees {
-    position: absolute;
     width: 100%;
 }
 
@@ -131,9 +122,9 @@ body {
 
 /************************/
 
+
 /* Hexagons */
 #hexGrid {
-    overflow: hidden;
     width: 90%;
     margin: 0 auto;
     padding: 0.866% 0;
@@ -153,14 +144,14 @@ body {
     float: left;
     overflow: hidden;
     visibility: hidden;
-    outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
     transform: rotate(-60deg) skewY(30deg) translatez(-1px);
 }
 
 .hex * {
     position: absolute;
     visibility: visible;
-    outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
 }
 
 .hexIn {
@@ -172,6 +163,7 @@ body {
     overflow: hidden;
     transform: skewY(-30deg) rotate(60deg);
 }
+
 
 /*** HEX CONTENT **********************************************************************/
 
@@ -187,7 +179,7 @@ body {
 .hex p {
     margin: 0;
     width: 102%;
-    left: -1%; /* prevent line on the right where background doesn't cover image */
+    left: -1%;  /* prevent line on the right where background doesn't cover image */
     padding: 5%;
     box-sizing: border-box;
     background-color: rgba(0, 128, 128, 0.8);
@@ -219,79 +211,64 @@ body {
     transform: translateY(100%) translatez(-1px);
 }
 
+
 /*** HOVER EFFECT  **********************************************************************/
 
 .hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
     transform: translateY(0%) translatez(-1px);
 }
 
+
 /*** SPACING AND SIZING *****************************************************************/
 
-@media (min-width: 1201px) {
-    /* <- 2-3  hexagons per row */
+@media (min-width:1201px) {  /* <- 2-3  hexagons per row */
     .hex {
-
-        width: 15.666%;
-        padding-bottom: 17.72%;
-
-        /* width: 32.666%;    /* = (100-2) / 3 */
-        /*   padding-bottom: 37.720%;    /* =  width / sin(60) */
-        margin-bottom: 45px;
+        width: 32.666%;    /* = (100-2) / 3 */
+        padding-bottom: 37.720%;    /* =  width / sin(60) */
     }
-
     .hex:nth-child(5n+1),
     .hex:nth-child(5n+2) {
         transform: translateX(50%) rotate(-60deg) skewY(30deg);
     }
-
     .hex:nth-child(5n+3),
     .hex:nth-child(5n+4),
     .hex:nth-child(5n+5) {
         margin-top: -8.564%;
         margin-bottom: -8.564%;
     }
-
     .hex:nth-child(5n+2),
     .hex:nth-child(5n+4) {
         margin-right: 1%;
         margin-left: 1%;
     }
-
     .hex:nth-child(5n+1) {
         margin-left: 0.5%;
     }
-
     .hex:nth-child(5n+3),
     .hex:nth-child(5n+6) {
         clear: left;
     }
 }
 
-@media (max-width: 1200px) {
-    /* <- 1-2  hexagons per row */
+@media (max-width: 1200px) {  /* <- 1-2  hexagons per row */
     .hex {
-        width: 49.5%; /* = (100-1) / 2 */
-        padding-bottom: 57.158%; /* =  width / sin(60) */
+        width: 49.5%;    /* = (100-1) / 2 */
+        padding-bottom: 57.158%;    /* =  width / sin(60) */
     }
-
     .hex:nth-child(3n+1) {
         transform: translateX(50%) rotate(-60deg) skewY(30deg);
     }
-
     .hex:nth-child(3n+2),
     .hex:nth-child(3n+3) {
         margin-top: -13.423%;
         margin-bottom: -13.423%;
     }
-
     .hex:nth-child(3n+1) {
         margin-left: 0.5%
     }
-
     .hex:nth-child(3n+3) {
         margin-left: 1%;
     }
-
     .hex:nth-child(3n+2),
     .hex:nth-child(3n+4) {
         clear: left;
@@ -306,38 +283,33 @@ body {
 
 /* End Hexagons */
 /* fork on github button */
-#fork {
+#fork{
     font-family: 'Raleway', sans-serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: #000;
-    text-decoration: none;
-    border: 1px solid #000;
-    padding: .5em .7em;
-    margin: 1%;
+    position:fixed;
+    top:0;
+    left:0;
+    color:#000;
+    text-decoration:none;
+    border:1px solid #000;
+    padding:.5em .7em;
+    margin:1%;
     transition: color .5s;
-    overflow: hidden;
+    overflow:hidden;
 }
-
 #fork:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 130%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 130%; height: 100%;
     background: #000;
     z-index: -1;
-    transform-origin: 0 0;
-    transform: translateX(-100%) skewX(-45deg);
+    transform-origin:0 0 ;
+    transform:translateX(-100%) skewX(-45deg);
     transition: transform .5s;
 }
-
 #fork:hover {
     color: #fff;
 }
-
 #fork:hover:before {
     transform: translateX(0) skewX(-45deg);
 }

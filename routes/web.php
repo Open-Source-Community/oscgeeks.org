@@ -78,3 +78,7 @@ Route::get('/login', function () {
 Route::get('/changepassword', function () {
     return view('changepassword');
 });
+
+Route::get('/updateprofile', function () {
+    return view('updateprofile');
+});

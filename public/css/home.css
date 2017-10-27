@@ -15,20 +15,6 @@
     margin-top: 1.5%;
 }
 
-.pinguen{
-    width: 80%;
-    margin-top: -130%;
-    position: absolute;;
-
-}
-.hello{
-    width: 180%;
-    position: relative;
-    margin-top: -460%;
-}
-#pinguen>div { visibility: hidden; }
-#pinguen:hover>div { visibility: visible; }
-
 
 .rocket{
     margin-top: 60px;
@@ -86,6 +72,24 @@
     border-color: gold;
     text-decoration: none;
     line-height: 62px;
+}
+
+
+@media (max-width:767px){
+    .rocket{
+        height: 172px;
+        width: 65%;
+        margin-left: 20%;
+        margin-top: 30px;
+    }
+    .message{
+        visibility: hidden;
+    }
+    .button{
+        width: 65%;
+        font-size: 16px;
+        margin-left: 22.5%;
+    }
 }
 
 
@@ -149,3 +153,4 @@ body{
 span{
     font-size: 150%;
 }
+

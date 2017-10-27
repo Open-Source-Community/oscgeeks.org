@@ -1,24 +1,24 @@
 .form {
-    margin-top: 110px;
-    margin-left: 500px;
+    margin: 40px 32.5%;
     height: 450px;
-    width: 380px;
+    width: 35%;
+    position: relative;
     background-color: rgba(100, 100, 100, 0.3);
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.form .logo {
+.form .logo-area {
     height: 25%;
     width: 100%;
+    border-radius: 7px;
     background-color: rgba(40, 40, 40, .8);
-    margin-left: -8.2em;
+    position: relative
 }
 
-.form .logo img {
-    width: 90px;
-    height: 90px;
-    margin: 10px 37%;
+.form .logo-area img {
+    width: 25%;
+    height: 80%;
+    margin: 10px 37.5%;
 }
 
 .form form {
@@ -68,4 +68,19 @@
     color: #333;
     padding-top: 4px;
     margin-left: 3px;
+}
+
+@media (max-width: 767px){
+    .form{
+        width: 70%;
+        height: 400px;
+        margin: 40px 15%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1022px){
+    .form{
+        width: 50%;
+        height: 400px;
+        margin: 40px 25%;
+    }
 }

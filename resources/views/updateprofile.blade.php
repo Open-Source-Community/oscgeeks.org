@@ -1,7 +1,7 @@
 @extends('layouts.app2')
 
 @section('CSS')
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/changepassword.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/updateprofile.css') }}">
 @endsection
 
 @section('content')
@@ -10,9 +10,9 @@
             <img src="images/logo.png">
         </div>
         <form>
-            <input type="password" placeholder="old Password">
-            <input type="password" placeholder="new Password">
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" class="col-xs-">
+            <input type="tel" placeholder="Phone">
+            <input type="password" placeholder="Password">
             <input type="submit" value="Save changes">
         </form>
 </div>

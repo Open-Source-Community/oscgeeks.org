@@ -27,6 +27,7 @@
 
 .form form input[type="text"],
 .form form input[type="password"],
+.form form input[type="tel"],
 .form input[type="submit"] {
     display: block;
     width: 80%;
@@ -50,6 +51,7 @@
 .form input[type="submit"]:hover {
     background-color: rgba(40, 40, 40, .9)
 }
+
 @media (max-width: 767px){
     .form{
         width: 70%;

@@ -2,6 +2,7 @@
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/blender.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/projects.css') }}">
 @endsection
 
 @section('JS')
@@ -9,7 +10,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row wow  bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+       <div class="row wow  bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
             <div class="col-md-12">
                 <div class="text-center">
                 <h3 class="hvr-grow" style="font-size: 400%;">Blender</h3>
@@ -35,61 +36,65 @@
             </div>
         </div>
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+    </ol>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="img-responsive" src="{{asset('/images/Background/b1.png')}}" alt="Los Angeles" style="width:650px;height:550px;">
+      </div>
 
-                @for( $i = 1 ; $i <= count($committee_images) ; $i++)
+      <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b2.jpg')}}" alt="Chicago" style="width:650px;height:550px;">
+      </div>
+    
+      <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b3.png')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
 
-                    @if ($i == 1)
+      <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b4.png')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
 
-                        <li data-target="#myCarousel" data-slide-to="{{$i}}" class="active"></li>
+      <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b5.png')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
 
-                    @else
+       <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b6.jpg')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
 
-                        <li data-target="#myCarousel" data-slide-to="{{$i}}"></li>
+       <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b7.jpg')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
 
-                    @endif
-                @endfor
+       <div class="item">
+        <img class="img-responsive" src="{{asset('/images/Background/b8.png')}}" alt="New york" style="width:650px;height:550px;">
+      </div>
+    </div>
 
-
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <!-- asset function statrs from public folder -->
-
-            <div class="carousel-inner">
-
-                @for( $i = 0 ; $i < count($committee_images) ; $i++)
-
-                    @if ($i == 0)
-                        <div class="item active">
-                            <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
-                        </div>
-                    @else
-                        <div class="item">
-                            <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
-                        </div>
-                    @endif
-                @endfor
-
-
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+   
         <br>
         <div class="wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
              <p class="vision" style="font-size: 300%;">Here're 2 playlists of blender tutorials to get started<br></p>

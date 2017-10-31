@@ -1,27 +1,16 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Auth::routes();
 
-Route::get('/', function () {
-    return redirect('/home');
+Route::get('/', 'HomeController@index');
+Route::get('/home', function () {
+    return view('home');
 });
 
 Route::get('/form', function () {
     return redirect('/home');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
 
 Route::get('/events', 'EventsController@index');
 
@@ -70,12 +59,10 @@ Route::get('/Projects', 'CommitteesController@index17');
 //Route::post('/done','RegisterationForm@store');
 
 
-// Esraa
-
+// Managment system
 Route::resource('/committees', 'CommitteesController');
-
-// Omar
-
 Route::resource('/committees.tasks', 'CommitteeTasksController');
+Route::resource('/members.tasks', 'MembersTasksController');
+
 
 

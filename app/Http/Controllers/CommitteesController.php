@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Committee;
+use App\User_committee;
 use Session;
 use App\Image;
 
@@ -11,6 +12,11 @@ class CommitteesController extends Controller
 
     public function index()
     {
+        if (auth()->user()->position_id == 4) {
+            $userCommittee = User_committee::where("user_id", auth()->user()->id)->first();
+
+            return redirect("committees/$userCommittee->committee_id/tasks");
+        }
         $items = Committee::all();
         return view("managment.committees.index", compact('items'));
     }

@@ -15,7 +15,7 @@
                     <ul id="categories" class="clr">
 
                         @foreach($items as $item)
-
+                            <a href="{{url("committees/$item->id/tasks")}}">
                             <li class="list">
 
                                 <div class="hex-div">
@@ -27,7 +27,7 @@
 
                                 </div>
                             </li>
-
+                            </a>
                         @endforeach
                     </ul>
                 </div>

@@ -13,6 +13,8 @@ class Task extends Model
         'user_id',
         'committee_id',
         'deadline',
+        'status',
+
     ];
 
     public function committee()

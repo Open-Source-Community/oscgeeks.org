@@ -27,7 +27,7 @@ class CommitteeTasksController extends Controller
      */
     public function create($committee_id)
     {
-        $users = User::all();
+        $users = User::where("position_id", 5)->get();
         return view('managment.tasks.create', compact('committee_id', 'users'));
     }
 
@@ -41,6 +41,7 @@ class CommitteeTasksController extends Controller
     {
         $request['deadline'] = $request->newDeadline;
         $request['committee_id'] = $committee_id;
+        $request['status'] = 1;
         Task::create($request->all());
         return redirect("committees/$committee_id/tasks");
     }
@@ -64,7 +65,7 @@ class CommitteeTasksController extends Controller
      */
     public function edit($committee_id, $task_id)
     {
-        $users = User::all();
+        $users = User::where("position_id", 5)->get();
         $item = Task::find($task_id);
         return view('managment.tasks.edit', compact('committee_id', 'item', 'users'));
 

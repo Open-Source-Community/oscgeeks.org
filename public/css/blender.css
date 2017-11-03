@@ -12,6 +12,14 @@ body{
     padding: 0px;
     overflow-x: hidden;
 }
+div img
+{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
 .timeline {
     position: relative;
     padding:4px 0 0 0;

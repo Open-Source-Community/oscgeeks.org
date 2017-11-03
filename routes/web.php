@@ -75,10 +75,19 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/changepassword', function () {
+/*Route::get('/changepassword', function () {
     return view('changepassword');
-});
+});*/
 
-Route::get('/updateprofile', function () {
+/*Route::get('/updateprofile', function () {
     return view('updateprofile');
-});
+});*/
+
+/*this routes for edit password and profile*/
+Route::get('/editpassword', 'UserController@update');
+
+Route::post('/edit', 'UserController@edit');
+
+Route::get('/updateprofile', 'UserController@updateprofile');
+
+Route::post('/editprofile', 'UserController@editprofile');

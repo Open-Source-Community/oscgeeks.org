@@ -9,10 +9,10 @@
         <div class="logo-area">
             <img src="images/logo.png">
         </div>
-        <form>
-            <input type="password" placeholder="old Password">
-            <input type="password" placeholder="new Password">
-            <input type="text" placeholder="Email">
+        <form method="POST" action="/edit">
+         {{ csrf_field() }}
+            <input type="password" name="oldpassword" placeholder="old Password" required>
+            <input type="password" name="newpassword" placeholder="new Password" required>
             <input type="submit" value="Save changes">
         </form>
 </div>

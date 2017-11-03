@@ -15,12 +15,13 @@ class CommitteesController extends Controller
         if (auth()->check()) {
             if (auth()->user()->position_id == 4) {
                 $userCommittee = User_committee::where("user_id", auth()->user()->id)->first();
-
                 return redirect("committees/$userCommittee->committee_id/tasks");
             }
 
             $items = Committee::all();
             return view("managment.committees.index", compact('items'));
+        } else {
+            return view('home');
         }
     }
 

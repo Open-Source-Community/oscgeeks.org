@@ -16,7 +16,13 @@ class MembersTasksController extends Controller
     public function edit($member_id, $task_id)
     {
         $item = Task::find($task_id);
-        $item->status = 2;
+        if ($item->status == 1) {
+            $item->status = 2;
+        } elseif ($item->status == 2) {
+            $item->status = 3;
+        } elseif ($item->status == 3) {
+            $item->status = 1;
+        }
         $item->save();
         return redirect("members/$member_id/tasks");
     }

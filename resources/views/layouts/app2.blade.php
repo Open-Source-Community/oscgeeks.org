@@ -25,7 +25,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">@yield('CSS')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">
+    @yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
@@ -36,6 +37,8 @@
     <script src="{{ asset('js/respond.min.js') }}"></script>
     <script src="{{ asset('js/wow.min.js') }}"></script>
     <script src="{{ asset('js/Custom.js') }}"></script>
+    <script src="{{ asset('js/jquery.nicescroll.min.js') }}"></script>
+    <script src="{{ asset('js/style.js') }}"></script>
     <script>new WOW().init();</script> @yield('JS')
 <!--End Scripts -->
     <!--  spiciale   -->
@@ -205,6 +208,7 @@
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->
 
+
 <script>
 
     $(document).ready(function () {
@@ -214,6 +218,7 @@
             $(".menu").slideToggle();
 
         });
+
 
 
     });

@@ -1,13 +1,13 @@
 $(document).ready(function(e){
 
- 
+
         var $menu = $(".dropdown-menu");
 
         $menu.menuAim({
             activate: activateSubmenu,
             deactivate: deactivateSubmenu
         });
-       
+
         function activateSubmenu(row) {
             var $row = $(row),
                 submenuId = $row.data("submenuId"),
@@ -47,7 +47,7 @@ $(document).ready(function(e){
             $(".popover").css("display", "none");
             $("a.maintainHover").removeClass("maintainHover");
         });
-    
+
 });
 
 

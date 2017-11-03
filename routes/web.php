@@ -1,15 +1,10 @@
 <?php
 
+
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/form', function () {
-    return redirect('/home');
-});
 
 
 Route::get('/events', 'EventsController@index');
@@ -63,6 +58,11 @@ Route::get('/Projects', 'CommitteesController@index17');
 Route::resource('/committees', 'CommitteesController');
 Route::resource('/committees.tasks', 'CommitteeTasksController');
 Route::resource('/members.tasks', 'MembersTasksController');
+
+
+
+
+
 
 
 

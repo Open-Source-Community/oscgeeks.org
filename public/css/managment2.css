@@ -67,20 +67,21 @@
 }
 
 /* HEX CONTENT */
-#categories .list img {
+#categories .list .hex-img {
     left: -100%;
     right: -100%;
     width: auto;
     height: 100%;
     margin: 0 auto;
 }
-.footer{
+
+.footer {
     position: fixed;
     bottom: 0;
     margin: 0;
 }
 
-#categories .hex-div h1, #categories .hex-div p {
+#categories .hex-div .hex-h1, #categories .hex-div p {
     width: 100%;
     padding: 0 5%;
     background-color: #232f3d;
@@ -90,7 +91,7 @@
     transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
 }
 
-#categories .list h1 {
+#categories .list .hex-h1 {
     bottom: 110%;
     font-style: italic;
     font-weight: normal;
@@ -99,7 +100,7 @@
     padding-bottom: 100%;
 }
 
-#categories .list h1:after {
+#categories .list .hex-h1:after {
     content: '';
     display: block;
     position: absolute;
@@ -119,7 +120,7 @@
 
 /* HOVER EFFECT  */
 
-#categories .list .hex-div:hover h1 {
+#categories .list .hex-div:hover .hex-h1 {
     bottom: 50%;
     padding-bottom: 10%;
 }
@@ -163,6 +164,7 @@
 #fork:hover:before {
     transform: translateX(0) skewX(-45deg);
 }
-.clr h1 {
+
+#categories .hex-h1 {
     margin: -0.33em 0;
 }

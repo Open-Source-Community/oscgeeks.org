@@ -15,6 +15,7 @@ class CreateCommitteesTable extends Migration
     {
         Schema::create('committees', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('image');
             $table->text('name');
         });
     }

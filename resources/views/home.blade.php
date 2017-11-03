@@ -45,6 +45,18 @@
         <div class=" rocket col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 col-sm-5 col-sm-offset-3 col-xs-5 col-xs-offset-3"></div>
 
         <div class="clearfix"></div>
+        <li>
+            <a href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                Logout
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                  style="display: none;">
+                {{ csrf_field() }}
+            </form>
+        </li>
 
         <a href="{{url("about")}}"  class="button col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-4 col-xs-offset-4">START TOUR</a>
     </div>

@@ -33,17 +33,25 @@
                                 <legend class="scheduler-border">{{$item->name}}</legend>
                                 @if(auth()->check())
                                     @if(auth()->user()->position_id ==5)
-
                                         @if(isset($member_id))
                                             @if($item->status ==1)
                                                 <a href="{{url("members/$member_id/tasks/$item->id/edit")}}">
-                                                    <button class="btn btn-danger" style="margin-left: 55px"> progress
+                                                    <button class="btn btn-danger" style="margin-left: 55px">
+                                                        go in progress
                                                     </button>
                                                 </a>
                                             @elseif($item->status == 2)
-                                                <label class="btn btn-warning"> in progress</label>
+                                                <a href="{{url("members/$member_id/tasks/$item->id/edit")}}">
+                                                    <button class="btn btn-warning" style="margin-left: 55px">
+                                                        go done
+                                                    </button>
+                                                </a>
                                             @elseif($item->status == 3)
-                                                <label class="btn btn-success"> done</label>
+                                                <a href="{{url("members/$member_id/tasks/$item->id/edit")}}">
+                                                    <button class="btn btn-primary" style="margin-left: 55px">
+                                                        go open
+                                                    </button>
+                                                </a>
                                             @endif
                                         @endif
                                     @endif

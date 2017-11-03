@@ -54,12 +54,12 @@
                     @if ($i == 0)
                         <div class="item active">
                             <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
+                                 src="{{$committee_images[$i]->image}}">
                         </div>
                     @else
                         <div class="item">
                             <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
+                                 src="{{$committee_images[$i]->image}}">
                         </div>
                     @endif
                 @endfor

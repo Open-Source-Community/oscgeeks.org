@@ -31,7 +31,7 @@
                 </p>
                 </div><br>
                 <h3 class="text-center">Here we represent some of our instructors' work</h3>
-                
+
             </div>
         </div>
 
@@ -66,12 +66,12 @@
                     @if ($i == 0)
                         <div class="item active">
                             <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
+                                 src="{{$committee_images[$i]->image}}">
                         </div>
                     @else
                         <div class="item">
                             <img class="img-responsive center-block"
-                                 src="{{$committee_images[$i]->imageurl}}">
+                                 src="{{$committee_images[$i]->image}}">
                         </div>
                     @endif
                 @endfor

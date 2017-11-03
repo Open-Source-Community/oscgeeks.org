@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Session;
-use App\Image;
+use App\Committee_image;
 
 class CommitteesController extends Controller
 {
@@ -19,7 +19,7 @@ class CommitteesController extends Controller
 
     public function index3()
     {
-        $committee_images = Image::where(['comm_name' => 'Blender'])->get();
+        $committee_images = Committee_image::where(['committee_id' => 7])->get();
         return view('blender', compact('committee_images'));
     }
 
@@ -30,7 +30,7 @@ class CommitteesController extends Controller
 
     public function index5()
     {
-        $committees_data2 = Image::where(['comm_name' => 'Artwork'])->get();
+        $committees_data2 = Committee_image::where(['committee_id' => 5])->get();
         return view('art', compact('committees_data2'));
     }
     public function index6()
@@ -40,7 +40,7 @@ class CommitteesController extends Controller
 
     public function index7()
     {
-        $committee_images = Image::where(['comm_name' => 'Logistics'])->get();
+        $committee_images = Committee_image::where(['committee_id' => 11])->get();
         return view('logistics', compact('committee_images'));
     }
     

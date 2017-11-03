@@ -18,7 +18,7 @@
     <div class="wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
     <div class="artwork">
         @foreach($committees_data2 as $committee)
-            <img tabindex="{{ $committee->id }}" src="{{ $committee->imageurl }}" alt="Image of Ireland">
+            <img tabindex="{{ $committee->id }}" src="{{ $committee->image }}" alt="Image of Ireland">
         @endforeach
     </div>
     </div>

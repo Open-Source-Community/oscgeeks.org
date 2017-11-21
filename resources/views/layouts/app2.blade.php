@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">
-    @yield('CSS')
+@yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
@@ -53,6 +53,22 @@
                               src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
             <img class=" osc col-md-4 col-xs-6   "
                  src="https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/osc-log.png?raw=true">
+            @if (Auth::guest())
+                <a href="/login" class="login pull-right hidden-xs hidden-sm "
+                   style="font-size:18px; color:#FFF ; padding:50px 6% 0 0 ; z-index:1 ; float:right"><i
+                            class="fa fa-sign-in"></i> Login</a>
+            @else
+                <a href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                   class="login pull-right hidden-xs hidden-sm "
+                   style="font-size:18px; color:#FFF ; padding:50px 6% 0 0 ; z-index:1 ; float:right"><i
+                            class="fa fa-sign-in"></i> Logout</a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+            @endif
         </div>
         <!--<div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
@@ -120,6 +136,23 @@
 
 
             <!-- NavBar For Small Screen -->
+
+            @if (Auth::guest())
+                <a href="/login" class="login pull-left hidden-md hidden-lg "
+                   style="font-size:18px; color:#FFF ; padding:20px 0 0 4% ; z-index:1 ; float:left"><i
+                            class="fa fa-sign-in"></i> Login</a>
+            @else
+                <a href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"
+                   class="login pull-left hidden-md hidden-lg "
+                   style="font-size:18px; color:#FFF ; padding:20px 0 0 4% ; z-index:1 ; float:left"><i
+                            class="fa fa-sign-in"></i> Logout</a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+            @endif
 
             <p class="fa fa-bars"></p>
 
@@ -218,7 +251,6 @@
             $(".menu").slideToggle();
 
         });
-
 
 
     });

@@ -15,20 +15,6 @@
     margin-top: 1.5%;
 }
 
-.pinguen{
-    width: 80%;
-    margin-top: -130%;
-    position: absolute;;
-
-}
-.hello{
-    width: 180%;
-    position: relative;
-    margin-top: -460%;
-}
-#pinguen>div { visibility: hidden; }
-#pinguen:hover>div { visibility: visible; }
-
 
 .rocket{
     margin-top: 60px;
@@ -88,8 +74,69 @@
     line-height: 62px;
 }
 
+@media (max-width:479px){
+    .home{
+        height: 100%;
+    }
+    .rocket{
+        height: 172px;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 160px;
+    }
+    .message{
+        background-image: url(../images/speech-bubble-md.png);
+        width: 68%;
+        margin-left: 25%;
+        margin-top: 35px;
+    }
+    .message p{
+        margin-top: 7px;
+        margin-bottom: 0;
+        margin-left: -25px;
+    }
+    .button{
+        width: 60%;
+        font-size: 16px;
+        margin-left: 20%;
+        margin-top: 60px;
+    }
+    .osc{
+        margin-top: 2.5%;
+        width: 80%;
+    }
+}
 
-@keyframes shaking{
+@media (min-width:480px) and (max-width:767px){
+    .home{
+        height: 100%;
+    }
+    .rocket{
+        height: 15em;
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 160px;
+    }
+    .message{
+        background-image: url(../images/speech-bubble-md.png);
+        width: 60%;
+        margin-left: 30%;
+        margin-top: 35px;
+    }
+
+    .button{
+        width: 60%;
+        font-size: 16px;
+        margin-left: 20%;
+        margin-top: 40px;
+    }
+    .osc{
+        margin-top: 2.5%;
+        width: 80%;
+    }
+}
+
+/*@keyframes shaking{
 
     25%{
         transform: rotate(-5deg)
@@ -99,7 +146,7 @@
         transform: rotate(5deg)
 
     }
-}
+}*/
 
 /* added recently*/
 

@@ -136,7 +136,7 @@
     }
 }
 
-/*@keyframes shaking{
+@keyframes shaking{
 
     25%{
         transform: rotate(-5deg)
@@ -146,7 +146,7 @@
         transform: rotate(5deg)
 
     }
-}*/
+}
 
 /* added recently*/
 

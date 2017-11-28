@@ -1,0 +1,80 @@
+.body{
+    box-sizing: border-box;
+}
+.back{
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.3);
+    padding: 40px 30px;
+    margin-bottom: 20px;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+    color: beige;
+    height: 60px;
+    padding-top: 12px;
+}
+
+.stars{
+    padding-left: 14%;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+
+.stars span{
+    color: beige;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    padding-left: 5px;
+}
+
+@media (max-width:767px){
+    .stars{
+        padding-left: 10%;
+    }
+}
+
+.modify{
+    height: 60px;
+    padding: 10px 0 0 0;
+}
+
+.modify .update{
+    display: inline;
+    width: 48%;
+    height: 70%;
+    padding: 0 4px;
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #444;
+}
+
+.modify .save{
+    display: inline;
+    width: 48%;
+    height: 70%;
+    background-color: #44D834;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 0 10px 10px 0;
+}
+
+.modify .update:hover,
+.modify .save:hover{
+    opacity: .92;
+}
+
+hr{
+    background-color: #888;
+    display: block;
+    margin-top: 45px;
+    border-color: #777;
+}
+
+.row{
+    margin-top: 20px;
+}

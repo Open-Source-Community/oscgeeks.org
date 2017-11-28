@@ -23,6 +23,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/star', function () {
+    return view('layouts.star');
+});
+
 Route::get('/events', 'EventsController@index');
 
 Route::get('/Linux', 'CommitteesController@index1');

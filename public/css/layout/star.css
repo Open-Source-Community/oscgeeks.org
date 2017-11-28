@@ -1,0 +1,17 @@
+.name{
+    font-size: 22px;
+    color: beige;
+}
+
+.stars span{
+    color: beige;
+    font-size: 22px;
+}
+
+.update button{
+    display: block;
+}
+
+.update input{
+    display: block;
+}

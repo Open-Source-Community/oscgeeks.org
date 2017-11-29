@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\User;
 
@@ -16,14 +16,17 @@ class UserController extends Controller
 
         $user = new User;
         $user = $user->find(1);
- 
+        $password = $user->password;
+
                 $oldpassword = $request->input('oldpassword');
                 $newpassword = $request->input('newpassword');
-            
-            //if condition 
-            
-                $user->update(['password' => $newpassword]);
-                return back();
+            //if condition
+                if ($password == $oldpassword){
+                    $user->update(['password' => $newpassword]);
+                    return back();
+                }else{
+                    echo "alert this password is false";
+                } 
             }
             
     //edit profile 
@@ -36,10 +39,9 @@ class UserController extends Controller
         $user = $user->find(1);
 
                 $email = $request->input('email');
-                $phone = $request->input('phone');
                 $name = $request->input('name');
 
-                $user->update(['email' => $email, 'phone'=> $phone, 'name'=>$name]);
+                $user->update(['email' => $email, 'name'=>$name]);
                 return back();
     }
     

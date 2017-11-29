@@ -12,7 +12,7 @@
         <form method="POST" action="/editprofile">
         {{ csrf_field() }}
             <input type="text" name="email" placeholder="Email" class="col-xs-">
-            <input type="tel" name="phone" placeholder="Phone">
+
             <input type="text" name="name" placeholder="name">
             <input type="submit" value="Save changes">
         </form>

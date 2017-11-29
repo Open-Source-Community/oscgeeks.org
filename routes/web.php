@@ -24,7 +24,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/star', function () {
-    return view('layouts.star');
+    return view('star');
 });
 
 Route::get('/events', 'EventsController@index');

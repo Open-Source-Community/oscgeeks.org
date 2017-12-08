@@ -6,9 +6,6 @@
 
 @endsection
 
-
-
-
 @section('content')
     <div class="container">
         <div class="row">
@@ -19,7 +16,12 @@
                 </div>
                 <div class="col-md-12 text-center">
                     <div class=" text-center">
-                        <h3>We let you try to use our tools to create whatever you want in hand-craft. We organized the place with handcrafts and colors to share charefulness with you. We made  beautiful things together. We made mental and educational games to let you share your knowladge and fun with us. We search for the right place to host our events and reserve it. We print posters and publish them on the walls to share events with you.</h3><br>
+                        <h3>We let you try to use our tool to handcraft whatever you want. We decorate the place with
+                            handcrafts and colors to share cheerfulness with you. We made many beautiful things together
+                            and continue to do so. We make entertaining and educational games to let you share your
+                            knowledge and have fun with us. We are also responsible for finding the right place to host
+                            our events and reserve it. We print flyers and posters and publish them during events. We
+                            are the heart of all the materials you see around in OSC.</h3><br>
                     </div>
                 </div>
             </div>

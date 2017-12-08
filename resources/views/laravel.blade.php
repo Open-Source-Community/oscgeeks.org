@@ -21,7 +21,7 @@
 
         <div class="col-sm-9">
             <h2> Laravel PHP Framework </h2>
-            <p>Awesome and experienced web developers found a repeating pattern in the process of creating web applications. They know very well that a real programmer should not repeat his code over and over again. And so they created a group of libraries and tools that contained code they used across their websites; they called it Laravel.</p>
+            <p>Awesome and experienced web developers found a repeating pattern in the process of creating web applications. They know very well that a real programmer should not repeat his code over and over again. And so they created a group of libraries and tools that contain code they used across their websites; they called it Laravel.</p>
         </div>
 
     </div>

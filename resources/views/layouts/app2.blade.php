@@ -175,20 +175,66 @@
        </div>
        @yield('content')
 <!--start footer-->
-<div class="footer">
-    <div class="row">
-        <center>
-            <div class="col-xs-12">OSC &copy; 2017</div>
-            <br><br>
-            
-            <a target="_blank" href="https://www.facebook.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-            <span>&nbsp;&nbsp;</span>
-            <a target="_blank" href="https://twitter.com/oscgeeks" id="" class="splings_link"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>   
-            <span>&nbsp;&nbsp;</span>
-            <a target="_blank" href="https://www.instagram.com/oscgeeks/" id="" class="splings_link"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-        </center>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <h3> Committees </h3>
+                    <ul style="display:inline-block;padding:0 20% 0 5%; border-left:1px solid #BAC1C8;">
+                       <li> <a href="/Linux">Linux </a></li>
+                       <li><a href="/Blender">Blender </a></li>
+                       <li><a href="/English Heroes">English </a></li>
+                       <li><a href="/Content Creators">Content Creators </a></li>
+                       <li><a href="/Artwork">Artwork </a></li>  
+                       <li><a href="/Projects">Projects </a>  </li>
+                    </ul>
+                    <ul style="display:inline-block">
+                        <li><a href="/Web">Web </a></li>
+                        <li><a href="/Public Relations">Public Relations </a> </li>
+                        <li><a href="/Human Resources">Human Resources </a> </li> 
+                        <li><a href="/Fundraising">Fundraising </a>  </li>
+                        <li><a href="/Logistics">Logistics </a></li>  
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Our Events </h3>
+                        <ul style="border-left:1px solid #BAC1C8; padding-left:5%;">
+                            <li> <a href="/events"> Ubuntu Release Party (URP)</a> </li>
+                            <li> <a href="/events"> Workshops</a> </li>
+                            <li> <a href="/events"> Recruitment </a> </li>
+                            <li> <a href="/events"> Job fair </a> </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Workshops </h3>
+                    <ul style="border-left:1px solid #BAC1C8; padding-left:5%;">
+                        <li> <a href="/Linux Workshop">Linux Workshop</a></li>
+                        <li> <a href="/Blender Workshop">Blender Workshop</a></li>
+                        <li> <a href="/Laravel">Laravel Workshop</a> </li>
+                        
+                    </ul>
+                </div>
+             
+    
+                <div class="pull-right col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
+                        <h3>social</h3>
+                    <ul class="social">
+                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row--> 
+        </div>
+        <!--/.container--> 
+        <p style="text-align:center ; width:89% ; margin:0 auto; padding-top:20px;border-top:1px solid #EDEFF1"> Copyright © OSC All right reserved. </p>
     </div>
-</div>
+    <!--/.footer-->
+    
 <!--End footer-->
 <!-- jquery File and MY Js -->
 <!-- Latest compiled and minified JavaScript -->

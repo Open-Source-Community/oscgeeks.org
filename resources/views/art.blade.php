@@ -1,10 +1,12 @@
 @extends('layouts.app2')
 
 @section('CSS')
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/artwork.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/artwork2.css') }}">
+   
 @endsection
 
 @section('content')
+
     <div class="wow zoomIn" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
         <div class="container text-center">
             <h1 class="hvr-grow">ArtWork</h1>
@@ -23,5 +25,16 @@
             @endforeach
         </div>
     </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 @endsection

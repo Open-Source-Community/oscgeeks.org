@@ -55,7 +55,8 @@
         transition: .5s;
     }
 .social{
-    padding-top: 25%;
+    padding-top: 20%;
+    margin-left: 30px;
 }
 .social li {
     background: none repeat scroll 0 0 #B5B5B5;
@@ -66,6 +67,7 @@
     height: 36px;
     line-height: 36px;
     margin: 0 8px 0 0;
+    margin-left: 5px;
     padding: 0;
     text-align: center;
     width: 36px;
@@ -88,6 +90,4 @@
     margin: 0 0 0 5px;
     color: #EDEFF1 !important;
 }
-
-
 /*End Footer*/

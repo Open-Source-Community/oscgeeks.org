@@ -222,9 +222,8 @@
                 <div class="pull-right col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
                         <h3>social</h3>
                     <ul class="social">
-                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-4x fa-facebook">   </i> </a> </li>
+                        <li> <a href="#"> <i class="fa fa-4x fa-twitter">   </i> </a> </li>
                     </ul>
                 </div>
             </div>

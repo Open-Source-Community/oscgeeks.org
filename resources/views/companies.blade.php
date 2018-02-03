@@ -88,7 +88,7 @@
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/code%20touch.png?raw=true" alt="Code Touch Logo">
                     <div class="card-body">
                         {{--<button class="btn btn-outline-warning" disabled >WebSite</button>--}}
-                        <a href="#" target="_blank" class="btn btn-outline-warning">Code Touch</a>
+                        <a href="http://www.sharpmobile.ca/" target="_blank" class="btn btn-outline-warning">http://www.sharpmobile.ca</a>
                     </div>
                 </div>
             </div>

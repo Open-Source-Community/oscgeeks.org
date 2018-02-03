@@ -71,7 +71,7 @@
                 <div class="card" style="width: 25rem; ">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Itworkx.png?raw=true" alt="Itworx Logo">
                     <div class="card-body">
-                        <a href="http://www.itworx.com/" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://www.itworx.com/" target="_blank" class="btn btn-outline-warning">http://www.itworx.com</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Tmentors.png?raw=true" alt="Tmentors Logo">
                     <div class="card-body">
-                        <a href="http://tmentors.com//" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://tmentors.com/" target="_blank" class="btn btn-outline-warning">http://tmentors.com</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,8 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/code%20touch.png?raw=true" alt="Code Touch Logo">
                     <div class="card-body">
-                        <button class="btn btn-outline-warning" disabled >WebSite</button>
+                        {{--<button class="btn btn-outline-warning" disabled >WebSite</button>--}}
+                        <a href="#" target="_blank" class="btn btn-outline-warning">Code Touch</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +96,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Vad.png?raw=true" alt="Vadecom Logo">
                     <div class="card-body">
-                        <a href="https://vadecom.net/en" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="https://vadecom.net/en" target="_blank" class="btn btn-outline-warning">https://vadecom.net/en</a>
                     </div>
                 </div>  
             </div>
@@ -103,7 +104,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Sewedy.png?raw=true" alt="ElSewedy Electric Logo">
                     <div class="card-body">
-                        <a href="http://www.elsewedyelectric.com/" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://www.elsewedyelectric.com/" target="_blank" class="btn btn-outline-warning">http://www.elsewedyelectric.com</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +112,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Acs.png?raw=true" alt="ACS Logo">
                     <div class="card-body">
-                        <a href="http://www.acs-egypt.com/English/Default.aspx" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://www.acs-egypt.com/English/Default.aspx" target="_blank" class="btn btn-outline-warning">http://www.acs-egypt.com/...</a>
                     </div>
                 </div>
             </div>
@@ -119,7 +120,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Assct.png?raw=true" alt="Asset Logo">
                     <div class="card-body">
-                        <a href="http://asset.com.eg/" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://asset.com.eg/" target="_blank" class="btn btn-outline-warning">http://asset.com.eg</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +128,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/BOsta.png?raw=true" alt="Bosta Logo">
                     <div class="card-body">
-                        <a href="https://bosta.co/" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="https://bosta.co/" target="_blank" class="btn btn-outline-warning">https://bosta.co</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +136,7 @@
                 <div class="card" style="width: 25rem;">
                     <img class="card-img-top img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/National%20technology.png?raw=true" alt="National technology Logo">
                     <div class="card-body">
-                        <a href="http://nt-me.com/" target="_blank" class="btn btn-outline-warning">WebSite</a>
+                        <a href="http://nt-me.com/" target="_blank" class="btn btn-outline-warning">http://nt-me.com</a>
                     </div>
                 </div>
             </div>  

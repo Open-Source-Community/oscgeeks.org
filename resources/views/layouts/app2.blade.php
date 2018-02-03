@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/hover-min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/header.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer.css') }}"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer2.css') }}"> 
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/nav.css') }}">@yield('CSS')
 <!--End Styles -->
     <!--Start Scripts -->
@@ -217,10 +217,8 @@
                         
                     </ul>
                 </div>
-             
-    
                 <div class="pull-right col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
-                        <h3>social</h3>
+                    <h3>social</h3>
                     <ul class="social">
                         <li> <a href="#"> <i class="fa fa-4x fa-facebook">   </i> </a> </li>
                         <li> <a href="#"> <i class="fa fa-4x fa-twitter">   </i> </a> </li>

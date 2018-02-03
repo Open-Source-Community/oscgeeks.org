@@ -3,150 +3,30 @@
     font-family: HANDVETICA;
     src: url('../fonts/font/HANDVETICA.TTF');
 }
+
 body
 {
-    font-family: HANDVETICA;
-    height: 100%;
+    background-image: url("Background.jpg");
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-image: url(../images/About/Background.jpg);
-}
-h1{
      font-family: HANDVETICA;
-     color: black;
-     font-size: 400%;
 }
-p
+div.c-wrapper
 {
-     color: darkslateblue;
+    width: 60%; /* for example */
+    margin: auto;
 }
-.jumbotron
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img
 {
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    width: 50%;
-    height:85%;
-    background-color: #232F3D;
-    margin-bottom: 20px;
+width: 80%; /* use this, or not */
+margin: auto;
 }
-.circle-image:hover{
-    
- box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
-    transform: scale(1.02);
-    
-}
-
-/***slideshow**/
-.imgslide{
-    border-radius: 50%;
-}
-
-/**//***************/
-
-/*Start Media querys for responsive Mode*/
-
-@media only screen and (max-width: 767px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-h1{
-     font-family: HANDVETICA;
-     color: black;
-     font-size: 400%;
-
-}
-.circle-image{
-    
-}
-.circle-image:hover{
-    
- box-shadow: 6px 6px 20px rgba(0, 0, 0, .7);
-    transform: scale(1.02);
-    
-}
-.card{
-    margin-bottom: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
-    background-color:#232f3d;
-    height:20rem;
-}
-.card-body{
-    
-    background-color:#232f3d;
-}
-/*Start Media querys for responsive Mode*/
-
-@media only screen and (max-width: 767px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    }
-
+.card-body
+{
+    background: #232f3d;
 }

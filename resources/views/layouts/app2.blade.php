@@ -232,6 +232,9 @@
                                   </i> </a></li>
                     <li><a href="https://twitter.com/oscgeeks" target="_blank"> <i class="fa fa-4x fa-twitter">   </i>
                         </a></li>
+
+                    <li><a href="https://www.instagram.com/oscgeeks/" target="_blank"> <i class="fa fa-4x fa-instagram">   </i>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -255,8 +258,6 @@
             $(".menu").slideToggle();
 
         });
-
-
     });
 
 </script>

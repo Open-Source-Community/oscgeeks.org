@@ -30,3 +30,12 @@ margin: auto;
 {
     background: #232f3d;
 }
+.card
+{
+    margin-bottom: 20px;
+}
+.colors
+{
+    font-size: 20px;
+    color:darkslateblue;
+}

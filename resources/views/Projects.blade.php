@@ -1,9 +1,8 @@
 @extends('layouts.app2')
 
 @section('CSS')
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/projects.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/projects2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer2.css') }}">
 @endsection
 
 @section('content')
@@ -36,10 +35,10 @@
 		<!-- Wrapper For Slides-->
 		<div class="carousel-inner">
 			<div class="item active">
-				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Acs.png?raw=true" alt="pic 0">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-33-08.png?raw=true" alt="pic 0">
 			</div>
 			<div class="item">
-				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/sponsers/Assct.png?raw=true" alt="pic 1">
+				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-34-11.png?raw=true" alt="pic 1">
 			</div>
 			<div class="item">
 				<img class="img-responsive" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Project1/Screenshot%20from%202017-09-07%2021-33-08.png?raw=true" alt="pic 2">

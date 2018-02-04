@@ -10,6 +10,7 @@ body{
    margin: 0px;
    padding: 0px;
    overflow-x: hidden;
+   font-family: HANDVETICA;
 
 }
 .homeContainer #pinguens{
@@ -86,5 +87,10 @@ span{
     overflow-x: hidden; 
     }
 
+}
+.colors
+{
+  font-size: 20px;
+  color:darkslateblue;
 }
 /*End Media querys for responsive Mode*/

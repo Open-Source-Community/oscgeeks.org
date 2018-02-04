@@ -2,7 +2,8 @@
 
 @section('CSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/events.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/lr.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/LR2.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/layout/footer2.css') }}">
 
 @endsection
 

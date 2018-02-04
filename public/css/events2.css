@@ -11,6 +11,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: HANDVETICA;
 }
 .timeline {
     position: relative;
@@ -315,4 +316,9 @@ h3{
 
 .resize {
   width: 20px;
+}
+p
+{
+    color:darkslateblue;
+    font-size:20px;
 }

@@ -238,7 +238,7 @@
         <!--/.row-->
     </div>
     <!--/.container-->
-    <p style="text-align:center ; width:89% ; margin:0 auto; padding-top:20px;border-top:1px solid #EDEFF1"> Copyright © OSC All rights reserved. </p>
+    <p class="colors" style="text-align:center ; width:89% ; margin:0 auto; padding-top:20px;border-top:1px solid #EDEFF1"> Copyright © OSC All rights reserved. </p>
 </div>
 <!--/.footer-->
 

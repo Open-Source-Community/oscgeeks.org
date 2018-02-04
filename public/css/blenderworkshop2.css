@@ -10,6 +10,13 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: HANDVETICA;
+
+}
+p
+{
+    color:darkslateblue;
+    font-size:20px;
 }
 h1
 {

@@ -11,6 +11,7 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: HANDVETICA;
 }
 div img
 {
@@ -322,4 +323,9 @@ h3{
 
 .resize {
   width: 20px;
+}
+.colors
+{
+    font-size: 20px;
+    color:darkslateblue;
 }

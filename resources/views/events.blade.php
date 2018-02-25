@@ -8,7 +8,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="text-center wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">Vision of OSC </h3>
+                <h3 class="text-center wow bounceInLeft" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
+                    Vision of OSC </h3>
                 <p class="vision wow bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
                     Our aim is to spread the open source concept throughout our community,
                     and among FCIS students specifically. We work to help them start the
@@ -16,7 +17,8 @@
                     their questions as best we can.
 
                 </p>
-                <h3 class="text-center wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">Our Events</h3>
+                <h3 class="text-center wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">Our
+                    Events</h3>
 
                 <ul class="timeline wow flipInY" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
                     @for ($i = 0; $i < count($user_data); $i++)

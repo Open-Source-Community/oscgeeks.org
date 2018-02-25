@@ -62,7 +62,7 @@
                     <div class="form-group">
                         <label class="control-label col-sm-3" for="email">Faculty:</label>
                         <div class="col-sm-9">
-                            <select  id="faculty" name="faculty" class="form-control selectpicker" required>
+                            <select id="faculty" name="faculty" class="form-control selectpicker" required>
                                 <option disabled selected value="">Select Your Faculty</option>
                                 <option value="cisAinShams" id="cisASU">حاسبات عين شمس</option>
                                 <option value="engAinShams" id="engASU"> هندسة عين شمس</option>
@@ -107,14 +107,14 @@
                         <div class="col-sm-9">
                             <select id="time" name="time" class="form-control selectpicker" required>
                                 <option disabled selected value="">Select Time</option>
-                                
+
                                 <option value="10 am to 11 am">10 am to 11 am</option>
                                 <option value="11 am to 12 pm">11 am to 12 pm</option>
                                 <option value="12 pm to 1 pm">12 pm to 1 pm</option>
-                                <option value="1 pm to 2 pm">1 pm to 2 pm</option>  
-                                <option value="2 pm to 3 pm">2 pm to 3 pm</option>      
-                                <option value="3 pm to 4 pm">3 pm to 4 pm</option>  
-                                <option value="4 pm to 5 pm">4 pm to 5 pm</option>            
+                                <option value="1 pm to 2 pm">1 pm to 2 pm</option>
+                                <option value="2 pm to 3 pm">2 pm to 3 pm</option>
+                                <option value="3 pm to 4 pm">3 pm to 4 pm</option>
+                                <option value="4 pm to 5 pm">4 pm to 5 pm</option>
                             </select>
                         </div>
                     </div>

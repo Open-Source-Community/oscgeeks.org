@@ -8,7 +8,7 @@ class EventsController extends Controller
 {
     public function index()
     {
-        $user_data = Event::all();
-        return view('events', compact('user_data'));
+        $events = Event::all();
+        return view('events', compact('events'));
     }
 }

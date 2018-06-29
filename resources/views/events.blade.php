@@ -21,23 +21,23 @@
                     Events</h3>
 
                 <ul class="timeline wow flipInY" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
-                    @for ($i = 0; $i < count($user_data); $i++)
+                    @for ($i = 0; $i < count($events); $i++)
                         @if($i%2==0)
                             <li>
                                 <div class="timeline-image img-responsive">
-                                    <img class="img-circle img-responsive" src="{{ $user_data[$i]->imageurl }}" alt="">
+                                    <img class="img-circle img-responsive" src="{{ $events[$i]->imageurl }}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h4 class="subheading">{{ $user_data[$i]->title }}</h4>
+                                        <h4 class="subheading">{{ $events[$i]->title }}</h4>
                                     </div>
                                     <div class="timeline-body">
                                         <p class="text-muted">
-                                            {{ $user_data[$i]->description }}
+                                            {{ $events[$i]->description }}
                                         </p>
                                     </div>
                                 </div>
-                                @if ($i <= count($user_data)-2)
+                                @if ($i <= count($events)-2)
                                     <div class="line"></div>
                                 @endif
                             </li>
@@ -45,19 +45,19 @@
                         @if($i%2==1)
                             <li class="timeline-inverted">
                                 <div class="timeline-image img-responsive">
-                                    <img class="img-circle img-responsive" src="{{ $user_data[$i]->imageurl }}" alt="">
+                                    <img class="img-circle img-responsive" src="{{ $events[$i]->imageurl }}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h4 class="subheading">{{ $user_data[$i]->title }}</h4>
+                                        <h4 class="subheading">{{ $events[$i]->title }}</h4>
                                     </div>
                                     <div class="timeline-body">
                                         <p class="text-muted">
-                                            {{ $user_data[$i]->description }}
+                                            {{ $events[$i]->description }}
                                         </p>
                                     </div>
                                 </div>
-                                @if ($i <= count($user_data)-2)
+                                @if ($i <= count($events)-2)
                                     <div class="line"></div>
                                 @endif
                             </li>

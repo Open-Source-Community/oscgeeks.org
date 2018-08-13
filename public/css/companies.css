@@ -1,41 +1,38 @@
-@font-face 
-{
+@font-face {
     font-family: HANDVETICA;
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body
-{
+body {
     background-image: url("Background.jpg");
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-     font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
 }
-div.c-wrapper
-{
+
+div.c-wrapper {
     width: 60%; /* for example */
     margin: auto;
 }
 
-.carousel-inner > .item > img, 
-.carousel-inner > .item > a > img
-{
-width: 80%; /* use this, or not */
-margin: auto;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 80%; /* use this, or not */
+    margin: auto;
 }
-.card-body
-{
+
+.card-body {
     background: #232f3d;
 }
-.card
-{
+
+.card {
     margin-bottom: 20px;
 }
-.colors
-{
+
+.colors {
     font-size: 20px;
-    color:darkslateblue;
+    color: darkslateblue;
 }

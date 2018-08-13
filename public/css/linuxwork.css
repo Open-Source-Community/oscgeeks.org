@@ -3,40 +3,40 @@
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body{
+body {
     background-image: url("Background.jpg");
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
 }
-.about
-{
-	margin-bottom: 50px;
+
+.about {
+    margin-bottom: 50px;
 }
-h1
-{
-	color:white;
-     font-size: 400%;
+
+h1 {
+    color: white;
+    font-size: 400%;
 }
-p
-{
-	color:darkslateblue;
-	font-size:20px;
-	margin-left: 50px;
+
+p {
+    color: darkslateblue;
+    font-size: 20px;
+    margin-left: 50px;
 }
-.who
-{
-	margin-bottom: 50px;
+
+.who {
+    margin-bottom: 50px;
 }
-.what
-{
-	margin-bottom: 50px;
+
+.what {
+    margin-bottom: 50px;
 }
-#ulli
-{
-	color:darkslateblue;
-	font-size: 20px;
+
+#ulli {
+    color: darkslateblue;
+    font-size: 20px;
 }

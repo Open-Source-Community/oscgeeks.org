@@ -9,7 +9,7 @@
     <div class="container">
         <div class="wow bounceIn" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
             <div class="text-center">
-                <h1 style="font-size: 30px;" class="hvr-grow">Linux Committee</h1>
+                <h1 style="font-size: 400%;color: white;" class="hvr-grow">Linux Committee</h1>
                 <img class="img-responsive"
                      src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/linux.png?raw=true">
             </div>

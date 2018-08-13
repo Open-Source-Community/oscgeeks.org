@@ -1,36 +1,38 @@
 .container {
     margin-top: 20px;
 }
+
 @font-face {
     font-family: HANDVETICA;
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
 body {
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-image: url(../images/About/Background.jpg);
 }
-div img 
-{
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
+
+div img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-#header_class{
+#header_class {
 
     color: #FFFFFF;
-    font-family: "HANDVETICA";
+    font-family: HANDVETICA, serif;
     text-align: center;
-     font-size: 400%;
+    font-size: 400%;
 }
+
 /* Carousel Styles */
 .carousel-indicators .active {
     background-color: #2980b9;
@@ -46,47 +48,44 @@ div img
 
 .carousel-control.left,
 .carousel-control.right {
-	opacity: 1;
-	filter: alpha(opacity=100);
-	background-image: none;
-	background-repeat: no-repeat;
-	text-shadow: none;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background: none no-repeat;
+    text-shadow: none;
 }
 
 .carousel-control.left span {
-	padding: 15px;
+    padding: 15px;
 }
 
 .carousel-control.right span {
-	padding: 15px;
+    padding: 15px;
 }
 
-.carousel-control .glyphicon-chevron-left, 
-.carousel-control .glyphicon-chevron-right, 
-.carousel-control .icon-prev, 
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
 .carousel-control .icon-next {
-	position: absolute;
-	top: 45%;
-	z-index: 5;
-	display: inline-block;
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block;
 }
 
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
-	left: 0;
+    left: 0;
 }
 
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next {
-	right: 0;
+    right: 0;
 }
-
-
 
 .carousel-control.left span:hover,
 .carousel-control.right span:hover {
-	opacity: .7;
-	filter: alpha(opacity=70);
+    opacity: .7;
+    filter: alpha(opacity=70);
 }
 
 /* Carousel Header Styles */
@@ -105,11 +104,11 @@ div img
 
 .header-text h2 span {
     background-color: #2980b9;
-	padding: 10px;
+    padding: 10px;
 }
 
 .header-text h3 span {
-	padding: 15px;
+    padding: 15px;
 }
 
 .btn-min-block {
@@ -129,9 +128,9 @@ div img
     background-color: #fff;
     border-color: #fff;
 }
-.colors
-{
+
+.colors {
     font-size: 20px;
-    color:darkslateblue;
+    color: darkslateblue;
 }
 

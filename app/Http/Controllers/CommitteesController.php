@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Session;
 use App\Committee_image;
+use Session;
 
 class CommitteesController extends Controller
 {
@@ -50,15 +50,6 @@ class CommitteesController extends Controller
         return view('ccc');
     }
 
-    public function index9()
-    {
-        if (Session::has('key')) {
-            return redirect('/done');
-        } else {
-            return view('form');
-        }
-    }
-
     public function index10()
     {
         return view('BlenderWorkshop');
@@ -97,15 +88,5 @@ class CommitteesController extends Controller
     public function index17()
     {
         return view('Projects');
-    }
-
-    public function done()
-    {
-        return view('done');
-    }
-
-    public function refused()
-    {
-        return view('refused');
     }
 }

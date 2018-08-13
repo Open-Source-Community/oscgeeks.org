@@ -1,54 +1,54 @@
 @font-face {
     font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
+    src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body{
+body {
     background-image: url(../images/About/Background.jpg);
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
 }
-div img
-{
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
+
+div img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
-#desc
-{
-    font-size:20px;
-    color:darkslateblue;
+
+#desc {
+    font-size: 20px;
+    color: darkslateblue;
 }
-h1
-{
+
+h1 {
     font-size: 400%;
-    color:white;
+    color: white;
 }
-.proj1
-{
+
+.proj1 {
     font-size: 300%;
-     color:white;
+    color: white;
 }
-.imgs
-{
-     
+
+.imgs {
+
 }
-h2
-{
+
+h2 {
     font-size: 300%;
 }
-p
-{
+
+p {
     font-size: 25px;
 }
-.colors
-{
+
+.colors {
     font-size: 20px;
-    color:darkslateblue;
+    color: darkslateblue;
 }

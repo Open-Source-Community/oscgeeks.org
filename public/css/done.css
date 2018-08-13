@@ -1,38 +1,7 @@
-@font-face {
-    font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
-}
-body{
-    background-image: url("Background.jpg");
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-.done
-{
-	height:350px;
-    display: table;
-}
-h1
-{
-	text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-
-}
-div {
-    position:relative;
-    height: 100%;
-    width:100%;
-}
-
-div img {
-    position:absolute;
-    top:10;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
+.done {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px
 }

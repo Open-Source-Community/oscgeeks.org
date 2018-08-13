@@ -1,7 +1,6 @@
 @extends('layouts.app2')
 
 @section('CSS')
-
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/fr.css') }}">
 @endsection
 
@@ -10,7 +9,6 @@
         <div class="text-center wow zoomInUp" data-wow-duration="1s" data-wow-delay="0.5s" offset="200">
             <h1 class="hvr-pop">Web Committee</h1>
         </div>
-
 
         <div class="text-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s" offset="200">
             <img class="img-responsive"

@@ -45,9 +45,9 @@
 <div class="navbar navbar-default ">
     <div class="container-fluid">
         <!--navbar logos-->
-        <div class="row"><img class=" logo  col-md-1 col-xs-3"
+        <div class="row"><img class="logo  col-md-1 col-xs-3"
                               src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
-            <img class=" osc col-md-4 col-xs-6   "
+            <img class=" osc col-md-4 col-xs-6"
                  src="https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/osc-log.png?raw=true">
         </div>
         <!--<div class="navbar-header">
@@ -94,8 +94,8 @@
                     <li><a href="/events"><b>Events</b></a></li>
                     <li>|</li>
                     <li><a href="/about"><b>About Us</b></a></li>
-                    <!--                    <li>|</li>-->
-                    <!--                    <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>-->
+                    <li>|</li>
+                    <li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>
                 </ul>
 
                 <div class="contact_us col-md-3 col-lg-3">
@@ -153,6 +153,7 @@
                         </li>
                         <li><a href="/events"><b>Events</b></a></li>
                         <li style="padding: 0"><a href="/about"><b>About Us</b></a></li>
+                        <li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>
                         <!--                        <li><a href="/workShop2017"><b>Workshop Registration</b></a></li>-->
                     </ul>
 
@@ -233,7 +234,8 @@
                     <li><a href="https://twitter.com/oscgeeks" target="_blank"> <i class="fa fa-4x fa-twitter">   </i>
                         </a></li>
 
-                    <li><a href="https://www.instagram.com/oscgeeks/" target="_blank"> <i class="fa fa-4x fa-instagram">   </i>
+                    <li><a href="https://www.instagram.com/oscgeeks/" target="_blank"> <i class="fa fa-4x fa-instagram">
+                                  </i>
                         </a></li>
                 </ul>
             </div>
@@ -241,7 +243,9 @@
         <!--/.row-->
     </div>
     <!--/.container-->
-    <p class="colors" style="text-align:center ; width:89% ; margin:0 auto; padding-top:20px;border-top:1px solid #EDEFF1"> Copyright © OSC All rights reserved. </p>
+    <p class="colors"
+       style="text-align:center ; width:89% ; margin:0 auto; padding-top:20px;border-top:1px solid #EDEFF1"> Copyright ©
+        OSC All rights reserved. </p>
 </div>
 <!--/.footer-->
 

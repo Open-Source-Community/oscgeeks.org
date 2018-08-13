@@ -14,7 +14,7 @@
         <div class="row wow  bounceInRight" data-wow-duration="3s" data-wow-delay="0.5s" offset="200">
             <div class="col-md-12">
                 <div class="text-center">
-                    <h3 class="hvr-grow" style="font-size: 400%;">Blender</h3>
+                    <h3 class="hvr-grow" style="font-size: 400%;color: white;">Blender</h3>
                 </div>
                 <div class="hvr-float-shadow">
                     <p class="vision" style="font-size: 200%;">

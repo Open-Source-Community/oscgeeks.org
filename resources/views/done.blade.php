@@ -1,19 +1,17 @@
 @extends('layouts.app2')
 
 @section('CSS')
-<link rel="stylesheet" type="text/css" href="{{ asset('/css/done.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/done.css') }}">
 @endsection
 
 @section('content')
-	<div class="container">
-	<form class="well form-horizontal" action="{{URL::to('done')}}" method="post" id="contact_form">
-		<fieldset>
-			<div class="done">
-			<h1>Thanks For Your Registration.</h1>
-<!--			<p><img src="images/Background/imges.jpg" class="img-responsive"></p>-->
-			</div>
-		</fieldset>
-
-	</form>
-	</div>
+    <div class="container">
+        <form class="well form-horizontal">
+            <fieldset>
+                <img class="done"
+                     src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
+                <h1 style="text-align: center;">Thanks For Your Registration</h1>
+            </fieldset>
+        </form>
+    </div>
 @endsection

@@ -3,47 +3,47 @@
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body{
+body {
     background-image: url("Background.jpg");
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
 
 }
-p
-{
-    color:darkslateblue;
-    font-size:20px;
+
+p {
+    color: darkslateblue;
+    font-size: 20px;
 }
-h1
-{
-	font-family: HANDVETICA;
+
+h1 {
+    font-family: HANDVETICA, serif;
     font-size: 400%;
     color: white;
 }
-h4
-{
-	font-family: HANDVETICA;
-	font-size: 21px;
+
+h4 {
+    font-family: HANDVETICA, serif;
+    font-size: 21px;
 }
-h2,h3
-{
-	font-family: HANDVETICA;
+
+h2, h3 {
+    font-family: HANDVETICA, serif;
 }
-span
-{
-	font-family: HANDVETICA;
-	font-size:20px;
-	color: darkslateblue;
+
+span {
+    font-family: HANDVETICA, serif;
+    font-size: 20px;
+    color: darkslateblue;
 }
-.note
-{
-	margin-bottom: 20px;
+
+.note {
+    margin-bottom: 20px;
 }
-.note span
-{
-	color:black; 
+
+.note span {
+    color: black;
 }

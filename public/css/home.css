@@ -1,9 +1,9 @@
 @font-face {
     font-family: HANDVETICA;
-    src: url('/fonts/font/HANDVETICA.TTF');
+    src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-.home{
+.home {
 
     width: 98.7%;
     height: 660px;
@@ -11,12 +11,11 @@
 
 }
 
-.osc{
+.osc {
     margin-top: 1.5%;
 }
 
-
-.rocket{
+.rocket {
     margin-top: 60px;
     height: 260px;
     background-image: url(../images/rocketimg.png);
@@ -24,14 +23,14 @@
     animation: shaking 10s infinite ease-in-out;
 }
 
-.message{
+.message {
     background-image: url(../images/rectanglespeechthought.png);
     background-size: 100% 100%;
     width: 300px;
     height: 140px;
     text-align: center;
     font-size: 19px;
-    font-family:cursive;
+    font-family: cursive;
     font-weight: bold;
     padding-top: 14px;
     padding-left: 50px;
@@ -39,110 +38,117 @@
     position: absolute;
 }
 
-.message p{
+.message p {
     margin-top: 10px;
     margin-bottom: 0;
-    font-family: 'Julee';font-size: 22px;
-    color:black
+    font-family: 'Julee', serif;
+    font-size: 22px;
+    color: black
 }
 
-.button{
-    font-family: 'Frijole';
+.button {
+    font-family: 'Frijole', serif;
     text-transform: uppercase;
-    font-size:22px;
+    font-size: 22px;
     width: 240px;
     height: 60px;
     border-radius: 80px;
     line-height: 60px;
     text-align: center;
-    border:3px solid #fff;
+    border: 3px solid #fff;
     display: block;
     text-decoration: none;
     margin-top: 35px;
-    color:#fff;
+    color: #fff;
     position: relative;
     overflow: hidden;
 }
 
-
-
-.button:hover{
-    color:orange;
+.button:hover {
+    color: orange;
     background-color: #fff;
     border-color: gold;
     text-decoration: none;
     line-height: 62px;
 }
 
-@media (max-width:479px){
-    .home{
+@media (max-width: 479px) {
+    .home {
         height: 100%;
     }
-    .rocket{
+
+    .rocket {
         height: 172px;
         width: 70%;
         margin-left: 15%;
         margin-top: 160px;
     }
-    .message{
+
+    .message {
         background-image: url(../images/speech-bubble-md.png);
         width: 68%;
         margin-left: 25%;
         margin-top: 35px;
     }
-    .message p{
+
+    .message p {
         margin-top: 7px;
         margin-bottom: 0;
         margin-left: -25px;
     }
-    .button{
+
+    .button {
         width: 60%;
         font-size: 16px;
         margin-left: 20%;
         margin-top: 60px;
     }
-    .osc{
+
+    .osc {
         margin-top: 2.5%;
         width: 80%;
     }
 }
 
-@media (min-width:480px) and (max-width:767px){
-    .home{
+@media (min-width: 480px) and (max-width: 767px) {
+    .home {
         height: 100%;
     }
-    .rocket{
+
+    .rocket {
         height: 15em;
         width: 60%;
         margin-left: 20%;
         margin-top: 160px;
     }
-    .message{
+
+    .message {
         background-image: url(../images/speech-bubble-md.png);
         width: 60%;
         margin-left: 30%;
         margin-top: 35px;
     }
 
-    .button{
+    .button {
         width: 60%;
         font-size: 16px;
         margin-left: 20%;
         margin-top: 40px;
     }
-    .osc{
+
+    .osc {
         margin-top: 2.5%;
         width: 80%;
     }
 }
 
-@keyframes shaking{
+@keyframes shaking {
 
-    25%{
+    25% {
         transform: rotate(-5deg)
     }
 
-    75%{
+    75% {
         transform: rotate(5deg)
 
     }
@@ -150,49 +156,56 @@
 
 /* added recently*/
 
-body{
+body {
     background-image: url(../images/About/Background.jpg);
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 
 }
-.homeContainer #pinguens{
+
+.homeContainer #pinguens {
     position: sticky;
     left: 50%;
     top: 60%;
     width: 50%;
 }
-.homeContainer #about_the_gablia{
+
+.homeContainer #about_the_gablia {
     position: sticky;
     margin-left: 1%;
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
     font-size: 400%;
     color: white;
 
 }
+
 .about_text {
 
     width: 90%;
-    font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
     font-size: 140%;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /*white-space: nowrap; /* Keeps the content on a single line */
 
     margin: 3% auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em; /* Adjust as needed */
-    animation:
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 90% }
+    from {
+        width: 0
+    }
+    to {
+        width: 90%
+    }
 }
-span{
+
+span {
     font-size: 150%;
 }

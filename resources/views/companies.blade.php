@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="text-center">Previous Sponsors</h1>
+        <h1 style="font-size: 400%;color: white;" class="text-center">Previous Sponsors</h1>
         <br>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">

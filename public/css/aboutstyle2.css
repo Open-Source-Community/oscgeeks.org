@@ -3,51 +3,58 @@
     src: url('../fonts/font/HANDVETICA.TTF');
 }
 
-body{
-   background-image: url(../images/About/Background.jpg);
-   width: 100%;
-   height: auto;
-   margin: 0px;
-   padding: 0px;
-   overflow-x: hidden;
-   font-family: HANDVETICA;
+body {
+    background-image: url(../images/About/Background.jpg);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: HANDVETICA, serif;
 
 }
-.homeContainer #pinguens{
+
+.homeContainer #pinguens {
     position: sticky;
     left: 50%;
-   top: 60%;
+    top: 60%;
     width: 50%;
 }
-.homeContainer #about_the_gablia{
+
+.homeContainer #about_the_gablia {
     position: sticky;
     margin-left: 1%;
-   font-family: HANDVETICA;
+    font-family: HANDVETICA, serif;
     font-size: 400%;
     color: white;
-    
+
 }
- .about_text {
 
-     width: 90%;
-     font-family: HANDVETICA;
+.about_text {
+
+    width: 90%;
+    font-family: HANDVETICA, serif;
     font-size: 140%;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-       /*white-space: nowrap; /* Keeps the content on a single line */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /*white-space: nowrap; /* Keeps the content on a single line */
 
-  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
+    margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 90% }
+    from {
+        width: 0
+    }
+    to {
+        width: 90%
+    }
 }
-span{
+
+span {
     font-size: 150%;
 }
 
@@ -55,42 +62,43 @@ span{
 
 @media only screen and (max-width: 767px) {
 
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
 }
-.colors
-{
-  font-size: 20px;
-  color:darkslateblue;
+
+.colors {
+    font-size: 20px;
+    color: darkslateblue;
 }
+
 /*End Media querys for responsive Mode*/

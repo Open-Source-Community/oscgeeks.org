@@ -11,3 +11,37 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+.form-container{
+    background: #FFF;
+    padding: 25px;
+    border-top:15px solid #333;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.form-group i{
+    width: 20px !important;
+}
+.submit{
+
+    background: #333;
+    border:none;
+    width: 35%;
+    color: #FFF;
+    height: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    bottom: 0px;
+    right: 33%;
+    transition: .5s;
+}
+
+.submit:hover{
+    background: #EE7C00;
+    transition: .5s;
+}

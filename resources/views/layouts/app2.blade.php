@@ -118,7 +118,7 @@
 
             <!-- NavBar For Small Screen -->
 
-            <p class="fa fa-bars"></p>
+            <p class="fa fa-bars hidden-md hidden-lg"></p>
 
             <div class="menu" style="display: none;margin-top:70px">
                 <div class="nav small_nav hidden-md hidden-lg col-xs-6 col-xs-6">

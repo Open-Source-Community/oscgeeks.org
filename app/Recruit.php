@@ -1,20 +1,21 @@
 <?php
+
 namespace App;
+
 use Illuminate\Database\Eloquent\Model;
-class WorkShop extends Model
+
+class Recruit extends Model
 {
     public $timestamps = false;
     protected $fillable = [
         'id',
-        'first_name',
-        'last_name',
+        'name',
         'email',
-        'contact_no',
-        'faculty',
+        'mobile',
         'year',
-        'homepage_select_workshop',
+        'first_committee',
+        'second_committee',
         'day',
         'time',
-        'blenderTask',
     ];
 }

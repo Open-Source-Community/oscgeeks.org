@@ -63,16 +63,3 @@ Route::post('/apply', 'EventsController@apply');
 Route::get('/done', 'EventsController@done');
 
 Route::get('/refused', 'EventsController@refused');
-
-//////////////////////////////////////////////////////////////////
-
-//Route::post('/workShop2017','RegisterationForm@postWorkShop27');
-//Route::get('/workShop2017','RegisterationForm@showWorkShop27');
-
-//Route::get('/form', 'CommitteesController@index9');
-
-//Route::get('/done','CommitteesController@done');
-
-//Route::get('/refused','CommitteesController@refused');
-
-//Route::post('/done','RegisterationForm@store');

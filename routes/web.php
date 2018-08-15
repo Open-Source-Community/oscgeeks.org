@@ -59,6 +59,7 @@ Route::get('/Projects', 'CommitteesController@index17');
 
 Route::get('/apply', 'EventsController@show_apply');
 Route::post('/apply', 'EventsController@apply');
+Route::post('/availTime', 'EventsController@availTime');
 
 Route::get('/done', 'EventsController@done');
 

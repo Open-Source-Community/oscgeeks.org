@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateRecruitsTable extends Migration
 {
@@ -21,8 +21,8 @@ class CreateRecruitsTable extends Migration
             $table->string('year');
             $table->string('first_committee');
             $table->string('second_committee');
-            $table->string('day');
-            $table->string('time');
+            $table->integer('day');
+            $table->integer('time');
         });
     }
 

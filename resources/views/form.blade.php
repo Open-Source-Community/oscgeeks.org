@@ -11,7 +11,7 @@
             <h1 class="hvr-pop">Registration Form</h1>
             <div class="col-md-offset-3 col-md-6">
                 <div class="form-container">
-                    <form action="/apply" method="POST">
+                    <form id="form" action="/apply" method="POST">
                         {{ csrf_field() }}
 
                         <div class="form-group">
@@ -69,7 +69,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-users "></i>
                                 </div>
-                                <select name="first_committee" class="form-control pull-right" type="text" required>
+                                <select id="committee" name="first_committee" class="form-control pull-right" type="text" required>
                                     <option selected value="">Choose First Committee*</option>
                                     <option value="Linux">Linux</option>
                                     <option value="Blender">Blender</option>
@@ -116,7 +116,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <select name="day" class="form-control pull-right" type="text" required>
+                                <select id="day" name="day" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Day*</option>
                                     <option value="Saturday">Saturday</option>
                                     <option value="Sunday">Sunday</option>
@@ -134,13 +134,13 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-clock "></i>
                                 </div>
-                                <select name="time" class="form-control pull-right" type="text" required>
+                                <select id="times" name="time" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Time*</option>
-                                    <option value="from 10:00 to 11:30">from 10:00 to 11:30</option>
+                                    <!-- <option value="from 10:00 to 11:30">from 10:00 to 11:30</option>
                                     <option value="from 11:30 to 01:00">from 11:30 to 01:00</option>
                                     <option value="from 01:00 to 02:30">from 01:00 to 02:30</option>
                                     <option value="from 02:30 to 04:00">from 02:30 to 04:00</option>
-                                    <option value="from 04:00 to 05:30">from 04:00 to 05:30</option>
+                                    <option value="from 04:00 to 05:30">from 04:00 to 05:30</option> -->
                                 </select>
                             </div>
                         </div>
@@ -156,5 +156,62 @@
     </div>
     </div>
 
+     <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog" style="text-align: center;">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="fas fa-times-circle" style="font-size: 100px; color: red; text-align: center;"></p>
+               <h3>No Available times at this day for the committee that you select it </h3> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
     </div>
+    <script>
+        $(document).ready(function(){
+
+            function availTime(){
+                var committee = $("#committee").find(':selected').val();
+                var day = $("#day").find(':selected').val();
+                $.ajax({
+                    url:"/availTime",
+                    type:"post",
+                    data: $("#form").serialize()
+                })
+                .done(function(data){
+                   if(data=="full"){
+                       $("#myModal").modal("show");
+                       $("#times").html('<option selected value="">Select Time*</option>');
+                   }else{
+                        $("#times").html('<option selected value="">Select Time*</option>');
+                        jQuery.each(data , function(i , val){
+                            $("#times").append('<option value="'+val+'">'+val+'</option>');
+                        });
+
+                    }
+                })
+            }
+            
+            availTime();
+
+
+            $("#day").on("change" ,function(e){
+                e.preventDefault()
+                availTime();
+            })
+            $("#committee").on("change" ,function(e){
+                e.preventDefault()
+                availTime();
+            })
+        })
+    
+    </script>
 @endsection

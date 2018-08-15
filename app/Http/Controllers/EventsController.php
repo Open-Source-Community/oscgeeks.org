@@ -32,18 +32,18 @@ class EventsController extends Controller
 
     public function apply(Request $request)
     {
-        $time1 = 'from 10:00 to 11:30';
-        $time2 = 'from 11:30 to 01:00';
-        $time3 = 'from 01:00 to 02:30';
-        $time4 = 'from 02:30 to 04:00';
-        $time5 = 'from 04:00 to 05:30';
+        $time1 = 1;
+        $time2 = 2;
+        $time3 = 3;
+        $time4 = 4;
+        $time5 = 5;
 
-        $day1 = 'Saturday';
-        $day2 = 'Sunday';
-        $day3 = 'Monday';
-        $day4 = 'Tuesday';
-        $day5 = 'Wednesday';
-        $day6 = 'Thursday';
+        $day1 = 1;
+        $day2 = 2;
+        $day3 = 3;
+        $day4 = 4;
+        $day5 = 5;
+        $day6 = 6;
 
         $day = $request->input('day');
         $time = $request->input('time');

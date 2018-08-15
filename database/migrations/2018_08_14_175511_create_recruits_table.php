@@ -21,8 +21,8 @@ class CreateRecruitsTable extends Migration
             $table->string('year');
             $table->string('first_committee');
             $table->string('second_committee');
-            $table->string('day');
-            $table->string('time');
+            $table->integer('day');
+            $table->integer('time');
         });
     }
 

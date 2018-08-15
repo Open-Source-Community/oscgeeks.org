@@ -118,12 +118,12 @@
                                 </div>
                                 <select name="day" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Day*</option>
-                                    <option value="Saturday">Saturday</option>
-                                    <option value="Sunday">Sunday</option>
-                                    <option value="Monday">Monday</option>
-                                    <option value="Tuesday">Tuesday</option>
-                                    <option value="Wednesday">Wednesday</option>
-                                    <option value="Thursday">Thursday</option>
+                                    <option value="1">Saturday</option>
+                                    <option value="2">Sunday</option>
+                                    <option value="3">Monday</option>
+                                    <option value="4">Tuesday</option>
+                                    <option value="5">Wednesday</option>
+                                    <option value="6">Thursday</option>
                                 </select>
                             </div>
                         </div>
@@ -136,11 +136,11 @@
                                 </div>
                                 <select name="time" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Time*</option>
-                                    <option value="from 10:00 to 11:30">from 10:00 to 11:30</option>
-                                    <option value="from 11:30 to 01:00">from 11:30 to 01:00</option>
-                                    <option value="from 01:00 to 02:30">from 01:00 to 02:30</option>
-                                    <option value="from 02:30 to 04:00">from 02:30 to 04:00</option>
-                                    <option value="from 04:00 to 05:30">from 04:00 to 05:30</option>
+                                    <option value="1">from 10:00 to 11:30</option>
+                                    <option value="2">from 11:30 to 01:00</option>
+                                    <option value="3">from 01:00 to 02:30</option>
+                                    <option value="4">from 02:30 to 04:00</option>
+                                    <option value="5">from 04:00 to 05:30</option>
                                 </select>
                             </div>
                         </div>

@@ -46,42 +46,48 @@ class EventsController extends Controller
         $day6 = 6;
 
         $day = $request->input('day');
+        $committee = $request->input('first_committee');
         $time = $request->input('time');
 
         if ($day == $day1)
             if ($this->Saturday($day1, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+                $count = Recruit::where("day" , $day)->where("first_committee" , $committee)->get()->count();
+                if($count < 5){
+                    Recruit::create($request->all());
+                    return redirect('done');
+                }else{
+                    return redirect('refused');
+                }
             } else
-                return redirect('refused');
+            return redirect('refused');
         elseif ($day == $day2)
             if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+                    Recruit::create($request->all());
+                    return redirect('done');
             } else
                 return redirect('refused');
         elseif ($day == $day3)
-            if ($this->Monday($day3, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+            if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
+                    Recruit::create($request->all());
+                    return redirect('done');
             } else
                 return redirect('refused');
         elseif ($day == $day4)
-            if ($this->Tuesday($day4, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+            if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
+                    Recruit::create($request->all());
+                    return redirect('done');
             } else
                 return redirect('refused');
         elseif ($day == $day5)
-            if ($this->Wednesday($day5, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+            if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
+                    Recruit::create($request->all());
+                    return redirect('done');
             } else
                 return redirect('refused');
         elseif ($day == $day6)
-            if ($this->Thursday($day6, $time, $time1, $time2, $time3, $time4, $time5)) {
-                Recruit::create($request->all());
-                return redirect('done');
+            if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
+                    Recruit::create($request->all());
+                    return redirect('done');
             } else
                 return redirect('refused');
     }
@@ -300,5 +306,44 @@ class EventsController extends Controller
             else
                 return true;
         }
+    }
+
+    public function availTime(Request $request){
+        
+        $committee = $request->input("first_committee");
+        $day = $request->input("day");
+        $allTimes = array(
+            'from 10:00 to 11:30', 
+            'from 11:30 to 01:00', 
+            'from 01:00 to 02:30', 
+            'from 02:30 to 04:00', 
+            'from 04:00 to 05:30'
+        );
+        $reservedTimes  = array();
+        $data = Recruit::where("day" , $day)->where("first_committee" , $committee)->get();
+        $count = Recruit::where("day" , $day)->where("first_committee" , $committee)->get()->count();
+        if($count >=5){
+
+            return Response()->json("full");
+            die();
+        }
+        if(!empty($data && $count < 5)){
+
+            foreach ($data as $row) {
+                $reservedTimes[] = $row->time;                
+            }
+
+            
+            foreach($reservedTimes as $resTime){
+                $index = array_search($resTime , $allTimes);
+                unset($allTimes[$index]);
+            }
+            
+            return Response()->json($allTimes);
+            die("2");
+        }   
+        
+        return Response()->json($allTimes);
+
     }
 }

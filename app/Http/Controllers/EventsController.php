@@ -51,39 +51,41 @@ class EventsController extends Controller
         if ($day == $day1)
             if ($this->Saturday($day1, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+
+                echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
+
         elseif ($day == $day2)
             if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+                  echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
         elseif ($day == $day3)
             if ($this->Monday($day3, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+                echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
         elseif ($day == $day4)
             if ($this->Tuesday($day4, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+                echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
         elseif ($day == $day5)
             if ($this->Wednesday($day5, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+                echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
         elseif ($day == $day6)
             if ($this->Thursday($day6, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                return redirect('done');
+                echo "done";
             } else
-                return redirect('refused');
+                echo "refused";
     }
 
     public function Saturday($day, $time, $time1, $time2, $time3, $time4, $time5)

@@ -7,85 +7,85 @@ use Session;
 
 class CommitteesController extends Controller
 {
-    public function index1()
-    {
-        return view('linux');
-    }
-
-    public function index2()
+    public function about()
     {
         return view('about');
     }
 
-    public function index3()
+    public function companies()
+    {
+        return view('companies');
+    }
+
+    public function Linux()
+    {
+        return view('linux');
+    }
+
+    public function Blender()
     {
         $committee_images = Committee_image::where('committee_id', 7)->get();
         return view('blender', compact('committee_images'));
     }
 
-    public function index4()
+    public function Laravel()
     {
         return view('laravel');
     }
 
-    public function index5()
+    public function Artwork()
     {
         $committee_images = Committee_image::where('committee_id', 5)->get();
         return view('art', compact('committee_images'));
     }
 
-    public function index6()
-    {
-        return view('companies');
-    }
-
-    public function index7()
+    public function Logistics()
     {
         $committee_images = Committee_image::where('committee_id', 11)->get();
         return view('logistics', compact('committee_images'));
     }
 
-    public function index8()
+    public function CCC()
     {
         return view('ccc');
     }
 
-    public function index10()
+    public function BlenderWorkshop()
     {
         return view('BlenderWorkshop');
     }
 
-    public function index11()
+    public function EnglishHeroes()
     {
         return view('EnglishHeroes');
     }
 
-    public function index12()
+    public function LinuxWorkshop()
     {
         return view('LinuxWorkshop');
     }
 
-    public function index13()
+    public function HumanResource()
     {
         return view('HumanResource');
     }
 
-    public function index14()
+    public function PublicRelations()
     {
         return view('PublicRelations');
     }
 
-    public function index15()
+    public function fundraising()
     {
         return view('fundraising');
     }
 
-    public function index16()
+    public function Web()
     {
         return view('web');
     }
 
-    public function index17()
+    public function Projects()
     {
         return view('Projects');
     }

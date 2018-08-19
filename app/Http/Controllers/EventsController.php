@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class EventsController extends Controller
 {
-
     public function index()
     {
         $events = Event::all();
@@ -51,7 +50,6 @@ class EventsController extends Controller
         if ($day == $day1)
             if ($this->Saturday($day1, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-
                 echo "done";
             } else
                 echo "refused";
@@ -59,7 +57,7 @@ class EventsController extends Controller
         elseif ($day == $day2)
             if ($this->Sunday($day2, $time, $time1, $time2, $time3, $time4, $time5)) {
                 Recruit::create($request->all());
-                  echo "done";
+                echo "done";
             } else
                 echo "refused";
         elseif ($day == $day3)

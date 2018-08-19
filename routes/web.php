@@ -12,54 +12,29 @@
 */
 
 Route::get('/', function () {
-    return redirect('/home');
-});
-
-Route::get('/form', function () {
-    return redirect('/home');
-});
-
-Route::get('/home', function () {
     return view('home');
 });
 
 Route::get('/events', 'EventsController@index');
+Route::get('/Companies', 'CommitteesController@companies');
+Route::get('/about', 'CommitteesController@about');
 
-Route::get('/Linux', 'CommitteesController@index1');
-
-Route::get('/about', 'CommitteesController@index2');
-
-Route::get('/Blender', 'CommitteesController@index3');
-
-Route::get('/Laravel', 'CommitteesController@index4');
-
-Route::get('/Artwork', 'CommitteesController@index5');
-
-Route::get('/Companies', 'CommitteesController@index6');
-
-Route::get('/Logistics', 'CommitteesController@index7');
-
-Route::get('/Content Creators', 'CommitteesController@index8');
-
-Route::get('/Blender Workshop', 'CommitteesController@index10');
-
-Route::get('/English Heroes', 'CommitteesController@index11');
-
-Route::get('/Linux Workshop', 'CommitteesController@index12');
-
-Route::get('/Human Resources', 'CommitteesController@index13');
-
-Route::get('/Public Relations', 'CommitteesController@index14');
-
-Route::get('/Fundraising', 'CommitteesController@index15');
-
-Route::get('/Web', 'CommitteesController@index16');
-
-Route::get('/Projects', 'CommitteesController@index17');
+Route::get('/Linux', 'CommitteesController@Linux');
+Route::get('/Blender', 'CommitteesController@Blender');
+Route::get('/Laravel', 'CommitteesController@Laravel');
+Route::get('/Artwork', 'CommitteesController@Artwork');
+Route::get('/Logistics', 'CommitteesController@Logistics');
+Route::get('/Content Creators', 'CommitteesController@CCC');
+Route::get('/Blender Workshop', 'CommitteesController@BlenderWorkshop');
+Route::get('/English Heroes', 'CommitteesController@EnglishHeroes');
+Route::get('/Linux Workshop', 'CommitteesController@LinuxWorkshop');
+Route::get('/Human Resources', 'CommitteesController@HumanResource');
+Route::get('/Public Relations', 'CommitteesController@PublicRelations');
+Route::get('/Fundraising', 'CommitteesController@fundraising');
+Route::get('/Web', 'CommitteesController@Web');
+Route::get('/Projects', 'CommitteesController@Projects');
 
 Route::get('/apply', 'EventsController@show_apply');
 Route::post('/apply', 'EventsController@apply');
 
 Route::get('/done', 'EventsController@done');
-
-Route::get('/refused', 'EventsController@refused');

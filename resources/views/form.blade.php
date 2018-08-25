@@ -93,7 +93,7 @@
                                     <i class="fas fa-users "></i>
                                 </div>
                                 <select name="second_committee" class="form-control pull-right" type="text">
-                                    <option selected value="">Choose Second Committee</option>
+                                    <option selected value="-">Choose Second Committee</option>
                                     <option value="Linux">Linux</option>
                                     <option value="Blender">Blender</option>
                                     <option value="English Heroes">English Heroes</option>

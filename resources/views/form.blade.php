@@ -20,7 +20,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <input name="name" class="form-control pull-right" type="text" placeholder="Full Name*"
+                                <input name="name" class="form-control pull-right" placeholder="Full Name*"
                                        required>
                             </div>
                         </div>
@@ -31,8 +31,8 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <input name="email" class="form-control pull-right" type="text" placeholder="Email*"
-                                       required>
+                                <input name="email" class="form-control pull-right" type="email"
+                                       placeholder="Email*" required>
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
-                                <input name="mobile" class="form-control pull-right" type="text"
+                                <input name="mobile" class="form-control pull-right" type="tel"
                                        placeholder="Mobile Number*" required>
                             </div>
                         </div>
@@ -145,58 +145,56 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="submit"><i id="spinner" class="fa fa-circle-o-notch fa-spin" style="margin-right: 10px;display: none"></i>Submit</button>
+                        <button class="submit"><i id="spinner" class="fa fa-circle-o-notch fa-spin"
+                                                  style="margin-right: 10px;display: none"></i>Submit
+                        </button>
                     </form>
 
                 </div>
             </div>
-
         </div>
-
-    </div>
     </div>
 
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title danger" style="color:orange">Error Submit</h4>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title danger" style="color:orange">Error Submit</h4>
+                </div>
+                <div class="modal-body" style="color: red;text-align: center">
+                    <img class="done"
+                         src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
+                    <p>Sorry, The slot you have picked is fully booked! Please choose another time for your
+                        interview.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body" style="color: red;text-align: center">
-                <img class="done" src="https://github.com/Open-Source-Community/oscgeeks.orgImages/blob/master/Minified%20Images/navbar/logo-osc.png?raw=true">
-              <p>Sorry, The slot you have picked is fully booked! Please choose another time for your interview.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
-
     </div>
+
     <script>
-        $(document).ready(function(){
-            $(".submit").click(function(e){
+        $(document).ready(function () {
+            $(".submit").click(function (e) {
                 e.preventDefault();
                 $("#spinner").show();
                 $.ajax({
-                    url:"/apply",
-                    type:"post",
+                    url: "/apply",
+                    type: "post",
                     data: $("#form").serialize()
-                })
-                .done(function(data){
+                }).done(function (data) {
                     $("#spinner").hide();
-                    if(data == "done"){
+                    if (data === "done") {
                         window.location = "/done";
                     }
-                    if(data == "refused"){
+                    if (data === "refused") {
                         $("#myModal").modal("show");
                     }
                 })
-
-            });    
-        })
+            });
+        });
     </script>
 
 @endsection

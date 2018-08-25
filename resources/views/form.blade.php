@@ -43,7 +43,7 @@
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
                                 <input name="mobile" class="form-control pull-right" type="tel"
-                                       placeholder="Mobile Number*" required>
+                                       pattern="^\d{11}$" maxlength="11" placeholder="Mobile Number*" required>
                             </div>
                         </div>
 
@@ -178,22 +178,27 @@
     <script>
         $(document).ready(function () {
             $(".submit").click(function (e) {
-                e.preventDefault();
-                $("#spinner").show();
-                $.ajax({
-                    url: "/apply",
-                    type: "post",
-                    data: $("#form").serialize()
-                }).done(function (data) {
-                    $("#spinner").hide();
-                    if (data === "done") {
-                        window.location = "/done";
+                    var valid = this.form.checkValidity();
+                    $("#valid").html(valid);
+                    if (valid) {
+                        e.preventDefault();
+                        $("#spinner").show();
+                        $.ajax({
+                            url: "/apply",
+                            type: "post",
+                            data: $("#form").serialize()
+                        }).done(function (data) {
+                            $("#spinner").hide();
+                            if (data === "done") {
+                                window.location = "/done";
+                            }
+                            if (data === "refused") {
+                                $("#myModal").modal("show");
+                            }
+                        })
                     }
-                    if (data === "refused") {
-                        $("#myModal").modal("show");
-                    }
-                })
-            });
+                }
+            );
         });
     </script>
 

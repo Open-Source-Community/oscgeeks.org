@@ -118,12 +118,12 @@
                                 </div>
                                 <select name="day" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Day*</option>
-                                    <option value="1">Saturday</option>
-                                    <option value="2">Sunday</option>
-                                    <option value="3">Monday</option>
-                                    <option value="4">Tuesday</option>
-                                    <option value="5">Wednesday</option>
-                                    <option value="6">Thursday</option>
+                                    <option value="1">Saturday 01/09</option>
+                                    <option value="2">Sunday 02/09</option>
+                                    <option value="3">Monday 03/09</option>
+                                    <option value="4">Tuesday 04/09</option>
+                                    <option value="5">Wednesday 05/09</option>
+                                    <option value="6">Thursday 06/09</option>
                                 </select>
                             </div>
                         </div>

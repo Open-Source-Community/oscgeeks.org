@@ -118,7 +118,7 @@
                                 </div>
                                 <select name="day" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Day*</option>
-                                    <option value="1">Saturday 01/09</option>
+                                    {{--<option value="1">Saturday 01/09</option>--}}
                                     <option value="2">Sunday 02/09</option>
                                     <option value="3">Monday 03/09</option>
                                     <option value="4">Tuesday 04/09</option>

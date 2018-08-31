@@ -97,8 +97,8 @@
                     <li><a href="/events"><b>Events</b></a></li>
                     <li>|</li>
                     <li><a href="/about"><b>About Us</b></a></li>
-                    <li>|</li>
-                    <li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>
+                    {{--<li>|</li>--}}
+                    {{--<li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>--}}
                 </ul>
 
                 <div class="contact_us col-md-3 col-lg-3">
@@ -156,7 +156,7 @@
                         </li>
                         <li><a href="/events"><b>Events</b></a></li>
                         <li style="padding: 0"><a href="/about"><b>About Us</b></a></li>
-                        <li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>
+                        {{--<li><a href="/apply"><b>Online Recruitment Registration Form</b></a></li>--}}
                     </ul>
 
                 </div>

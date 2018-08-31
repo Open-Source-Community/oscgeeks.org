@@ -24,9 +24,9 @@ class EventsController extends Controller
         return view('done');
     }
 
-    public function refused()
+    public function expired()
     {
-        return view('refused');
+        return view('expired');
     }
 
     public function apply(Request $request)

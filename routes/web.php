@@ -34,7 +34,9 @@ Route::get('/Fundraising', 'CommitteesController@fundraising');
 Route::get('/Web', 'CommitteesController@Web');
 Route::get('/Projects', 'CommitteesController@Projects');
 
-Route::get('/apply', 'EventsController@show_apply');
-Route::post('/apply', 'EventsController@apply');
+//Route::get('/apply', 'EventsController@show_apply');
+//Route::post('/apply', 'EventsController@apply');
+//
+//Route::get('/done', 'EventsController@done');
 
-Route::get('/done', 'EventsController@done');
+Route::get('/apply', 'EventsController@expired');

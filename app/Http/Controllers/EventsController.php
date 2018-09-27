@@ -84,6 +84,8 @@ class EventsController extends Controller
                 echo "done";
             } else
                 echo "refused";
+        else
+            echo "refused";
     }
 
     public function Saturday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -119,7 +121,8 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 
     public function Sunday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -155,7 +158,8 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 
     public function Monday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -191,7 +195,8 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 
     public function Tuesday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -227,7 +232,8 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 
     public function Wednesday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -263,7 +269,8 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 
     public function Thursday($day, $time, $time1, $time2, $time3, $time4, $time5)
@@ -299,6 +306,7 @@ class EventsController extends Controller
                 return false;
             else
                 return true;
-        }
+        } else
+            return false;
     }
 }

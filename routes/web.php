@@ -40,9 +40,9 @@ Route::get('/Projects', 'CommitteesController@Projects');
 //Route::get('/done', 'EventsController@done');
 
 ////////////////////////////////////////////////////////
-//Route::get('/apply', 'EventsController@expired');
+Route::get('/apply', 'EventsController@expired');
 
 ////////////////////////////////////////////////////////
-Route::get('/apply', 'WorkshopsController@show_apply');
-Route::post('/apply', 'WorkshopsController@apply');
-Route::get('/done', 'WorkshopsController@done');
+//Route::get('/apply', 'WorkshopsController@show_apply');
+//Route::post('/apply', 'WorkshopsController@apply');
+//Route::get('/done', 'WorkshopsController@done');

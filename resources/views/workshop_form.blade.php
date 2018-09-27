@@ -116,18 +116,12 @@
                                 </div>
                                 <select name="time" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Time*</option>
-                                    <option value="1">from 10:00 to 10:30</option>
-                                    <option value="2">from 10:30 to 11:00</option>
-                                    <option value="3">from 11:00 to 11:30</option>
-                                    <option value="4">from 11:30 to 12:00</option>
-                                    <option value="5">from 12:00 to 12:30</option>
-                                    <option value="6">from 12:30 to 01:00</option>
-                                    <option value="7">from 01:00 to 01:30</option>
-                                    <option value="8">from 01:30 to 02:00</option>
-                                    <option value="9">from 02:00 to 02:30</option>
-                                    <option value="10">from 02:30 to 03:00</option>
-                                    <option value="11">from 03:00 to 03:30</option>
-                                    <option value="12">from 03:30 to 04:00</option>
+                                    <option value="1">from 10:00 to 11:00</option>
+                                    <option value="2">from 11:00 to 12:00</option>
+                                    <option value="3">from 12:00 to 01:00</option>
+                                    <option value="4">from 01:00 to 02:00</option>
+                                    <option value="5">from 02:00 to 03:00</option>
+                                    <option value="6">from 03:00 to 04:00</option>
                                 </select>
                             </div>
                         </div>

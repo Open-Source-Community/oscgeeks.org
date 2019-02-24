@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Event;
 use App\Recruit;
 use Illuminate\Http\Request;
-
+use App\workshop_day;
+use App\workshop_time;
+use App\slot;
+use App\time;
 class EventsController extends Controller
 {
     public function index()
@@ -14,9 +17,26 @@ class EventsController extends Controller
         return view('events', compact('events'));
     }
 
+    public function get_day_times(Request $req)
+    {
+        $allTimes = workshop_time::all();
+        $dayTimes = workshop_day::where('id' , $req->day)->first();
+        $dayTimes = explode(",",$dayTimes->times);
+        foreach($dayTimes as $time){
+            $addedTime = workshop_time::where('time' , $time)->first();
+            $slots = slot::where('time_id' , $addedTime->id)->first();
+            $added = Recruit::where('day' , $req->day)->where('time' , $addedTime->id)->get();
+            die($added);
+            if(count($slots) == count($added)){
+                array_pull($time , $allTimes);
+            }
+        }
+        return response()->json($allTimes);
+    }
     public function show_apply()
     {
-        return view('form');
+        $days = workshop_day::all();   
+        return view('form' , ['days'=>$days]);
     }
 
     public function done()

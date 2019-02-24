@@ -116,14 +116,12 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
-                                <select name="day" class="form-control pull-right" type="text" required>
+                                <select id="day" name="day" class="form-control pull-right" type="text" required>
                                     <option selected value="">Select Day*</option>
                                     {{--<option value="1">Saturday 01/09</option>--}}
-                                    <option value="2">Sunday 02/09</option>
-                                    <option value="3">Monday 03/09</option>
-                                    <option value="4">Tuesday 04/09</option>
-                                    <option value="5">Wednesday 05/09</option>
-                                    <option value="6">Thursday 06/09</option>
+                                    @foreach($days as $day)
+                                         <option value="{{$day->id}}">{{$day->day." | $day->date"}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
@@ -134,13 +132,8 @@
                                 <div class="input-group-addon">
                                     <i class="fas fa-clock "></i>
                                 </div>
-                                <select name="time" class="form-control pull-right" type="text" required>
-                                    <option selected value="">Select Time*</option>
-                                    <option value="1">from 10:00 to 11:30</option>
-                                    <option value="2">from 11:30 to 01:00</option>
-                                    <option value="3">from 01:00 to 02:30</option>
-                                    <option value="4">from 02:30 to 04:00</option>
-                                    <option value="5">from 04:00 to 05:30</option>
+                                <select id="times" disabled name="time" class="form-control pull-right" type="text" required>
+                                    <option value="" selected>chose time</option>
                                 </select>
                             </div>
                         </div>
@@ -177,6 +170,28 @@
 
     <script>
         $(document).ready(function () {
+
+            $("#day").change(function(){
+                var day = $(this).find(":selected").val();
+                console.log(day);
+                $.ajax({
+                    url: "/getTimes",
+                    type: "get",
+                    dataType:"json",
+                    data: {'day':day , '_token':'{{csrf_token()}}'}
+                })
+                .done(function (res) {
+                        jQuery.each(res , function(i , row) {
+                           $("#times").append(' <option value="'+res.id+'">'+res.+'</option>')
+                        })
+                        if(res.length == 0){
+                            alert("dsad");
+                        }
+                //    jQuery.each(res,function(i , val){
+                //         console.log(val);
+                //    })
+                })
+            });
             $(".submit").click(function (e) {
                     var valid = this.form.checkValidity();
                     $("#valid").html(valid);
@@ -200,6 +215,9 @@
                 }
             );
         });
+
+        
+
     </script>
 
 @endsection

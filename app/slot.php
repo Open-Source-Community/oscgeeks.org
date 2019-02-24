@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Workshop extends Model
+class slot extends Model
 {
     public $timestamps = false;
+
+    //
 }

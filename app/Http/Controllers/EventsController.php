@@ -23,21 +23,32 @@ class EventsController extends Controller
         $allTimes = workshop_time::all();
         $dayTimes = workshop_day::where('id' , $req->day)->first();
         $dayTimes = explode(",",$dayTimes->times);
+        $availableTimes = $dayTimes;
         foreach($dayTimes as $time){
             $addedTime = workshop_time::where('time' , $time)->first();
             $slots = slot::where('time_id' , $addedTime->id)->first();
             $added = Recruit::where('day' , $req->day)->where('time' , $addedTime->id)->get();
             if($slots->slots == count($added)){
-                $index =0;
-                foreach ($allTimes as $item) {
-                    if($item->time == $time){
-                        unset($allTimes[$index]);
-                    }
-                   $index++;
+                $index = array_search($time , $availableTimes);
+                unset($availableTimes[$index]);
+            }
+
+        }
+
+        $aTimes=[];
+        $i=0;
+        foreach ($allTimes as $item) {
+            foreach ($availableTimes as $time) {
+                if($item->time == $time){
+                    $aTimes[$i]['id']=$item->id;
+                    $aTimes[$i]['time']=$time;
+
+                    $i++;
                 }
             }
         }
-        return response()->json($allTimes);
+
+        return response()->json($aTimes);
     }
     public function show_apply()
     {

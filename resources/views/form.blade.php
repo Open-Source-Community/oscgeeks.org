@@ -173,7 +173,6 @@
 
             $("#day").change(function(){
                 var day = $(this).find(":selected").val();
-                console.log(day);
                 $.ajax({
                     url: "/getTimes",
                     type: "get",
@@ -186,7 +185,6 @@
                     $("#times").append('<option value="" selected>Select Time</option>');
                     $("#times").attr("disabled" , false);
                         jQuery.each(res , function(i , row) {
-                            console.log(row);
                            $("#times").append("<option value='"+row.id+"'>"+row.time+"</option>");
                         })
                         if(res.length == 0){

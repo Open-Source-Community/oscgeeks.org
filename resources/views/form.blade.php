@@ -181,15 +181,18 @@
                     data: {'day':day , '_token':'{{csrf_token()}}'}
                 })
                 .done(function (res) {
+                    console.log(res);
+                    $("#times").html("");
+                    $("#times").append('<option value="" selected>Select Time</option>');
+                    $("#times").attr("disabled" , false);
                         jQuery.each(res , function(i , row) {
-                           $("#times").append(' <option value="'+res.id+'">'+res.+'</option>')
+                            console.log(row);
+                           $("#times").append("<option value='"+row.id+"'>"+row.time+"</option>");
                         })
                         if(res.length == 0){
-                            alert("dsad");
+                            alert("this day doesn't have available times");
+                            $("#times").attr("disabled" , true);
                         }
-                //    jQuery.each(res,function(i , val){
-                //         console.log(val);
-                //    })
                 })
             });
             $(".submit").click(function (e) {

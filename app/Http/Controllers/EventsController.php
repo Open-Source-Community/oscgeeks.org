@@ -26,9 +26,12 @@ class EventsController extends Controller
         $availableTimes = $dayTimes;
         foreach($dayTimes as $time){
             $addedTime = workshop_time::where('time' , $time)->first();
-            $slots = slot::where('time_id' , $addedTime->id)->first();
+            $slot = slot::where('time_id' , $addedTime->id)->first();
             $added = Recruit::where('day' , $req->day)->where('time' , $addedTime->id)->get();
-            if($slots->slots == count($added)){
+            
+            // dd($slot['slots']);
+            
+            if($slot['slots'] == count($added)){
                 $index = array_search($time , $availableTimes);
                 unset($availableTimes[$index]);
             }
@@ -68,6 +71,16 @@ class EventsController extends Controller
 
     public function apply(Request $req)
     {
+        $this->validate($req,[
+            'name'              => "required",
+            'email'             => "required",
+            'mobile'            => "required",
+            'year'              => "required",
+            'first_committee'   => "required",
+            'second_committee'  => "required",
+            'day'               => "required",
+            'time'              => "required",
+        ]);
 
         $row = new Recruit;
         $row->name = $req->name;
@@ -78,6 +91,11 @@ class EventsController extends Controller
         $row->second_committee = $req->second_committee;
         $row->day = $req->day;
         $row->time = $req->time;
+        $row->status = "لسه متحددش";
+        $row->comment = "لسه متحددش";
+        $row->hr_interviewer = "لسه متحددش";
+        $row->first_com_interviewer = "لسه متحددش";
+        $row->second_com_interviewer = "لسه متحددش";
         if($row->save()){
             echo "done";
         }

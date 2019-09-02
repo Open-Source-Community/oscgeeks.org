@@ -11,6 +11,9 @@
             <h1 class="hvr-pop">Registration Form</h1>
             <div class="col-md-offset-3 col-md-6">
                 <div class="form-container">
+                    <div class="errors">
+
+                    </div>
                     <form id="form">
                         {{ csrf_field() }}
 
@@ -20,8 +23,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <input name="name" class="form-control pull-right" placeholder="Full Name*"
-                                       required>
+                                <input name="name" class="form-control pull-right" placeholder="Full Name*" required>
                             </div>
                         </div>
 
@@ -180,7 +182,6 @@
                     data: {'day':day , '_token':'{{csrf_token()}}'}
                 })
                 .done(function (res) {
-                    console.log(res);
                     $("#times").html("");
                     $("#times").append('<option value="" selected>Select Time</option>');
                     $("#times").attr("disabled" , false);
@@ -211,6 +212,9 @@
                             if (data === "refused") {
                                 $("#myModal").modal("show");
                             }
+                        })
+                        .fail(function(){
+                            $("#spinner").hide();
                         })
                     }
                 }

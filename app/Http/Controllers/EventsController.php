@@ -26,7 +26,7 @@ class EventsController extends Controller
         $availableTimes = $dayTimes;
         foreach($dayTimes as $time){
             $addedTime = workshop_time::where('time' , $time)->first();
-            $slot = slot::where('time_id' , $addedTime['id'])->first();
+            $slot = slot::where('time_id' , $addedTime['id'])->where("day_id" , $req->day)->first();
             $added = Recruit::where('day' , $req->day)->where('time' , $addedTime['id'])->get();
             
             // dd($slot['slots']);

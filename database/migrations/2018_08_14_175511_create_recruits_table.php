@@ -23,6 +23,11 @@ class CreateRecruitsTable extends Migration
             $table->string('second_committee');
             $table->integer('day');
             $table->integer('time');
+            $table->string('status')->nullable();
+            $table->string('comment')->nullable();
+            $table->string('hr_interciewer')->nullable();
+            $table->string('first_com_interviewer')->nullable();
+            $table->string('second_com_interviewer')->nullable();
         });
     }
 

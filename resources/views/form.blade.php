@@ -105,7 +105,8 @@
                                     <option value="Web">Web</option>
                                     <option value="Public Relations">Public Relations</option>
                                     <option value="Human Resources">Human Resources</option>
-                                    <option value="Fundraising">Fundraising</option>
+                                    <option value="Game">Game</option>
+                                    <option value="Social">Social Media</option>
                                     <option value="Logistics">Logistics</option>
                                 </select>
                             </div>

@@ -101,7 +101,7 @@
                                     <option value="Blender">Blender</option>
                                     <option value="English Heroes">English Heroes</option>
                                     <option value="Content Creators">Content Creators</option>
-                                    <option value="Artwork">Artwork</option>
+                                    <option value="Artwork">Artwork & Design</option>
                                     <option value="Projects">Projects</option>
                                     <option value="Web">Web</option>
                                     <option value="Public Relations">Public Relations</option>
